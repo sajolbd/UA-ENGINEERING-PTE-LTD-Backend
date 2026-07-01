@@ -23,11 +23,18 @@ const PORT = process.env.PORT || 5000;
 const DB_PATH = path.join(__dirname, "data", "db.json");
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: true,
+  credentials: true
+}));
 app.use(bodyParser.json());
 
-// Serve the website public/images folder statically to resolve dashboard previews
-app.use("/images", express.static("D:/Projects/UA ENGINEERING PTE. LTD/UA ENGINEERING PTE. LTD -Website/public/images"));
+// Serve uploaded images statically from the backend's own public folder
+const publicImagesDir = path.join(__dirname, "public", "images");
+if (!require("fs").existsSync(publicImagesDir)) {
+  require("fs").mkdirSync(publicImagesDir, { recursive: true });
+}
+app.use("/images", express.static(publicImagesDir));
 
 // Helper function to read database (local fallback)
 function readDatabase() {
@@ -255,7 +262,10 @@ app.delete("/api/blogs/:id", async (req, res) => {
 function syncBlogsToWebsite(blogs) {
   try {
     const tsPath = "D:/Projects/UA ENGINEERING PTE. LTD/UA ENGINEERING PTE. LTD -Website/data/blogData.ts";
+    if (!fs.existsSync(path.dirname(tsPath))) return; // Skip on Railway/production
     const tsCode = `export interface BlogPost {
+  id?: string;
+  _id?: string;
   slug: string;
   title: string;
   category: string;
@@ -566,14 +576,15 @@ app.post("/api/reset", async (req, res) => {
   }
 });
 
-// 10. POST / UPLOAD Image file (Synchronized to Website and Dashboard)
+// 10. POST / UPLOAD Image file
+const uploadDir = path.join(__dirname, "public", "images", "uploads");
+if (!fs.existsSync(uploadDir)) {
+  fs.mkdirSync(uploadDir, { recursive: true });
+}
+
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    const websiteUploadDir = "D:/Projects/UA ENGINEERING PTE. LTD/UA ENGINEERING PTE. LTD -Website/public/images/uploads";
-    if (!fs.existsSync(websiteUploadDir)) {
-      fs.mkdirSync(websiteUploadDir, { recursive: true });
-    }
-    cb(null, websiteUploadDir);
+    cb(null, uploadDir);
   },
   filename: function (req, file, cb) {
     const uniqueSuffix = Date.now() + "-" + Math.round(Math.random() * 1e9);
@@ -592,22 +603,26 @@ app.post("/api/upload", upload.single("image"), (req, res) => {
   const filename = req.file.filename;
   const relativePath = "/images/uploads/" + filename;
 
+  // Attempt to also copy to local Website folder if running locally
   try {
-    const dashboardUploadDir = "D:/Projects/UA ENGINEERING PTE. LTD/UA ENGINEERING PTE. LTD -Dashboard/public/images/uploads";
-    if (!fs.existsSync(dashboardUploadDir)) {
-      fs.mkdirSync(dashboardUploadDir, { recursive: true });
+    const localWebsiteDir = "D:/Projects/UA ENGINEERING PTE. LTD/UA ENGINEERING PTE. LTD -Website/public/images/uploads";
+    if (fs.existsSync(path.dirname(localWebsiteDir))) {
+      if (!fs.existsSync(localWebsiteDir)) fs.mkdirSync(localWebsiteDir, { recursive: true });
+      fs.copyFileSync(req.file.path, path.join(localWebsiteDir, filename));
     }
-    const srcPath = req.file.path;
-    const destPath = path.join(dashboardUploadDir, filename);
-    fs.copyFileSync(srcPath, destPath);
+    const localDashboardDir = "D:/Projects/UA ENGINEERING PTE. LTD/UA ENGINEERING PTE. LTD -Dashboard/public/images/uploads";
+    if (fs.existsSync(path.dirname(localDashboardDir))) {
+      if (!fs.existsSync(localDashboardDir)) fs.mkdirSync(localDashboardDir, { recursive: true });
+      fs.copyFileSync(req.file.path, path.join(localDashboardDir, filename));
+    }
   } catch (err) {
-    console.error("Failed to copy image to dashboard public folder:", err.message);
+    // Non-fatal - local sync only works in dev environment
   }
 
   res.json({
     success: true,
     imagePath: relativePath,
-    message: "Image uploaded and synchronized successfully!"
+    message: "Image uploaded successfully!"
   });
 });
 
