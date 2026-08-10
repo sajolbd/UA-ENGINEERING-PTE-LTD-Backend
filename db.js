@@ -4,33 +4,54 @@ const dotenv = require("dotenv");
 // Load environment variables from .env
 dotenv.config();
 
-const MONGODB_URI = process.env.MONGODB_URI;
 let useMongo = false;
+let cachedPromise = null;
 
-// Connect to MongoDB if the URI is set and not using the default placeholder
-if (MONGODB_URI && !MONGODB_URI.includes("YOUR_PASSWORD")) {
-  mongoose
-    .connect(MONGODB_URI)
-    .then(() => {
-      console.log("===============================================");
-      console.log("   Connected to MongoDB Database Successfully! ");
-      console.log("===============================================");
-      useMongo = true;
-      seedDefaultData();
-    })
-    .catch((err) => {
-      console.error("===============================================");
-      console.error("   MongoDB Connection Failed!                  ");
-      console.error("   Error:", err.message);
-      console.error("   Falling back to local db.json database file. ");
-      console.error("===============================================");
-      useMongo = false;
-    });
-} else {
-  console.log("===============================================");
-  console.log("   MongoDB URI is not configured in .env yet.  ");
-  console.log("   Using local data/db.json file database.     ");
-  console.log("===============================================");
+async function connectDB() {
+  const MONGODB_URI = process.env.MONGODB_URI;
+
+  if (!MONGODB_URI || MONGODB_URI.includes("YOUR_PASSWORD")) {
+    useMongo = false;
+    return false;
+  }
+
+  if (mongoose.connection.readyState >= 1) {
+    useMongo = true;
+    return true;
+  }
+
+  if (!cachedPromise) {
+    cachedPromise = mongoose
+      .connect(MONGODB_URI, {
+        bufferCommands: false,
+      })
+      .then(async () => {
+        console.log("===============================================");
+        console.log("   Connected to MongoDB Database Successfully! ");
+        console.log("===============================================");
+        useMongo = true;
+        await seedDefaultData().catch((err) =>
+          console.error("   Seeding notice:", err.message)
+        );
+        return true;
+      })
+      .catch((err) => {
+        console.error("===============================================");
+        console.error("   MongoDB Connection Failed!                  ");
+        console.error("   Error:", err.message);
+        console.error("===============================================");
+        useMongo = false;
+        cachedPromise = null;
+        return false;
+      });
+  }
+
+  return cachedPromise;
+}
+
+// Proactively initiate connection on module load if MONGODB_URI exists
+if (process.env.MONGODB_URI && !process.env.MONGODB_URI.includes("YOUR_PASSWORD")) {
+  connectDB().catch(() => {});
 }
 
 // 1. CMS Page Schema
@@ -82,12 +103,12 @@ const ServiceSchema = new mongoose.Schema({
   categories: { type: Array, default: [] }
 });
 
-// Register models
-const Cms = mongoose.model("Cms", CmsSchema);
-const Blog = mongoose.model("Blog", BlogSchema);
-const Inquiry = mongoose.model("Inquiry", InquirySchema);
-const Project = mongoose.model("Project", ProjectSchema);
-const Service = mongoose.model("Service", ServiceSchema);
+// Register models safely (prevent overwrite error if model registered)
+const Cms = mongoose.models.Cms || mongoose.model("Cms", CmsSchema);
+const Blog = mongoose.models.Blog || mongoose.model("Blog", BlogSchema);
+const Inquiry = mongoose.models.Inquiry || mongoose.model("Inquiry", InquirySchema);
+const Project = mongoose.models.Project || mongoose.model("Project", ProjectSchema);
+const Service = mongoose.models.Service || mongoose.model("Service", ServiceSchema);
 
 async function seedDefaultData() {
   try {
@@ -160,7 +181,8 @@ async function seedDefaultData() {
 
 module.exports = {
   mongoose,
-  getUseMongo: () => useMongo,
+  connectDB,
+  getUseMongo: () => useMongo || mongoose.connection.readyState === 1,
   Cms,
   Blog,
   Inquiry,

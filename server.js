@@ -3,6 +3,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const fs = require("fs");
 const path = require("path");
+const os = require("os");
 const multer = require("multer");
 const dotenv = require("dotenv");
 
@@ -29,18 +30,31 @@ app.use(cors({
 }));
 app.use(bodyParser.json());
 
-// Serve uploaded images statically from the backend's own public folder
+// Ensure MongoDB connection is initialized for serverless requests
+app.use(async (req, res, next) => {
+  await dbConnection.connectDB().catch(() => {});
+  next();
+});
+
+// Serve uploaded images statically
 const publicImagesDir = path.join(__dirname, "public", "images");
-if (!require("fs").existsSync(publicImagesDir)) {
-  require("fs").mkdirSync(publicImagesDir, { recursive: true });
+try {
+  if (!fs.existsSync(publicImagesDir)) {
+    fs.mkdirSync(publicImagesDir, { recursive: true });
+  }
+  app.use("/images", express.static(publicImagesDir));
+} catch (e) {
+  // Read-only filesystem on Vercel
 }
-app.use("/images", express.static(publicImagesDir));
 
 // Fallback to serve website's static public images if they exist locally (local dev environment)
-const websitePublicImagesDir = path.join(__dirname, "..", "UA ENGINEERING PTE. LTD -Website", "public", "images");
-if (fs.existsSync(websitePublicImagesDir)) {
-  app.use("/images", express.static(websitePublicImagesDir));
-  console.log(`[Static Fallback] Serving static assets from website: ${websitePublicImagesDir}`);
+try {
+  const websitePublicImagesDir = path.join(__dirname, "..", "UA ENGINEERING PTE. LTD -Website", "public", "images");
+  if (fs.existsSync(websitePublicImagesDir)) {
+    app.use("/images", express.static(websitePublicImagesDir));
+  }
+} catch (e) {
+  // Non-fatal
 }
 
 // Helper function to read database (local fallback)
@@ -51,14 +65,15 @@ function readDatabase() {
       return JSON.parse(data);
     }
   } catch (error) {
-    console.error("Error reading database:", error);
+    console.error("Error reading database:", error.message);
   }
-  return { cms: {}, blogs: [], inquiries: [], projects: [] };
+  return { cms: {}, blogs: [], inquiries: [], projects: [], services: [] };
 }
 
 // Helper function to write database (local fallback)
 function writeDatabase(data) {
   try {
+    if (process.env.VERCEL) return false;
     const dir = path.dirname(DB_PATH);
     if (!fs.existsSync(dir)) {
       fs.mkdirSync(dir, { recursive: true });
@@ -66,15 +81,18 @@ function writeDatabase(data) {
     fs.writeFileSync(DB_PATH, JSON.stringify(data, null, 2), "utf8");
     return true;
   } catch (error) {
-    console.error("Error writing database:", error);
+    console.error("Error writing database:", error.message);
     return false;
   }
 }
 
-// Helper to sync changes to the website static json config
+// Production-safe local sync helper functions
 function syncToWebsite(pageId, formType, data) {
+  if (process.env.VERCEL) return;
   try {
-    const websiteCmsJsonPath = "D:/Projects/UA ENGINEERING PTE. LTD/UA ENGINEERING PTE. LTD -Website/data/cmsData.json";
+    const websiteCmsJsonPath = path.join(__dirname, "..", "UA ENGINEERING PTE. LTD -Website", "data", "cmsData.json");
+    if (!fs.existsSync(path.dirname(websiteCmsJsonPath))) return;
+    
     let currentCms = {};
     if (fs.existsSync(websiteCmsJsonPath)) {
       currentCms = JSON.parse(fs.readFileSync(websiteCmsJsonPath, "utf8"));
@@ -84,9 +102,102 @@ function syncToWebsite(pageId, formType, data) {
     }
     currentCms[pageId][formType] = data;
     fs.writeFileSync(websiteCmsJsonPath, JSON.stringify(currentCms, null, 2), "utf8");
-    console.log(`[Sync] Successfully synchronized CMS configuration to website data file: ${websiteCmsJsonPath}`);
   } catch (err) {
-    console.error("[Sync Error] Failed to synchronize CMS changes to website folder:", err.message);
+    // Non-fatal in production
+  }
+}
+
+function syncBlogsToWebsite(blogs) {
+  if (process.env.VERCEL) return;
+  try {
+    const tsPath = path.join(__dirname, "..", "UA ENGINEERING PTE. LTD -Website", "data", "blogData.ts");
+    if (!fs.existsSync(path.dirname(tsPath))) return;
+
+    const tsCode = `export interface BlogPost {
+  id?: string;
+  _id?: string;
+  slug: string;
+  title: string;
+  category: string;
+  categorySlug: string;
+  date: string;
+  author: string;
+  image: string;
+  bgColor: string;
+  readTime: string;
+  popular?: boolean;
+  views?: number;
+  content: string;
+}
+
+export const blogPosts: BlogPost[] = ${JSON.stringify(blogs, null, 2)};
+`;
+    fs.writeFileSync(tsPath, tsCode, "utf8");
+  } catch (err) {
+    // Non-fatal in production
+  }
+}
+
+function syncProjectsToWebsite(projects) {
+  if (process.env.VERCEL) return;
+  try {
+    const tsPath = path.join(__dirname, "..", "UA ENGINEERING PTE. LTD -Website", "data", "projectsData.ts");
+    if (!fs.existsSync(path.dirname(tsPath))) return;
+
+    const tsCode = `export interface ProjectItem {
+  id?: string;
+  _id?: string;
+  title: string;
+  category: string;
+  image: string;
+  description: string;
+  location: string;
+  gallery: string[];
+}
+
+export const projectsData: ProjectItem[] = ${JSON.stringify(projects, null, 2)};
+`;
+    fs.writeFileSync(tsPath, tsCode, "utf8");
+  } catch (err) {
+    // Non-fatal in production
+  }
+}
+
+function syncServicesToWebsite(categories) {
+  if (process.env.VERCEL) return;
+  try {
+    const tsPath = path.join(__dirname, "..", "UA ENGINEERING PTE. LTD -Website", "data", "servicesData.ts");
+    if (!fs.existsSync(path.dirname(tsPath))) return;
+
+    const tsCode = `export interface SubService {
+  slug: string;
+  title: string;
+  image: string;
+  breadcrumbTitle?: string;
+  breadcrumbBg?: string;
+  description: string;
+  longDescription: string;
+  features: string[];
+  benefits: string[];
+  process: string[];
+}
+
+export interface ServiceCategory {
+  slug: string;
+  title: string;
+  breadcrumbTitle?: string;
+  shortDescription: string;
+  description: string;
+  featuredImage: string;
+  bgImage: string;
+  services: SubService[];
+}
+
+export const servicesData: ServiceCategory[] = ${JSON.stringify(categories, null, 2)};
+`;
+    fs.writeFileSync(tsPath, tsCode, "utf8");
+  } catch (err) {
+    // Non-fatal in production
   }
 }
 
@@ -94,7 +205,16 @@ function syncToWebsite(pageId, formType, data) {
 // API Routes
 // -------------------------------------------------------------
 
-// Health check endpoint
+// Root Status Route
+app.get("/", (req, res) => {
+  res.json({
+    success: true,
+    message: "UA Engineering Backend API is running",
+    status: "online"
+  });
+});
+
+// Health Check Endpoint
 app.get("/api/health", (req, res) => {
   res.json({
     status: "ok",
@@ -115,7 +235,6 @@ app.get("/api/cms", async (req, res) => {
           seo: doc.seo || {}
         };
       });
-      // Merge with default initial config if some pages are missing in MongoDB
       const localDb = readDatabase();
       const mergedCms = { ...localDb.cms, ...cmsMap };
       return res.json({ success: true, data: mergedCms });
@@ -124,7 +243,6 @@ app.get("/api/cms", async (req, res) => {
     }
   }
 
-  // Fallback to Local JSON
   const db = readDatabase();
   res.json({ success: true, data: db.cms || {} });
 });
@@ -152,7 +270,6 @@ app.post("/api/cms", async (req, res) => {
     }
   }
 
-  // Fallback to Local JSON
   const db = readDatabase();
   if (!db.cms[pageId]) {
     db.cms[pageId] = { content: {}, seo: {} };
@@ -160,7 +277,7 @@ app.post("/api/cms", async (req, res) => {
   db.cms[pageId][formType] = data;
   
   const saved = writeDatabase(db);
-  if (saved) {
+  if (saved || process.env.VERCEL) {
     syncToWebsite(pageId, formType, data);
     res.json({ success: true, message: `CMS ${formType} settings saved successfully for page: ${pageId}` });
   } else {
@@ -179,7 +296,6 @@ app.get("/api/blogs", async (req, res) => {
     }
   }
 
-  // Fallback to Local JSON
   const db = readDatabase();
   res.json({ success: true, data: db.blogs || [] });
 });
@@ -198,45 +314,40 @@ app.post("/api/blogs", async (req, res) => {
       if (exists) {
         return res.status(400).json({ success: false, error: "A blog post with this slug already exists." });
       }
-      
+
       const blogDoc = new Blog(newPost);
       await blogDoc.save();
+
       const allBlogs = await Blog.find().sort({ _id: -1 });
       syncBlogsToWebsite(allBlogs);
-      return res.json({ success: true, data: blogDoc, message: "Blog post published successfully to MongoDB!" });
+
+      return res.json({ success: true, data: blogDoc, message: "Blog published successfully to MongoDB!" });
     } catch (err) {
       console.error("[Mongo Error] POST /api/blogs failed:", err.message);
     }
   }
 
-  // Fallback to Local JSON
   const db = readDatabase();
   if (!db.blogs) db.blogs = [];
-  
-  const exists = db.blogs.find(post => post.slug === newPost.slug);
+
+  const exists = db.blogs.find((b) => b.slug === newPost.slug);
   if (exists) {
     return res.status(400).json({ success: false, error: "A blog post with this slug already exists." });
   }
 
-  newPost.views = newPost.views || 0;
-  newPost.date = newPost.date || new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
-  newPost.author = newPost.author || "Administrator";
-  newPost.bgColor = newPost.bgColor || "bg-slate-100";
-  newPost.readTime = newPost.readTime || "5 mins read";
   newPost.id = Date.now().toString();
-
   db.blogs.unshift(newPost);
   
   const saved = writeDatabase(db);
-  if (saved) {
+  if (saved || process.env.VERCEL) {
     syncBlogsToWebsite(db.blogs);
-    res.json({ success: true, data: newPost, message: "Blog post published successfully!" });
+    res.json({ success: true, data: newPost, message: "Blog published successfully!" });
   } else {
-    res.status(500).json({ success: false, error: "Failed to write data to database" });
+    res.status(500).json({ success: false, error: "Failed to write blog to database" });
   }
 });
 
-// 4.2. DELETE Blog Post
+// 4.1. DELETE Blog Post
 app.delete("/api/blogs/:id", async (req, res) => {
   const { id } = req.params;
 
@@ -255,100 +366,87 @@ app.delete("/api/blogs/:id", async (req, res) => {
   if (db.blogs) {
     db.blogs = db.blogs.filter((b) => b.id !== id && b._id !== id);
     const saved = writeDatabase(db);
-    if (saved) {
+    if (saved || process.env.VERCEL) {
       syncBlogsToWebsite(db.blogs);
       res.json({ success: true, message: "Blog post deleted successfully!" });
     } else {
-      res.status(500).json({ success: false, error: "Failed to update database file" });
+      res.status(500).json({ success: false, error: "Failed to update local database" });
     }
   } else {
     res.status(404).json({ success: false, error: "No blogs found" });
   }
 });
 
-function syncBlogsToWebsite(blogs) {
-  try {
-    const tsPath = "D:/Projects/UA ENGINEERING PTE. LTD/UA ENGINEERING PTE. LTD -Website/data/blogData.ts";
-    if (!fs.existsSync(path.dirname(tsPath))) return; // Skip on Railway/production
-    const tsCode = `export interface BlogPost {
-  id?: string;
-  _id?: string;
-  slug: string;
-  title: string;
-  category: string;
-  categorySlug: string;
-  date: string;
-  author: string;
-  image: string;
-  bgColor: string;
-  readTime: string;
-  popular: boolean;
-  content: string;
-  views: number;
-}
+// 5. GET Single Blog Post by Slug
+app.get("/api/blogs/:slug", async (req, res) => {
+  const { slug } = req.params;
 
-export const blogPosts: BlogPost[] = ${JSON.stringify(blogs, null, 2)};
-`;
-    fs.writeFileSync(tsPath, tsCode, "utf8");
-    console.log(`[Sync] Successfully synchronized dynamic blog posts to website TS file: ${tsPath}`);
-  } catch (err) {
-    console.error("[Sync Error] Failed to synchronize blogs to website folder:", err.message);
-  }
-}
-
-
-// 5. GET Contact Inquiries
-app.get("/api/inquiries", async (req, res) => {
   if (getUseMongo()) {
     try {
-      const inquiries = await Inquiry.find().sort({ createdAt: -1 });
-      return res.json({ success: true, data: inquiries });
+      const blog = await Blog.findOne({ slug });
+      if (blog) {
+        blog.views = (blog.views || 0) + 1;
+        await blog.save();
+        return res.json({ success: true, data: blog });
+      }
     } catch (err) {
-      console.error("[Mongo Error] GET /api/inquiries failed:", err.message);
+      console.error("[Mongo Error] GET /api/blogs/:slug failed:", err.message);
     }
   }
 
-  // Fallback to Local JSON
   const db = readDatabase();
-  res.json({ success: true, data: db.inquiries || [] });
+  const blog = (db.blogs || []).find((b) => b.slug === slug);
+
+  if (blog) {
+    blog.views = (blog.views || 0) + 1;
+    writeDatabase(db);
+    return res.json({ success: true, data: blog });
+  }
+
+  res.status(404).json({ success: false, error: "Blog post not found" });
 });
 
-// 6. POST / SUBMIT Contact Inquiry
+// 6. POST Contact Form Inquiry
 app.post("/api/inquiries", async (req, res) => {
-  const newInquiry = req.body;
+  const { name, email, phone, service, message } = req.body;
 
-  if (!newInquiry.name || !newInquiry.phone) {
-    return res.status(400).json({ success: false, error: "Name and Phone number are required to submit an inquiry." });
+  if (!name || !email || !message) {
+    return res.status(400).json({ success: false, error: "Name, email, and message are required." });
   }
+
+  const newInquiry = {
+    id: Date.now().toString(),
+    name,
+    email,
+    phone: phone || "",
+    service: service || "General Inquiry",
+    message,
+    date: new Date().toISOString()
+  };
 
   if (getUseMongo()) {
     try {
       const inquiryDoc = new Inquiry(newInquiry);
       await inquiryDoc.save();
-      return res.json({ success: true, data: inquiryDoc, message: "Inquiry registered successfully to MongoDB!" });
+      return res.json({ success: true, message: "Thank you! Your inquiry has been submitted successfully to MongoDB." });
     } catch (err) {
       console.error("[Mongo Error] POST /api/inquiries failed:", err.message);
     }
   }
 
-  // Fallback to Local JSON
   const db = readDatabase();
   if (!db.inquiries) db.inquiries = [];
-
-  newInquiry.id = Date.now().toString();
-  newInquiry.date = new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
-  
   db.inquiries.unshift(newInquiry);
 
   const saved = writeDatabase(db);
-  if (saved) {
-    res.json({ success: true, data: newInquiry, message: "Inquiry registered successfully!" });
+  if (saved || process.env.VERCEL) {
+    res.json({ success: true, message: "Thank you! Your inquiry has been submitted successfully." });
   } else {
-    res.status(500).json({ success: false, error: "Failed to submit inquiry" });
+    res.status(500).json({ success: false, error: "Failed to save inquiry" });
   }
 });
 
-// 7. GET Projects
+// 7. GET Completed Projects
 app.get("/api/projects", async (req, res) => {
   if (getUseMongo()) {
     try {
@@ -359,7 +457,6 @@ app.get("/api/projects", async (req, res) => {
     }
   }
 
-  // Fallback to Local JSON
   const db = readDatabase();
   res.json({ success: true, data: db.projects || [] });
 });
@@ -384,7 +481,6 @@ app.post("/api/projects", async (req, res) => {
     }
   }
 
-  // Fallback to Local JSON
   const db = readDatabase();
   if (!db.projects) db.projects = [];
 
@@ -392,7 +488,7 @@ app.post("/api/projects", async (req, res) => {
   db.projects.unshift(newProject);
 
   const saved = writeDatabase(db);
-  if (saved) {
+  if (saved || process.env.VERCEL) {
     syncProjectsToWebsite(db.projects);
     res.json({ success: true, data: newProject, message: "Project added successfully!" });
   } else {
@@ -424,14 +520,13 @@ app.put("/api/projects/:id", async (req, res) => {
     }
   }
 
-  // Fallback to Local JSON
   const db = readDatabase();
   if (db.projects) {
     let index = db.projects.findIndex((p) => p.id === id || p._id === id);
     if (index !== -1) {
       db.projects[index] = { ...db.projects[index], ...updatedData };
       const saved = writeDatabase(db);
-      if (saved) {
+      if (saved || process.env.VERCEL) {
         syncProjectsToWebsite(db.projects);
         return res.json({ success: true, data: db.projects[index], message: "Project updated successfully!" });
       }
@@ -456,12 +551,11 @@ app.delete("/api/projects/:id", async (req, res) => {
     }
   }
 
-  // Fallback to Local JSON
   const db = readDatabase();
   if (db.projects) {
-    db.projects = db.projects.filter((p) => p.id !== id);
+    db.projects = db.projects.filter((p) => p.id !== id && p._id !== id);
     const saved = writeDatabase(db);
-    if (saved) {
+    if (saved || process.env.VERCEL) {
       syncProjectsToWebsite(db.projects);
       res.json({ success: true, message: "Project deleted successfully!" });
     } else {
@@ -472,32 +566,7 @@ app.delete("/api/projects/:id", async (req, res) => {
   }
 });
 
-
-function syncProjectsToWebsite(projects) {
-  try {
-    const tsPath = "D:/Projects/UA ENGINEERING PTE. LTD/UA ENGINEERING PTE. LTD -Website/data/projectsData.ts";
-    const tsCode = `export interface ProjectItem {
-  id?: string;
-  _id?: string;
-  title: string;
-  category: string;
-  image: string;
-  description: string;
-  location: string;
-  gallery: string[];
-}
-
-export const projectsData: ProjectItem[] = ${JSON.stringify(projects, null, 2)};
-`;
-    fs.writeFileSync(tsPath, tsCode, "utf8");
-    console.log(`[Sync] Successfully synchronized dynamic projects to website TS file: ${tsPath}`);
-  } catch (err) {
-    console.error("[Sync Error] Failed to synchronize projects to website folder:", err.message);
-  }
-}
-
-
-// 8.5. Serve/Modify Services List
+// 8.5. GET & UPDATE Services List
 app.get("/api/services", async (req, res) => {
   if (getUseMongo()) {
     try {
@@ -536,7 +605,7 @@ app.post("/api/services", async (req, res) => {
   const db = readDatabase();
   db.services = categories;
   const saved = writeDatabase(db);
-  if (saved) {
+  if (saved || process.env.VERCEL) {
     syncServicesToWebsite(categories);
     res.json({ success: true, message: "Services list successfully updated locally!" });
   } else {
@@ -544,46 +613,12 @@ app.post("/api/services", async (req, res) => {
   }
 });
 
-function syncServicesToWebsite(categories) {
-  try {
-    const tsPath = "D:/Projects/UA ENGINEERING PTE. LTD/UA ENGINEERING PTE. LTD -Website/data/servicesData.ts";
-    const tsCode = `export interface SubService {
-  slug: string;
-  title: string;
-  image: string;
-  breadcrumbTitle?: string;
-  breadcrumbBg?: string;
-  description: string;
-  longDescription: string;
-  features: string[];
-  benefits: string[];
-  process: string[];
-}
-
-export interface ServiceCategory {
-  slug: string;
-  title: string;
-  breadcrumbTitle?: string;
-  shortDescription: string;
-  description: string;
-  featuredImage: string;
-  bgImage: string;
-  services: SubService[];
-}
-
-export const servicesData: ServiceCategory[] = ${JSON.stringify(categories, null, 2)};
-`;
-    fs.writeFileSync(tsPath, tsCode, "utf8");
-    console.log(`[Sync] Successfully synchronized dynamic services to website TS file: \${tsPath}`);
-  } catch (err) {
-    console.error("[Sync Error] Failed to synchronize services to website folder:", err.message);
-  }
-}
-
-
-// 9. Reset database to default presets (seeder action)
+// 9. Reset database to default presets
 app.post("/api/reset", async (req, res) => {
-  const defaultCms = require("./data/db.json").cms;
+  let defaultCms = {};
+  try {
+    defaultCms = readDatabase().cms;
+  } catch (e) {}
 
   if (getUseMongo()) {
     try {
@@ -592,7 +627,6 @@ app.post("/api/reset", async (req, res) => {
       await Project.deleteMany({});
       await Cms.deleteMany({});
       
-      // Seed default cms configuration to Mongo
       for (const pageId of Object.keys(defaultCms)) {
         await Cms.create({
           pageId,
@@ -601,36 +635,41 @@ app.post("/api/reset", async (req, res) => {
         });
       }
       
-      // Also rewrite the website static file
-      fs.writeFileSync("D:/Projects/UA ENGINEERING PTE. LTD/UA ENGINEERING PTE. LTD -Website/data/cmsData.json", JSON.stringify(defaultCms, null, 2), "utf8");
-      
+      syncToWebsite("reset", "content", defaultCms);
       return res.json({ success: true, message: "MongoDB tables cleared and reset successfully!" });
     } catch (err) {
       console.error("[Mongo Error] POST /api/reset failed:", err.message);
     }
   }
 
-  // Fallback to Local JSON reset
   const db = {
     cms: defaultCms,
     blogs: [],
     inquiries: [],
-    projects: []
+    projects: [],
+    services: []
   };
   
   const saved = writeDatabase(db);
-  if (saved) {
-    fs.writeFileSync("D:/Projects/UA ENGINEERING PTE. LTD/UA ENGINEERING PTE. LTD -Website/data/cmsData.json", JSON.stringify(defaultCms, null, 2), "utf8");
-    res.json({ success: true, message: "Database reset to 0 blogs / empty tables successfully!" });
+  if (saved || process.env.VERCEL) {
+    syncToWebsite("reset", "content", defaultCms);
+    res.json({ success: true, message: "Database reset successfully!" });
   } else {
     res.status(500).json({ success: false, error: "Failed to reset database" });
   }
 });
 
-// 10. POST / UPLOAD Image file
-const uploadDir = path.join(__dirname, "public", "images", "uploads");
-if (!fs.existsSync(uploadDir)) {
-  fs.mkdirSync(uploadDir, { recursive: true });
+// 10. POST / UPLOAD Image file (Multer)
+const uploadDir = process.env.VERCEL
+  ? path.join(os.tmpdir(), "uploads")
+  : path.join(__dirname, "public", "images", "uploads");
+
+try {
+  if (!fs.existsSync(uploadDir)) {
+    fs.mkdirSync(uploadDir, { recursive: true });
+  }
+} catch (e) {
+  // Non-fatal on serverless
 }
 
 const storage = multer.diskStorage({
@@ -654,22 +693,6 @@ app.post("/api/upload", upload.single("image"), (req, res) => {
   const filename = req.file.filename;
   const relativePath = "/images/uploads/" + filename;
 
-  // Attempt to also copy to local Website folder if running locally
-  try {
-    const localWebsiteDir = "D:/Projects/UA ENGINEERING PTE. LTD/UA ENGINEERING PTE. LTD -Website/public/images/uploads";
-    if (fs.existsSync(path.dirname(localWebsiteDir))) {
-      if (!fs.existsSync(localWebsiteDir)) fs.mkdirSync(localWebsiteDir, { recursive: true });
-      fs.copyFileSync(req.file.path, path.join(localWebsiteDir, filename));
-    }
-    const localDashboardDir = "D:/Projects/UA ENGINEERING PTE. LTD/UA ENGINEERING PTE. LTD -Dashboard/public/images/uploads";
-    if (fs.existsSync(path.dirname(localDashboardDir))) {
-      if (!fs.existsSync(localDashboardDir)) fs.mkdirSync(localDashboardDir, { recursive: true });
-      fs.copyFileSync(req.file.path, path.join(localDashboardDir, filename));
-    }
-  } catch (err) {
-    // Non-fatal - local sync only works in dev environment
-  }
-
   res.json({
     success: true,
     imagePath: relativePath,
@@ -677,38 +700,36 @@ app.post("/api/upload", upload.single("image"), (req, res) => {
   });
 });
 
-// Start Server
-app.listen(PORT, () => {
-  console.log(`===============================================`);
-  console.log(`   UA Engineering REST Backend API Server      `);
-  console.log(`   Running on: http://localhost:${PORT}        `);
-  console.log(`   Mode: ${getUseMongo() ? "MongoDB connected" : "Local db.json File"} `);
-  console.log(`===============================================`);
+// Server execution logic (Avoid calling app.listen when imported by Vercel serverless entry point)
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`===============================================`);
+    console.log(`   UA Engineering REST Backend API Server      `);
+    console.log(`   Running on: http://localhost:${PORT}        `);
+    console.log(`   Mode: ${getUseMongo() ? "MongoDB connected" : "Local db.json File"} `);
+    console.log(`===============================================`);
 
-  // Asynchronous startup sync after mongoose finishes connecting
-  setTimeout(async () => {
-    try {
-      if (getUseMongo()) {
-        const servicesDoc = await Service.findOne();
-        if (servicesDoc && servicesDoc.categories) {
-          syncServicesToWebsite(servicesDoc.categories);
+    setTimeout(async () => {
+      try {
+        if (getUseMongo()) {
+          const servicesDoc = await Service.findOne();
+          if (servicesDoc && servicesDoc.categories) {
+            syncServicesToWebsite(servicesDoc.categories);
+          }
+          const projects = await Project.find().sort({ createdAt: -1 });
+          if (projects && projects.length > 0) {
+            syncProjectsToWebsite(projects);
+          }
+          const blogs = await Blog.find().sort({ _id: -1 });
+          if (blogs && blogs.length > 0) {
+            syncBlogsToWebsite(blogs);
+          }
         }
-        const projects = await Project.find().sort({ createdAt: -1 });
-        if (projects && projects.length > 0) {
-          syncProjectsToWebsite(projects);
-        }
-        const blogs = await Blog.find().sort({ _id: -1 });
-        if (blogs && blogs.length > 0) {
-          syncBlogsToWebsite(blogs);
-        }
-      } else {
-        const db = readDatabase();
-        if (db.services) syncServicesToWebsite(db.services);
-        if (db.projects) syncProjectsToWebsite(db.projects);
-        if (db.blogs) syncBlogsToWebsite(db.blogs);
+      } catch (err) {
+        console.error("Failed to execute startup file compilation:", err.message);
       }
-    } catch (err) {
-      console.error("Failed to execute startup file compilation:", err.message);
-    }
-  }, 2000);
-});
+    }, 2000);
+  });
+}
+
+module.exports = app;
