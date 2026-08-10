@@ -110,7 +110,10 @@ function syncToWebsite(pageId, formType, data) {
 function syncBlogsToWebsite(blogs) {
   if (process.env.VERCEL) return;
   try {
-    const tsPath = path.join(__dirname, "..", "UA ENGINEERING PTE. LTD -Website", "data", "blogData.ts");
+    let tsPath = path.join(__dirname, "..", "UA-ENGINEERING-PTE-LTD-Website", "data", "blogData.ts");
+    if (!fs.existsSync(path.dirname(tsPath))) {
+      tsPath = path.join(__dirname, "..", "UA ENGINEERING PTE. LTD -Website", "data", "blogData.ts");
+    }
     if (!fs.existsSync(path.dirname(tsPath))) return;
 
     const tsCode = `export interface BlogPost {
@@ -141,7 +144,10 @@ export const blogPosts: BlogPost[] = ${JSON.stringify(blogs, null, 2)};
 function syncProjectsToWebsite(projects) {
   if (process.env.VERCEL) return;
   try {
-    const tsPath = path.join(__dirname, "..", "UA ENGINEERING PTE. LTD -Website", "data", "projectsData.ts");
+    let tsPath = path.join(__dirname, "..", "UA-ENGINEERING-PTE-LTD-Website", "data", "projectsData.ts");
+    if (!fs.existsSync(path.dirname(tsPath))) {
+      tsPath = path.join(__dirname, "..", "UA ENGINEERING PTE. LTD -Website", "data", "projectsData.ts");
+    }
     if (!fs.existsSync(path.dirname(tsPath))) return;
 
     const tsCode = `export interface ProjectItem {
