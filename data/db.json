@@ -1,20 +1,57 @@
 {
   "cms": {
+    "site": {
+      "content": {
+        "siteLogo": "/images/logo.png",
+        "footerLogo": "/images/footer-logo.png",
+        "companyName": "UA ENGINEERING PTE. LTD.",
+        "welcomeMessage": "Welcome to UA ENGINEERING PTE. LTD.",
+        "phone": "+65 9841 1786",
+        "email": "hello.uaengineering@gmail.com",
+        "address": "10 Anson Road, Singapore 079903",
+        "workingHours": "Mon - Sat: 9:00 AM - 6:00 PM (Emergency 24/7 Support)",
+        "appointmentButtonText": "Book An Appointment",
+        "footerAboutText": "Professional engineering, renovation, waterproofing, and steel fabrication solutions in Singapore. Licensed, certified, and compliant with BCA standards.",
+        "facebook": "https://facebook.com",
+        "instagram": "https://instagram.com",
+        "linkedin": "https://linkedin.com",
+        "youtube": "https://youtube.com",
+        "whatsapp": "https://wa.me/6598411786"
+      },
+      "seo": {
+        "metaTitle": "UA Engineering PTE. LTD. | Singapore Engineering & Renovation",
+        "metaDescription": "UA Engineering PTE. LTD. provides renovation, waterproofing, steel works, roofing, electrical, plumbing, aircon, aluminium glazing and maintenance services across Singapore.",
+        "metaKeywords": "UA Engineering, Singapore Renovation, Waterproofing Singapore",
+        "schemaJson": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"LocalBusiness\",\n  \"name\": \"UA Engineering Pte Ltd\"\n}"
+      }
+    },
     "home": {
       "content": {
         "heroHeading": "From Renovation to Painting, Roofing, Electrical, Plumbing and Steel Works.",
         "heroSubheading": "We handle it all with expertise, reliability, and guaranteed quality.",
         "heroImage": "/images/home/hero/hero-bg.png",
         "heroImageAlt": "UA Engineering Renovation and Steel Fabrications Banner",
+        "heroCtaText": "Book An Appointment",
         "aboutHeading": "Your Trusted Partner for High Quality Renovation & Upgrading Services.",
         "aboutSubheading": "At UA ENGINEERING PTE. LTD. we deliver reliable Renovation & Upgrading solutions grounded in integrity, expertise, and precision. Our team ensures every project meets high standards of safety, durability, and quality workmanship.",
         "aboutImage": "/images/home/about/about-main.jpg",
         "aboutImageAlt": "UA Engineering Upgrading Worksite Inspections Team",
         "aboutExperience": "15",
-        "callbackHeading": "Let's Get Started on Your Next Engineering Project",
-        "callbackSubheading": "Call us today to schedule a site inspection, structural audit, or customized renovation quotation.",
-        "relyHeading": "Why Property Owners Rely on UA Engineering",
-        "relySubheading": "We blend quality craftsmanship with safety protocols and BCA standards to deliver long-lasting engineering solutions in Singapore."
+        "whyChooseBadge": "UA ADVANTAGE",
+        "whyChooseHeading": "Why Choose UA Engineering?",
+        "relyBadge": "RELIABILITY & TRUST",
+        "relyHeading": "Why Do You Rely On Us?",
+        "relyImage": "/images/home/rely/rely-main.png",
+        "relyButtonText": "Talk to an Expert",
+        "callbackHeading": "Let Us Call You",
+        "callbackSubheading": "Need help now? Send a few details - we'll call you shortly.",
+        "callbackBgImage": "/images/home/call/callback-bg.png",
+        "callbackSupportImage": "/images/home/call/call-support.png",
+        "callbackButtonText": "Submit Now",
+        "reviewsBadge": "CLIENT TESTIMONIALS",
+        "reviewsHeading": "What Our Clients Say About UA Engineering",
+        "processBadge": "OUR WORK PROCESS",
+        "processHeading": "How We Deliver Engineering Excellence"
       },
       "seo": {
         "metaTitle": "UA Engineering PTE. LTD. | Singapore Engineering & Renovation",
@@ -277,7 +314,7 @@
       "title": "Renovation & Upgrading",
       "shortDescription": "Transform your residential, commercial, or industrial spaces with our custom renovation and space-planning solutions.",
       "description": "UA Engineering provides top-tier renovation, interior upgrading, and space optimization solutions in Singapore. From modernizing layout structures to premium custom finishes, we deliver turnkey excellence.",
-      "featuredImage": "/images/services/renovation.png",
+      "featuredImage": "/images/uploads/image-1786329246103-73316015.png",
       "bgImage": "/images/layout/services-bg.png",
       "services": [
         {
@@ -454,7 +491,8 @@
             "Final safety sanding and cleaning"
           ]
         }
-      ]
+      ],
+      "breadcrumbTitle": "Professional Renovation & Upgrading"
     },
     {
       "slug": "structural-exterior-works",

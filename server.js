@@ -36,6 +36,13 @@ if (!require("fs").existsSync(publicImagesDir)) {
 }
 app.use("/images", express.static(publicImagesDir));
 
+// Fallback to serve website's static public images if they exist locally (local dev environment)
+const websitePublicImagesDir = path.join(__dirname, "..", "UA ENGINEERING PTE. LTD -Website", "public", "images");
+if (fs.existsSync(websitePublicImagesDir)) {
+  app.use("/images", express.static(websitePublicImagesDir));
+  console.log(`[Static Fallback] Serving static assets from website: ${websitePublicImagesDir}`);
+}
+
 // Helper function to read database (local fallback)
 function readDatabase() {
   try {
@@ -393,6 +400,47 @@ app.post("/api/projects", async (req, res) => {
   }
 });
 
+// 8.1. PUT / UPDATE Project
+app.put("/api/projects/:id", async (req, res) => {
+  const { id } = req.params;
+  const updatedData = req.body;
+
+  if (!updatedData.title) {
+    return res.status(400).json({ success: false, error: "Project Title is required." });
+  }
+
+  if (getUseMongo()) {
+    try {
+      const projectDoc = await Project.findByIdAndUpdate(
+        id,
+        { $set: updatedData },
+        { new: true }
+      );
+      const allProjects = await Project.find().sort({ createdAt: -1 });
+      syncProjectsToWebsite(allProjects);
+      return res.json({ success: true, data: projectDoc, message: "Project updated successfully in MongoDB!" });
+    } catch (err) {
+      console.error("[Mongo Error] PUT /api/projects/:id failed:", err.message);
+    }
+  }
+
+  // Fallback to Local JSON
+  const db = readDatabase();
+  if (db.projects) {
+    let index = db.projects.findIndex((p) => p.id === id || p._id === id);
+    if (index !== -1) {
+      db.projects[index] = { ...db.projects[index], ...updatedData };
+      const saved = writeDatabase(db);
+      if (saved) {
+        syncProjectsToWebsite(db.projects);
+        return res.json({ success: true, data: db.projects[index], message: "Project updated successfully!" });
+      }
+    }
+  }
+
+  res.status(500).json({ success: false, error: "Failed to update project" });
+});
+
 // 8.2. DELETE Completed Project
 app.delete("/api/projects/:id", async (req, res) => {
   const { id } = req.params;
@@ -503,6 +551,8 @@ function syncServicesToWebsite(categories) {
   slug: string;
   title: string;
   image: string;
+  breadcrumbTitle?: string;
+  breadcrumbBg?: string;
   description: string;
   longDescription: string;
   features: string[];
@@ -513,6 +563,7 @@ function syncServicesToWebsite(categories) {
 export interface ServiceCategory {
   slug: string;
   title: string;
+  breadcrumbTitle?: string;
   shortDescription: string;
   description: string;
   featuredImage: string;
