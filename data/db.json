@@ -64,7 +64,8 @@
       "content": {
         "heroHeading": "About UA Engineering",
         "heroSubheading": "A dedicated team of licensed professional engineers and certified EHS compliance officers delivering high-quality construction works.",
-        "heroImage": "/images/about/about-bg.jpg",
+        "heroImage": "/images/layout/about-bg.png",
+        "aboutImage": "/images/home/about/about-main.jpg",
         "heroImageAlt": "UA Engineering Commercial Facility Builders",
         "overviewHeading": "Company History & Core Values",
         "overviewText": "Founded in Singapore, UA Engineering has grown into a leading contractor offering mechanical, electrical, plumbing, waterproofing, and steel fabrication works. Integrity, safety, and client satisfaction drive our operations.",
