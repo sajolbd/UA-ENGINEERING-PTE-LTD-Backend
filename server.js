@@ -166,7 +166,10 @@ export const projectsData: ProjectItem[] = ${JSON.stringify(projects, null, 2)};
 function syncServicesToWebsite(categories) {
   if (process.env.VERCEL) return;
   try {
-    const tsPath = path.join(__dirname, "..", "UA ENGINEERING PTE. LTD -Website", "data", "servicesData.ts");
+    let tsPath = path.join(__dirname, "..", "UA-ENGINEERING-PTE-LTD-Website", "data", "servicesData.ts");
+    if (!fs.existsSync(path.dirname(tsPath))) {
+      tsPath = path.join(__dirname, "..", "UA ENGINEERING PTE. LTD -Website", "data", "servicesData.ts");
+    }
     if (!fs.existsSync(path.dirname(tsPath))) return;
 
     const tsCode = `export interface SubService {
