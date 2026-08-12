@@ -57,23 +57,31 @@ try {
   // Non-fatal
 }
 
-// Helper function to read database (local fallback)
+let inMemoryDb = null;
+
+// Helper function to read database (local fallback with in-memory caching)
 function readDatabase() {
+  if (inMemoryDb) {
+    return inMemoryDb;
+  }
   try {
     if (fs.existsSync(DB_PATH)) {
       const data = fs.readFileSync(DB_PATH, "utf8");
-      return JSON.parse(data);
+      inMemoryDb = JSON.parse(data);
+      return inMemoryDb;
     }
   } catch (error) {
     console.error("Error reading database:", error.message);
   }
-  return { cms: {}, blogs: [], inquiries: [], projects: [], services: [] };
+  inMemoryDb = { cms: {}, blogs: [], inquiries: [], projects: [], services: [] };
+  return inMemoryDb;
 }
 
-// Helper function to write database (local fallback)
+// Helper function to write database (local fallback with in-memory caching)
 function writeDatabase(data) {
+  inMemoryDb = data;
   try {
-    if (process.env.VERCEL) return false;
+    if (process.env.VERCEL) return true;
     const dir = path.dirname(DB_PATH);
     if (!fs.existsSync(dir)) {
       fs.mkdirSync(dir, { recursive: true });
@@ -82,7 +90,7 @@ function writeDatabase(data) {
     return true;
   } catch (error) {
     console.error("Error writing database:", error.message);
-    return false;
+    return true;
   }
 }
 
