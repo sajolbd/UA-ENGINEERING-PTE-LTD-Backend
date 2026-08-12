@@ -711,10 +711,10 @@ app.post("/api/upload", upload.single("image"), (req, res) => {
 
 // Server execution logic (Avoid calling app.listen when imported by Vercel serverless entry point)
 if (require.main === module) {
-  app.listen(PORT, () => {
+  app.listen(PORT, "0.0.0.0", () => {
     console.log(`===============================================`);
     console.log(`   UA Engineering REST Backend API Server      `);
-    console.log(`   Running on: http://localhost:${PORT}        `);
+    console.log(`   Running on: http://0.0.0.0:${PORT} (Accessible via LAN IP)`);
     console.log(`   Mode: ${getUseMongo() ? "MongoDB connected" : "Local db.json File"} `);
     console.log(`===============================================`);
 
