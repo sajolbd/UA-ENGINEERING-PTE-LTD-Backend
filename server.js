@@ -724,7 +724,35 @@ app.post("/api/upload", upload.single("image"), (req, res) => {
   }
 
   const filename = req.file.filename;
-  const relativePath = "/images/uploads/" + filename;
+  let relativePath = "/images/uploads/" + filename;
+
+  // 1. If running on Vercel or serverless read-only environment, convert image buffer to Base64 Data URL
+  // so images persist reliably without depending on ephemeral serverless disk
+  if (process.env.VERCEL) {
+    try {
+      const mimeType = req.file.mimetype || "image/png";
+      const fileBuffer = fs.readFileSync(req.file.path);
+      const base64Data = fileBuffer.toString("base64");
+      relativePath = `data:${mimeType};base64,${base64Data}`;
+    } catch (e) {
+      console.error("[Vercel Upload Base64 Error]", e.message);
+    }
+  } else {
+    // 2. Local environment: Sync copy uploaded file to Website & Dashboard public image directories
+    try {
+      const websiteUploadDir = path.join(__dirname, "..", "UA ENGINEERING PTE. LTD -Website", "public", "images", "uploads");
+      const dashboardUploadDir = path.join(__dirname, "..", "UA ENGINEERING PTE. LTD -Dashboard", "public", "images", "uploads");
+
+      [websiteUploadDir, dashboardUploadDir].forEach((dir) => {
+        if (!fs.existsSync(dir)) {
+          fs.mkdirSync(dir, { recursive: true });
+        }
+        fs.copyFileSync(req.file.path, path.join(dir, filename));
+      });
+    } catch (e) {
+      console.error("[Local File Sync Copy Notice]", e.message);
+    }
+  }
 
   res.json({
     success: true,
