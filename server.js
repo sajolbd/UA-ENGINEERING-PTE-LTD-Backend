@@ -114,7 +114,10 @@ function syncToWebsite(pageId, formType, data) {
     if (!currentCms[pageId]) {
       currentCms[pageId] = { content: {}, seo: {} };
     }
-    currentCms[pageId][formType] = data;
+    currentCms[pageId][formType] = {
+      ...(currentCms[pageId][formType] || {}),
+      ...data,
+    };
     fs.writeFileSync(websiteCmsJsonPath, JSON.stringify(currentCms, null, 2), "utf8");
   } catch (err) {
     // Non-fatal in production
