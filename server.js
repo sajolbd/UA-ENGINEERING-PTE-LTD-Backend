@@ -28,7 +28,10 @@ app.use(cors({
   origin: true,
   credentials: true
 }));
-app.use(bodyParser.json());
+app.use(express.json({ limit: "50mb" }));
+app.use(express.urlencoded({ limit: "50mb", extended: true }));
+app.use(bodyParser.json({ limit: "50mb" }));
+app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
 
 // Ensure MongoDB connection is initialized for serverless requests
 app.use(async (req, res, next) => {
@@ -98,7 +101,10 @@ function writeDatabase(data) {
 function syncToWebsite(pageId, formType, data) {
   if (process.env.VERCEL) return;
   try {
-    const websiteCmsJsonPath = path.join(__dirname, "..", "UA ENGINEERING PTE. LTD -Website", "data", "cmsData.json");
+    let websiteCmsJsonPath = path.join(__dirname, "..", "UA-ENGINEERING-PTE-LTD-Website", "data", "cmsData.json");
+    if (!fs.existsSync(path.dirname(websiteCmsJsonPath))) {
+      websiteCmsJsonPath = path.join(__dirname, "..", "UA ENGINEERING PTE. LTD -Website", "data", "cmsData.json");
+    }
     if (!fs.existsSync(path.dirname(websiteCmsJsonPath))) return;
     
     let currentCms = {};
