@@ -150,6 +150,66 @@
             "thumbnail": "/images/home/projects/project-electrical.png",
             "videoId": "yY19i3889p4"
           }
+        ],
+        "reviewBadge": "REVIEWS & FEEDBACK",
+        "reviewHeading": "5-Star Happy Customer Reviews",
+        "googleReviews": [
+          {
+            "id": "1",
+            "name": "Majidul Islam Majidul",
+            "time": "1 year ago",
+            "stars": 5,
+            "avatar": "/images/home/reviews/google-majidul.png",
+            "text": "UA Engineering workmanship and investigation of existing building leaking very good. They have done waterproofing leaking rectification work for The American Club Singapore so far no leaking last few weeks I monitoring. Thanks, UA Engineering team members and workers."
+          },
+          {
+            "id": "2",
+            "name": "Cyril Wood",
+            "time": "1 year ago",
+            "stars": 5,
+            "avatar": "/images/home/reviews/google-cyril.png",
+            "text": "The team at UA Engineering were very efficient. They worked well to do the job in an awkward place. Even repainted an area affected by water damage at no extra cost. I would recommend this service."
+          },
+          {
+            "id": "3",
+            "name": "James Lim",
+            "time": "2 years ago",
+            "stars": 5,
+            "avatar": "/images/home/reviews/google-james.png",
+            "text": "Very good! Solved my problem which others cannot solve. Thank you! Highly recommended."
+          },
+          {
+            "id": "4",
+            "name": "Eugene T",
+            "time": "2 years ago",
+            "stars": 5,
+            "avatar": "/images/home/reviews/google-eugene.png",
+            "text": "Engaged UA Engineering for my roof and RC waterproofing. The workers handled the works relatively well and were receptive to our inputs. They are responsive and returned on a few times when we noticed areas that the paint was not even. Overall, happy to recommend to ask for a quote if you are looking for good works at competitive rates."
+          },
+          {
+            "id": "5",
+            "name": "Atik Tamim",
+            "time": "2 years ago",
+            "stars": 5,
+            "avatar": "/images/home/reviews/google-atik.png",
+            "text": "You saved my structure. Thanks for your quality work."
+          },
+          {
+            "id": "6",
+            "name": "Yong Huat Ng",
+            "time": "2 years ago",
+            "stars": 5,
+            "avatar": "/images/home/reviews/google-yonghuat.png",
+            "text": "Willingness to listen, give no excuses, and very committed to doing a complete job is the key characteristics and strength of this vendor. As waterproofing can be a progressive trial process. This vendor response fast to feedback and comeback quickly to complete the coverage of the fixes. I am particularly impressed with the positive attitude of the lead worker. He is friendly, attentive, welcome feedback and committed to delivering a quality work (which he did). A vendor that I am very happy with and will recommend to anyone that need to have the waterproofing services."
+          },
+          {
+            "id": "7",
+            "name": "Joo Goh",
+            "time": "3 years ago",
+            "stars": 5,
+            "avatar": "/images/home/reviews/google-joogoh.png",
+            "text": "Am very pleased with the work done by UA Engineering Pte Ltd few months back and no further leakage or mould were detected to date. The previous contractor (Flux Solutions Pte Ltd) was very unresponsive and rude to after sales service and I decided to terminate them in favour for UA Engineering. I hope UA Engineering will continue with its responsive after sales service that I've experienced and recommend this company after the bad experience I had with Flux Solutions."
+          }
         ]
       },
       "seo": {
