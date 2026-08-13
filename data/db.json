@@ -121,7 +121,36 @@
         "testimonial3Project": "Industrial Electrical Upgrade",
         "testimonial3Quote": "Superb coordination and safety protocol adherence during our substation electrical works. The project was completed efficiently and complied with all regulations.",
         "testimonial3Thumbnail": "/images/home/projects/project-electrical.png",
-        "testimonial3VideoId": "yY19i3889p4"
+        "testimonial3VideoId": "yY19i3889p4",
+        "testimonials": [
+          {
+            "id": "1",
+            "name": "Marcus Tan",
+            "role": "Property Manager, CapitaLand",
+            "project": "Commercial Waterproofing",
+            "quote": "UA Engineering did an outstanding job waterproofing our commercial facade and basement. Excellent workmanship, clean execution, and no water leaks since completion!",
+            "thumbnail": "/images/home/projects/project-waterproofing.png",
+            "videoId": "A2y8jK-iGSw"
+          },
+          {
+            "id": "2",
+            "name": "Sarah Lim",
+            "role": "Homeowner, Sentosa Cove",
+            "project": "Premium Renovation & Fit-out",
+            "quote": "Their attention to detail during our home renovation was exceptional. From hacking to false ceiling installation, they delivered premium quality on schedule.",
+            "thumbnail": "/images/home/projects/project-drywall.png",
+            "videoId": "G5-o475Xz1Y"
+          },
+          {
+            "id": "3",
+            "name": "David Hendricks",
+            "role": "Facilities Director, Jurong Hub",
+            "project": "Industrial Electrical Upgrade",
+            "quote": "Superb coordination and safety protocol adherence during our substation electrical works. The project was completed efficiently and complied with all regulations.",
+            "thumbnail": "/images/home/projects/project-electrical.png",
+            "videoId": "yY19i3889p4"
+          }
+        ]
       },
       "seo": {
         "metaTitle": "UA Engineering PTE. LTD. | Singapore Engineering & Renovation",
