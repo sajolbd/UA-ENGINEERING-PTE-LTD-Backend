@@ -321,16 +321,29 @@ app.get("/api/blogs", async (req, res) => {
 app.post("/api/blogs", async (req, res) => {
   const newPost = req.body;
   
-  if (!newPost.title || !newPost.slug) {
-    return res.status(400).json({ success: false, error: "Title and slug are required to post a blog." });
+  if (!newPost.title) {
+    return res.status(400).json({ success: false, error: "Title is required to post a blog." });
   }
+
+  // Ensure slug exists and clean
+  let baseSlug = (newPost.slug || newPost.title)
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+
+  if (!baseSlug) baseSlug = `post-${Date.now()}`;
+  newPost.slug = baseSlug;
 
   if (getUseMongo()) {
     try {
-      const exists = await Blog.findOne({ slug: newPost.slug });
-      if (exists) {
-        return res.status(400).json({ success: false, error: "A blog post with this slug already exists." });
+      let uniqueSlug = baseSlug;
+      let counter = 1;
+      while (await Blog.findOne({ slug: uniqueSlug })) {
+        uniqueSlug = `${baseSlug}-${counter}`;
+        counter++;
       }
+      newPost.slug = uniqueSlug;
 
       const blogDoc = new Blog(newPost);
       await blogDoc.save();
@@ -347,10 +360,13 @@ app.post("/api/blogs", async (req, res) => {
   const db = readDatabase();
   if (!db.blogs) db.blogs = [];
 
-  const exists = db.blogs.find((b) => b.slug === newPost.slug);
-  if (exists) {
-    return res.status(400).json({ success: false, error: "A blog post with this slug already exists." });
+  let uniqueSlug = baseSlug;
+  let counter = 1;
+  while (db.blogs.some((b) => b.slug === uniqueSlug)) {
+    uniqueSlug = `${baseSlug}-${counter}`;
+    counter++;
   }
+  newPost.slug = uniqueSlug;
 
   newPost.id = Date.now().toString();
   db.blogs.unshift(newPost);
