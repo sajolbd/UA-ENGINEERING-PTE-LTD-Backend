@@ -210,6 +210,31 @@
             "avatar": "/images/home/reviews/google-joogoh.png",
             "text": "Am very pleased with the work done by UA Engineering Pte Ltd few months back and no further leakage or mould were detected to date. The previous contractor (Flux Solutions Pte Ltd) was very unresponsive and rude to after sales service and I decided to terminate them in favour for UA Engineering. I hope UA Engineering will continue with its responsive after sales service that I've experienced and recommend this company after the bad experience I had with Flux Solutions."
           }
+        ],
+        "areaBadge": "Service Areas",
+        "areaHeading": "Reliable Engineering & Renovation Solutions Near You!",
+        "areaSubheading": "At UA Engineering PTE. LTD, we proudly provide expert renovation, construction, and engineering services throughout Singapore with fast response times and professional support.",
+        "regions": [
+          {
+            "name": "Central",
+            "areas": ["Orchard Road", "Marina Bay", "Bugis", "Raffles Place", "Tanjong Pagar", "Clarke Quay"]
+          },
+          {
+            "name": "East",
+            "areas": ["Bedok", "Tampines", "Pasir Ris", "Changi", "Marine Parade"]
+          },
+          {
+            "name": "West",
+            "areas": ["Jurong East", "Jurong West", "Bukit Batok", "Clementi", "Boon Lay"]
+          },
+          {
+            "name": "North",
+            "areas": ["Woodlands", "Yishun", "Sembawang", "Admiralty"]
+          },
+          {
+            "name": "North-East",
+            "areas": ["Hougang", "Punggol", "Sengkang", "Serangoon"]
+          }
         ]
       },
       "seo": {
