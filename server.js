@@ -39,6 +39,16 @@ app.use(async (req, res, next) => {
   next();
 });
 
+// Cache prevention for all API GET requests
+app.use((req, res, next) => {
+  if (req.method === "GET" && req.path.startsWith("/api/")) {
+    res.setHeader("Cache-Control", "no-store, no-cache, must-revalidate, proxy-revalidate");
+    res.setHeader("Pragma", "no-cache");
+    res.setHeader("Expires", "0");
+  }
+  next();
+});
+
 // Serve uploaded images statically
 const publicImagesDir = path.join(__dirname, "public", "images");
 try {
@@ -735,16 +745,16 @@ app.post("/api/upload", upload.single("image"), (req, res) => {
   const filename = req.file.filename;
   let relativePath = "/images/uploads/" + filename;
 
-  // 1. If running on Vercel or serverless read-only environment, convert image buffer to Base64 Data URL
-  // so images persist reliably without depending on ephemeral serverless disk
-  if (process.env.VERCEL) {
+  // 1. If running on Vercel, Render, Railway (ephemeral cloud filesystems) OR if MongoDB is not connected (local file fallback),
+  // convert image buffer to Base64 Data URL so images persist reliably inside the database/JSON file
+  if (process.env.VERCEL || process.env.RENDER || process.env.RAILWAY || !getUseMongo()) {
     try {
       const mimeType = req.file.mimetype || "image/png";
       const fileBuffer = fs.readFileSync(req.file.path);
       const base64Data = fileBuffer.toString("base64");
       relativePath = `data:${mimeType};base64,${base64Data}`;
     } catch (e) {
-      console.error("[Vercel Upload Base64 Error]", e.message);
+      console.error("[Ephemeral/Base64 Upload Error]", e.message);
     }
   } else {
     // 2. Local environment: Sync copy uploaded file to Website & Dashboard public image directories
