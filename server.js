@@ -33,9 +33,10 @@ app.use(express.urlencoded({ limit: "50mb", extended: true }));
 app.use(bodyParser.json({ limit: "50mb" }));
 app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
 
-// Ensure MongoDB connection is initialized for serverless requests
+// Ensure MongoDB connection is initialized for serverless requests (non-blocking fallback)
 app.use(async (req, res, next) => {
-  await dbConnection.connectDB().catch(() => {});
+  const timeoutPromise = new Promise((resolve) => setTimeout(resolve, 3000));
+  await Promise.race([dbConnection.connectDB().catch(() => {}), timeoutPromise]);
   next();
 });
 
@@ -226,6 +227,7 @@ export interface ServiceCategory {
   description: string;
   featuredImage: string;
   bgImage: string;
+  icon?: string;
   services: SubService[];
 }
 

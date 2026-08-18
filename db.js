@@ -24,6 +24,7 @@ async function connectDB() {
     cachedPromise = mongoose
       .connect(MONGODB_URI, {
         bufferCommands: false,
+        serverSelectionTimeoutMS: 5000,
       })
       .then(async () => {
         console.log("===============================================");
