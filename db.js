@@ -175,6 +175,25 @@ async function seedDefaultData() {
         await Service.create({ categories: parsedData.services });
       }
     }
+
+    // Seed projects list if empty
+    const projectCount = await Project.countDocuments();
+    if (projectCount === 0 && parsedData.projects && Array.isArray(parsedData.projects)) {
+      console.log("   MongoDB is empty. Seeding default projects portfolio...");
+      for (const proj of parsedData.projects) {
+        const slug = proj.slug || proj.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+        await Project.create({
+          slug,
+          title: proj.title,
+          category: proj.category,
+          image: proj.image,
+          description: proj.description || "",
+          location: proj.location || "Singapore",
+          gallery: proj.gallery || []
+        });
+      }
+      console.log("   Successfully seeded default projects portfolio to MongoDB!");
+    }
   } catch (err) {
     console.error("   Failed to seed/migrate database values:", err.message);
   }
