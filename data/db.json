@@ -235,7 +235,10 @@
             "name": "North-East",
             "areas": ["Hougang", "Punggol", "Sengkang", "Serangoon"]
           }
-        ]
+        ],
+        "faqHeading": "Frequently Asked Questions",
+        "faqSubheading": "Get quick answers to common questions regarding our engineering, renovation, and maintenance services in Singapore.",
+        "faqsJson": "[{\"question\":\"What engineering and renovation services does UA Engineering provide in Singapore?\",\"answer\":\"We provide comprehensive building solutions including renovation & upgrading, structural steel works, roof extension, painting, waterproofing, electrical rewiring, plumbing, aircon servicing, aluminium glazing, and solar panel installation.\"},{\"question\":\"Are your engineers and technicians licensed and certified in Singapore?\",\"answer\":\"Yes, our team consists of BCA-certified professionals, EMA-licensed electricians, and trained Workplace Safety and Health (WSH) officers compliant with Singapore building safety standards.\"},{\"question\":\"Do you offer free site inspection and non-obligatory quotations?\",\"answer\":\"Yes! We offer free site assessments across all Singapore regions to evaluate your property's requirements and provide clear, transparent upfront quotations with no hidden costs.\"},{\"question\":\"How quickly can UA Engineering start our project upon confirmation?\",\"answer\":\"Once project scope and quotations are approved, our project management team arranges site preparation and material delivery to commence works promptly according to agreed timelines.\"}]"
       },
       "seo": {
         "metaTitle": "UA Engineering PTE. LTD. | Singapore Engineering & Renovation",

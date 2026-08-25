@@ -217,18 +217,52 @@ function syncServicesToWebsite(categories) {
   features: string[];
   benefits: string[];
   process: string[];
+  processSteps?: ProcessStep[];
+}
+
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+export interface ProcessStep {
+  title: string;
+  description: string;
 }
 
 export interface ServiceCategory {
   slug: string;
   title: string;
   breadcrumbTitle?: string;
+  detailTitle?: string;
+  subServicesTitle?: string;
+  subServicesSubheading?: string;
   shortDescription: string;
   description: string;
   featuredImage: string;
   bgImage: string;
   icon?: string;
   services: SubService[];
+  features?: string[];
+  benefits?: string[];
+  process?: string[];
+  processHeading?: string;
+  processText?: string;
+  processSteps?: ProcessStep[];
+  targetBadge?: string;
+  targetHeading?: string;
+  targetSubheading?: string;
+  targetSpaces?: string[];
+  whyChooseBadge?: string;
+  whyChooseHeading?: string;
+  whyChooseLeftTitle?: string;
+  whyChooseRightTitle?: string;
+  whyChooseAdvantages?: { title: string; description: string }[];
+  whyChooseChallenges?: { title: string; description: string }[];
+  serviceAreasBadge?: string;
+  serviceAreasHeading?: string;
+  serviceAreasSubheading?: string;
+  faqs?: FAQItem[];
 }
 
 export const servicesData: ServiceCategory[] = ${JSON.stringify(categories, null, 2)};
