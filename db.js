@@ -161,19 +161,14 @@ async function seedDefaultData() {
       }
     }
 
-    // Seed services list if empty
-    const serviceCount = await Service.countDocuments();
-    if (serviceCount === 0) {
-      console.log("   MongoDB is empty. Seeding default services list...");
-      if (parsedData.services) {
-        await Service.create({ categories: parsedData.services });
-        console.log("   Successfully seeded default services list to MongoDB!");
-      }
-    } else {
-      const servicesDoc = await Service.findOne();
-      if (!servicesDoc && parsedData.services) {
-        await Service.create({ categories: parsedData.services });
-      }
+    // Seed / Sync services list to MongoDB
+    if (parsedData.services && parsedData.services.length > 0) {
+      await Service.findOneAndUpdate(
+        {},
+        { $set: { categories: parsedData.services } },
+        { upsert: true, new: true }
+      );
+      console.log("   Successfully synced default services list to MongoDB!");
     }
 
     // Seed projects list if empty
