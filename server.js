@@ -182,11 +182,15 @@ function syncProjectsToWebsite(projects) {
   id?: string;
   _id?: string;
   title: string;
+  subtitle?: string;
   category: string;
+  client?: string;
   image: string;
   description: string;
   location: string;
-  gallery: string[];
+  gallery?: string[];
+  createdAt?: string;
+  __v?: number;
 }
 
 export const projectsData: ProjectItem[] = ${JSON.stringify(projects, null, 2)};
