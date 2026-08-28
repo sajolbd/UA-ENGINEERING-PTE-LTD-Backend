@@ -135,10 +135,88 @@ async function seedDefaultData() {
       console.log("   Successfully seeded default CMS pages data to MongoDB!");
     } else {
       // Migrate missing keys to existing MongoDB documents
+      const DEFAULT_ABOUT_FIELDS = {
+        sectionTag: "About Our Company",
+        overviewHeading: "Why Choose UA Engineering For Renovation & Upgrading Services in Singapore",
+        overviewText: "Looking for a dependable renovation and upgrading contractor in Singapore? UA ENGINEERING PTE. LTD. provides renovation, construction, and engineering services for HDB, BTO, condos, landed homes, commercial, and industrial properties.",
+        experienceYears: "15",
+        experienceTitle: "Years of Excellence",
+        experienceSubtitle: "Renovation & Upgrading Services",
+        trustHeading: "Why Property Owners Trust UA Engineering",
+        highlightsJson: JSON.stringify([
+          { text: "15+ Years of Industry Experience", icon: "Clock" },
+          { text: "Highly Skilled & Certified Workers", icon: "Wrench" },
+          { text: "BCA & HDB Compliant Workmanship", icon: "Award" },
+          { text: "Transparent & Competitive Pricing", icon: "DollarSign" },
+          { text: "Premium Quality Materials", icon: "ShieldCheck" },
+          { text: "Safety-First Construction Practices", icon: "ShieldCheck" },
+          { text: "On-Time Project Completion", icon: "Clock" },
+          { text: "100% Commitment to Client Satisfaction", icon: "ThumbsUp" }
+        ]),
+        processBadge: "HOW WE WORK",
+        processHeading: "Our Process",
+        processSubheading: "Every successful renovation begins with proper planning and professional execution. At UA Engineering, we follow a proven project management process that ensures efficiency, quality, and complete customer confidence from the initial consultation through project completion.",
+        processStepsJson: JSON.stringify([
+          {
+            id: 1,
+            tag: "STEP 01",
+            title: "Consultation & Site Assessment",
+            description: "We discuss your renovation goals, inspect the property, take accurate measurements, assess technical requirements, and recommend practical solutions to develop a clear and efficient project plan.",
+            milestones: [
+              "Free consultation and site inspection",
+              "Detailed technical assessment",
+              "Structural and feasibility evaluation",
+              "Accurate measurements"
+            ]
+          },
+          {
+            id: 2,
+            tag: "STEP 02",
+            title: "Proposal & Project Planning",
+            description: "We prepare a transparent quotation covering scope, materials, pricing, and timeline. After approval, we organise resources, scheduling, and project planning for smooth execution.",
+            milestones: [
+              "Detailed itemised quotation",
+              "Transparent pricing",
+              "Material recommendations",
+              "Project scheduling"
+            ]
+          },
+          {
+            id: 3,
+            tag: "STEP 03",
+            title: "Professional Execution & Quality Control",
+            description: "Our skilled team completes every project safely under experienced supervision, following BCA and HDB standards while maintaining strict quality control throughout every stage.",
+            milestones: [
+              "Experienced project supervisors",
+              "Certified skilled workers",
+              "Premium construction materials",
+              "Continuous quality inspections"
+            ]
+          },
+          {
+            id: 4,
+            tag: "STEP 04",
+            title: "Completion, Handover & After-Sales Support",
+            description: "After final inspections and site cleaning, we hand over the completed project with warranty information, maintenance guidance, and responsive after-sales support for your peace of mind.",
+            milestones: [
+              "Final quality inspection",
+              "Complete project walkthrough",
+              "Site cleaning and finishing",
+              "Warranty documentation"
+            ]
+          }
+        ]),
+        residentialBadge: "WHAT WE DO",
+        residentialHeading: "Complete Renovation, Engineering & Property Improvement Services",
+        residentialSubheading: "UA Engineering provides complete renovation, structural, waterproofing, electrical, plumbing, aluminium, and solar panel solutions for residential, commercial, and industrial properties across Singapore.",
+        faqBadge: "FAQ'S"
+      };
+
       for (const pageId of Object.keys(parsedData.cms)) {
         const doc = await Cms.findOne({ pageId });
         if (doc) {
-          const contentUpdated = { ...parsedData.cms[pageId].content, ...doc.content };
+          const defaultsForPage = pageId === "about" ? DEFAULT_ABOUT_FIELDS : {};
+          const contentUpdated = { ...defaultsForPage, ...parsedData.cms[pageId].content, ...doc.content };
           const seoUpdated = { ...parsedData.cms[pageId].seo, ...doc.seo };
           
           if (Object.keys(contentUpdated).length !== Object.keys(doc.content).length || 
