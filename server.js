@@ -6,6 +6,7 @@ const path = require("path");
 const os = require("os");
 const multer = require("multer");
 const dotenv = require("dotenv");
+const mongoose = require("mongoose");
 
 // Load Environment variables
 dotenv.config();
