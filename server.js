@@ -691,17 +691,23 @@ app.post("/api/services", async (req, res) => {
       return res.json({ success: true, message: "Services list successfully updated in MongoDB!" });
     } catch (err) {
       console.error("[Mongo Error] POST /api/services failed:", err.message);
+      return res.status(500).json({ success: false, error: `Database save failed: ${err.message}` });
     }
   }
 
-  const db = readDatabase();
-  db.services = categories;
-  const saved = writeDatabase(db);
-  if (saved || process.env.VERCEL) {
-    syncServicesToWebsite(categories);
-    res.json({ success: true, message: "Services list successfully updated locally!" });
-  } else {
-    res.status(500).json({ success: false, error: "Failed to write data to database" });
+  try {
+    const db = readDatabase();
+    db.services = categories;
+    const saved = writeDatabase(db);
+    if (saved || process.env.VERCEL) {
+      syncServicesToWebsite(categories);
+      return res.json({ success: true, message: "Services list successfully updated locally!" });
+    } else {
+      return res.status(500).json({ success: false, error: "Failed to write data to database" });
+    }
+  } catch (err) {
+    console.error("[Local DB Error] POST /api/services failed:", err.message);
+    return res.status(500).json({ success: false, error: err.message });
   }
 });
 
