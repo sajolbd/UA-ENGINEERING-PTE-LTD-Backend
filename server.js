@@ -651,19 +651,23 @@ app.put("/api/projects/:id", async (req, res) => {
   if (getUseMongo()) {
     try {
       let projectDoc = null;
-      if (mongoose.Types.ObjectId.isValid(id)) {
+      if (id && mongoose.Types.ObjectId.isValid(id)) {
         projectDoc = await Project.findByIdAndUpdate(
           id,
           { $set: updatedData },
           { new: true }
         );
       }
-      if (!projectDoc) {
+      if (!projectDoc && id) {
         projectDoc = await Project.findOneAndUpdate(
-          { $or: [{ id: id }, { slug: id }] },
+          { $or: [{ id: id }, { slug: id }, { title: updatedData.title }] },
           { $set: updatedData },
           { new: true }
         );
+      }
+      if (!projectDoc) {
+        projectDoc = new Project(updatedData);
+        await projectDoc.save();
       }
       const allProjects = await Project.find().sort({ createdAt: -1 });
       syncProjectsToWebsite(allProjects);
