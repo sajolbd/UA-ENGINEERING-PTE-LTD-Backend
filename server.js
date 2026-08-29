@@ -28,6 +28,7 @@ app.use(cors({
   origin: true,
   credentials: true
 }));
+app.options("*", cors());
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ limit: "50mb", extended: true }));
 app.use(bodyParser.json({ limit: "50mb" }));
@@ -334,30 +335,37 @@ app.post("/api/cms", async (req, res) => {
   if (getUseMongo()) {
     try {
       const updateField = formType === "content" ? { content: data } : { seo: data };
-      await Cms.findOneAndUpdate(
+      const updatedDoc = await Cms.findOneAndUpdate(
         { pageId },
         { $set: updateField },
         { upsert: true, new: true }
       );
       syncToWebsite(pageId, formType, data);
-      return res.json({ success: true, message: `CMS ${formType} settings saved successfully to MongoDB for page: ${pageId}` });
+      return res.json({ success: true, data: updatedDoc, message: `CMS ${formType} settings saved successfully to MongoDB for page: ${pageId}` });
     } catch (err) {
       console.error("[Mongo Error] POST /api/cms failed:", err.message);
+      return res.status(500).json({ success: false, error: err.message });
     }
   }
 
-  const db = readDatabase();
-  if (!db.cms[pageId]) {
-    db.cms[pageId] = { content: {}, seo: {} };
-  }
-  db.cms[pageId][formType] = data;
-  
-  const saved = writeDatabase(db);
-  if (saved || process.env.VERCEL) {
-    syncToWebsite(pageId, formType, data);
-    res.json({ success: true, message: `CMS ${formType} settings saved successfully for page: ${pageId}` });
-  } else {
-    res.status(500).json({ success: false, error: "Failed to write data to database" });
+  try {
+    const db = readDatabase();
+    if (!db.cms) db.cms = {};
+    if (!db.cms[pageId]) {
+      db.cms[pageId] = { content: {}, seo: {} };
+    }
+    db.cms[pageId][formType] = data;
+    
+    const saved = writeDatabase(db);
+    if (saved || process.env.VERCEL) {
+      syncToWebsite(pageId, formType, data);
+      return res.json({ success: true, message: `CMS ${formType} settings saved successfully for page: ${pageId}` });
+    } else {
+      return res.status(500).json({ success: false, error: "Failed to write data to database" });
+    }
+  } catch (err) {
+    console.error("[Local DB Error] POST /api/cms failed:", err.message);
+    return res.status(500).json({ success: false, error: err.message });
   }
 });
 
@@ -413,29 +421,34 @@ app.post("/api/blogs", async (req, res) => {
       return res.json({ success: true, data: blogDoc, message: "Blog published successfully to MongoDB!" });
     } catch (err) {
       console.error("[Mongo Error] POST /api/blogs failed:", err.message);
+      return res.status(500).json({ success: false, error: err.message });
     }
   }
 
-  const db = readDatabase();
-  if (!db.blogs) db.blogs = [];
+  try {
+    const db = readDatabase();
+    if (!db.blogs) db.blogs = [];
 
-  let uniqueSlug = baseSlug;
-  let counter = 1;
-  while (db.blogs.some((b) => b.slug === uniqueSlug)) {
-    uniqueSlug = `${baseSlug}-${counter}`;
-    counter++;
-  }
-  newPost.slug = uniqueSlug;
-
-  newPost.id = Date.now().toString();
-  db.blogs.unshift(newPost);
-  
-  const saved = writeDatabase(db);
-  if (saved || process.env.VERCEL) {
-    syncBlogsToWebsite(db.blogs);
-    res.json({ success: true, data: newPost, message: "Blog published successfully!" });
-  } else {
-    res.status(500).json({ success: false, error: "Failed to write blog to database" });
+    let uniqueSlug = baseSlug;
+    let counter = 1;
+    while (db.blogs.some((b) => b.slug === uniqueSlug)) {
+      uniqueSlug = `${baseSlug}-${counter}`;
+      counter++;
+    }
+    newPost.slug = uniqueSlug;
+    newPost.id = Date.now().toString();
+    db.blogs.unshift(newPost);
+    
+    const saved = writeDatabase(db);
+    if (saved || process.env.VERCEL) {
+      syncBlogsToWebsite(db.blogs);
+      return res.json({ success: true, data: newPost, message: "Blog published successfully!" });
+    } else {
+      return res.status(500).json({ success: false, error: "Failed to write blog to database" });
+    }
+  } catch (err) {
+    console.error("[Local DB Error] POST /api/blogs failed:", err.message);
+    return res.status(500).json({ success: false, error: err.message });
   }
 });
 
@@ -445,27 +458,33 @@ app.delete("/api/blogs/:id", async (req, res) => {
 
   if (getUseMongo()) {
     try {
-      await Blog.findByIdAndDelete(id);
+      await Blog.deleteMany({ $or: [{ _id: id }, { id: id }, { slug: id }] });
       const allBlogs = await Blog.find().sort({ _id: -1 });
       syncBlogsToWebsite(allBlogs);
       return res.json({ success: true, message: "Blog post deleted successfully from MongoDB!" });
     } catch (err) {
       console.error("[Mongo Error] DELETE /api/blogs failed:", err.message);
+      return res.status(500).json({ success: false, error: err.message });
     }
   }
 
-  const db = readDatabase();
-  if (db.blogs) {
-    db.blogs = db.blogs.filter((b) => b.id !== id && b._id !== id);
-    const saved = writeDatabase(db);
-    if (saved || process.env.VERCEL) {
-      syncBlogsToWebsite(db.blogs);
-      res.json({ success: true, message: "Blog post deleted successfully!" });
+  try {
+    const db = readDatabase();
+    if (db.blogs) {
+      db.blogs = db.blogs.filter((b) => b.id !== id && b._id !== id && b.slug !== id);
+      const saved = writeDatabase(db);
+      if (saved || process.env.VERCEL) {
+        syncBlogsToWebsite(db.blogs);
+        return res.json({ success: true, message: "Blog post deleted successfully!" });
+      } else {
+        return res.status(500).json({ success: false, error: "Failed to update local database" });
+      }
     } else {
-      res.status(500).json({ success: false, error: "Failed to update local database" });
+      return res.status(404).json({ success: false, error: "No blogs found" });
     }
-  } else {
-    res.status(404).json({ success: false, error: "No blogs found" });
+  } catch (err) {
+    console.error("[Local DB Error] DELETE /api/blogs failed:", err.message);
+    return res.status(500).json({ success: false, error: err.message });
   }
 });
 
@@ -523,18 +542,24 @@ app.post("/api/inquiries", async (req, res) => {
       return res.json({ success: true, message: "Thank you! Your inquiry has been submitted successfully to MongoDB." });
     } catch (err) {
       console.error("[Mongo Error] POST /api/inquiries failed:", err.message);
+      return res.status(500).json({ success: false, error: err.message });
     }
   }
 
-  const db = readDatabase();
-  if (!db.inquiries) db.inquiries = [];
-  db.inquiries.unshift(newInquiry);
+  try {
+    const db = readDatabase();
+    if (!db.inquiries) db.inquiries = [];
+    db.inquiries.unshift(newInquiry);
 
-  const saved = writeDatabase(db);
-  if (saved || process.env.VERCEL) {
-    res.json({ success: true, message: "Thank you! Your inquiry has been submitted successfully." });
-  } else {
-    res.status(500).json({ success: false, error: "Failed to save inquiry" });
+    const saved = writeDatabase(db);
+    if (saved || process.env.VERCEL) {
+      return res.json({ success: true, message: "Thank you! Your inquiry has been submitted successfully." });
+    } else {
+      return res.status(500).json({ success: false, error: "Failed to save inquiry" });
+    }
+  } catch (err) {
+    console.error("[Local DB Error] POST /api/inquiries failed:", err.message);
+    return res.status(500).json({ success: false, error: err.message });
   }
 });
 
@@ -570,21 +595,27 @@ app.post("/api/projects", async (req, res) => {
       return res.json({ success: true, data: projectDoc, message: "Project added successfully to MongoDB!" });
     } catch (err) {
       console.error("[Mongo Error] POST /api/projects failed:", err.message);
+      return res.status(500).json({ success: false, error: err.message });
     }
   }
 
-  const db = readDatabase();
-  if (!db.projects) db.projects = [];
+  try {
+    const db = readDatabase();
+    if (!db.projects) db.projects = [];
 
-  newProject.id = Date.now().toString();
-  db.projects.unshift(newProject);
+    newProject.id = Date.now().toString();
+    db.projects.unshift(newProject);
 
-  const saved = writeDatabase(db);
-  if (saved || process.env.VERCEL) {
-    syncProjectsToWebsite(db.projects);
-    res.json({ success: true, data: newProject, message: "Project added successfully!" });
-  } else {
-    res.status(500).json({ success: false, error: "Failed to save project" });
+    const saved = writeDatabase(db);
+    if (saved || process.env.VERCEL) {
+      syncProjectsToWebsite(db.projects);
+      return res.json({ success: true, data: newProject, message: "Project added successfully!" });
+    } else {
+      return res.status(500).json({ success: false, error: "Failed to save project" });
+    }
+  } catch (err) {
+    console.error("[Local DB Error] POST /api/projects failed:", err.message);
+    return res.status(500).json({ success: false, error: err.message });
   }
 });
 
@@ -599,33 +630,48 @@ app.put("/api/projects/:id", async (req, res) => {
 
   if (getUseMongo()) {
     try {
-      const projectDoc = await Project.findByIdAndUpdate(
-        id,
-        { $set: updatedData },
-        { new: true }
-      );
+      let projectDoc = null;
+      if (mongoose.Types.ObjectId.isValid(id)) {
+        projectDoc = await Project.findByIdAndUpdate(
+          id,
+          { $set: updatedData },
+          { new: true }
+        );
+      }
+      if (!projectDoc) {
+        projectDoc = await Project.findOneAndUpdate(
+          { $or: [{ id: id }, { slug: id }] },
+          { $set: updatedData },
+          { new: true }
+        );
+      }
       const allProjects = await Project.find().sort({ createdAt: -1 });
       syncProjectsToWebsite(allProjects);
       return res.json({ success: true, data: projectDoc, message: "Project updated successfully in MongoDB!" });
     } catch (err) {
       console.error("[Mongo Error] PUT /api/projects/:id failed:", err.message);
+      return res.status(500).json({ success: false, error: err.message });
     }
   }
 
-  const db = readDatabase();
-  if (db.projects) {
-    let index = db.projects.findIndex((p) => p.id === id || p._id === id);
-    if (index !== -1) {
-      db.projects[index] = { ...db.projects[index], ...updatedData };
-      const saved = writeDatabase(db);
-      if (saved || process.env.VERCEL) {
-        syncProjectsToWebsite(db.projects);
-        return res.json({ success: true, data: db.projects[index], message: "Project updated successfully!" });
+  try {
+    const db = readDatabase();
+    if (db.projects) {
+      let index = db.projects.findIndex((p) => p.id === id || p._id === id || p.slug === id);
+      if (index !== -1) {
+        db.projects[index] = { ...db.projects[index], ...updatedData };
+        const saved = writeDatabase(db);
+        if (saved || process.env.VERCEL) {
+          syncProjectsToWebsite(db.projects);
+          return res.json({ success: true, data: db.projects[index], message: "Project updated successfully!" });
+        }
       }
     }
+    return res.status(404).json({ success: false, error: "Project not found to update" });
+  } catch (err) {
+    console.error("[Local DB Error] PUT /api/projects/:id failed:", err.message);
+    return res.status(500).json({ success: false, error: err.message });
   }
-
-  res.status(500).json({ success: false, error: "Failed to update project" });
 });
 
 // 8.2. DELETE Completed Project
@@ -634,27 +680,37 @@ app.delete("/api/projects/:id", async (req, res) => {
 
   if (getUseMongo()) {
     try {
-      await Project.findByIdAndDelete(id);
+      if (mongoose.Types.ObjectId.isValid(id)) {
+        await Project.findByIdAndDelete(id);
+      } else {
+        await Project.deleteMany({ $or: [{ id: id }, { slug: id }] });
+      }
       const allProjects = await Project.find().sort({ createdAt: -1 });
       syncProjectsToWebsite(allProjects);
       return res.json({ success: true, message: "Project deleted successfully from MongoDB!" });
     } catch (err) {
       console.error("[Mongo Error] DELETE /api/projects failed:", err.message);
+      return res.status(500).json({ success: false, error: err.message });
     }
   }
 
-  const db = readDatabase();
-  if (db.projects) {
-    db.projects = db.projects.filter((p) => p.id !== id && p._id !== id);
-    const saved = writeDatabase(db);
-    if (saved || process.env.VERCEL) {
-      syncProjectsToWebsite(db.projects);
-      res.json({ success: true, message: "Project deleted successfully!" });
+  try {
+    const db = readDatabase();
+    if (db.projects) {
+      db.projects = db.projects.filter((p) => p.id !== id && p._id !== id && p.slug !== id);
+      const saved = writeDatabase(db);
+      if (saved || process.env.VERCEL) {
+        syncProjectsToWebsite(db.projects);
+        return res.json({ success: true, message: "Project deleted successfully!" });
+      } else {
+        return res.status(500).json({ success: false, error: "Failed to update local database" });
+      }
     } else {
-      res.status(500).json({ success: false, error: "Failed to update local database" });
+      return res.status(404).json({ success: false, error: "No projects found" });
     }
-  } else {
-    res.status(404).json({ success: false, error: "No projects found" });
+  } catch (err) {
+    console.error("[Local DB Error] DELETE /api/projects failed:", err.message);
+    return res.status(500).json({ success: false, error: err.message });
   }
 });
 

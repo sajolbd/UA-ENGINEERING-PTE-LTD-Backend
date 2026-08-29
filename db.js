@@ -60,11 +60,11 @@ const CmsSchema = new mongoose.Schema({
   pageId: { type: String, required: true, unique: true },
   content: { type: mongoose.Schema.Types.Mixed, default: {} },
   seo: { type: mongoose.Schema.Types.Mixed, default: {} }
-});
+}, { strict: false });
 
 // 2. Blog Posts Schema
 const BlogSchema = new mongoose.Schema({
-  slug: { type: String, required: true, unique: true },
+  slug: { type: String, required: true },
   title: { type: String, required: true },
   category: { type: String, default: "Renovation & Upgrading" },
   categorySlug: { type: String, default: "renovation-upgrading" },
@@ -76,7 +76,7 @@ const BlogSchema = new mongoose.Schema({
   popular: { type: Boolean, default: false },
   views: { type: Number, default: 0 },
   content: { type: String, default: "" }
-});
+}, { strict: false });
 
 // 3. Contact Inquiries Schema
 const InquirySchema = new mongoose.Schema({
@@ -86,23 +86,26 @@ const InquirySchema = new mongoose.Schema({
   service: { type: String, default: "General Inquiry" },
   message: { type: String, required: true },
   createdAt: { type: Date, default: Date.now }
-});
+}, { strict: false });
 
 // 4. Custom Completed Projects Schema
 const ProjectSchema = new mongoose.Schema({
   title: { type: String, required: true },
+  slug: { type: String, default: "" },
+  subtitle: { type: String, default: "" },
   category: { type: String, default: "" },
   client: { type: String, default: "" },
   location: { type: String, default: "" },
   description: { type: String, default: "" },
   image: { type: String, default: "" },
+  gallery: { type: Array, default: [] },
   createdAt: { type: Date, default: Date.now }
-});
+}, { strict: false });
 
 // 5. Dynamic Services Schema
 const ServiceSchema = new mongoose.Schema({
   categories: { type: Array, default: [] }
-});
+}, { strict: false });
 
 // Register models safely (prevent overwrite error if model registered)
 const Cms = mongoose.models.Cms || mongoose.model("Cms", CmsSchema);
