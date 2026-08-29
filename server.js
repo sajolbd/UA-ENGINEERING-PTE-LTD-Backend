@@ -23,12 +23,30 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const DB_PATH = path.join(__dirname, "data", "db.json");
 
-// Middleware
+// Universal CORS & Preflight Middleware (Prevents 'Failed to fetch' browser errors)
+app.use((req, res, next) => {
+  const origin = req.headers.origin;
+  if (origin) {
+    res.setHeader("Access-Control-Allow-Origin", origin);
+  } else {
+    res.setHeader("Access-Control-Allow-Origin", "*");
+  }
+  res.setHeader("Access-Control-Allow-Credentials", "true");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, PATCH");
+  res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization, Cache-Control, Pragma");
+
+  if (req.method === "OPTIONS") {
+    return res.status(200).end();
+  }
+  next();
+});
+
 app.use(cors({
   origin: true,
   credentials: true
 }));
 app.options("*", cors());
+
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ limit: "50mb", extended: true }));
 app.use(bodyParser.json({ limit: "50mb" }));
@@ -36,7 +54,8 @@ app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
 
 // Ensure MongoDB connection is initialized for serverless requests (non-blocking fallback)
 app.use(async (req, res, next) => {
-  const timeoutPromise = new Promise((resolve) => setTimeout(resolve, 3000));
+  if (getUseMongo()) return next();
+  const timeoutPromise = new Promise((resolve) => setTimeout(resolve, 2000));
   await Promise.race([dbConnection.connectDB().catch(() => {}), timeoutPromise]);
   next();
 });

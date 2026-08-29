@@ -7,8 +7,10 @@ dotenv.config();
 let useMongo = false;
 let cachedPromise = null;
 
+const DEFAULT_MONGODB_URI = "mongodb+srv://sajolbd:sajolBD-222@cluster0.wug67yz.mongodb.net/?appName=Cluster0";
+
 async function connectDB() {
-  const MONGODB_URI = process.env.MONGODB_URI;
+  const MONGODB_URI = process.env.MONGODB_URI || DEFAULT_MONGODB_URI;
 
   if (!MONGODB_URI || MONGODB_URI.includes("YOUR_PASSWORD")) {
     useMongo = false;
@@ -50,10 +52,8 @@ async function connectDB() {
   return cachedPromise;
 }
 
-// Proactively initiate connection on module load if MONGODB_URI exists
-if (process.env.MONGODB_URI && !process.env.MONGODB_URI.includes("YOUR_PASSWORD")) {
-  connectDB().catch(() => {});
-}
+// Proactively initiate connection on module load
+connectDB().catch(() => {});
 
 // 1. CMS Page Schema
 const CmsSchema = new mongoose.Schema({
