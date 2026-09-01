@@ -2,13 +2,13 @@
   "cms": {
     "site": {
       "content": {
-        "siteLogo": "/images/logo.png",
-        "footerLogo": "/images/footer-logo.png",
+        "siteLogo": "/images/logo.webp",
+        "footerLogo": "/images/logo.webp",
         "companyName": "UA ENGINEERING PTE. LTD.",
         "welcomeMessage": "Welcome to",
-        "phone": "+65 9841 1786",
-        "email": "hello.uaengineering@gmail.com",
-        "address": "10 Anson Road, Singapore 079903",
+        "phone": "+65 8459 3003",
+        "email": "Info@uaengineering.com.sg",
+        "address": "38C Sea Avenue Marine Mansion Singapore 424256",
         "workingHours": "Mon - Sat: 9:00 AM - 6:00 PM (Emergency 24/7 Support)",
         "appointmentButtonText": "Book An Appointment",
         "footerAboutText": "Professional engineering, renovation, waterproofing, and steel fabrication solutions in Singapore. Licensed, certified, and compliant with BCA standards.",
@@ -16,7 +16,7 @@
         "instagram": "https://instagram.com",
         "linkedin": "https://linkedin.com",
         "youtube": "https://youtube.com",
-        "whatsapp": "https://wa.me/6598411786"
+        "whatsapp": "https://wa.me/6584593003"
       },
       "seo": {
         "metaTitle": "UA Engineering PTE. LTD. | Singapore Engineering & Renovation",
@@ -267,13 +267,20 @@
         ],
         "faqHeading": "Frequently Asked Questions",
         "faqSubheading": "Get quick answers to common questions regarding our engineering, renovation, and maintenance services in Singapore.",
-        "faqsJson": "[{\"question\":\"What engineering and renovation services does UA Engineering provide in Singapore?\",\"answer\":\"We provide comprehensive building solutions including renovation & upgrading, structural steel works, roof extension, painting, waterproofing, electrical rewiring, plumbing, aircon servicing, aluminium glazing, and solar panel installation.\"},{\"question\":\"Are your engineers and technicians licensed and certified in Singapore?\",\"answer\":\"Yes, our team consists of BCA-certified professionals, EMA-licensed electricians, and trained Workplace Safety and Health (WSH) officers compliant with Singapore building safety standards.\"},{\"question\":\"Do you offer free site inspection and non-obligatory quotations?\",\"answer\":\"Yes! We offer free site assessments across all Singapore regions to evaluate your property's requirements and provide clear, transparent upfront quotations with no hidden costs.\"},{\"question\":\"How quickly can UA Engineering start our project upon confirmation?\",\"answer\":\"Once project scope and quotations are approved, our project management team arranges site preparation and material delivery to commence works promptly according to agreed timelines.\"}]"
+        "faqsJson": "[{\"question\":\"What engineering and renovation services does UA Engineering provide in Singapore?\",\"answer\":\"We provide comprehensive building solutions including renovation & upgrading, structural steel works, roof extension, painting, waterproofing, electrical rewiring, plumbing, aircon servicing, aluminium glazing, and solar panel installation.\"},{\"question\":\"Are your engineers and technicians licensed and certified in Singapore?\",\"answer\":\"Yes, our team consists of BCA-certified professionals, EMA-licensed electricians, and trained Workplace Safety and Health (WSH) officers compliant with Singapore building safety standards.\"},{\"question\":\"Do you offer free site inspection and non-obligatory quotations?\",\"answer\":\"Yes! We offer free site assessments across all Singapore regions to evaluate your property's requirements and provide clear, transparent upfront quotations with no hidden costs.\"},{\"question\":\"How quickly can UA Engineering start our project upon confirmation?\",\"answer\":\"Once project scope and quotations are approved, our project management team arranges site preparation and material delivery to commence works promptly according to agreed timelines.\"}]",
+        "heroSlide1Bg": "/images/home/hero/hero-bg.png",
+        "heroSlide2Bg": "/images/home/hero/hero-bg.png",
+        "heroSlide3Bg": "/images/home/hero/hero-bg.png",
+        "heroSlide4Bg": "/images/home/hero/hero-bg.png",
+        "heroSlide5Bg": "/images/home/hero/hero-bg.png",
+        "heroSlide6Bg": "/images/home/hero/hero-bg.png",
+        "heroSlide7Bg": "/images/home/hero/hero-bg.png"
       },
       "seo": {
         "metaTitle": "UA Engineering PTE. LTD. | Singapore Engineering & Renovation",
         "metaDescription": "UA Engineering PTE. LTD. provides renovation, waterproofing, steel works, roofing, electrical, plumbing, aircon, aluminium glazing and maintenance services across Singapore.",
         "metaKeywords": "UA Engineering, Singapore Renovation, Waterproofing Singapore, Roof Extension, Steel Works, Electrical Services, Plumbing Services, Aircon Repair, Aluminium Works, Engineering Company Singapore",
-        "schemaJson": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"LocalBusiness\",\n  \"name\": \"UA Engineering Pte Ltd\",\n  \"image\": \"https://ua-engineering.com/images/logo.png\",\n  \"address\": {\n    \"@type\": \"PostalAddress\",\n    \"streetAddress\": \"10 Anson Road\",\n    \"addressLocality\": \"Singapore\",\n    \"postalCode\": \"079903\"\n  },\n  \"telephone\": \"+65 9841 1786\"\n}"
+        "schemaJson": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"LocalBusiness\",\n  \"name\": \"UA Engineering Pte Ltd\",\n  \"image\": \"https://ua-engineering.com/images/logo.png\",\n  \"address\": {\n    \"@type\": \"PostalAddress\",\n    \"streetAddress\": \"38C Sea Avenue Marine Mansion\",\n    \"addressLocality\": \"Singapore\",\n    \"postalCode\": \"424256\"\n  },\n  \"telephone\": \"+65 8459 3003\"\n}"
       }
     },
     "about": {
@@ -317,7 +324,7 @@
       "content": {
         "heroHeading": "Our Engineering Services",
         "heroSubheading": "Professional solutions covering plumbing, substation electrical networks, waterproofing membranes, drywall, tiling, hacking, and solar panels.",
-        "heroImage": "/images/services/services-bg.jpg",
+        "heroImage": "/images/layout/services-bg.png",
         "heroImageAlt": "UA Engineering Substation Electrical Rewiring Grid",
         "servicesHeading": "Singapore Building and Construction Capability",
         "servicesSubheading": "We handle commercial, industrial, and residential upgrades. All works are certified by BCA registered professional engineers."
@@ -333,7 +340,7 @@
       "content": {
         "heroHeading": "Our Completed Projects",
         "heroSubheading": "A catalog of successfully delivered commercial, retail, and residential projects reflecting structural engineering precision and quality.",
-        "heroImage": "/images/projects/projects-bg.jpg",
+        "heroImage": "/images/layout/projects-bg.png",
         "heroImageAlt": "UA Engineering Commercial Drywall Alteration Project",
         "portfolioHeading": "Featured Engineering Contracts",
         "portfolioSubheading": "Review our portfolio of successfully delivered projects in Singapore, including shopping mall drywalls, substation setups, and waterproofing flat roofs."
@@ -349,7 +356,7 @@
       "content": {
         "heroHeading": "Engineering & Safety Resources",
         "heroSubheading": "Professional insights, building codes, EHS checklists, and tips on flat roof waterproofing and electrical safety upgrades in HDBs.",
-        "heroImage": "/images/blog/blog-bg.jpg",
+        "heroImage": "/images/layout/blog-bg.png",
         "heroImageAlt": "UA Engineering BTO Renovation Checklist Documents",
         "blogHeading": "Latest Insights & Field Manuals",
         "blogSubheading": "Stay up-to-date with Singapore BCA and HDB guidelines. Our registered engineers share field checklists, tips, and safety articles."
@@ -365,11 +372,11 @@
       "content": {
         "heroHeading": "Contact UA Engineering",
         "heroSubheading": "Get in touch for commercial quotations, structural surveys, emergency substation audits, or custom plumbing design layout consultations.",
-        "heroImage": "/images/contact/contact-bg.jpg",
+        "heroImage": "/images/layout/contact-bg.png",
         "heroImageAlt": "UA Engineering Singapore Customer Support Center",
-        "contactAddress": "10 Anson Road, Singapore 079903",
-        "contactPhone": "+65 9841 1786",
-        "contactEmail": "info@ua-engineering.com",
+        "contactAddress": "38C Sea Avenue Marine Mansion Singapore 424256",
+        "contactPhone": "+65 8459 3003",
+        "contactEmail": "Info@uaengineering.com.sg",
         "contactHours": "Mon - Sat: 9:00 AM - 6:00 PM (Emergency 24/7 Support)"
       },
       "seo": {
