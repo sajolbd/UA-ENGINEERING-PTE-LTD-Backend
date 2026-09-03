@@ -242,14 +242,11 @@ async function seedDefaultData() {
       }
     }
 
-    // Seed / Sync services list to MongoDB
-    if (parsedData.services && parsedData.services.length > 0) {
-      await Service.findOneAndUpdate(
-        {},
-        { $set: { categories: parsedData.services } },
-        { upsert: true, new: true }
-      );
-      console.log("   Successfully synced default services list to MongoDB!");
+    // Seed services list to MongoDB only if empty
+    const serviceDoc = await Service.findOne();
+    if (!serviceDoc && parsedData.services && parsedData.services.length > 0) {
+      await Service.create({ categories: parsedData.services });
+      console.log("   Successfully seeded default services list to MongoDB!");
     }
 
     // Seed projects list if empty
@@ -269,6 +266,30 @@ async function seedDefaultData() {
         });
       }
       console.log("   Successfully seeded default projects portfolio to MongoDB!");
+    }
+
+    // Seed blogs list if empty
+    const blogCount = await Blog.countDocuments();
+    if (blogCount === 0 && parsedData.blogs && Array.isArray(parsedData.blogs)) {
+      console.log("   MongoDB is empty. Seeding default blog articles...");
+      for (const b of parsedData.blogs) {
+        const slug = b.slug || b.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+        await Blog.create({
+          slug,
+          title: b.title,
+          category: b.category || "Renovation & Upgrading",
+          categorySlug: b.categorySlug || "renovation-upgrading",
+          date: b.date || "August 20, 2026",
+          author: b.author || "UA Administrator",
+          image: b.image || "/images/layout/breadcrumb-bg.png",
+          bgColor: b.bgColor || "bg-slate-100",
+          readTime: b.readTime || "5 mins read",
+          popular: b.popular || false,
+          views: b.views || 0,
+          content: b.content || ""
+        });
+      }
+      console.log("   Successfully seeded default blog articles to MongoDB!");
     }
   } catch (err) {
     console.error("   Failed to seed/migrate database values:", err.message);
