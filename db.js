@@ -33,9 +33,11 @@ async function connectDB() {
         console.log("   Connected to MongoDB Database Successfully! ");
         console.log("===============================================");
         useMongo = true;
-        await seedDefaultData().catch((err) =>
-          console.error("   Seeding notice:", err.message)
-        );
+        if (!process.env.VERCEL) {
+          await seedDefaultData().catch((err) =>
+            console.error("   Seeding notice:", err.message)
+          );
+        }
         return true;
       })
       .catch((err) => {
