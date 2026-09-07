@@ -12,10 +12,13 @@
         "workingHours": "Mon - Sat: 9:00 AM - 6:00 PM (Emergency 24/7 Support)",
         "appointmentButtonText": "Book An Appointment",
         "footerAboutText": "Professional engineering, renovation, waterproofing, and steel fabrication solutions in Singapore. Licensed, certified, and compliant with BCA standards.",
-        "facebook": "https://facebook.com",
-        "instagram": "https://instagram.com",
-        "linkedin": "https://linkedin.com",
-        "youtube": "https://youtube.com",
+        "facebook": "https://www.facebook.com/UA.Engineering.PTE.LTD",
+        "instagram": "https://www.instagram.com/ua_engineering_pte_ltd",
+        "linkedin": "https://www.linkedin.com/company/ua-engineering-pte-ltd/",
+        "youtube": "https://www.youtube.com/@ua_engineering_pte_ltd",
+        "twitter": "https://x.com/UAEngineering1",
+        "x": "https://x.com/UAEngineering1",
+        "tiktok": "https://www.tiktok.com/@ua.engineering3",
         "whatsapp": "https://wa.me/6584593003"
       },
       "seo": {
@@ -34,23 +37,36 @@
         "heroCtaText": "Book An Appointment",
         "heroSlide1Heading": "From Renovation to Painting, Roofing, Electrical, Plumbing and Steel Works.",
         "heroSlide1Subheading": "We handle it all with expertise, reliability, and guaranteed quality.",
+        "heroSlide1Bg": "/images/home/hero/hero-bg.png",
         "heroSlide2Heading": "High Quality Building Renovation & Upgrading Solutions",
         "heroSlide2Subheading": "Complete transformation of commercial, industrial, and residential spaces with certified safety.",
+        "heroSlide2Bg": "/images/home/hero/hero-bg.png",
         "heroSlide3Heading": "Certified Waterproofing & Concrete Leakage Rectification",
         "heroSlide3Subheading": "Advanced membrane injection, RC flat roof sealing, and wet area leakage fixes.",
+        "heroSlide3Bg": "/images/home/hero/hero-bg.png",
         "heroSlide4Heading": "Professional Substation & High-Voltage Electrical Networks",
         "heroSlide4Subheading": "Licensed electrical rewiring, DB box upgrading, power grid setup, and solar integration.",
+        "heroSlide4Bg": "/images/home/hero/hero-bg.png",
         "heroSlide5Heading": "BCA Registered Roofing, Steel Works & Glazing Contracting",
         "heroSlide5Subheading": "Custom structural steel frames, aluminium windows, glass partitions, and roof extensions.",
+        "heroSlide5Bg": "/images/home/hero/hero-bg.png",
         "heroSlide6Heading": "Professional Plumbing Services Without the Hassle",
         "heroSlide6Subheading": "Leak repairs, pipe replacement, drainage solutions, sanitary installations, and preventive maintenance.",
+        "heroSlide6Bg": "/images/home/hero/hero-bg.png",
         "heroSlide7Heading": "Custom Steel Fabrication Built for Strength & Precision",
         "heroSlide7Subheading": "We design, fabricate, and install steel structures, staircases, platforms, railings, and custom metal works.",
+        "heroSlide7Bg": "/images/home/hero/hero-bg.png",
         "aboutHeading": "Your Trusted Partner for High Quality Renovation & Upgrading Services.",
         "aboutSubheading": "At UA ENGINEERING PTE. LTD. we deliver reliable Renovation & Upgrading solutions grounded in integrity, expertise, and precision. Our team ensures every project meets high standards of safety, durability, and quality workmanship.",
         "aboutImage": "/images/home/about/about-main.jpg",
         "aboutImageAlt": "UA Engineering Upgrading Worksite Inspections Team",
         "aboutExperience": "15",
+        "aboutCard1Title": "BCA Certified Company",
+        "aboutCard1Desc": "Meeting standards with quality workmanship, compliance, and professional practices.",
+        "aboutCard2Title": "Skilled & Certified Workforce",
+        "aboutCard2Desc": "Experienced professionals delivering quality work with precision, reliability, and attention.",
+        "aboutCard3Title": "Competitive & Transparent Pricing",
+        "aboutCard3Desc": "Fair, upfront pricing with detailed quotations and no hidden costs or unexpected charges.",
         "whyChooseBadge": "UA ADVANTAGE",
         "whyChooseHeading": "Why Choose UA Engineering?",
         "whyCard1Title": "Complete Building Solutions",
@@ -84,6 +100,9 @@
         "callbackBgImage": "/images/home/call/callback-bg.png",
         "callbackSupportImage": "/images/home/call/call-support.png",
         "callbackButtonText": "Submit Now",
+        "completedProjectsBadge": "LATEST PROJECTS",
+        "completedProjectsHeading": "Our Completed Projects",
+        "completedProjectsSubheading": "A showcase of our successfully delivered projects in Singapore, reflecting our commitment to structural precision, safety, and architectural elegance.",
         "reviewsBadge": "CLIENT TESTIMONIALS",
         "reviewsHeading": "What Our Clients Say About UA Engineering",
         "processBadge": "HOW IT WORKS",
@@ -267,14 +286,7 @@
         ],
         "faqHeading": "Frequently Asked Questions",
         "faqSubheading": "Get quick answers to common questions regarding our engineering, renovation, and maintenance services in Singapore.",
-        "faqsJson": "[{\"question\":\"What engineering and renovation services does UA Engineering provide in Singapore?\",\"answer\":\"We provide comprehensive building solutions including renovation & upgrading, structural steel works, roof extension, painting, waterproofing, electrical rewiring, plumbing, aircon servicing, aluminium glazing, and solar panel installation.\"},{\"question\":\"Are your engineers and technicians licensed and certified in Singapore?\",\"answer\":\"Yes, our team consists of BCA-certified professionals, EMA-licensed electricians, and trained Workplace Safety and Health (WSH) officers compliant with Singapore building safety standards.\"},{\"question\":\"Do you offer free site inspection and non-obligatory quotations?\",\"answer\":\"Yes! We offer free site assessments across all Singapore regions to evaluate your property's requirements and provide clear, transparent upfront quotations with no hidden costs.\"},{\"question\":\"How quickly can UA Engineering start our project upon confirmation?\",\"answer\":\"Once project scope and quotations are approved, our project management team arranges site preparation and material delivery to commence works promptly according to agreed timelines.\"}]",
-        "heroSlide1Bg": "/images/home/hero/hero-bg.png",
-        "heroSlide2Bg": "/images/home/hero/hero-bg.png",
-        "heroSlide3Bg": "/images/home/hero/hero-bg.png",
-        "heroSlide4Bg": "/images/home/hero/hero-bg.png",
-        "heroSlide5Bg": "/images/home/hero/hero-bg.png",
-        "heroSlide6Bg": "/images/home/hero/hero-bg.png",
-        "heroSlide7Bg": "/images/home/hero/hero-bg.png"
+        "faqsJson": "[{\"question\":\"What engineering and renovation services does UA Engineering provide in Singapore?\",\"answer\":\"We provide comprehensive building solutions including renovation & upgrading, structural steel works, roof extension, painting, waterproofing, electrical rewiring, plumbing, aircon servicing, aluminium glazing, and solar panel installation.\"},{\"question\":\"Are your engineers and technicians licensed and certified in Singapore?\",\"answer\":\"Yes, our team consists of BCA-certified professionals, EMA-licensed electricians, and trained Workplace Safety and Health (WSH) officers compliant with Singapore building safety standards.\"},{\"question\":\"Do you offer free site inspection and non-obligatory quotations?\",\"answer\":\"Yes! We offer free site assessments across all Singapore regions to evaluate your property's requirements and provide clear, transparent upfront quotations with no hidden costs.\"},{\"question\":\"How quickly can UA Engineering start our project upon confirmation?\",\"answer\":\"Once project scope and quotations are approved, our project management team arranges site preparation and material delivery to commence works promptly according to agreed timelines.\"}]"
       },
       "seo": {
         "metaTitle": "UA Engineering PTE. LTD. | Singapore Engineering & Renovation",
@@ -286,13 +298,13 @@
     "about": {
       "content": {
         "heroHeading": "About UA Engineering",
-        "heroSubheading": "A dedicated team of licensed professional engineers and certified EHS compliance officers delivering high-quality construction works.",
+        "heroSubheading": "A Engineering is a Singapore-based company providing renovation, structural, glazing, electrical, plumbing, aircon, waterproofing, and solar solutions.",
         "heroImage": "/images/layout/about-bg.png",
         "aboutImage": "/images/home/about/about-main.jpg",
         "heroImageAlt": "UA Engineering Commercial Facility Builders",
         "sectionTag": "About Our Company",
-        "overviewHeading": "Why Choose UA Engineering For Renovation & Upgrading Services in Singapore",
-        "overviewText": "Looking for a dependable renovation and upgrading contractor in Singapore? UA ENGINEERING PTE. LTD. provides renovation, construction, and engineering services for HDB, BTO, condos, landed homes, commercial, and industrial properties.",
+        "overviewHeading": "Company History & Core Values",
+        "overviewText": "UA ENGINEERING PTE. LTD. is a trusted engineering and construction company with over 15 years of industry experience. We deliver quality workmanship through highly skilled and certified professionals, BCA-compliant practices, and premium materials. With transparent pricing, a strong focus on safety, and reliable project management, we are committed to completing every project on time while exceeding our clients’ expectations. Your satisfaction, safety, and trust are at the heart of everything we do.",
         "experienceYears": "15",
         "experienceTitle": "Years of Excellence",
         "experienceSubtitle": "Renovation & Upgrading Services",
@@ -302,16 +314,16 @@
         "ehsText": "We maintain a Zero-Accident policy across all site operations. Our EHS compliance officers inspect structural rigs, high-voltage lines, and confined space setups daily to protect our workers and clients.",
         "ehsImage": "/images/home/about/about-main.jpg",
         "processBadge": "HOW WE WORK",
-        "processHeading": "Our Process",
-        "processSubheading": "Every successful renovation begins with proper planning and professional execution. At UA Engineering, we follow a proven project management process that ensures efficiency, quality, and complete customer confidence from the initial consultation through project completion.",
-        "processStepsJson": "[{\"id\":1,\"tag\":\"STEP 01\",\"title\":\"Consultation & Site Assessment\",\"description\":\"We discuss your renovation goals, inspect the property, take accurate measurements, assess technical requirements, and recommend practical solutions to develop a clear and efficient project plan.\",\"milestones\":[\"Free consultation and site inspection\",\"Detailed technical assessment\",\"Structural and feasibility evaluation\",\"Accurate measurements\"]},{\"id\":2,\"tag\":\"STEP 02\",\"title\":\"Proposal & Project Planning\",\"description\":\"We prepare a transparent quotation covering scope, materials, pricing, and timeline. After approval, we organise resources, scheduling, and project planning for smooth execution.\",\"milestones\":[\"Detailed itemised quotation\",\"Transparent pricing\",\"Material recommendations\",\"Project scheduling\"]},{\"id\":3,\"tag\":\"STEP 03\",\"title\":\"Professional Execution & Quality Control\",\"description\":\"Our skilled team completes every project safely under experienced supervision, following BCA and HDB standards while maintaining strict quality control throughout every stage.\",\"milestones\":[\"Experienced project supervisors\",\"Certified skilled workers\",\"Premium construction materials\",\"Continuous quality inspections\"]},{\"id\":4,\"tag\":\"STEP 04\",\"title\":\"Completion, Handover & After-Sales Support\",\"description\":\"After final inspections and site cleaning, we hand over the completed project with warranty information, maintenance guidance, and responsive after-sales support for your peace of mind.\",\"milestones\":[\"Final quality inspection\",\"Complete project walkthrough\",\"Site cleaning and finishing\",\"Warranty documentation\"]}]",
+        "processHeading": "Our Engineering Process",
+        "processSubheading": "From initial consultation to project completion, we follow standard safety guidelines.",
+        "processStepsJson": "[{\"id\":1,\"tag\":\"STEP 01\",\"title\":\"Consultation & Site Assessment\",\"description\":\"We discuss your renovation goals, inspect the property, take accurate measurements, assess technical requirements, and recommend practical solutions to develop a clear and efficient project plan.\",\"milestones\":[\"Free consultation and site inspection\",\"Detailed technical assessment\",\"Structural and feasibility evaluation\",\"Accurate measurements\"]},{\"id\":2,\"tag\":\"STEP 02\",\"title\":\"Proposal & Project Planning\",\"description\":\"We prepare a transparent quotation covering scope, materials, pricing, and timeline. After approval, we organise resources, scheduling, and project planning for smooth execution.\",\"milestones\":[\"Detailed itemised quotation\",\"Transparent pricing\",\"Material recommendations\",\"Project scheduling\"]},{\"id\":3,\"tag\":\"STEP 03\",\"title\":\"Professional Execution & Quality Control\",\"description\":\"Our skilled team completes every project safely under experienced supervision, following BCA and HDB standards while maintaining strict quality control throughout every stage.\",\"milestones\":[\"Experienced project supervisors\",\"Certified skilled workers\",\"Premium construction materials\",\"Continuous quality inspections\"]},{\"id\":4,\"tag\":\"STEP 04\",\"title\":\"Completion, Handover & After-Sales Support\",\"description\":\"After final inspections and site cleaning, we hand over the completed project with warranty information, maintenance guidance, and responsive after-sales support for your peace of mind.\",\"milestones\":[\"Final quality inspection\",\"Complete project walkthrough\",\"Site cleaning and finishing\",\"Warranty documentation\",\"Test\"]}]",
         "residentialBadge": "WHAT WE DO",
-        "residentialHeading": "Complete Renovation, Engineering & Property Improvement Services",
-        "residentialSubheading": "UA Engineering provides complete renovation, structural, waterproofing, electrical, plumbing, aluminium, and solar panel solutions for residential, commercial, and industrial properties across Singapore.",
+        "residentialHeading": "Residential Renovation & Upgrading Capability",
+        "residentialSubheading": "Providing HDB, Condominium, and Landed Home owners with certified renovation solutions.",
         "faqBadge": "FAQ'S",
-        "faqHeading": "FAQ's: Looking for Answers?",
-        "faqSubheading": "Find expert answers to common questions about our renovation, construction, and handyman services in Singapore.",
-        "faqsJson": "[{\"question\":\"How long has UA Engineering PTE. LTD. been serving Singapore?\",\"answer\":\"UA Engineering PTE. LTD. has been a trusted contractor in Singapore's renovation and engineering industry for over 15 years. Over the years, we've built a strong reputation for delivering high-quality renovation, partition, waterproofing, and structural upgrades for residential, commercial, and industrial properties.\"},{\"question\":\"What sets UA Engineering apart from other contractors in Singapore?\",\"answer\":\"What sets us apart is our professional specialization, certified engineering teams (such as EMA-certified electricians), transparency in quoting, and adherence to Singapore building safety guidelines (HDB/BCA). We provide turnkey project execution from minor handyman repairs to full landed house addition & alteration (A&A).\"},{\"question\":\"Do you offer free site inspections and consultations?\",\"answer\":\"Yes, we believe in empowering our clients with the information they need to make informed decisions. We offer free, no-obligation site assessments and detailed consultations. This allows us to inspect your property (e.g., for roof leakages or renovation layout plans) and provide a transparent, upfront quotation.\"},{\"question\":\"How do you ensure safety and quality control on site?\",\"answer\":\"Safety is our absolute priority and is non-negotiable. We strictly follow Workplace Safety and Health (WSH) guidelines on all project sites. Our teams are equipped with certified personal protective equipment (PPE) and undergo regular risk assessments. For quality control, we utilize premium, Singapore-certified materials and conduct strict supervision at every project phase.\"}]"
+        "faqHeading": "Frequently Asked Questions",
+        "faqSubheading": "Got questions about our engineering & renovation services in Singapore?",
+        "faqsJson": "[{\"question\":\"Who is UA Engineering?\",\"answer\":\"UA ENGINEERING PTE. LTD. is a Singapore-based general engineering and construction company.\"},{\"question\":\"What services does UA Engineering provide?\",\"answer\":\"We provide renovation and upgrading, steel and exterior works, painting and waterproofing, aluminium and glazing, electrical and plumbing, aircon repair, blinds, and solar panel installation.\"},{\"question\":\"What makes UA Engineering different?\",\"answer\":\"We combine skilled and certified workers, BCA-compliant workmanship, premium-quality materials, transparent pricing, and a strong commitment to safety and quality.\"},{\"question\":\"Do you prioritize workplace safety?\",\"answer\":\"Yes. Safety is a key priority in every project. We follow responsible construction practices and maintain high safety standards throughout our work.\"},{\"question\":\"How do you ensure project quality?\",\"answer\":\"We use quality materials, experienced professionals, careful project supervision, and established workmanship standards to deliver consistent results.\"},{\"question\":\"Do you complete projects on time?\",\"answer\":\"Yes. We focus on effective planning, coordination, and project management to ensure work is completed efficiently and within the agreed timeline whenever possible.\"},{\"question\":\"Why should I choose UA Engineering?\",\"answer\":\"With 15+ years of experience, skilled professionals, competitive pricing, quality materials, and a client-first approach, UA Engineering is committed to delivering dependable results and 100% client satisfaction.\"}]"
       },
       "seo": {
         "metaTitle": "About Us | UA Engineering PTE. LTD.",
@@ -389,6 +401,7 @@
   },
   "blogs": [
     {
+      "_id": "6a99124e0527f21a021418db",
       "slug": "test-blog",
       "title": "Test Blog",
       "category": "Renovation & Upgrading",
@@ -399,163 +412,180 @@
       "bgColor": "bg-amber-100",
       "readTime": "1 mins read",
       "popular": true,
-      "content": "<strong style=\"margin: 0px; padding: 0px; color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif; text-align: justify;\">Lorem Ipsum</strong><span style=\"color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif; text-align: justify;\"> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.</span>",
       "views": 0,
-      "id": "1786363271264"
+      "content": "<strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry.",
+      "__v": 0
     }
   ],
   "inquiries": [],
   "projects": [
     {
-      "title": "SHAMIM",
-      "category": "Painting & Waterproofing",
-      "image": "/images/uploads/image-1786333085591-361452311.png",
-      "description": "",
-      "location": "Singapore",
-      "gallery": []
-    },
-    {
-      "title": "Latest Roof Coating",
-      "category": "Painting & Waterproofing",
-      "image": "/images/projects/latest-roof-coating.png",
-      "description": "Multi-layered protective coating applied to terracotta roofing tiles to resist tropical weathering, UV rays, and algae growth.",
-      "location": "Sembawang, Singapore",
-      "gallery": [
-        "/images/projects/latest-roof-coating.png",
-        "/images/projects/roof-waterproofing.png",
-        "/images/services/sub_waterproofing.png",
-        "/images/services/sub_painting.png"
-      ]
-    },
-    {
-      "title": "External Painting",
-      "category": "Painting & Waterproofing",
-      "image": "/images/projects/external-painting.png",
-      "description": "High-rise external wall painting, crack repair, and facade upgrading using premium weather-shield paint systems.",
-      "location": "Orchard Road, Singapore",
-      "gallery": [
-        "/images/projects/external-painting.png",
-        "/images/services/sub_painting.png",
-        "/images/projects/latest-roof-coating.png",
-        "/images/services/sub_waterproofing.png"
-      ]
-    },
-    {
-      "title": "Roof Waterproofing",
-      "category": "Painting & Waterproofing",
-      "image": "/images/projects/roof-waterproofing.png",
-      "description": "Polyurethane liquid membrane waterproofing system applied on a commercial flat concrete rooftop next to AC ledges.",
-      "location": "Tuas Industrial Estate, Singapore",
-      "gallery": [
-        "/images/projects/roof-waterproofing.png",
-        "/images/services/sub_waterproofing.png",
-        "/images/projects/latest-roof-coating.png",
-        "/images/services/sub_painting.png"
-      ]
-    },
-    {
-      "title": "Commercial Plumbing Installation",
-      "category": "Electrical & Plumbing",
-      "image": "/images/home/projects/project-plumbing.png",
-      "description": "Design and installation of high-pressure copper water supply pipelines, heavy-duty floor traps, and sanitary fixtures.",
-      "location": "Marina Bay, Singapore",
-      "gallery": [
-        "/images/home/projects/project-plumbing.png",
-        "/images/services/sub_plumbing.png",
-        "/images/services/mep.png",
-        "/images/services/sub_electrical.png"
-      ]
-    },
-    {
-      "title": "Industrial Substation Electrical Works",
-      "category": "Electrical & Plumbing",
-      "image": "/images/home/projects/project-electrical.png",
-      "description": "Installation and testing of three-phase distribution boards, industrial conduit wiring, and safety grounding systems.",
-      "location": "Changi Business Park, Singapore",
-      "gallery": [
-        "/images/home/projects/project-electrical.png",
-        "/images/services/sub_electrical.png",
-        "/images/services/mep.png",
-        "/images/services/sub_aircon.png"
-      ]
-    },
-    {
-      "title": "Foundation & Structural Waterproofing",
-      "category": "Painting & Waterproofing",
-      "image": "/images/home/projects/project-waterproofing.png",
-      "description": "Sub-structure torch-on bitumen membrane installation for permanent protection against underground water ingress.",
-      "location": "Jurong East, Singapore",
-      "gallery": [
-        "/images/home/projects/project-waterproofing.png",
-        "/images/services/sub_waterproofing.png",
-        "/images/projects/roof-waterproofing.png",
-        "/images/projects/latest-roof-coating.png"
-      ]
-    },
-    {
-      "title": "Modern Office Drywall Fit-out",
-      "category": "Renovation & Tiling",
-      "image": "/images/home/projects/project-drywall.png",
-      "description": "Acoustic-rated double-layered gypsum board drywall partitions with galvanized iron framing for an open-plan office.",
-      "location": "Raffles Place, Singapore",
-      "gallery": [
-        "/images/home/projects/project-drywall.png",
-        "/images/services/sub_home_reno.png",
-        "/images/services/sub_open_plan.png",
-        "/images/services/sub_room_beautification.png"
-      ]
-    },
-    {
-      "title": "Rooftop Solar Array Grid Integration",
-      "category": "Solar Panel",
-      "image": "/images/home/projects/project-solar.png",
-      "description": "Installation of high-efficiency monocrystalline solar panels with customized aluminium mounting rails and grid-tied inverters.",
-      "location": "Ang Mo Kio, Singapore",
-      "gallery": [
-        "/images/home/projects/project-solar.png",
-        "/images/services/sub_solar.png",
-        "/images/services/solar.png",
-        "/images/home/projects/project-electrical.png"
-      ]
-    },
-    {
-      "title": "Luxury Condominium Lobby Tiling",
-      "category": "Renovation & Tiling",
-      "image": "/images/home/projects/project-tiling.png",
-      "description": "Precision laying of large-format premium homogeneous marble-grain tiles with epoxy grout lines in a high-rise lobby.",
-      "location": "Sentosa Cove, Singapore",
-      "gallery": [
-        "/images/home/projects/project-tiling.png",
-        "/images/services/sub_floor_reno.png",
-        "/images/services/sub_kitchen_reno.png",
-        "/images/services/sub_home_reno.png"
-      ]
-    },
-    {
-      "title": "Controlled Concrete Demolition",
-      "category": "Structural & Steel",
-      "image": "/images/home/projects/project-demolition.png",
-      "description": "Controlled hacking and demolition of reinforced concrete partition walls with safety barriers and structural support props.",
-      "location": "Bedok Mall, Singapore",
-      "gallery": [
-        "/images/home/projects/project-demolition.png",
-        "/images/services/sub_steel_work.png",
-        "/images/services/sub_gate_grill.png",
-        "/images/services/structural.png"
-      ]
-    },
-    {
+      "slug": "",
+      "subtitle": "",
+      "gallery": [],
+      "_id": "6a84367006af49c1185b76e9",
       "title": "Suspended Cove Ceiling Grid System",
       "category": "Renovation & Tiling",
-      "image": "/images/home/projects/project-ceiling.png",
-      "description": "Fabrication of suspended plasterboard false ceilings with integrated indirect LED cove lighting troughs and access panels.",
+      "client": "",
       "location": "Bukit Timah, Singapore",
-      "gallery": [
-        "/images/home/projects/project-ceiling.png",
-        "/images/services/sub_room_beautification.png",
-        "/images/services/sub_home_reno.png",
-        "/images/services/sub_open_plan.png"
-      ]
+      "description": "Fabrication of suspended plasterboard false ceilings with integrated indirect LED cove lighting troughs and access panels.",
+      "image": "/images/home/projects/project-ceiling.png",
+      "createdAt": "2026-08-18T10:39:44.951Z",
+      "__v": 0
+    },
+    {
+      "slug": "",
+      "subtitle": "",
+      "gallery": [],
+      "_id": "6a84367006af49c1185b76e8",
+      "title": "Controlled Concrete Demolition",
+      "category": "Structural & Steel",
+      "client": "",
+      "location": "Bedok Mall, Singapore",
+      "description": "Controlled hacking and demolition of reinforced concrete partition walls with safety barriers and structural support props.",
+      "image": "/images/home/projects/project-demolition.png",
+      "createdAt": "2026-08-18T10:39:44.906Z",
+      "__v": 0
+    },
+    {
+      "slug": "",
+      "subtitle": "",
+      "gallery": [],
+      "_id": "6a84367006af49c1185b76e7",
+      "title": "Luxury Condominium Lobby Tiling",
+      "category": "Renovation & Tiling",
+      "client": "",
+      "location": "Sentosa Cove, Singapore",
+      "description": "Precision laying of large-format premium homogeneous marble-grain tiles with epoxy grout lines in a high-rise lobby.",
+      "image": "/images/home/projects/project-tiling.png",
+      "createdAt": "2026-08-18T10:39:44.862Z",
+      "__v": 0
+    },
+    {
+      "slug": "",
+      "subtitle": "",
+      "gallery": [],
+      "_id": "6a84367006af49c1185b76e6",
+      "title": "Rooftop Solar Array Grid Integration",
+      "category": "Solar Panel",
+      "client": "",
+      "location": "Ang Mo Kio, Singapore",
+      "description": "Installation of high-efficiency monocrystalline solar panels with customized aluminium mounting rails and grid-tied inverters.",
+      "image": "/images/home/projects/project-solar.png",
+      "createdAt": "2026-08-18T10:39:44.816Z",
+      "__v": 0
+    },
+    {
+      "slug": "",
+      "subtitle": "",
+      "gallery": [],
+      "_id": "6a84367006af49c1185b76e5",
+      "title": "Modern Office Drywall Fit-out",
+      "category": "Renovation & Tiling",
+      "client": "",
+      "location": "Raffles Place, Singapore",
+      "description": "Acoustic-rated double-layered gypsum board drywall partitions with galvanized iron framing for an open-plan office.",
+      "image": "/images/home/projects/project-drywall.png",
+      "createdAt": "2026-08-18T10:39:44.773Z",
+      "__v": 0
+    },
+    {
+      "slug": "",
+      "subtitle": "",
+      "gallery": [],
+      "_id": "6a84367006af49c1185b76e4",
+      "title": "Foundation & Structural Waterproofing",
+      "category": "Painting & Waterproofing",
+      "client": "",
+      "location": "Jurong East, Singapore",
+      "description": "Sub-structure torch-on bitumen membrane installation for permanent protection against underground water ingress.",
+      "image": "/images/home/projects/project-waterproofing.png",
+      "createdAt": "2026-08-18T10:39:44.728Z",
+      "__v": 0
+    },
+    {
+      "slug": "",
+      "subtitle": "",
+      "gallery": [],
+      "_id": "6a84367006af49c1185b76e3",
+      "title": "Industrial Substation Electrical Works",
+      "category": "Electrical & Plumbing",
+      "client": "",
+      "location": "Changi Business Park, Singapore",
+      "description": "Installation and testing of three-phase distribution boards, industrial conduit wiring, and safety grounding systems.",
+      "image": "/images/home/projects/project-electrical.png",
+      "createdAt": "2026-08-18T10:39:44.683Z",
+      "__v": 0
+    },
+    {
+      "slug": "",
+      "subtitle": "",
+      "gallery": [],
+      "_id": "6a84367006af49c1185b76e2",
+      "title": "Commercial Plumbing Installation",
+      "category": "Electrical & Plumbing",
+      "client": "",
+      "location": "Marina Bay, Singapore",
+      "description": "Design and installation of high-pressure copper water supply pipelines, heavy-duty floor traps, and sanitary fixtures.",
+      "image": "/images/home/projects/project-plumbing.png",
+      "createdAt": "2026-08-18T10:39:44.639Z",
+      "__v": 0
+    },
+    {
+      "slug": "",
+      "subtitle": "",
+      "gallery": [],
+      "_id": "6a84367006af49c1185b76e1",
+      "title": "Roof Waterproofing",
+      "category": "Painting & Waterproofing",
+      "client": "",
+      "location": "Tuas Industrial Estate, Singapore",
+      "description": "Polyurethane liquid membrane waterproofing system applied on a commercial flat concrete rooftop next to AC ledges.",
+      "image": "/images/projects/roof-waterproofing.png",
+      "createdAt": "2026-08-18T10:39:44.589Z",
+      "__v": 0
+    },
+    {
+      "slug": "",
+      "subtitle": "",
+      "gallery": [],
+      "_id": "6a84367006af49c1185b76e0",
+      "title": "External Painting",
+      "category": "Painting & Waterproofing",
+      "client": "",
+      "location": "Orchard Road, Singapore",
+      "description": "High-rise external wall painting, crack repair, and facade upgrading using premium weather-shield paint systems.",
+      "image": "/images/projects/external-painting.png",
+      "createdAt": "2026-08-18T10:39:44.539Z",
+      "__v": 0
+    },
+    {
+      "slug": "",
+      "subtitle": "",
+      "gallery": [],
+      "_id": "6a84367006af49c1185b76df",
+      "title": "Latest Roof Coating",
+      "category": "Painting & Waterproofing",
+      "client": "",
+      "location": "Sembawang, Singapore",
+      "description": "Multi-layered protective coating applied to terracotta roofing tiles to resist tropical weathering, UV rays, and algae growth.",
+      "image": "/images/projects/latest-roof-coating.png",
+      "createdAt": "2026-08-18T10:39:44.495Z",
+      "__v": 0
+    },
+    {
+      "slug": "",
+      "subtitle": "",
+      "gallery": [],
+      "_id": "6a84367006af49c1185b76de",
+      "title": "SHAMIM",
+      "category": "Painting & Waterproofing",
+      "client": "",
+      "location": "Singapore",
+      "description": "",
+      "image": "/images/uploads/image-1786333085591-361452311.png",
+      "createdAt": "2026-08-18T10:39:44.422Z",
+      "__v": 0
     }
   ],
   "services": [
@@ -588,36 +618,36 @@
             "Professional renovations completed in accordance with Singapore renovation requirements."
           ],
           "process": [
-            "Assessment: Discuss renovation goals, budget, and project requirements.",
-            "Design: Measure the property and assess existing conditions.",
-            "Approval: Prepare layouts, material selections, and project schedule.",
-            "Hacking: Carry out demolition, installation, and finishing works.",
-            "Installation: Inspect workmanship and complete all necessary touch-ups.",
-            "Verification: Final walkthrough, site cleaning, and customer handover."
+            "Consultation: Discuss renovation goals, budget, and project requirements.",
+            "Site Survey: Measure the property and assess existing conditions.",
+            "Planning: Prepare layouts, material selections, and project schedule.",
+            "Renovation Works: Carry out demolition, installation, and finishing works.",
+            "Quality Inspection: Inspect workmanship and complete all necessary touch-ups.",
+            "Project Handover: Final walkthrough, site cleaning, and customer handover."
           ],
           "processSteps": [
             {
-              "title": "Assessment",
+              "title": "Consultation",
               "description": "Discuss renovation goals, budget, and project requirements."
             },
             {
-              "title": "Design",
+              "title": "Site Survey",
               "description": "Measure the property and assess existing conditions."
             },
             {
-              "title": "Approval",
+              "title": "Planning",
               "description": "Prepare layouts, material selections, and project schedule."
             },
             {
-              "title": "Hacking",
+              "title": "Renovation Works",
               "description": "Carry out demolition, installation, and finishing works."
             },
             {
-              "title": "Installation",
+              "title": "Quality Inspection",
               "description": "Inspect workmanship and complete all necessary touch-ups."
             },
             {
-              "title": "Verification",
+              "title": "Project Handover",
               "description": "Final walkthrough, site cleaning, and customer handover."
             }
           ]
@@ -643,12 +673,38 @@
             "Tailored solutions for HDB, condo, and landed properties."
           ],
           "process": [
-            "Discuss kitchen layout, storage, and lifestyle requirements.",
-            "Measure the kitchen and assess renovation requirements.",
-            "Confirm layout, materials, and countertop selection.",
-            "Install cabinets, countertops, tiling, and plumbing fixtures.",
-            "Complete adjustments, detailing, and final fittings.",
-            "Inspect completed work and hand over your new kitchen."
+            "Consultation: Discuss kitchen layout, storage, and lifestyle requirements.",
+            "Site Measurement: Measure the kitchen and assess renovation requirements.",
+            "Design Planning: Confirm layout, materials, and countertop selection.",
+            "Renovation Works: Install cabinets, countertops, tiling, and plumbing fixtures.",
+            "Finishing: Complete adjustments, detailing, and final fittings.",
+            "Handover: Inspect completed work and hand over your new kitchen."
+          ],
+          "processSteps": [
+            {
+              "title": "Consultation",
+              "description": "Discuss kitchen layout, storage, and lifestyle requirements."
+            },
+            {
+              "title": "Site Measurement",
+              "description": "Measure the kitchen and assess renovation requirements."
+            },
+            {
+              "title": "Design Planning",
+              "description": "Confirm layout, materials, and countertop selection."
+            },
+            {
+              "title": "Renovation Works",
+              "description": "Install cabinets, countertops, tiling, and plumbing fixtures."
+            },
+            {
+              "title": "Finishing",
+              "description": "Complete adjustments, detailing, and final fittings."
+            },
+            {
+              "title": "Handover",
+              "description": "Inspect completed work and hand over your new kitchen."
+            }
           ]
         },
         {
@@ -672,12 +728,38 @@
             "Efficient renovation with minimal disruption."
           ],
           "process": [
-            "Understand your design preferences and room requirements.",
-            "Evaluate room dimensions and existing conditions.",
-            "Confirm finishes, materials, and renovation scope.",
-            "Carry out enhancement works with precision.",
-            "Complete finishing touches and quality checks.",
-            "Clean the area and hand over the completed space."
+            "Consultation: Understand your design preferences and room requirements.",
+            "Site Assessment: Evaluate room dimensions and existing conditions.",
+            "Design Selection: Confirm finishes, materials, and renovation scope.",
+            "Installation: Carry out enhancement works with precision.",
+            "Final Detailing: Complete finishing touches and quality checks.",
+            "Project Completion: Clean the area and hand over the completed space."
+          ],
+          "processSteps": [
+            {
+              "title": "Consultation",
+              "description": "Understand your design preferences and room requirements."
+            },
+            {
+              "title": "Site Assessment",
+              "description": "Evaluate room dimensions and existing conditions."
+            },
+            {
+              "title": "Design Selection",
+              "description": "Confirm finishes, materials, and renovation scope."
+            },
+            {
+              "title": "Installation",
+              "description": "Carry out enhancement works with precision."
+            },
+            {
+              "title": "Final Detailing",
+              "description": "Complete finishing touches and quality checks."
+            },
+            {
+              "title": "Project Completion",
+              "description": "Clean the area and hand over the completed space."
+            }
           ]
         },
         {
@@ -701,12 +783,38 @@
             "Neat execution with careful quality supervision."
           ],
           "process": [
-            "Assess structural conditions and project feasibility.",
-            "Prepare renovation scope and compliance requirements.",
-            "Coordinate necessary renovation approvals where required.",
-            "Carry out demolition and reconstruction safely.",
-            "Complete masonry finishing and clean the work area.",
-            "Inspect completed works before project handover."
+            "Site Inspection: Assess structural conditions and project feasibility.",
+            "Planning: Prepare renovation scope and compliance requirements.",
+            "Approval: Coordinate necessary renovation approvals where required.",
+            "Construction Works: Carry out demolition and reconstruction safely.",
+            "Site Restoration: Complete masonry finishing and clean the work area.",
+            "Final Inspection: Inspect completed works before project handover."
+          ],
+          "processSteps": [
+            {
+              "title": "Site Inspection",
+              "description": "Assess structural conditions and project feasibility."
+            },
+            {
+              "title": "Planning",
+              "description": "Prepare renovation scope and compliance requirements."
+            },
+            {
+              "title": "Approval",
+              "description": "Coordinate necessary renovation approvals where required."
+            },
+            {
+              "title": "Construction Works",
+              "description": "Carry out demolition and reconstruction safely."
+            },
+            {
+              "title": "Site Restoration",
+              "description": "Complete masonry finishing and clean the work area."
+            },
+            {
+              "title": "Final Inspection",
+              "description": "Inspect completed works before project handover."
+            }
           ]
         },
         {
@@ -730,12 +838,38 @@
             "Reliable project scheduling and clean execution."
           ],
           "process": [
-            "Assess floor condition and identify repair requirements.",
-            "Remove damaged flooring and prepare the substrate.",
-            "Confirm flooring materials and finish options.",
-            "Install or restore flooring with precision.",
-            "Polish and protect completed floor surfaces.",
-            "Perform final inspection and site cleaning."
+            "Inspection: Assess floor condition and identify repair requirements.",
+            "Surface Preparation: Remove damaged flooring and prepare the substrate.",
+            "Material Selection: Confirm flooring materials and finish options.",
+            "Installation: Install or restore flooring with precision.",
+            "Polishing: Polish and protect completed floor surfaces.",
+            "Handover: Perform final inspection and site cleaning."
+          ],
+          "processSteps": [
+            {
+              "title": "Inspection",
+              "description": "Assess floor condition and identify repair requirements."
+            },
+            {
+              "title": "Surface Preparation",
+              "description": "Remove damaged flooring and prepare the substrate."
+            },
+            {
+              "title": "Material Selection",
+              "description": "Confirm flooring materials and finish options."
+            },
+            {
+              "title": "Installation",
+              "description": "Install or restore flooring with precision."
+            },
+            {
+              "title": "Polishing",
+              "description": "Polish and protect completed floor surfaces."
+            },
+            {
+              "title": "Handover",
+              "description": "Perform final inspection and site cleaning."
+            }
           ]
         },
         {
@@ -759,12 +893,38 @@
             "Professional installation with precise workmanship."
           ],
           "process": [
-            "Review outdoor space and decking requirements.",
-            "Measure the installation area accurately.",
-            "Choose decking materials and finishing options.",
-            "Install decking framework and deck boards.",
-            "Complete trimming and final detailing.",
-            "Inspect the completed deck and hand over the project."
+            "Consultation: Review outdoor space and decking requirements.",
+            "Site Measurement: Measure the installation area accurately.",
+            "Material Selection: Choose decking materials and finishing options.",
+            "Installation: Install decking framework and deck boards.",
+            "Finishing: Complete trimming and final detailing.",
+            "Project Handover: Inspect the completed deck and hand over the project."
+          ],
+          "processSteps": [
+            {
+              "title": "Consultation",
+              "description": "Review outdoor space and decking requirements."
+            },
+            {
+              "title": "Site Measurement",
+              "description": "Measure the installation area accurately."
+            },
+            {
+              "title": "Material Selection",
+              "description": "Choose decking materials and finishing options."
+            },
+            {
+              "title": "Installation",
+              "description": "Install decking framework and deck boards."
+            },
+            {
+              "title": "Finishing",
+              "description": "Complete trimming and final detailing."
+            },
+            {
+              "title": "Project Handover",
+              "description": "Inspect the completed deck and hand over the project."
+            }
           ]
         }
       ],
@@ -821,12 +981,38 @@
             "Clear coordination ensures organised projects from assessment through installation."
           ],
           "process": [
-            "Inspect site, measure areas, understand requirements.",
-            "Recommend solutions, materials, and provide quotation.",
-            "Cut, weld, assemble, and prepare steel components.",
-            "Apply protective coatings for durability and appearance.",
-            "Install and secure components with precise alignment.",
-            "Check quality, finishing, functionality before project handover."
+            "Site Assessment: Inspect site, measure areas, understand requirements.",
+            "Planning & Quotation: Recommend solutions, materials, and provide quotation.",
+            "Steel Fabrication: Cut, weld, assemble, and prepare steel components.",
+            "Surface Finishing: Apply protective coatings for durability and appearance.",
+            "Installation: Install and secure components with precise alignment.",
+            "Inspection & Handover: Check quality, finishing, functionality before project handover."
+          ],
+          "processSteps": [
+            {
+              "title": "Site Assessment",
+              "description": "Inspect site, measure areas, understand requirements."
+            },
+            {
+              "title": "Planning & Quotation",
+              "description": "Recommend solutions, materials, and provide quotation."
+            },
+            {
+              "title": "Steel Fabrication",
+              "description": "Cut, weld, assemble, and prepare steel components."
+            },
+            {
+              "title": "Surface Finishing",
+              "description": "Apply protective coatings for durability and appearance."
+            },
+            {
+              "title": "Installation",
+              "description": "Install and secure components with precise alignment."
+            },
+            {
+              "title": "Inspection & Handover",
+              "description": "Check quality, finishing, functionality before project handover."
+            }
           ]
         },
         {
@@ -850,12 +1036,38 @@
             "Professional installation ensures secure fixing and smooth operation."
           ],
           "process": [
-            "Inspect site, discuss preferences, take accurate measurements.",
-            "Recommend materials, styles, and provide clear quotation.",
-            "Fabricate gates and grills to approved specifications.",
-            "Apply protective finishes for durability and appearance.",
-            "Securely install, align, and test smooth operation.",
-            "Check alignment, locks, finishing, and complete handover."
+            "Site Measurement: Inspect site, discuss preferences, take accurate measurements.",
+            "Design & Quotation: Recommend materials, styles, and provide clear quotation.",
+            "Fabrication: Fabricate gates and grills to approved specifications.",
+            "Surface Finishing: Apply protective finishes for durability and appearance.",
+            "Installation: Securely install, align, and test smooth operation.",
+            "Final Inspection: Check alignment, locks, finishing, and complete handover."
+          ],
+          "processSteps": [
+            {
+              "title": "Site Measurement",
+              "description": "Inspect site, discuss preferences, take accurate measurements."
+            },
+            {
+              "title": "Design & Quotation",
+              "description": "Recommend materials, styles, and provide clear quotation."
+            },
+            {
+              "title": "Fabrication",
+              "description": "Fabricate gates and grills to approved specifications."
+            },
+            {
+              "title": "Surface Finishing",
+              "description": "Apply protective finishes for durability and appearance."
+            },
+            {
+              "title": "Installation",
+              "description": "Securely install, align, and test smooth operation."
+            },
+            {
+              "title": "Final Inspection",
+              "description": "Check alignment, locks, finishing, and complete handover."
+            }
           ]
         },
         {
@@ -879,12 +1091,38 @@
             "Balcony shelters create comfortable outdoor spaces for daily use."
           ],
           "process": [
-            "We inspect the balcony area and assess suitable shelter options.",
-            "Material options, colours, and structural requirements are discussed.",
-            "Support frames and shelter components are fabricated according to site measurements.",
-            "Roofing panels and structural components are prepared before installation.",
-            "The shelter is securely installed with careful alignment and finishing.",
-            "Completed works are checked before final project completion."
+            "Site Assessment: We inspect the balcony area and assess suitable shelter options.",
+            "Design Consultation: Material options, colours, and structural requirements are discussed.",
+            "Fabrication: Support frames and shelter components are fabricated according to site measurements.",
+            "Material Preparation: Roofing panels and structural components are prepared before installation.",
+            "Installation: The shelter is securely installed with careful alignment and finishing.",
+            "Inspection & Handover: Completed works are checked before final project completion."
+          ],
+          "processSteps": [
+            {
+              "title": "Site Assessment",
+              "description": "We inspect the balcony area and assess suitable shelter options."
+            },
+            {
+              "title": "Design Consultation",
+              "description": "Material options, colours, and structural requirements are discussed."
+            },
+            {
+              "title": "Fabrication",
+              "description": "Support frames and shelter components are fabricated according to site measurements."
+            },
+            {
+              "title": "Material Preparation",
+              "description": "Roofing panels and structural components are prepared before installation."
+            },
+            {
+              "title": "Installation",
+              "description": "The shelter is securely installed with careful alignment and finishing."
+            },
+            {
+              "title": "Inspection & Handover",
+              "description": "Completed works are checked before final project completion."
+            }
           ]
         },
         {
@@ -908,12 +1146,38 @@
             "Professional installation ensures organised workmanship and quality finishing."
           ],
           "process": [
-            "We assess your existing roof and discuss extension requirements.",
-            "Roof layout, materials, and structural details are finalised.",
-            "Roof support structures are fabricated according to approved dimensions.",
-            "Roofing sheets, flashings, and accessories are prepared.",
-            "Structural frames and roofing materials are professionally installed.",
-            "The completed roof extension is inspected before handover."
+            "Site Visit: We assess your existing roof and discuss extension requirements.",
+            "Design Proposal: Roof layout, materials, and structural details are finalised.",
+            "Fabrication: Roof support structures are fabricated according to approved dimensions.",
+            "Material Preparation: Roofing sheets, flashings, and accessories are prepared.",
+            "Installation: Structural frames and roofing materials are professionally installed.",
+            "Quality Inspection: The completed roof extension is inspected before handover."
+          ],
+          "processSteps": [
+            {
+              "title": "Site Visit",
+              "description": "We assess your existing roof and discuss extension requirements."
+            },
+            {
+              "title": "Design Proposal",
+              "description": "Roof layout, materials, and structural details are finalised."
+            },
+            {
+              "title": "Fabrication",
+              "description": "Roof support structures are fabricated according to approved dimensions."
+            },
+            {
+              "title": "Material Preparation",
+              "description": "Roofing sheets, flashings, and accessories are prepared."
+            },
+            {
+              "title": "Installation",
+              "description": "Structural frames and roofing materials are professionally installed."
+            },
+            {
+              "title": "Quality Inspection",
+              "description": "The completed roof extension is inspected before handover."
+            }
           ]
         },
         {
@@ -937,12 +1201,38 @@
             "We complete installations with careful alignment, neat workmanship, and attention to detail."
           ],
           "process": [
-            "We assess the installation area and discuss your shelter requirements.",
-            "Suitable awning materials, frame types, and colours are recommended.",
-            "The awning frame and roofing components are fabricated to the required dimensions.",
-            "Materials and fittings are prepared for efficient on-site installation.",
-            "We securely install, check alignment, fixing points, and structural stability.",
-            "We complete a final quality inspection and ensure the awning."
+            "Site Consultation: We assess the installation area and discuss your shelter requirements.",
+            "Material Selection: Suitable awning materials, frame types, and colours are recommended.",
+            "Custom Fabrication: The awning frame and roofing components are fabricated to the required dimensions.",
+            "Pre-Installation Preparation: Materials and fittings are prepared for efficient on-site installation.",
+            "Installation: We securely install, check alignment, fixing points, and structural stability.",
+            "Final Inspection & Handover: We complete a final quality inspection and ensure the awning."
+          ],
+          "processSteps": [
+            {
+              "title": "Site Consultation",
+              "description": "We assess the installation area and discuss your shelter requirements."
+            },
+            {
+              "title": "Material Selection",
+              "description": "Suitable awning materials, frame types, and colours are recommended."
+            },
+            {
+              "title": "Custom Fabrication",
+              "description": "The awning frame and roofing components are fabricated to the required dimensions."
+            },
+            {
+              "title": "Pre-Installation Preparation",
+              "description": "Materials and fittings are prepared for efficient on-site installation."
+            },
+            {
+              "title": "Installation",
+              "description": "We securely install, check alignment, fixing points, and structural stability."
+            },
+            {
+              "title": "Final Inspection & Handover",
+              "description": "We complete a final quality inspection and ensure the awning."
+            }
           ]
         }
       ],
@@ -980,12 +1270,38 @@
             "Experienced painters delivering reliable results with attention to every detail."
           ],
           "process": [
-            "Assess wall condition, cracks, moisture, and painting requirements.",
-            "Protect surrounding areas, repair cracks, sand surfaces, and apply primer.",
-            "Confirm paint colours, finishes, and project scope before application.",
-            "Apply premium paint systems using professional techniques for even coverage.",
-            "Inspect painted surfaces, complete touch-ups, and remove protective coverings.",
-            "Conduct final inspection, site cleaning, and customer handover."
+            "Site Inspection: Assess wall condition, cracks, moisture, and painting requirements.",
+            "Surface Preparation: Protect surrounding areas, repair cracks, sand surfaces, and apply primer.",
+            "Colour Confirmation: Confirm paint colours, finishes, and project scope before application.",
+            "Paint Application: Apply premium paint systems using professional techniques for even coverage.",
+            "Final Touch-Up: Inspect painted surfaces, complete touch-ups, and remove protective coverings.",
+            "Quality Handover: Conduct final inspection, site cleaning, and customer handover."
+          ],
+          "processSteps": [
+            {
+              "title": "Site Inspection",
+              "description": "Assess wall condition, cracks, moisture, and painting requirements."
+            },
+            {
+              "title": "Surface Preparation",
+              "description": "Protect surrounding areas, repair cracks, sand surfaces, and apply primer."
+            },
+            {
+              "title": "Colour Confirmation",
+              "description": "Confirm paint colours, finishes, and project scope before application."
+            },
+            {
+              "title": "Paint Application",
+              "description": "Apply premium paint systems using professional techniques for even coverage."
+            },
+            {
+              "title": "Final Touch-Up",
+              "description": "Inspect painted surfaces, complete touch-ups, and remove protective coverings."
+            },
+            {
+              "title": "Quality Handover",
+              "description": "Conduct final inspection, site cleaning, and customer handover."
+            }
           ]
         },
         {
@@ -1009,12 +1325,38 @@
             "Skilled waterproofing specialists delivering dependable workmanship and lasting protection."
           ],
           "process": [
-            "Inspect leak sources, moisture levels, cracks, and affected surfaces.",
-            "Clean the area, remove damaged materials, and prepare surfaces for treatment.",
-            "Recommend the most suitable waterproofing method based on site conditions.",
-            "Apply membranes, PU injection, sealants, or waterproof coatings professionally.",
-            "Carry out water testing and verify complete waterproof protection.",
-            "Perform final quality checks, clean the site, and provide maintenance guidance."
+            "Site Assessment: Inspect leak sources, moisture levels, cracks, and affected surfaces.",
+            "Surface Preparation: Clean the area, remove damaged materials, and prepare surfaces for treatment.",
+            "System Selection: Recommend the most suitable waterproofing method based on site conditions.",
+            "Waterproofing Application: Apply membranes, PU injection, sealants, or waterproof coatings professionally.",
+            "Testing & Inspection: Carry out water testing and verify complete waterproof protection.",
+            "Project Handover: Perform final quality checks, clean the site, and provide maintenance guidance."
+          ],
+          "processSteps": [
+            {
+              "title": "Site Assessment",
+              "description": "Inspect leak sources, moisture levels, cracks, and affected surfaces."
+            },
+            {
+              "title": "Surface Preparation",
+              "description": "Clean the area, remove damaged materials, and prepare surfaces for treatment."
+            },
+            {
+              "title": "System Selection",
+              "description": "Recommend the most suitable waterproofing method based on site conditions."
+            },
+            {
+              "title": "Waterproofing Application",
+              "description": "Apply membranes, PU injection, sealants, or waterproof coatings professionally."
+            },
+            {
+              "title": "Testing & Inspection",
+              "description": "Carry out water testing and verify complete waterproof protection."
+            },
+            {
+              "title": "Project Handover",
+              "description": "Perform final quality checks, clean the site, and provide maintenance guidance."
+            }
           ]
         }
       ],
