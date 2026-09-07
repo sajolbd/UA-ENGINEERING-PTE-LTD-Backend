@@ -12,15 +12,11 @@
         "workingHours": "Mon - Sat: 9:00 AM - 6:00 PM (Emergency 24/7 Support)",
         "appointmentButtonText": "Book An Appointment",
         "footerAboutText": "Professional engineering, renovation, waterproofing, and steel fabrication solutions in Singapore. Licensed, certified, and compliant with BCA standards.",
-        "facebook": "https://www.facebook.com/UA.Engineering.PTE.LTD",
-        "instagram": "https://www.instagram.com/ua_engineering_pte_ltd",
-        "linkedin": "https://www.linkedin.com/company/ua-engineering-pte-ltd/",
-        "youtube": "https://www.youtube.com/@ua_engineering_pte_ltd",
-        "twitter": "https://x.com/UAEngineering1",
-        "x": "https://x.com/UAEngineering1",
-        "tiktok": "https://www.tiktok.com/@ua.engineering3",
-        "whatsapp": "https://wa.me/6584593003",
-        "tagLine": "A complete renovation partner for homes and commercial spaces in Singapore, handling everything from small repairs to full structural transformation."
+        "facebook": "https://facebook.com",
+        "instagram": "https://instagram.com",
+        "linkedin": "https://linkedin.com",
+        "youtube": "https://youtube.com",
+        "whatsapp": "https://wa.me/6584593003"
       },
       "seo": {
         "metaTitle": "UA Engineering PTE. LTD. | Singapore Engineering & Renovation",
@@ -33,41 +29,34 @@
       "content": {
         "heroHeading": "From Renovation to Painting, Roofing, Electrical, Plumbing and Steel Works.",
         "heroSubheading": "We handle it all with expertise, reliability, and guaranteed quality.",
+        "heroSlide1Heading": "From Renovation to Painting, Roofing, Electrical, Plumbing and Steel Works.",
+        "heroSlide1Subheading": "We handle it all with expertise, reliability, and guaranteed quality.",
+        "heroSlide2Heading": "Everything Your Property Needs. One Trusted Engineering Team.",
+        "heroSlide2Subheading": "From renovations and reinstatement to electrical, plumbing, painting, roofing, steel fabrication, waterproofing, and maintenance - we handle every project with precision and professionalism.",
+        "heroSlide3Heading": "Fresh Paint. Lasting Protection. Stunning Results.",
+        "heroSlide3Subheading": "Interior and exterior painting services that enhance appearance, protect surfaces, and increase the value of your property.",
+        "heroSlide4Heading": "Roof Problems? We Fix Them Before They Cost You More.",
+        "heroSlide4Subheading": "Professional roof repairs, waterproofing, leak prevention, and complete roofing solutions to keep your property safe in every season.",
+        "heroSlide5Heading": "Safe, Reliable Electrical Solutions for Every Building",
+        "heroSlide5Subheading": "From new installations and rewiring to troubleshooting and upgrades, we deliver electrical work that keeps your property running safely.",
+        "heroSlide6Heading": "Professional Plumbing Services Without the Hassle",
+        "heroSlide6Subheading": "Leak repairs, pipe replacement, drainage solutions, sanitary installations, and preventive maintenance-all completed with quality workmanship.",
+        "heroSlide7Heading": "Custom Steel Fabrication Built for Strength & Precision",
+        "heroSlide7Subheading": "We design, fabricate, and install steel structures, staircases, platforms, railings, and custom metal works for commercial and industrial projects.",
         "heroImage": "/images/home/hero/hero-bg.png",
         "heroImageAlt": "UA Engineering Renovation and Steel Fabrications Banner",
         "heroCtaText": "Book An Appointment",
-        "heroSlide1Heading": "From Renovation to Painting, Roofing, Electrical, Plumbing and Steel Works.",
-        "heroSlide1Subheading": "We handle it all with expertise, reliability, and guaranteed quality.",
-        "heroSlide1Bg": "/images/home/hero/hero-bg.png",
-        "heroSlide2Heading": "Everything Your Property Needs. One Trusted Engineering Team.",
-        "heroSlide2Subheading": "From renovations to electrical, plumbing, painting, roofing, steel fabrication, waterproofing, and maintenance - We handle it all.",
-        "heroSlide2Bg": "/images/services/renovation.png",
-        "heroSlide3Heading": "Fresh Paint. Lasting Protection. Stunning Results.",
-        "heroSlide3Subheading": "Interior and exterior painting services that enhance appearance, protect surfaces, and increase the value of your property.",
-        "heroSlide3Bg": "/images/services/painting.png",
-        "heroSlide4Heading": "Roof Problems? We Fix Them Before They Cost You More.",
-        "heroSlide4Subheading": "Professional roof repairs, waterproofing, leak prevention, and complete roofing solutions to keep your property safe in every season.",
-        "heroSlide4Bg": "/images/services/sub_roof_extension.png",
-        "heroSlide5Heading": "Safe, Reliable Electrical Solutions for Every Building.",
-        "heroSlide5Subheading": "From new installations and rewiring to troubleshooting and upgrades, we deliver electrical work that keeps your property running safely.",
-        "heroSlide5Bg": "/images/services/sub_electrical.png",
-        "heroSlide6Heading": "Professional Plumbing Services Without the Hassle.",
-        "heroSlide6Subheading": "Leak repairs, pipe replacement, drainage solutions and sanitary installations all completed with quality workmanship.",
-        "heroSlide6Bg": "/images/services/sub_plumbing.png",
-        "heroSlide7Heading": "Custom Steel Fabrication Built for Strength & Precision.",
-        "heroSlide7Subheading": "We design, fabricate, and install steel structures, staircases, platforms, railings, and custom metal works.",
-        "heroSlide7Bg": "/images/services/sub_steel_work.png",
-        "aboutHeading": "Your Trusted Partner for All Building Needs.",
-        "aboutSubheading": "We provide home renovation, painting, waterproofing, main gate & grill works, balcony shelter installation, roof extensions, aluminium & glass installation, electrical, plumbing, aircon, and solar panel installation for homes and commercial properties across Singapore.",
+        "aboutHeading": "Your Trusted Partner for High Quality Renovation & Upgrading Services.",
+        "aboutSubheading": "At UA ENGINEERING PTE. LTD. we deliver reliable Renovation & Upgrading solutions grounded in integrity, expertise, and precision. Our team ensures every project meets high standards of safety, durability, and quality workmanship.",
         "aboutImage": "/images/home/about/about-main.jpg",
         "aboutImageAlt": "UA Engineering Upgrading Worksite Inspections Team",
         "aboutExperience": "15",
         "aboutCard1Title": "BCA Certified Company",
-        "aboutCard1Desc": "Meeting standards with high-quality workmanship, reliable service, compliance, consistent delivery, and professional practices.",
+        "aboutCard1Desc": "Meeting standards with quality workmanship, compliance, and professional practices.",
         "aboutCard2Title": "Skilled & Certified Workforce",
-        "aboutCard2Desc": "Experienced professionals delivering quality work with precision, and attention.",
+        "aboutCard2Desc": "Experienced professionals delivering quality work with precision, reliability, and attention.",
         "aboutCard3Title": "Competitive & Transparent Pricing",
-        "aboutCard3Desc": "Fair, upfront pricing with detailed quotations, competitive rates, and no hidden costs or charges.",
+        "aboutCard3Desc": "Fair, upfront pricing with detailed quotations and no hidden costs or unexpected charges.",
         "whyChooseBadge": "UA ADVANTAGE",
         "whyChooseHeading": "Why Choose UA Engineering?",
         "whyCard1Title": "Complete Building Solutions",
@@ -101,13 +90,10 @@
         "callbackBgImage": "/images/home/call/callback-bg.png",
         "callbackSupportImage": "/images/home/call/call-support.png",
         "callbackButtonText": "Submit Now",
-        "completedProjectsBadge": "LATEST PROJECTS",
-        "completedProjectsHeading": "Our Completed Projects",
-        "completedProjectsSubheading": "A showcase of our successfully delivered projects in Singapore, reflecting our commitment to structural precision, safety, and architectural elegance.",
         "reviewsBadge": "CLIENT TESTIMONIALS",
         "reviewsHeading": "What Our Clients Say About UA Engineering",
         "processBadge": "HOW IT WORKS",
-        "processHeading": "Our Simple & Transparent Working Process",
+        "processHeading": "Our Simple & Transparent Work Process",
         "processSubheading": "From site inspection and quotation to professional installation and project handover, we ensure quality, transparency, and customer satisfaction at every stage.",
         "processStep1Title": "Free Consultation & Site Visit",
         "processStep1Desc": "We assess your requirements, inspect the site, discuss solutions, and understand your project goals.",
@@ -120,206 +106,30 @@
         "processStep3Image": "/images/home/process/execution.png",
         "processStep4Title": "Final Inspection & Handover",
         "processStep4Desc": "We conduct final quality checks, ensure everything meets expectations, and hand over your completed project with confidence.",
-        "processStep4Image": "/images/home/process/handover.png",
-        "testimonialBadge": "TESTIMONIALS",
-        "testimonialHeading": "Hear out From our clients",
-        "testimonialSubheading": "See what our clients has to say about our services and experience.",
-        "testimonial1Name": "Marcus Tan",
-        "testimonial1Role": "Property Manager, CapitaLand",
-        "testimonial1Project": "Commercial Waterproofing",
-        "testimonial1Quote": "UA Engineering did an outstanding job waterproofing our commercial facade and basement. Excellent workmanship, clean execution, and no water leaks since completion!",
-        "testimonial1Thumbnail": "/images/home/projects/project-waterproofing.png",
-        "testimonial1VideoId": "A2y8jK-iGSw",
-        "testimonial2Name": "Sarah Lim",
-        "testimonial2Role": "Homeowner, Sentosa Cove",
-        "testimonial2Project": "Premium Renovation & Fit-out",
-        "testimonial2Quote": "Their attention to detail during our home renovation was exceptional. From hacking to false ceiling installation, they delivered premium quality on schedule.",
-        "testimonial2Thumbnail": "/images/home/projects/project-drywall.png",
-        "testimonial2VideoId": "G5-o475Xz1Y",
-        "testimonial3Name": "David Hendricks",
-        "testimonial3Role": "Facilities Director, Jurong Hub",
-        "testimonial3Project": "Industrial Electrical Upgrade",
-        "testimonial3Quote": "Superb coordination and safety protocol adherence during our substation electrical works. The project was completed efficiently and complied with all regulations.",
-        "testimonial3Thumbnail": "/images/home/projects/project-electrical.png",
-        "testimonial3VideoId": "yY19i3889p4",
-        "testimonials": [
-          {
-            "id": "1",
-            "name": "Marcus Tan",
-            "role": "Property Manager, CapitaLand",
-            "project": "Commercial Waterproofing",
-            "quote": "UA Engineering did an outstanding job waterproofing our commercial facade and basement. Excellent workmanship, clean execution, and no water leaks since completion!",
-            "thumbnail": "/images/home/projects/project-waterproofing.png",
-            "videoId": "A2y8jK-iGSw"
-          },
-          {
-            "id": "2",
-            "name": "Sarah Lim",
-            "role": "Homeowner, Sentosa Cove",
-            "project": "Premium Renovation & Fit-out",
-            "quote": "Their attention to detail during our home renovation was exceptional. From hacking to false ceiling installation, they delivered premium quality on schedule.",
-            "thumbnail": "/images/home/projects/project-drywall.png",
-            "videoId": "G5-o475Xz1Y"
-          },
-          {
-            "id": "3",
-            "name": "David Hendricks",
-            "role": "Facilities Director, Jurong Hub",
-            "project": "Industrial Electrical Upgrade",
-            "quote": "Superb coordination and safety protocol adherence during our substation electrical works. The project was completed efficiently and complied with all regulations.",
-            "thumbnail": "/images/home/projects/project-electrical.png",
-            "videoId": "yY19i3889p4"
-          }
-        ],
-        "reviewBadge": "REVIEWS & FEEDBACK",
-        "reviewHeading": "5-Star Happy Customer Reviews",
-        "googleReviews": [
-          {
-            "id": "1",
-            "name": "Majidul Islam Majidul",
-            "time": "1 year ago",
-            "stars": 5,
-            "avatar": "/images/home/reviews/google-majidul.png",
-            "text": "UA Engineering workmanship and investigation of existing building leaking very good. They have done waterproofing leaking rectification work for The American Club Singapore so far no leaking last few weeks I monitoring. Thanks, UA Engineering team members and workers."
-          },
-          {
-            "id": "2",
-            "name": "Cyril Wood",
-            "time": "1 year ago",
-            "stars": 5,
-            "avatar": "/images/home/reviews/google-cyril.png",
-            "text": "The team at UA Engineering were very efficient. They worked well to do the job in an awkward place. Even repainted an area affected by water damage at no extra cost. I would recommend this service."
-          },
-          {
-            "id": "3",
-            "name": "James Lim",
-            "time": "2 years ago",
-            "stars": 5,
-            "avatar": "/images/home/reviews/google-james.png",
-            "text": "Very good! Solved my problem which others cannot solve. Thank you! Highly recommended."
-          },
-          {
-            "id": "4",
-            "name": "Eugene T",
-            "time": "2 years ago",
-            "stars": 5,
-            "avatar": "/images/home/reviews/google-eugene.png",
-            "text": "Engaged UA Engineering for my roof and RC waterproofing. The workers handled the works relatively well and were receptive to our inputs. They are responsive and returned on a few times when we noticed areas that the paint was not even. Overall, happy to recommend to ask for a quote if you are looking for good works at competitive rates."
-          },
-          {
-            "id": "5",
-            "name": "Atik Tamim",
-            "time": "2 years ago",
-            "stars": 5,
-            "avatar": "/images/home/reviews/google-atik.png",
-            "text": "You saved my structure. Thanks for your quality work."
-          },
-          {
-            "id": "6",
-            "name": "Yong Huat Ng",
-            "time": "2 years ago",
-            "stars": 5,
-            "avatar": "/images/home/reviews/google-yonghuat.png",
-            "text": "Willingness to listen, give no excuses, and very committed to doing a complete job is the key characteristics and strength of this vendor. As waterproofing can be a progressive trial process. This vendor response fast to feedback and comeback quickly to complete the coverage of the fixes. I am particularly impressed with the positive attitude of the lead worker. He is friendly, attentive, welcome feedback and committed to delivering a quality work (which he did). A vendor that I am very happy with and will recommend to anyone that need to have the waterproofing services."
-          },
-          {
-            "id": "7",
-            "name": "Joo Goh",
-            "time": "3 years ago",
-            "stars": 5,
-            "avatar": "/images/home/reviews/google-joogoh.png",
-            "text": "Am very pleased with the work done by UA Engineering Pte Ltd few months back and no further leakage or mould were detected to date. The previous contractor (Flux Solutions Pte Ltd) was very unresponsive and rude to after sales service and I decided to terminate them in favour for UA Engineering. I hope UA Engineering will continue with its responsive after sales service that I've experienced and recommend this company after the bad experience I had with Flux Solutions."
-          }
-        ],
-        "areaBadge": "Service Areas",
-        "areaHeading": "Reliable Home Renovation Solutions Near You",
-        "areaSubheading": "UA ENGINEERING proudly provides home renovation services across Singapore, covering all major residential and commercial areas.",
-        "regions": [
-          {
-            "name": "Central Region",
-            "areas": [
-              "Orchard",
-              "Bugis",
-              "Marina Bay",
-              "Raffles Place",
-              "Tanjong Pagar",
-              "Bishan",
-              "Toa Payoh",
-              "Bukit Merah"
-            ]
-          },
-          {
-            "name": "East Region",
-            "areas": [
-              "Marine Parade",
-              "Katong",
-              "Joo Chiat",
-              "Bedok",
-              "Tampines",
-              "Pasir Ris",
-              "Changi",
-              "Geylang"
-            ]
-          },
-          {
-            "name": "North Region",
-            "areas": [
-              "Woodlands",
-              "Yishun",
-              "Sembawang",
-              "Mandai",
-              "Sungei Kadut"
-            ]
-          },
-          {
-            "name": "North-East Region",
-            "areas": [
-              "Hougang",
-              "Punggol",
-              "Sengkang",
-              "Serangoon",
-              "Ang Mo Kio"
-            ]
-          },
-          {
-            "name": "West Region",
-            "areas": [
-              "Jurong East",
-              "Jurong West",
-              "Bukit Batok",
-              "Clementi",
-              "Boon Lay",
-              "Choa Chu Kang"
-            ]
-          }
-        ],
-        "faqHeading": "Frequently Asked Questions",
-        "faqSubheading": "Get quick answers to common questions regarding our engineering, renovation, and maintenance services in Singapore.",
-        "faqsJson": "[{\"question\":\"What home improvement and renovation services do you provide in Singapore?\",\"answer\":\"We provide a wide range of home renovation and property improvement services in Singapore, including home and kitchen renovation, room beautification, open-plan space creation and C&R works, floor renovation and polishing, decking, decorative wall panels, steel works, awnings, painting, waterproofing, aluminium and glass works, electrical and lighting, plumbing, aircon repair, and solar panel installation.\"},{\"question\":\"How do I choose the right renovation or upgrading solution for my home?\",\"answer\":\"The right solution depends on your property's existing condition, layout, budget, intended use, and the improvements you want to make. We can assess your requirements and recommend practical options, whether you need a complete home renovation, a kitchen upgrade, exterior improvements, repairs, or smaller enhancement works.\"},{\"question\":\"How much does home renovation cost in Singapore?\",\"answer\":\"Home renovation costs vary depending on the size of the property, scope of work, materials, finishes, complexity, and required installation or repair work. A kitchen renovation, for example, will have different requirements from floor polishing, painting, waterproofing, or structural steel work. We recommend assessing the actual scope before providing a project-specific quotation.\"},{\"question\":\"Can you handle multiple renovation and improvement works in one project?\",\"answer\":\"Yes. We can coordinate different types of property improvement works under one project, such as renovation, painting, waterproofing, flooring, aluminium and glass works, steel fabrication, electrical work, plumbing, and other services. Having related works coordinated together can make the renovation process more convenient and efficient for property owners.\"},{\"question\":\"Do you provide customised steel gates, grilles, awnings and roof extensions?\",\"answer\":\"Yes. We provide steel fabrication and installation services, including main gates, grille work, balcony shelters, roof extensions, and customised awning shelters. Solutions can be tailored according to the property's design, available space, functional requirements, and project specifications.\"},{\"question\":\"What can I do if my property has water leakage or waterproofing problems?\",\"answer\":\"Water leakage should be investigated to identify the likely source before selecting a waterproofing solution. We provide waterproofing services in Singapore for suitable property improvement and maintenance requirements. We can assess the affected area and recommend an appropriate waterproofing approach based on the condition of the property.\"},{\"question\":\"Do you provide aluminium, glass, skylight, blinds and mosquito net installation?\",\"answer\":\"Yes. Our aluminium and glass services include installation and repair, skylight installation, mosquito net installation, glass protection films, zip blinds, and various types of blind fabrication and installation. These solutions can improve natural lighting, ventilation, privacy, comfort, and the overall appearance of your home.\"},{\"question\":\"Can you help with electrical, plumbing and aircon problems during renovation?\",\"answer\":\"Yes. We provide electrical and lighting work, plumbing services, and aircon repair as part of our property improvement and maintenance services. Addressing these works alongside renovation can help property owners coordinate essential building services with other improvement works.\"},{\"question\":\"Can you help transform an existing room into an open-plan space?\",\"answer\":\"Yes. We provide open-plan space creation and C&R works for suitable properties. Depending on the existing layout and requirements, we can help create a more open and functional living environment. Any proposed works should take into account the property's existing structure, services, and applicable requirements.\"},{\"question\":\"Do you provide solar panel installation for homes and properties in Singapore?\",\"answer\":\"Yes. We provide solar panel installation services in Singapore for suitable properties. The feasibility of a solar installation depends on factors such as available roof space, roof condition, shading, orientation, and electrical requirements. We can assess the project requirements and recommend a suitable installation approach.\"}]",
-        "servicesIntro": "Get professional renovation, painting, waterproofing, structural works, M&E services, and solar panel installation-all under one roof."
+        "processStep4Image": "/images/home/process/handover.png"
       },
       "seo": {
         "metaTitle": "UA Engineering PTE. LTD. | Singapore Engineering & Renovation",
         "metaDescription": "UA Engineering PTE. LTD. provides renovation, waterproofing, steel works, roofing, electrical, plumbing, aircon, aluminium glazing and maintenance services across Singapore.",
         "metaKeywords": "UA Engineering, Singapore Renovation, Waterproofing Singapore, Roof Extension, Steel Works, Electrical Services, Plumbing Services, Aircon Repair, Aluminium Works, Engineering Company Singapore",
-        "schemaJson": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"LocalBusiness\",\n  \"name\": \"UA Engineering Pte Ltd\",\n  \"image\": \"https://ua-engineering.com/images/logo.png\",\n  \"address\": {\n    \"@type\": \"PostalAddress\",\n    \"streetAddress\": \"38C Sea Avenue Marine Mansion\",\n    \"addressLocality\": \"Singapore\",\n    \"postalCode\": \"424256\"\n  },\n  \"telephone\": \"+65 8459 3003\"\n}"
+        "schemaJson": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"LocalBusiness\",\n  \"name\": \"UA Engineering Pte Ltd\"\n}"
       }
     },
     "about": {
       "content": {
         "heroHeading": "About UA Engineering",
-        "heroSubheading": "UA Engineering is a Singapore-based company providing renovation, structural, glazing, electrical, plumbing, aircon, waterproofing, and solar solutions.",
+        "heroSubheading": "A dedicated team of licensed professional engineers and certified EHS compliance officers delivering high-quality construction works.",
         "heroImage": "/images/layout/about-bg.png",
         "aboutImage": "/images/home/about/about-main.jpg",
         "heroImageAlt": "UA Engineering Commercial Facility Builders",
         "sectionTag": "About Our Company",
-        "overviewHeading": "About Our Company",
-        "overviewText": "UA ENGINEERING PTE. LTD. is a trusted engineering and construction company. We deliver quality workmanship through highly skilled and certified professionals, BCA-compliant practices, and premium materials. With transparent pricing, a strong focus on safety, and reliable project management, we are committed to completing every project on time while exceeding our clients’ expectations. Your satisfaction, safety, and trust are at the heart of everything we do.",
+        "overviewHeading": "Why Choose UA Engineering For Renovation & Upgrading Services in Singapore",
+        "overviewText": "Looking for a dependable renovation and upgrading contractor in Singapore? UA ENGINEERING PTE. LTD. provides renovation, construction, and engineering services for HDB, BTO, condos, landed homes, commercial, and industrial properties.",
         "experienceYears": "15",
         "experienceTitle": "Years of Excellence",
         "experienceSubtitle": "Renovation & Upgrading Services",
         "trustHeading": "Why Property Owners Trust UA Engineering",
-        "highlightsJson": "[{\"text\":\"15+ Years Skilled Personnel\",\"icon\":\"Clock\"},{\"text\":\"Highly Skilled & Certified Workers\",\"icon\":\"Wrench\"},{\"text\":\"BCA Compliant Workmanship\",\"icon\":\"Award\"},{\"text\":\"Transparent & Competitive Pricing\",\"icon\":\"DollarSign\"},{\"text\":\"Premium Quality Materials\",\"icon\":\"ShieldCheck\"},{\"text\":\"Safety-First Construction Practices\",\"icon\":\"ShieldCheck\"},{\"text\":\"On-Time Project Completion\",\"icon\":\"Clock\"},{\"text\":\"100% Commitment to Client Satisfaction\",\"icon\":\"ThumbsUp\"}]",
+        "highlightsJson": "[{\"text\":\"15+ Years of Industry Experience\",\"icon\":\"Clock\"},{\"text\":\"Highly Skilled & Certified Workers\",\"icon\":\"Wrench\"},{\"text\":\"BCA & HDB Compliant Workmanship\",\"icon\":\"Award\"},{\"text\":\"Transparent & Competitive Pricing\",\"icon\":\"DollarSign\"},{\"text\":\"Premium Quality Materials\",\"icon\":\"ShieldCheck\"},{\"text\":\"Safety-First Construction Practices\",\"icon\":\"ShieldCheck\"},{\"text\":\"On-Time Project Completion\",\"icon\":\"Clock\"},{\"text\":\"100% Commitment to Client Satisfaction\",\"icon\":\"ThumbsUp\"}]",
         "ehsHeading": "EHS Safety Policy & Environmental Compliance",
         "ehsText": "We maintain a Zero-Accident policy across all site operations. Our EHS compliance officers inspect structural rigs, high-voltage lines, and confined space setups daily to protect our workers and clients.",
         "ehsImage": "/images/home/about/about-main.jpg",
@@ -331,14 +141,14 @@
         "residentialHeading": "Complete Renovation, Engineering & Property Improvement Services",
         "residentialSubheading": "UA Engineering provides complete renovation, structural, waterproofing, electrical, plumbing, aluminium, and solar panel solutions for residential, commercial, and industrial properties across Singapore.",
         "faqBadge": "FAQ'S",
-        "faqHeading": "Frequently Asked Questions",
-        "faqSubheading": "Got questions about our engineering & renovation services in Singapore?",
-        "faqsJson": "[{\"question\":\"1. What services does UA Engineering provide?\",\"answer\":\"UA Engineering provides a comprehensive range of renovation and engineering services, including residential and commercial renovation, structural works, glazing, aluminium works, electrical, plumbing, air-conditioning, waterproofing, and solar panel solutions.\"},{\"question\":\"2. Does UA Engineering handle both residential and commercial projects?\",\"answer\":\"Yes. We undertake projects for residential, commercial, and industrial properties across Singapore. Our team can manage projects of different sizes and requirements, from individual renovation works to complete property improvement projects.\"},{\"question\":\"3. How does the renovation process work?\",\"answer\":\"Our process begins with a consultation and site assessment, followed by a detailed proposal and project planning. Once approved, our skilled team carries out the works under professional supervision and quality control. The project concludes with final inspection, handover, site cleaning, and after-sales support.\"},{\"question\":\"4. Do you provide a detailed quotation before starting work?\",\"answer\":\"Yes. We provide transparent, itemised quotations outlining the project scope, materials, pricing, and expected timeline. This helps clients understand the costs clearly and minimise unexpected charges during the project.\"},{\"question\":\"5. Are your workers skilled and certified?\",\"answer\":\"Yes. UA Engineering works with highly skilled and certified professionals who follow applicable industry requirements and established safety and quality practices. Experienced supervision is maintained throughout the project to ensure professional execution.\"},{\"question\":\"6. Do you provide waterproofing, plumbing, electrical and air-conditioning services?\",\"answer\":\"Yes. We provide a wide range of essential property services, including waterproofing, plumbing, electrical works, and air-conditioning solutions. These services can be carried out as individual works or integrated into a larger renovation or engineering project.\"},{\"question\":\"7. How does UA Engineering ensure quality and timely project completion?\",\"answer\":\"We use structured project planning, experienced supervision, quality inspections, premium materials, and professional workmanship throughout each stage. Our team focuses on safety, quality control, clear communication, and efficient scheduling to deliver projects reliably and on time.\"}]"
+        "faqHeading": "FAQ's: Looking for Answers?",
+        "faqSubheading": "Find expert answers to common questions about our renovation, construction, and handyman services in Singapore.",
+        "faqsJson": "[{\"question\":\"How long has UA Engineering PTE. LTD. been serving Singapore?\",\"answer\":\"UA Engineering PTE. LTD. has been a trusted contractor in Singapore's renovation and engineering industry for over 15 years. Over the years, we've built a strong reputation for delivering high-quality renovation, partition, waterproofing, and structural upgrades for residential, commercial, and industrial properties.\"},{\"question\":\"What sets UA Engineering apart from other contractors in Singapore?\",\"answer\":\"What sets us apart is our professional specialization, certified engineering teams (such as EMA-certified electricians), transparency in quoting, and adherence to Singapore building safety guidelines (HDB/BCA).\"},{\"question\":\"Do you offer free site inspections and consultations?\",\"answer\":\"Yes, we believe in empowering our clients with the information they need to make informed decisions. We offer free, no-obligation site assessments and detailed consultations.\"},{\"question\":\"How do you ensure safety and quality control on site?\",\"answer\":\"Safety is our absolute priority and is non-negotiable. We strictly follow Workplace Safety and Health (WSH) guidelines on all project sites.\"}]"
       },
       "seo": {
         "metaTitle": "About Us | UA Engineering PTE. LTD.",
         "metaDescription": "Learn more about UA Engineering's team, licensed professional engineers, safety track record, and commercial construction capability in Singapore.",
-        "metaKeywords": "about UA engineering, site engineers Singapore, certified contractors Singapore, BCA registered contractor",
+        "metaKeywords": "about UA engineering, site engineers Singapore, certified contractors Singapore",
         "schemaJson": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"AboutPage\",\n  \"name\": \"About UA Engineering Pte Ltd\"\n}"
       }
     },
@@ -346,15 +156,15 @@
       "content": {
         "heroHeading": "Our Engineering Services",
         "heroSubheading": "Professional solutions covering plumbing, substation electrical networks, waterproofing membranes, drywall, tiling, hacking, and solar panels.",
-        "heroImage": "/images/layout/services-bg.png",
+        "heroImage": "/images/services/services-bg.jpg",
         "heroImageAlt": "UA Engineering Substation Electrical Rewiring Grid",
         "servicesHeading": "Singapore Building and Construction Capability",
         "servicesSubheading": "We handle commercial, industrial, and residential upgrades. All works are certified by BCA registered professional engineers."
       },
       "seo": {
         "metaTitle": "Our Services | Substation Electrical, Plumbing, Waterproofing",
-        "metaDescription": "Explore our commercial and industrial services in Singapore. We specialize in plumbing layout, substation electrical grids, concrete hacking, and solar roof setups.",
-        "metaKeywords": "substation electrical works, commercial plumbing Singapore, industrial concrete demolition, commercial solar array",
+        "metaDescription": "Explore our commercial and industrial services in Singapore.",
+        "metaKeywords": "substation electrical works, commercial plumbing Singapore",
         "schemaJson": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Service\"\n}"
       }
     },
@@ -362,15 +172,15 @@
       "content": {
         "heroHeading": "Our Completed Projects",
         "heroSubheading": "A catalog of successfully delivered commercial, retail, and residential projects reflecting structural engineering precision and quality.",
-        "heroImage": "/images/layout/projects-bg.png",
+        "heroImage": "/images/projects/projects-bg.jpg",
         "heroImageAlt": "UA Engineering Commercial Drywall Alteration Project",
         "portfolioHeading": "Featured Engineering Contracts",
-        "portfolioSubheading": "Review our portfolio of successfully delivered projects in Singapore, including shopping mall drywalls, substation setups, and waterproofing flat roofs."
+        "portfolioSubheading": "Review our portfolio of successfully delivered projects in Singapore."
       },
       "seo": {
         "metaTitle": "Completed Projects | UA Engineering Portfolio",
-        "metaDescription": "Review our portfolio of successfully delivered projects in Singapore, including shopping mall drywalls, substation setups, and waterproofing flat roofs.",
-        "metaKeywords": "engineering portfolio Singapore, substation works Singapore, commercial plumbing project, solar roof layout",
+        "metaDescription": "Review our portfolio of successfully delivered projects in Singapore.",
+        "metaKeywords": "engineering portfolio Singapore, substation works Singapore",
         "schemaJson": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"CollectionPage\"\n}"
       }
     },
@@ -378,15 +188,15 @@
       "content": {
         "heroHeading": "Engineering & Safety Resources",
         "heroSubheading": "Professional insights, building codes, EHS checklists, and tips on flat roof waterproofing and electrical safety upgrades in HDBs.",
-        "heroImage": "/images/layout/blog-bg.png",
+        "heroImage": "/images/blog/blog-bg.jpg",
         "heroImageAlt": "UA Engineering BTO Renovation Checklist Documents",
         "blogHeading": "Latest Insights & Field Manuals",
-        "blogSubheading": "Stay up-to-date with Singapore BCA and HDB guidelines. Our registered engineers share field checklists, tips, and safety articles."
+        "blogSubheading": "Stay up-to-date with Singapore BCA and HDB guidelines."
       },
       "seo": {
         "metaTitle": "Blog & Engineering Resources | UA Engineering",
-        "metaDescription": "Read the latest engineering articles, safety tips, BTO renovation rules, and electrical rewiring checklists written by our expert engineers.",
-        "metaKeywords": "engineering blog, BTO renovation tips, electrical safety HDB, Singapore building code audit",
+        "metaDescription": "Read the latest engineering articles, safety tips, BTO renovation rules, and electrical rewiring checklists.",
+        "metaKeywords": "engineering blog, BTO renovation tips",
         "schemaJson": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Blog\"\n}"
       }
     },
@@ -394,7 +204,7 @@
       "content": {
         "heroHeading": "Contact UA Engineering",
         "heroSubheading": "Get in touch for commercial quotations, structural surveys, emergency substation audits, or custom plumbing design layout consultations.",
-        "heroImage": "/images/layout/contact-bg.png",
+        "heroImage": "/images/contact/contact-bg.jpg",
         "heroImageAlt": "UA Engineering Singapore Customer Support Center",
         "contactAddress": "38C Sea Avenue Marine Mansion Singapore 424256",
         "contactPhone": "+65 8459 3003",
@@ -403,8 +213,8 @@
       },
       "seo": {
         "metaTitle": "Contact Us | UA Engineering PTE. LTD.",
-        "metaDescription": "Request a callback or quotation from UA Engineering Singapore. Visit our office, email us, or call for immediate high-voltage substation checks.",
-        "metaKeywords": "contact UA engineering, Singapore engineer inspection, substation maintenance quotation",
+        "metaDescription": "Request a callback or quotation from UA Engineering Singapore.",
+        "metaKeywords": "contact UA engineering, Singapore engineer inspection",
         "schemaJson": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"ContactPage\"\n}"
       }
     }
@@ -413,15 +223,126 @@
     {
       "slug": "renovation-upgrading",
       "title": "Renovation & Upgrading",
+      "breadcrumbTitle": "Renovation & Upgrading Solutions",
+      "detailTitle": "Professional Renovation & Property Upgrading in Singapore",
+      "subServicesTitle": "Our Renovation & Upgrading Services",
+      "subServicesSubheading": "Customised residential and commercial renovation solutions crafted for modern living, high durability, and superior quality finish.",
       "shortDescription": "Transform homes, offices, and commercial spaces with tailored renovations, interior upgrades, quality finishes, and expert project execution.",
       "description": "We help homeowners and property owners achieve beautiful, practical spaces through professional renovation solutions built on trust, precision, and proven expertise.",
-      "featuredImage": "/images/services/service_0_featuredImage_1788760396236_4501.webp",
-      "bgImage": "/images/services/service_0_bgImage_1788760396290_2012.webp",
+      "featuredImage": "/images/services/renovation.png",
+      "bgImage": "/images/layout/breadcrumb-bg.png",
+      "targetBadge": "PROJECT COVERAGE",
+      "targetHeading": "Properties & Spaces We Renovate",
+      "targetSubheading": "From HDB flats to commercial offices, our experienced project team handles all renovation works with precision.",
+      "targetSpaces": [
+        "HDB 3-Room, 4-Room, 5-Room & Executive Apartments",
+        "BTO Flats & Resale HDB Units",
+        "Condominium Apartments & Penthouses",
+        "Landed Houses & Bungalows",
+        "Commercial Offices & Retail Stores",
+        "Industrial Premises & Warehouses"
+      ],
+      "whyChooseBadge": "UA ADVANTAGE",
+      "whyChooseHeading": "Why Choose UA Engineering For Renovation?",
+      "whyChooseLeftTitle": "Challenges Property Owners Face",
+      "whyChooseRightTitle": "The UA Engineering Solution",
+      "whyChooseAdvantages": [
+        {
+          "title": "Single-Point Project Management",
+          "description": "One dedicated project manager coordinates all demolition, masonry, carpentry, plumbing, and electrical works efficiently."
+        },
+        {
+          "title": "BCA & HDB Compliance Guaranteed",
+          "description": "All hacking, structural alterations, and installations adhere strictly to Singapore renovation guidelines and safety standards."
+        },
+        {
+          "title": "Transparent Itemised Pricing",
+          "description": "No hidden charges or unexpected variation orders. Clear pricing provided upfront with itemised bill of quantities."
+        },
+        {
+          "title": "Quality Workmanship & After-Sales Support",
+          "description": "Premium grade materials, skilled certified tradesmen, and reliable after-sales support for complete peace of mind."
+        }
+      ],
+      "whyChooseChallenges": [
+        {
+          "title": "Managing Multiple Independent Contractors",
+          "description": "Dealing with separate hacking, tiling, and carpentry contractors leads to miscommunication and project delays."
+        },
+        {
+          "title": "Unclear Quotations & Hidden Costs",
+          "description": "Low upfront estimates that suddenly surge due to unlisted mandatory installation and disposal fees."
+        },
+        {
+          "title": "Substandard Materials & Rushed Workmanship",
+          "description": "Use of poor quality timber, tiles, or adhesives causing early cracks, warping, and water leaks."
+        },
+        {
+          "title": "Non-Compliant Hacking Works",
+          "description": "Unauthorised hacking of load-bearing walls leading to structural risks and municipal penalties."
+        }
+      ],
+      "features": [
+        "Full Interior & Exterior Renovation Planning",
+        "HDB & Condominium Compliant Demolition & Hacking",
+        "Custom Cabinetry & Custom Carpentry Design",
+        "Floor Tiling, Vinyl Flooring & Marble Polishing",
+        "Ceiling Board & Partition Wall Installation",
+        "Complete Electrical Rewiring & Lighting Setup"
+      ],
+      "benefits": [
+        "Comprehensive end-to-end renovation managed by single experienced contractor.",
+        "Strict compliance with HDB, BCA, and condo management guidelines.",
+        "High quality materials for long-lasting aesthetic and structural durability.",
+        "Clear upfront quotation with detailed breakdown and fixed delivery timeline."
+      ],
+      "processHeading": "Our Renovation Project Workflow",
+      "processText": "From initial design layout to final handover, we follow a systematic process to deliver exceptional renovation results on schedule.",
+      "processSteps": [
+        {
+          "title": "Consultation & Layout Planning",
+          "description": "We discuss your vision, space requirements, budget, and draft initial floor plan layouts."
+        },
+        {
+          "title": "Detailed Quotation & Permits",
+          "description": "Transparent quotation breakdown and submission of required HDB / BCA permits."
+        },
+        {
+          "title": "Demolition & Masonry Works",
+          "description": "Careful hacking, wall erection, wet works, and floor tile installation under strict supervision."
+        },
+        {
+          "title": "M&E Works & Carpentry Fabrication",
+          "description": "Electrical rewiring, plumbing pipe installation, and custom carpentry fabrication."
+        },
+        {
+          "title": "Finishing & Quality Inspection",
+          "description": "Painting, light fitting installation, deep site cleaning, and comprehensive final QA walkthrough."
+        }
+      ],
+      "serviceAreasBadge": "COVERAGE",
+      "serviceAreasHeading": "Serving All Regions Across Singapore",
+      "serviceAreasSubheading": "Our teams deploy islandwide across North, South, East, West, and Central Singapore.",
+      "faqs": [
+        {
+          "question": "How long does a typical HDB home renovation take?",
+          "answer": "A complete HDB home renovation typically takes between 4 to 8 weeks depending on the scope of hacking, tiling, and custom carpentry required."
+        },
+        {
+          "question": "Do you assist with obtaining HDB and condo renovation permits?",
+          "answer": "Yes, UA Engineering handles all necessary permit applications and submissions to HDB, BCA, and condo management prior to commencing works."
+        },
+        {
+          "question": "Are your quotations fixed with no hidden fees?",
+          "answer": "All our quotations are itemised with transparent pricing. Any changes requested during the project are agreed upon in writing before execution."
+        }
+      ],
       "services": [
         {
           "slug": "home-renovation",
           "title": "Home Renovation",
-          "image": "/images/services/service_0_services_0_image_1788760396294_6882.webp",
+          "image": "/images/services/sub_home_reno.png",
+          "breadcrumbBg": "/images/layout/breadcrumb-bg.png",
           "description": "Transform your HDB, condo, or landed property with customised home renovation solutions designed for modern living, comfort, functionality, and long-term value.",
           "longDescription": "Create a home that reflects your lifestyle with UA Engineering's professional Home Renovation Services in Singapore. We specialise in renovating HDB flats, condominiums, and landed homes by improving layouts, maximising usable space, and upgrading interiors for better comfort and functionality. Whether you're renovating an ageing property or preparing a newly purchased home, our experienced team delivers practical renovation solutions with quality workmanship, efficient project coordination, and compliance with Singapore renovation guidelines.",
           "features": [
@@ -443,8 +364,7 @@
             "Site Survey: Measure the property and assess existing conditions.",
             "Planning: Prepare layouts, material selections, and project schedule.",
             "Renovation Works: Carry out demolition, installation, and finishing works.",
-            "Quality Inspection: Inspect workmanship and complete all necessary touch-ups.",
-            "Project Handover: Final walkthrough, site cleaning, and customer handover."
+            "Quality Inspection: Inspect workmanship and complete all necessary touch-ups."
           ],
           "processSteps": [
             {
@@ -466,230 +386,144 @@
             {
               "title": "Quality Inspection",
               "description": "Inspect workmanship and complete all necessary touch-ups."
-            },
-            {
-              "title": "Project Handover",
-              "description": "Final walkthrough, site cleaning, and customer handover."
             }
           ]
         },
         {
           "slug": "kitchen-renovation",
           "title": "Kitchen Renovation",
-          "image": "/images/services/service_0_services_1_image_1788760396297_2340.webp",
-          "description": "Upgrade your kitchen with smart layouts, durable cabinetry, and stylish finishes that maximise storage, efficiency, and everyday convenience for Singapore homes.",
-          "longDescription": "Transform your cooking space with UA Engineering's professional Kitchen Renovation Services in Singapore. We design and renovate functional kitchens for HDB flats, condominiums, and landed homes, combining smart layouts with quality materials and efficient storage solutions. From cabinet replacement and countertop installation to tiling and plumbing coordination, we deliver practical kitchen renovations that improve workflow, maximise space, and enhance everyday living.",
+          "image": "/images/services/sub_kitchen_reno.png",
+          "breadcrumbBg": "/images/layout/breadcrumb-bg.png",
+          "description": "Upgrade your kitchen with smart layouts, durable cabinetry, and stylish finishes that maximise functionality and aesthetics.",
+          "longDescription": "Transform your cooking space into a highly functional and modern kitchen. We provide custom kitchen cabinets, countertop installation, wall tiling, plumbing point relocations, and appliances integration tailored to your everyday culinary needs.",
           "features": [
-            "Kitchen Layout Planning",
-            "Custom Kitchen Cabinet Installation",
-            "Quartz & Solid Surface Countertops",
-            "Kitchen Wall & Floor Tiling",
-            "Sink & Plumbing Coordination",
-            "Storage Optimisation Solutions"
+            "Custom Kitchen Cabinets & Islands",
+            "Quartz & Granite Countertop Fitting",
+            "Kitchen Sink & Plumbing Relocation",
+            "Backsplash Tiling & Waterproofing",
+            "Appliance Integration & Wiring"
           ],
           "benefits": [
-            "Practical kitchen layouts designed for everyday cooking and storage.",
-            "Quality cabinetry with durable hardware and premium finishes.",
-            "Experienced project coordination for smooth renovation progress.",
-            "Tailored solutions for HDB, condo, and landed properties."
+            "Ergonomic kitchen layout for smooth workflow and cooking comfort.",
+            "Water-resistant and heat-durable countertop and cabinet materials.",
+            "Enhanced storage solutions with soft-close hardware and pull-out drawers."
           ],
           "process": [
-            "Consultation: Discuss kitchen layout, storage, and lifestyle requirements.",
-            "Site Measurement: Measure the kitchen and assess renovation requirements.",
-            "Design Planning: Confirm layout, materials, and countertop selection.",
-            "Renovation Works: Install cabinets, countertops, tiling, and plumbing fixtures.",
-            "Finishing: Complete adjustments, detailing, and final fittings.",
-            "Handover: Inspect completed work and hand over your new kitchen."
+            "Initial Assessment: Inspect existing kitchen space and plumbing points.",
+            "Design & Material Selection: Choose cabinet laminates and countertop stone.",
+            "Fabrication & Installation: Precision installation of cabinets and countertops."
           ],
           "processSteps": [
             {
-              "title": "Consultation",
-              "description": "Discuss kitchen layout, storage, and lifestyle requirements."
+              "title": "Initial Assessment",
+              "description": "Inspect existing kitchen space and plumbing points."
             },
             {
-              "title": "Site Measurement",
-              "description": "Measure the kitchen and assess renovation requirements."
+              "title": "Design & Selection",
+              "description": "Choose cabinet laminates and countertop stone."
             },
             {
-              "title": "Design Planning",
-              "description": "Confirm layout, materials, and countertop selection."
-            },
-            {
-              "title": "Renovation Works",
-              "description": "Install cabinets, countertops, tiling, and plumbing fixtures."
-            },
-            {
-              "title": "Finishing",
-              "description": "Complete adjustments, detailing, and final fittings."
-            },
-            {
-              "title": "Handover",
-              "description": "Inspect completed work and hand over your new kitchen."
+              "title": "Installation",
+              "description": "Precision installation of cabinets and countertops."
             }
           ]
         },
         {
           "slug": "room-beautification",
           "title": "Room Beautification",
-          "image": "/images/services/service_0_services_2_image_1788760396301_2485.webp",
-          "description": "Refresh bedrooms, living rooms, and study spaces with elegant interior upgrades that create a comfortable, stylish, and personalised environment for your family.",
-          "longDescription": "Enhance the comfort and appearance of your home with UA Engineering's Room Beautification Services in Singapore. We upgrade bedrooms, living rooms, and study spaces through customised interior enhancements, decorative finishes, space optimisation, and quality built-in features. Every project is designed to create a welcoming environment that reflects your lifestyle while improving functionality and visual appeal.",
+          "image": "/images/services/sub_room_beautification.png",
+          "breadcrumbBg": "/images/layout/breadcrumb-bg.png",
+          "description": "Refresh bedrooms, living rooms, and study spaces with elegant interior upgrades that create a welcoming atmosphere.",
+          "longDescription": "Enhance the aesthetic appeal of individual rooms with custom wall paneling, ambient cove lighting, built-in wardrobes, feature walls, and fresh interior paint.",
           "features": [
-            "Interior Space Enhancement",
-            "Decorative Feature Walls",
-            "Built-in Wardrobes & Storage",
-            "Ceiling Design Improvements",
-            "Decorative Wall Panel Installation",
-            "Interior Finishing Coordination"
+            "Feature Wall & Fluted Panel Installation",
+            "False Ceiling & Ambient Cove Lighting",
+            "Built-in Wardrobes & Display Units",
+            "Premium Interior Wall Painting"
           ],
           "benefits": [
-            "Personalised room designs tailored to your lifestyle.",
-            "Modern finishes that enhance comfort and aesthetics.",
-            "Quality craftsmanship with attention to every detail.",
-            "Efficient renovation with minimal disruption."
+            "Modern visual transformation without full structural hacking.",
+            "Maximised vertical storage with custom-fitted wardrobe designs.",
+            "Improved lighting ambiance tailored for relaxation or productivity."
           ],
           "process": [
-            "Consultation: Understand your design preferences and room requirements.",
-            "Site Assessment: Evaluate room dimensions and existing conditions.",
-            "Design Selection: Confirm finishes, materials, and renovation scope.",
-            "Installation: Carry out enhancement works with precision.",
-            "Final Detailing: Complete finishing touches and quality checks.",
-            "Project Completion: Clean the area and hand over the completed space."
+            "Concept Discussion: Select feature wall designs and color schemes.",
+            "On-site Fitting: Precise assembly of wall panels and lighting fixtures."
           ],
           "processSteps": [
             {
-              "title": "Consultation",
-              "description": "Understand your design preferences and room requirements."
+              "title": "Concept Discussion",
+              "description": "Select feature wall designs and color schemes."
             },
             {
-              "title": "Site Assessment",
-              "description": "Evaluate room dimensions and existing conditions."
-            },
-            {
-              "title": "Design Selection",
-              "description": "Confirm finishes, materials, and renovation scope."
-            },
-            {
-              "title": "Installation",
-              "description": "Carry out enhancement works with precision."
-            },
-            {
-              "title": "Final Detailing",
-              "description": "Complete finishing touches and quality checks."
-            },
-            {
-              "title": "Project Completion",
-              "description": "Clean the area and hand over the completed space."
+              "title": "On-site Fitting",
+              "description": "Precise assembly of wall panels and lighting fixtures."
             }
           ]
         },
         {
-          "slug": "open-plan-spaces",
+          "slug": "create-open-plan-spaces",
           "title": "Create Open Plan Spaces (C&R Works)",
-          "image": "/images/services/service_0_services_3_image_1788760396303_8147.webp",
-          "description": "Create spacious and modern open-plan living areas with professional C&R works, ensuring safe structural modifications and compliance with Singapore regulations.",
-          "longDescription": "Create brighter and more spacious interiors with UA Engineering's C&R (Construction & Reconstruction) Services in Singapore. We perform professional wall removal, structural modifications, and space reconfiguration to improve flow and maximise usable living areas. Every project is carefully planned and executed in compliance with HDB and Singapore building regulations.",
+          "image": "/images/services/sub_open_plan.png",
+          "breadcrumbBg": "/images/layout/breadcrumb-bg.png",
+          "description": "Create spacious and modern open-plan living areas with professional C&R works, ensuring safe wall removal and structural integrity.",
+          "longDescription": "Maximise light and natural airflow by merging living and dining areas. We manage non-structural wall hacking, beam reinforcement checks, and floor seamlessly matching.",
           "features": [
-            "Site Assessment & Structural Review",
-            "Non-Load Bearing Wall Removal",
-            "Masonry & Reconstruction Works",
-            "Space Reconfiguration",
-            "BCA Compliance Coordination",
-            "Site Restoration & Finishing"
+            "Non-Load Bearing Wall Demolition",
+            "Structural PE Endorsement & Permits",
+            "Seamless Floor Tile Patching",
+            "Ceiling & Lighting Extension"
           ],
           "benefits": [
-            "Safe structural modifications following Singapore regulations.",
-            "Professional planning before any alteration begins.",
-            "Experienced masonry and reconstruction specialists.",
-            "Neat execution with careful quality supervision."
+            "Spacious and airy interior layout ideal for modern entertaining.",
+            "Increased natural daylight throughout the home.",
+            "Engineered structural safety compliance."
           ],
           "process": [
-            "Site Inspection: Assess structural conditions and project feasibility.",
-            "Planning: Prepare renovation scope and compliance requirements.",
-            "Approval: Coordinate necessary renovation approvals where required.",
-            "Construction Works: Carry out demolition and reconstruction safely.",
-            "Site Restoration: Complete masonry finishing and clean the work area.",
-            "Final Inspection: Inspect completed works before project handover."
+            "Structural Verification: Ensure wall removal is safe and permitted.",
+            "Controlled Demolition: Dust-controlled hacking and debris removal."
           ],
           "processSteps": [
             {
-              "title": "Site Inspection",
-              "description": "Assess structural conditions and project feasibility."
+              "title": "Structural Verification",
+              "description": "Ensure wall removal is safe and permitted."
             },
             {
-              "title": "Planning",
-              "description": "Prepare renovation scope and compliance requirements."
-            },
-            {
-              "title": "Approval",
-              "description": "Coordinate necessary renovation approvals where required."
-            },
-            {
-              "title": "Construction Works",
-              "description": "Carry out demolition and reconstruction safely."
-            },
-            {
-              "title": "Site Restoration",
-              "description": "Complete masonry finishing and clean the work area."
-            },
-            {
-              "title": "Final Inspection",
-              "description": "Inspect completed works before project handover."
+              "title": "Controlled Demolition",
+              "description": "Dust-controlled hacking and debris removal."
             }
           ]
         },
         {
-          "slug": "floor-renovation",
+          "slug": "floor-renovation-polishing",
           "title": "Floor Renovation & Polishing",
-          "image": "/images/services/service_0_services_4_image_1788760396305_4609.webp",
-          "description": "Restore and upgrade your flooring with high-quality renovation and polishing services that enhance durability, appearance, and long-lasting protection.",
-          "longDescription": "Restore the beauty and durability of your floors with UA Engineering's professional Floor Renovation & Polishing Services in Singapore. We repair, replace, and polish a wide range of flooring materials to improve appearance, safety, and long-term performance for residential and commercial properties.",
+          "image": "/images/services/sub_floor_reno.png",
+          "breadcrumbBg": "/images/layout/breadcrumb-bg.png",
+          "description": "Restore and upgrade your flooring with high-quality renovation and polishing services that extend life and enhance appearance.",
+          "longDescription": "Renew worn-out floors with professional marble polishing, parquet sanding, vinyl overlay installation, and ceramic tile replacement for pristine finishes.",
           "features": [
-            "Floor Surface Assessment",
-            "Tile Replacement & Repairs",
-            "Vinyl Flooring Installation",
-            "Marble & Homogeneous Tile Polishing",
-            "Floor Levelling",
-            "Protective Surface Finishing"
+            "Marble & Natural Stone Diamond Polishing",
+            "Parquet Wood Sanding & Varnishing",
+            "Heavy-Duty SPC Vinyl Floor Overlay",
+            "Tile Grout Restoration & Sealing"
           ],
           "benefits": [
-            "Professional flooring solutions for lasting durability.",
-            "Smooth, level finishes with quality workmanship.",
-            "Suitable for residential and commercial properties.",
-            "Reliable project scheduling and clean execution."
+            "Restores original luster and shine to aged stone and timber floors.",
+            "Cost-effective overlay solutions with zero hacking required.",
+            "Slip-resistant and scratch-durable protective sealants."
           ],
           "process": [
-            "Inspection: Assess floor condition and identify repair requirements.",
-            "Surface Preparation: Remove damaged flooring and prepare the substrate.",
-            "Material Selection: Confirm flooring materials and finish options.",
-            "Installation: Install or restore flooring with precision.",
-            "Polishing: Polish and protect completed floor surfaces.",
-            "Handover: Perform final inspection and site cleaning."
+            "Surface Preparation: Deep cleaning and levelling of sub-floor.",
+            "Grinding & Polishing: Multi-stage diamond pad grinding and sealing."
           ],
           "processSteps": [
-            {
-              "title": "Inspection",
-              "description": "Assess floor condition and identify repair requirements."
-            },
             {
               "title": "Surface Preparation",
-              "description": "Remove damaged flooring and prepare the substrate."
+              "description": "Deep cleaning and levelling of sub-floor."
             },
             {
-              "title": "Material Selection",
-              "description": "Confirm flooring materials and finish options."
-            },
-            {
-              "title": "Installation",
-              "description": "Install or restore flooring with precision."
-            },
-            {
-              "title": "Polishing",
-              "description": "Polish and protect completed floor surfaces."
-            },
-            {
-              "title": "Handover",
-              "description": "Perform final inspection and site cleaning."
+              "title": "Grinding & Polishing",
+              "description": "Multi-stage diamond pad grinding and sealing."
             }
           ]
         },
@@ -697,848 +531,981 @@
           "slug": "decking-work",
           "title": "Decking Work",
           "image": "/images/services/sub_decking.png",
-          "description": "Enhance balconies, patios, and outdoor spaces with durable decking solutions that combine weather resistance, safety, and elegant design.",
-          "longDescription": "Upgrade your outdoor living areas with UA Engineering's professional Decking Installation Services in Singapore. We design and install durable timber and composite decking for balconies, patios, gardens, and outdoor spaces that combine functionality, safety, and long-lasting performance in Singapore's tropical climate.",
+          "breadcrumbBg": "/images/layout/breadcrumb-bg.png",
+          "description": "Enhance balconies, patios, and outdoor spaces with durable decking solutions that combine aesthetics with weather resistance.",
+          "longDescription": "Extend your living space outwards with weather-resistant Composite Wood (WPC) or Chengal timber decking for balconies, roof terraces, and garden patios.",
           "features": [
-            "Timber Deck Installation",
-            "Composite Decking Systems",
-            "Balcony & Patio Decking",
-            "Outdoor Flooring Solutions",
-            "Anti-Slip Deck Finishes",
-            "Deck Repair & Replacement"
+            "WPC Composite Eco Decking Installation",
+            "Natural Chengal & Teak Wood Decking",
+            "Sub-Frame Aluminum Framing Support",
+            "Outdoor Timber Varnishing & Maintenance"
           ],
           "benefits": [
-            "Weather-resistant decking designed for Singapore conditions.",
-            "Quality materials with durable construction.",
-            "Custom decking layouts to suit your outdoor space.",
-            "Professional installation with precise workmanship."
+            "UV and water-resistant materials engineered for tropical climates.",
+            "Splinter-free and comfortable underfoot surface.",
+            "Low maintenance outdoor flooring solution."
           ],
           "process": [
-            "Consultation: Review outdoor space and decking requirements.",
-            "Site Measurement: Measure the installation area accurately.",
-            "Material Selection: Choose decking materials and finishing options.",
-            "Installation: Install decking framework and deck boards.",
-            "Finishing: Complete trimming and final detailing.",
-            "Project Handover: Inspect the completed deck and hand over the project."
+            "Framework Setup: Install anti-rust aluminum sub-frame structure.",
+            "Deck Board Fitting: Concealed clip fastening for smooth finish."
           ],
           "processSteps": [
             {
-              "title": "Consultation",
-              "description": "Review outdoor space and decking requirements."
+              "title": "Framework Setup",
+              "description": "Install anti-rust aluminum sub-frame structure."
             },
             {
-              "title": "Site Measurement",
-              "description": "Measure the installation area accurately."
-            },
-            {
-              "title": "Material Selection",
-              "description": "Choose decking materials and finishing options."
-            },
-            {
-              "title": "Installation",
-              "description": "Install decking framework and deck boards."
-            },
-            {
-              "title": "Finishing",
-              "description": "Complete trimming and final detailing."
-            },
-            {
-              "title": "Project Handover",
-              "description": "Inspect the completed deck and hand over the project."
+              "title": "Deck Board Fitting",
+              "description": "Concealed clip fastening for smooth finish."
             }
           ]
-        }
-      ],
-      "breadcrumbTitle": "Renovation & Upgrading Services",
-      "icon": "",
-      "features": [],
-      "benefits": [],
-      "process": [],
-      "faqs": [
-        {
-          "question": "What renovation services does UA Engineering provide?",
-          "answer": "We provide home, kitchen, room, flooring, decking, and open-plan renovation services, including C&R works."
-        },
-        {
-          "question": "Do you handle HDB, condo, and landed property renovations?",
-          "answer": "Yes. We provide customised renovation solutions for HDB flats, condominiums, and landed homes across Singapore."
-        },
-        {
-          "question": "Can UA Engineering help with creating open-plan spaces?",
-          "answer": "Yes. We handle C&R works, including site assessment, non-load-bearing wall removal, masonry, and reconstruction, while following Singapore regulations."
-        },
-        {
-          "question": "Do you provide customised renovation solutions?",
-          "answer": "Yes. Our team tailors renovation plans, layouts, materials, finishes, and built-in solutions to suit your space and requirements."
-        },
-        {
-          "question": "How do you ensure renovation projects stay on schedule and budget?",
-          "answer": "We use structured project management, transparent quotations, quality materials, and coordinated workmanship to keep projects organised and on track."
-        },
-        {
-          "question": "Does UA Engineering provide renovation services across Singapore?",
-          "answer": "Yes. We serve major areas across Singapore, including the Central, East, North, North-East, and West regions."
-        },
-        {
-          "question": "How can I get a quotation for my renovation project?",
-          "answer": "Contact UA Engineering through the Get Free Quote, WhatsApp, or Let Us Call You options and share your project requirements."
-        }
-      ],
-      "processHeading": "Our Working Process",
-      "processText": "Our structured renovation process transforms your Singapore property on time and budget. We manage design, structural permits, and premium built-in cabinetry.",
-      "processSteps": [
-        {
-          "title": "One-Site Meeting & Site Visit",
-          "description": "We assess your space, understand your needs, and identify the best renovation approach."
-        },
-        {
-          "title": "Planning & Proposal Making",
-          "description": "We create a clear renovation plan with scope, timeline, materials, and pricing."
-        },
-        {
-          "title": "Start Working & Quality Control",
-          "description": "Our team executes the project with strict supervision and consistent quality checks."
-        },
-        {
-          "title": "Functional Audit & Handover",
-          "description": "We inspect every detail, complete final checks, and hand over a ready-to-use space."
-        }
-      ],
-      "targetSpaces": [],
-      "whyChooseLeftTitle": "Our Renovation & Upgrading",
-      "whyChooseRightTitle": "Traditional Renovation Companies",
-      "whyChooseAdvantages": [
-        {
-          "title": "Smart Space Planning",
-          "description": "We use digital layout planning and modern design tools to optimize every square foot of your home, creating functional, stylish, and efficient living spaces."
-        },
-        {
-          "title": "Minimal Disruption Process",
-          "description": "Our organised workflow, dust-control measures, and efficient project coordination reduce noise, mess, and inconvenience during renovation works."
-        },
-        {
-          "title": "Premium Materials & Finishes",
-          "description": "We source durable, high-quality materials and apply advanced installation techniques to ensure long-lasting performance and a refined finish."
-        },
-        {
-          "title": "Skilled & Certified Team",
-          "description": "Our BCA-compliant workmanship and experienced project specialists deliver reliable results with strict attention to safety and quality standards."
-        }
-      ],
-      "whyChooseChallenges": [
-        {
-          "title": "Outdated Planning Methods",
-          "description": "Traditional contractors may rely on basic planning, resulting in inefficient layouts, wasted space, and design changes during the project."
-        },
-        {
-          "title": "Delays & Poor Coordination",
-          "description": "Without a structured workflow, projects can face delays, miscommunication, and extended renovation timelines that disrupt daily life."
-        },
-        {
-          "title": "Inconsistent Workmanship",
-          "description": "Some contractors use lower-grade materials or outdated techniques, leading to uneven finishes and frequent repair needs"
-        },
-        {
-          "title": "Limited Quality Assurance",
-          "description": "Traditional processes may lack proper inspections, documentation, and systematic quality control, reducing confidence in the final result."
         }
       ]
     },
     {
       "slug": "structural-exterior-works",
       "title": "Structural & Exterior Works",
-      "shortDescription": "Strengthen and protect your property with structural repairs, roofing, steel works, gate, grill, masonry, and durable exterior improvement solutions.",
-      "description": "UA ENGINEERING provides professional structural and exterior works for homes and businesses in Singapore. Our skilled team delivers steel fabrication, roof extensions, gates, grills, balcony shelters, and awnings built for durability.",
-      "featuredImage": "/images/services/service_1_featuredImage_1788760396307_2492.webp",
-      "bgImage": "/images/services/service_1_bgImage_1788760396309_9494.webp",
+      "breadcrumbTitle": "Structural & Exterior Engineering",
+      "detailTitle": "Heavy-Duty Structural Steel & Exterior Works Singapore",
+      "subServicesTitle": "Our Structural & Exterior Services",
+      "subServicesSubheading": "Custom steel fabrication, roof extensions, gates, grills, and structural additions built for extreme strength and longevity.",
+      "shortDescription": "Strengthen and protect your property with structural repairs, roofing, steel works, gate, grill, masonry, and durable exterior solutions.",
+      "description": "UA Engineering designs, fabricates, and installs structural steel, metalwork, gates, railings, roof extensions, and exterior structures engineered for maximum durability and compliance.",
+      "featuredImage": "/images/services/structural.png",
+      "bgImage": "/images/layout/breadcrumb-bg.png",
+      "targetBadge": "APPLICATIONS",
+      "targetHeading": "Structural Engineering Applications",
+      "targetSubheading": "We handle custom structural steel fabrication and exterior building works for all sectors.",
+      "targetSpaces": [
+        "Commercial Buildings & Industrial Factories",
+        "Landed Residential Roof & Balcony Extensions",
+        "Warehouse Platforms & Mezzanine Floors",
+        "Exterior Gate & Security Perimeter Grills",
+        "Staircases, Catwalks & Fire Escapes"
+      ],
+      "whyChooseBadge": "STRUCTURAL EXPERTISE",
+      "whyChooseHeading": "Why UA Engineering For Structural Works?",
+      "whyChooseLeftTitle": "Structural Concerns",
+      "whyChooseRightTitle": "Our Engineering Guarantee",
+      "whyChooseAdvantages": [
+        {
+          "title": "PE Certified Structural Calculations",
+          "description": "All structural designs endorsed by Professional Engineers (PE) ensuring structural safety."
+        },
+        {
+          "title": "Precision Metal Welding & Anti-Rust Coating",
+          "description": "Hot-dip galvanised steel and high-grade primers preventing rust and corrosion."
+        },
+        {
+          "title": "Custom In-House Fabrication",
+          "description": "Fabricated to exact dimensions with minimal disruption during on-site installation."
+        }
+      ],
+      "whyChooseChallenges": [
+        {
+          "title": "Uncertified Welding & Poor Steel Quality",
+          "description": "Substandard structural joints vulnerable to stress fractures and collapse."
+        },
+        {
+          "title": "Premature Rusting & Paint Peeling",
+          "description": "Inadequate surface preparation causing steel oxidation within months."
+        }
+      ],
+      "features": [
+        "Custom Structural Steel Fabrication",
+        "Mezzanine Floor & Platform Construction",
+        "Main Entrance Gate & Stainless Steel Grills",
+        "Roof Extension & Canopy Metal Framework",
+        "Awning Shelter Fabrication & Fitting"
+      ],
+      "benefits": [
+        "Certified structural integrity compliant with BCA standards.",
+        "Weather-proof anti-corrosion treatment for outdoor installations.",
+        "Custom designed to complement building architecture."
+      ],
+      "processHeading": "Our Structural Fabrication Process",
+      "processText": "From PE design approval to factory fabrication and on-site crane hoisting.",
+      "processSteps": [
+        {
+          "title": "PE Calculation & Design",
+          "description": "Engineer load-bearing calculations and technical shop drawings."
+        },
+        {
+          "title": "Factory Fabrication",
+          "description": "Precision cutting, welding, and anti-rust galvanising."
+        },
+        {
+          "title": "Site Erection",
+          "description": "Safe on-site installation, anchoring, and final bolt torque checks."
+        }
+      ],
+      "serviceAreasBadge": "SINGAPORE WIDE",
+      "serviceAreasHeading": "Exterior & Steel Works Islandwide",
+      "serviceAreasSubheading": "Deploying certified welders and installation rigs across Singapore.",
+      "faqs": [
+        {
+          "question": "Do structural steel modifications require PE endorsement?",
+          "answer": "Yes, major structural works such as mezzanine floors and structural beam replacements require PE calculations and BCA permits."
+        },
+        {
+          "question": "Are your steel structures anti-rust treated?",
+          "answer": "Yes, all exterior steel structures undergo hot-dip galvanising or zinc-rich anti-corrosion primer coating before final painting."
+        }
+      ],
       "services": [
         {
-          "slug": "steel-work",
+          "slug": "all-kinds-of-steel-work",
           "title": "All Kinds of Steel Work",
-          "image": "/images/services/service_1_services_0_image_1788760396310_780.webp",
-          "description": "Expert steel fabrication and installation for durable, safe, customised structural solutions throughout Singapore properties.",
-          "longDescription": "UA ENGINEERING provides custom steel fabrication and installation services for HDB flats, condominiums, landed homes, and commercial properties across Singapore. We fabricate and install steel support structures, custom frames, platforms, brackets, railings, and other metal components tailored to your property's requirements. Our team combines precise fabrication, quality materials, and professional installation to deliver durable steel solutions built for safety, functionality, and long-term performance.",
+          "image": "/images/services/sub_steel_work.png",
+          "breadcrumbBg": "/images/layout/breadcrumb-bg.png",
+          "description": "Expert steel fabrication and installation services for residential, commercial, and industrial properties across Singapore.",
+          "longDescription": "We specialize in custom structural steel fabrication, mezzanine platforms, steel staircases, support beams, and industrial metal frameworks engineered to high load-bearing standards.",
           "features": [
-            "Custom Steel Fabrication",
-            "Structural Steel Support Frames",
-            "Steel Platforms & Access Structures",
-            "Precision Cutting & Welding",
-            "Protective Anti-Rust Finishes",
-            "Steel Repair & Modification Works"
+            "Structural I-Beam & H-Beam Fabrication",
+            "Mezzanine Floor Steel Platforms",
+            "Industrial Steel Staircases & Handrails",
+            "Hot-Dip Galvanised Anti-Rust Coating"
           ],
           "benefits": [
-            "Every component is custom-fabricated using accurate site measurements.",
-            "Suitable materials and coatings withstand Singapore's humid conditions.",
-            "Experienced professionals ensure safe, stable, quality workmanship.",
-            "Clear coordination ensures organised projects from assessment through installation."
+            "Maximum load-bearing strength verified by PE calculations.",
+            "Long-term resistance against rust, moisture, and heavy usage.",
+            "Tailored fabrication matching exact site dimensions."
           ],
           "process": [
-            "Site Assessment: Inspect site, measure areas, understand requirements.",
-            "Planning & Quotation: Recommend solutions, materials, and provide quotation.",
-            "Steel Fabrication: Cut, weld, assemble, and prepare steel components.",
-            "Surface Finishing: Apply protective coatings for durability and appearance.",
-            "Installation: Install and secure components with precise alignment.",
-            "Inspection & Handover: Check quality, finishing, functionality before project handover."
+            "Technical Site Measurement: Precise laser site survey and load assessment.",
+            "Off-site Fabrication: Cutting, welding, and galvanising in workshop.",
+            "On-site Installation: Crane hoisting and secure bolt anchoring."
           ],
           "processSteps": [
             {
-              "title": "Site Assessment",
-              "description": "Inspect site, measure areas, understand requirements."
+              "title": "Technical Measurement",
+              "description": "Laser site survey and load assessment."
             },
             {
-              "title": "Planning & Quotation",
-              "description": "Recommend solutions, materials, and provide quotation."
+              "title": "Off-site Fabrication",
+              "description": "Cutting, welding, and galvanising in workshop."
             },
             {
-              "title": "Steel Fabrication",
-              "description": "Cut, weld, assemble, and prepare steel components."
-            },
-            {
-              "title": "Surface Finishing",
-              "description": "Apply protective coatings for durability and appearance."
-            },
-            {
-              "title": "Installation",
-              "description": "Install and secure components with precise alignment."
-            },
-            {
-              "title": "Inspection & Handover",
-              "description": "Check quality, finishing, functionality before project handover."
+              "title": "On-site Installation",
+              "description": "Crane hoisting and secure bolt anchoring."
             }
           ]
         },
         {
-          "slug": "gate-grill-work",
+          "slug": "main-gate-grill-work",
           "title": "Main Gate & Grill Work",
-          "image": "/images/services/service_1_services_1_image_1788760396311_7719.webp",
-          "description": "Custom gates and grills combining security, durability, and modern designs for residential and commercial properties across Singapore.",
-          "longDescription": "UA ENGINEERING provides custom main gate and grill fabrication services for HDB flats, condominiums, landed homes, and commercial properties across Singapore. Whether you're replacing an existing gate, installing a new entrance gate, or upgrading window and door grills, we fabricate each product to suit your property's dimensions and design preferences. Our team focuses on quality workmanship, secure installation, and durable materials to improve property security while complementing the overall appearance of your home or business.",
+          "image": "/images/services/sub_gate_grill.png",
+          "breadcrumbBg": "/images/layout/breadcrumb-bg.png",
+          "description": "Custom gates and grills combining security, durability, and modern design for homes, landed properties, and commercial buildings.",
+          "longDescription": "Upgrade property entrance security with custom wrought iron, mild steel, or aluminum main gates, window grills, and security perimeter fencing.",
           "features": [
-            "Stainless Steel Gates",
-            "Decorative Metal Grills",
-            "Mild Steel Main Gates ",
-            "Window & Door Grill Installation",
-            "Custom Metal Fencing",
-            "Rust-Resistant Protective Finishes"
+            "Mild Steel & Wrought Iron Main Gates",
+            "Laser-Cut Decorative Metal Panels",
+            "Window Security Grills & Sliding Gates",
+            "Powder-Coated Weather Resistant Finishes"
           ],
           "benefits": [
-            "Every gate and grill is custom-made for precise fitting.",
-            "Strong steel provides reliable security for daily use.",
-            "Protective coatings ensure durability and clean modern appearance.",
-            "Professional installation ensures secure fixing and smooth operation."
+            "Enhanced security against intrusion with robust locking mechanisms.",
+            "Rust-resistant powder coated finish requiring minimal maintenance.",
+            "Custom laser-cut aesthetic patterns to elevate facade look."
           ],
           "process": [
-            "Site Measurement: Inspect site, discuss preferences, take accurate measurements.",
-            "Design & Quotation: Recommend materials, styles, and provide clear quotation.",
-            "Fabrication: Fabricate gates and grills to approved specifications.",
-            "Surface Finishing: Apply protective finishes for durability and appearance.",
-            "Installation: Securely install, align, and test smooth operation.",
-            "Final Inspection: Check alignment, locks, finishing, and complete handover."
+            "Design Selection: Choose gate patterns, colors, and lock fittings.",
+            "Installation: Secure hinge mounting and lock alignment."
+          ],
+          "processSteps": [
+            {
+              "title": "Design Selection",
+              "description": "Choose gate patterns, colors, and lock fittings."
+            },
+            {
+              "title": "Installation",
+              "description": "Secure hinge mounting and lock alignment."
+            }
+          ]
+        },
+        {
+          "slug": "balcony-shelter-work",
+          "title": "Balcony Shelter Work",
+          "image": "/images/services/sub_balcony_shelter.png",
+          "breadcrumbBg": "/images/layout/breadcrumb-bg.png",
+          "description": "Professionally installed balcony shelters that provide reliable weather protection while enhancing your outdoor living area.",
+          "longDescription": "Protect your balcony from heavy rain and intense tropical heat with custom glass, polycarbonate, or aluminum composite balcony roofing structures.",
+          "features": [
+            "Laminated Tempered Glass Canopy Shelters",
+            "UV-Blocking Polycarbonate Roofing Sheets",
+            "Aluminum Alloy Structural Support Frame",
+            "Integrated Rainwater Gutter System"
+          ],
+          "benefits": [
+            "Keeps outdoor balcony usable during wet and sunny weather.",
+            "High UV reflection reducing indoor room heat transfer.",
+            "Clean modern architectural appearance."
+          ],
+          "process": [
+            "Site Measurement: Measure balcony span and drainage points.",
+            "Structure Fitting: Anchor aluminum frame and seal glass panels."
           ],
           "processSteps": [
             {
               "title": "Site Measurement",
-              "description": "Inspect site, discuss preferences, take accurate measurements."
+              "description": "Measure balcony span and drainage points."
             },
             {
-              "title": "Design & Quotation",
-              "description": "Recommend materials, styles, and provide clear quotation."
-            },
-            {
-              "title": "Fabrication",
-              "description": "Fabricate gates and grills to approved specifications."
-            },
-            {
-              "title": "Surface Finishing",
-              "description": "Apply protective finishes for durability and appearance."
-            },
-            {
-              "title": "Installation",
-              "description": "Securely install, align, and test smooth operation."
-            },
-            {
-              "title": "Final Inspection",
-              "description": "Check alignment, locks, finishing, and complete handover."
+              "title": "Structure Fitting",
+              "description": "Anchor aluminum frame and seal glass panels."
             }
           ]
         },
         {
-          "slug": "balcony-shelter",
-          "title": "Balcony Shelter Work",
-          "image": "/images/services/service_1_services_2_image_1788760396313_9275.webp",
-          "description": "Professionally installed balcony shelters providing reliable weather protection, enhanced comfort, and lasting durability for Singapore properties.",
-          "longDescription": "UA ENGINEERING designs and installs balcony shelters that provide practical weather protection while enhancing the comfort and usability of outdoor living spaces. Our balcony shelter solutions are suitable for HDB executive apartments (where permitted), condominiums, landed homes, and commercial premises. We use quality structural materials and roofing systems to create shelters that blend with your property's exterior while helping protect against Singapore's sun and frequent rainfall.",
-          "features": [
-            "Polycarbonate Balcony Shelters",
-            "Aluminium Support Structures",
-            "Balcony Canopy Installation",
-            "UV-Resistant Roofing Panels",
-            "Rain Protection Systems",
-            "Custom Shelter Designs"
-          ],
-          "benefits": [
-            "Customised shelters complement your property's layout and functional needs.",
-            "Durable roofing materials provide reliable weather protection.",
-            "Professional workmanship ensures secure fixing and structural support.",
-            "Balcony shelters create comfortable outdoor spaces for daily use."
-          ],
-          "process": [
-            "Site Assessment: We inspect the balcony area and assess suitable shelter options.",
-            "Design Consultation: Material options, colours, and structural requirements are discussed.",
-            "Fabrication: Support frames and shelter components are fabricated according to site measurements.",
-            "Material Preparation: Roofing panels and structural components are prepared before installation.",
-            "Installation: The shelter is securely installed with careful alignment and finishing.",
-            "Inspection & Handover: Completed works are checked before final project completion."
-          ],
-          "processSteps": [
-            {
-              "title": "Site Assessment",
-              "description": "We inspect the balcony area and assess suitable shelter options."
-            },
-            {
-              "title": "Design Consultation",
-              "description": "Material options, colours, and structural requirements are discussed."
-            },
-            {
-              "title": "Fabrication",
-              "description": "Support frames and shelter components are fabricated according to site measurements."
-            },
-            {
-              "title": "Material Preparation",
-              "description": "Roofing panels and structural components are prepared before installation."
-            },
-            {
-              "title": "Installation",
-              "description": "The shelter is securely installed with careful alignment and finishing."
-            },
-            {
-              "title": "Inspection & Handover",
-              "description": "Completed works are checked before final project completion."
-            }
-          ]
-        },
-        {
-          "slug": "roof-extension",
+          "slug": "roof-extension-solutions",
           "title": "Roof Extension & Solutions",
-          "image": "/images/services/service_1_services_3_image_1788760396315_2972.webp",
-          "description": "Custom roof extensions designed to maximise covered space while improving weather protection, functionality, and long-term property value.",
-          "longDescription": "UA ENGINEERING provides customised roof extension solutions for landed homes and commercial properties across Singapore. Whether you need additional covered space for a car porch, outdoor seating area, side walkway, or backyard, our team fabricates and installs durable roof structures designed to suit your property's layout. We focus on practical designs, quality materials, and professional installation to improve protection from Singapore's weather while maintaining a clean and well-integrated appearance.",
+          "image": "/images/services/sub_roof_extension.png",
+          "breadcrumbBg": "/images/layout/breadcrumb-bg.png",
+          "description": "Custom roof extensions designed to maximize usable sheltered space for landed homes, walkways, and commercial facilities.",
+          "longDescription": "Extend existing rooflines seamlessly with metal roofing sheets, tile matching, rainwater gutters, and insulated roof extension panels.",
           "features": [
-            "Car Porch Roof Extensions",
-            "Side Walkway Roof Covers",
-            "Backyard Roof Extensions",
-            "Metal Roof Structures",
-            "Polycarbonate Roofing",
-            "Aluminium Roofing Systems"
+            "Metal Deck & Insulated Roof Extension",
+            "Roof Structural Beam Extension",
+            "Gutters & Downpipe Drainage Routing",
+            "Flashing & Waterproof Joint Sealing"
           ],
           "benefits": [
-            "Tailored roof designs maximise covered space and complement architecture.",
-            "Quality structural materials ensure reliable long-term performance.",
-            "Climate-suitable solutions protect against sun and heavy rainfall.",
-            "Professional installation ensures organised workmanship and quality finishing."
+            "Expands usable covered area for cars, gardens, or storage.",
+            "Prevents rainwater leakage at roof extension joints.",
+            "Durable heat-insulated metal roof paneling."
           ],
           "process": [
-            "Site Visit: We assess your existing roof and discuss extension requirements.",
-            "Design Proposal: Roof layout, materials, and structural details are finalised.",
-            "Fabrication: Roof support structures are fabricated according to approved dimensions.",
-            "Material Preparation: Roofing sheets, flashings, and accessories are prepared.",
-            "Installation: Structural frames and roofing materials are professionally installed.",
-            "Quality Inspection: The completed roof extension is inspected before handover."
+            "Structural Framing: Extend metal rafters and purlins.",
+            "Roof Sheet Laying: Install insulated roofing and flashing."
           ],
           "processSteps": [
             {
-              "title": "Site Visit",
-              "description": "We assess your existing roof and discuss extension requirements."
+              "title": "Structural Framing",
+              "description": "Extend metal rafters and purlins."
             },
             {
-              "title": "Design Proposal",
-              "description": "Roof layout, materials, and structural details are finalised."
-            },
-            {
-              "title": "Fabrication",
-              "description": "Roof support structures are fabricated according to approved dimensions."
-            },
-            {
-              "title": "Material Preparation",
-              "description": "Roofing sheets, flashings, and accessories are prepared."
-            },
-            {
-              "title": "Installation",
-              "description": "Structural frames and roofing materials are professionally installed."
-            },
-            {
-              "title": "Quality Inspection",
-              "description": "The completed roof extension is inspected before handover."
+              "title": "Roof Sheet Laying",
+              "description": "Install insulated roofing and flashing."
             }
           ]
         },
         {
-          "slug": "awning-shelter",
+          "slug": "awning-shelter-fabrication-installation",
           "title": "Awning Shelter Fabrication & Installation",
-          "image": "/images/services/service_1_services_4_image_1788760396317_8129.webp",
-          "description": "High-quality awning shelters expertly fabricated and installed to provide shade, weather protection, and enhanced outdoor comfort.",
-          "longDescription": "UA ENGINEERING fabricates and installs customised awning shelters for residential and commercial properties throughout Singapore. Our awnings provide practical shade and weather protection for entrances, windows, patios, shopfronts, and outdoor areas. Every awning is manufactured according to your property's dimensions and installed with careful attention to structural stability, functionality, and overall appearance.",
+          "image": "/images/services/sub_awning.png",
+          "breadcrumbBg": "/images/layout/breadcrumb-bg.png",
+          "description": "High-quality awning shelters expertly fabricated and installed to shield windows, entrances, and outdoor areas from sun and rain.",
+          "longDescription": "Shield shopfronts, patio entrances, and windows with fixed acrylic awnings, retractable canvas shelters, and aluminum metal louvers.",
           "features": [
-            "Residential Awning Installation",
-            "Commercial Shopfront Awnings",
-            "Window Awnings",
-            "Patio & Outdoor Shelters",
-            "Polycarbonate Awnings",
-            "Custom Shelter Installation"
+            "Fixed Aluminum & Polycarbonate Awnings",
+            "Motorised & Manual Retractable Canvas Awnings",
+            "Window & Door Entrance Rain Canopy",
+            "Heavy-Duty Outdoor Fabric Selections"
           ],
           "benefits": [
-            "Every awning is fabricated to suit your property's size, usage, and exterior design.",
-            "Our awning systems help reduce direct sunlight and provide shelter during rainy weather.",
-            "Quality framing and secure installation contribute to the stability and durability of every awning.",
-            "We complete installations with careful alignment, neat workmanship, and attention to detail."
+            "Instant shade protection reducing direct sunlight glare.",
+            "Retractable options allow flexibile outdoor open space.",
+            "Durable rust-proof aluminum mounting brackets."
           ],
           "process": [
-            "Site Consultation: We assess the installation area and discuss your shelter requirements.",
-            "Material Selection: Suitable awning materials, frame types, and colours are recommended.",
-            "Custom Fabrication: The awning frame and roofing components are fabricated to the required dimensions.",
-            "Pre-Installation Preparation: Materials and fittings are prepared for efficient on-site installation.",
-            "Installation: We securely install, check alignment, fixing points, and structural stability.",
-            "Final Inspection & Handover: We complete a final quality inspection and ensure the awning."
+            "Bracket Mounting: Anchor heavy duty brackets into concrete beam.",
+            "Awning Mounting: Fit canvas or poly canopy and test mechanism."
           ],
           "processSteps": [
             {
-              "title": "Site Consultation",
-              "description": "We assess the installation area and discuss your shelter requirements."
+              "title": "Bracket Mounting",
+              "description": "Anchor heavy duty brackets into concrete beam."
             },
             {
-              "title": "Material Selection",
-              "description": "Suitable awning materials, frame types, and colours are recommended."
-            },
-            {
-              "title": "Custom Fabrication",
-              "description": "The awning frame and roofing components are fabricated to the required dimensions."
-            },
-            {
-              "title": "Pre-Installation Preparation",
-              "description": "Materials and fittings are prepared for efficient on-site installation."
-            },
-            {
-              "title": "Installation",
-              "description": "We securely install, check alignment, fixing points, and structural stability."
-            },
-            {
-              "title": "Final Inspection & Handover",
-              "description": "We complete a final quality inspection and ensure the awning."
+              "title": "Awning Mounting",
+              "description": "Fit canvas or poly canopy and test mechanism."
             }
           ]
         }
-      ],
-      "icon": "",
-      "features": [],
-      "benefits": [],
-      "process": []
+      ]
     },
     {
       "slug": "painting-waterproofing",
       "title": "Painting & Waterproofing",
-      "shortDescription": "Enhance your property's interior and exterior appearance through premium painting, waterproofing, crack repairs, and protective coatings.",
-      "description": "UA ENGINEERING provides expert painting and waterproofing solutions in Singapore, delivering durable finishes, leak protection, and reliable solutions for homes, offices, and commercial properties.",
-      "featuredImage": "/images/services/service_2_featuredImage_1788760396318_8758.webp",
-      "bgImage": "/images/services/service_2_bgImage_1788760396320_3412.webp",
+      "breadcrumbTitle": "Painting & Waterproofing Experts",
+      "detailTitle": "Interior & Exterior Painting and Leak Waterproofing Singapore",
+      "subServicesTitle": "Our Painting & Waterproofing Services",
+      "subServicesSubheading": "Long-lasting surface protection, crack repairs, anti-mold coatings, and advanced membrane waterproofing.",
+      "shortDescription": "Enhance your property's interior and exterior appearance through premium painting, waterproofing, crack repairs, and protective sealants.",
+      "description": "UA Engineering offers professional interior and exterior painting services alongside specialized waterproofing solutions for roofs, balconies, bathrooms, and basements.",
+      "featuredImage": "/images/services/painting.png",
+      "bgImage": "/images/layout/breadcrumb-bg.png",
+      "targetBadge": "PROTECTION",
+      "targetHeading": "Waterproofing & Paint Applications",
+      "targetSubheading": "We resolve water seepage and refresh wall appearances across all building types.",
+      "targetSpaces": [
+        "HDB & Condo Bathroom Water Seepage Repair",
+        "RC Flat Roof & Metal Roof Waterproofing",
+        "External Wall Painting & Crack Sealing",
+        "Interior Wall Anti-Mold Paint Coating",
+        "Basement & Swimming Pool Membrane Lining"
+      ],
+      "whyChooseBadge": "LEAK FREE GUARANTEE",
+      "whyChooseHeading": "Why Choose Our Waterproofing & Painting?",
+      "whyChooseLeftTitle": "Common Moisture Problems",
+      "whyChooseRightTitle": "Our Protective Coating System",
+      "whyChooseAdvantages": [
+        {
+          "title": "PU Injection & Membrane Technology",
+          "description": "High-pressure Polyurethane (PU) grouting to seal active water leaks without damaging tiles."
+        },
+        {
+          "title": "Weather-Resistant Anti-Algae Paints",
+          "description": "Premium exterior paints that resist peeling, fading, and algae growth under tropical sun."
+        }
+      ],
+      "whyChooseChallenges": [
+        {
+          "title": "Recurring Water Seepage & Ceiling Stains",
+          "description": "Temporary surface patching that fails during heavy monsoon downpours."
+        },
+        {
+          "title": "Peeling & Flaking Paint",
+          "description": "Using cheap interior paints on damp walls causing unsightly bubbling."
+        }
+      ],
+      "features": [
+        "Interior Wall & Ceiling Painting",
+        "Exterior Building Facade Painting",
+        "PU Injection Leak Waterproofing",
+        "Torch-On & Liquid Waterproofing Membrane",
+        "Anti-Mold & Anti-Fungal Protective Coating"
+      ],
+      "benefits": [
+        "Stops water leakage at the root source.",
+        "Extends building facade lifespan with weather-proof coatings.",
+        "Improves indoor air quality by eliminating mold and damp odors."
+      ],
+      "processHeading": "Waterproofing & Painting Workflow",
+      "processText": "Thorough surface preparation, moisture testing, primer coat, and multi-layer protective topcoats.",
+      "processSteps": [
+        {
+          "title": "Moisture Inspection",
+          "description": "Thermal imaging and moisture meter detection of leak source."
+        },
+        {
+          "title": "Surface Preparation",
+          "description": "High-pressure washing, scraping, and crack filling."
+        },
+        {
+          "title": "Coating Application",
+          "description": "Application of waterproof membrane or multi-coat painting system."
+        }
+      ],
+      "serviceAreasBadge": "ISLANDWIDE",
+      "serviceAreasHeading": "Waterproofing Services Across Singapore",
+      "serviceAreasSubheading": "Rapid response teams for urgent water leak inspection and repairs.",
+      "faqs": [
+        {
+          "question": "Can bathroom leaks be fixed without hacking tiles?",
+          "answer": "Yes, we utilize non-destructive PU injection chemical grouting to seal internal concrete voids and stop leaks from below."
+        },
+        {
+          "question": "How long does external facade paint last?",
+          "answer": "Our premium exterior paint systems come with weather-shield technology lasting 5 to 10 years."
+        }
+      ],
       "services": [
         {
           "slug": "painting-services",
           "title": "Painting Services",
-          "image": "/images/services/service_2_services_0_image_1788760396321_2453.webp",
-          "description": "Expert Interior and Exterior Painting Services Designed to Enhance Beauty, Protection, and Property Value.",
-          "longDescription": "Refresh and protect your property with UA Engineering's professional Painting Services in Singapore. We provide interior and exterior painting for HDB flats, condominiums, landed houses, offices, and commercial properties. Our process includes thorough surface preparation, crack repairs, priming, and premium paint application to achieve smooth, durable, and long-lasting finishes that withstand Singapore's humid climate.",
+          "image": "/images/services/sub_painting.png",
+          "breadcrumbBg": "/images/layout/breadcrumb-bg.png",
+          "description": "Expert Interior and Exterior Painting Services for HDB, Condos, Landed Homes, Commercial Buildings, and Industrial Offices across Singapore.",
+          "longDescription": "Refresh and protect your property with UA Engineering's professional painting services. We use premium non-toxic low-VOC paints for interiors and heavy-duty weather-shield coatings for exteriors. Our trained painters ensure proper wall scraping, crack filling, primer application, and neat drop-cloth protection.",
           "features": [
-            "Interior Wall & Ceiling Painting",
-            "Exterior Wall & Facade Painting",
-            "Repainting for Homes & Commercial Properties",
-            "Door, Metal Gate & Railing Painting",
-            "Protective Primers & Premium Top Coats",
-            "Final Touch-Up & Site Cleaning"
+            "HDB & Condo Full Interior Painting",
+            "Landed Exterior Facade Painting",
+            "Anti-Mold & Odourless Paint Coating",
+            "Wall Crack Scraping & Plastering",
+            "Commercial & Industrial Office Painting"
           ],
           "benefits": [
-            "Comprehensive surface preparation for smoother, longer-lasting paint finishes.",
-            "Premium quality paints from trusted brands for excellent durability and colour retention.",
-            "Clean, efficient workmanship with minimal disruption to your home or business.",
-            "Experienced painters delivering reliable results with attention to every detail."
+            "Vibrant, smooth finish that brightens up living and working spaces.",
+            "Long-lasting protection against dampness, yellowing, and peeling.",
+            "Clean process with thorough floor and furniture protection."
           ],
           "process": [
-            "Site Inspection: Assess wall condition, cracks, moisture, and painting requirements.",
-            "Surface Preparation: Protect surrounding areas, repair cracks, sand surfaces, and apply primer.",
-            "Colour Confirmation: Confirm paint colours, finishes, and project scope before application.",
-            "Paint Application: Apply premium paint systems using professional techniques for even coverage.",
-            "Final Touch-Up: Inspect painted surfaces, complete touch-ups, and remove protective coverings.",
-            "Quality Handover: Conduct final inspection, site cleaning, and customer handover."
+            "Surface Prep: Patch wall cracks, sand rough surfaces, apply sealer.",
+            "Coat Application: 1 coat primer + 2 coats premium finish paint."
           ],
           "processSteps": [
             {
-              "title": "Site Inspection",
-              "description": "Assess wall condition, cracks, moisture, and painting requirements."
+              "title": "Surface Prep",
+              "description": "Patch wall cracks, sand rough surfaces, apply sealer."
             },
             {
-              "title": "Surface Preparation",
-              "description": "Protect surrounding areas, repair cracks, sand surfaces, and apply primer."
-            },
-            {
-              "title": "Colour Confirmation",
-              "description": "Confirm paint colours, finishes, and project scope before application."
-            },
-            {
-              "title": "Paint Application",
-              "description": "Apply premium paint systems using professional techniques for even coverage."
-            },
-            {
-              "title": "Final Touch-Up",
-              "description": "Inspect painted surfaces, complete touch-ups, and remove protective coverings."
-            },
-            {
-              "title": "Quality Handover",
-              "description": "Conduct final inspection, site cleaning, and customer handover."
+              "title": "Coat Application",
+              "description": "1 coat primer + 2 coats premium finish paint."
             }
           ]
         },
         {
           "slug": "waterproofing-solutions",
           "title": "Waterproofing Solutions",
-          "image": "/images/services/service_2_services_1_image_1788760396322_3907.webp",
-          "description": "Professional Waterproofing Solutions Preventing Water Seepage, Roof Leaks, and Moisture Damage for Lasting Protection.",
-          "longDescription": "Protect your property from water seepage, roof leaks, ceiling leaks, and damp walls with UA Engineering's professional Waterproofing Solutions in Singapore. We provide effective waterproofing for roofs, bathrooms, balconies, external walls, and concrete surfaces using proven waterproofing systems that deliver long-term protection against Singapore's heavy rainfall and humidity.",
+          "image": "/images/services/sub_waterproofing.png",
+          "breadcrumbBg": "/images/layout/breadcrumb-bg.png",
+          "description": "Professional Waterproofing Solutions Preventing Water Leakage, Seepage, Moisture Damage & Mold Growth for Roofs, Balconies, Bathrooms & Basements.",
+          "longDescription": "Eliminate stubborn water leaks with specialized waterproofing systems. We diagnose seepage root causes using thermal imaging and apply liquid acrylic membranes, torch-on bitumen membranes, and PU injection grouting.",
           "features": [
-            "Roof Waterproofing Systems",
-            "Bathroom & Toilet Waterproofing",
-            "Balcony & Terrace Waterproofing",
-            "Ceiling Leak & Water Seepage Repair",
-            "Leak Testing & Final Quality Inspection",
-            "PU Injection for Crack Sealing"
+            "High Pressure PU Chemical Injection Grouting",
+            "Torch-On Bitumen Roof Waterproofing",
+            "Liquid Applied Acrylic Membrane Coating",
+            "Bathroom & Toilet Non-Hacking Leak Repair",
+            "Balcony & Concrete Deck Waterproofing"
           ],
           "benefits": [
-            "Accurate leak detection to identify the root cause before repairs begin.",
-            "High-performance waterproofing systems designed for Singapore's tropical climate.",
-            "Durable solutions that help prevent recurring leaks and costly repairs.",
-            "Skilled waterproofing specialists delivering dependable workmanship and lasting protection."
+            "Completely resolves water seepage into lower neighbor units.",
+            "Prevents structural concrete spalling and rebar corrosion.",
+            "Backed by leak-free warranty coverage."
           ],
           "process": [
-            "Site Assessment: Inspect leak sources, moisture levels, cracks, and affected surfaces.",
-            "Surface Preparation: Clean the area, remove damaged materials, and prepare surfaces for treatment.",
-            "System Selection: Recommend the most suitable waterproofing method based on site conditions.",
-            "Waterproofing Application: Apply membranes, PU injection, sealants, or waterproof coatings professionally.",
-            "Testing & Inspection: Carry out water testing and verify complete waterproof protection.",
-            "Project Handover: Perform final quality checks, clean the site, and provide maintenance guidance."
+            "Leak Inspection: Pinpoint exact water ingress point.",
+            "Membrane Treatment: Apply multi-layer waterproof barrier."
           ],
           "processSteps": [
             {
-              "title": "Site Assessment",
-              "description": "Inspect leak sources, moisture levels, cracks, and affected surfaces."
+              "title": "Leak Inspection",
+              "description": "Pinpoint exact water ingress point."
             },
             {
-              "title": "Surface Preparation",
-              "description": "Clean the area, remove damaged materials, and prepare surfaces for treatment."
-            },
-            {
-              "title": "System Selection",
-              "description": "Recommend the most suitable waterproofing method based on site conditions."
-            },
-            {
-              "title": "Waterproofing Application",
-              "description": "Apply membranes, PU injection, sealants, or waterproof coatings professionally."
-            },
-            {
-              "title": "Testing & Inspection",
-              "description": "Carry out water testing and verify complete waterproof protection."
-            },
-            {
-              "title": "Project Handover",
-              "description": "Perform final quality checks, clean the site, and provide maintenance guidance."
+              "title": "Membrane Treatment",
+              "description": "Apply multi-layer waterproof barrier."
             }
           ]
         }
-      ],
-      "icon": "",
-      "features": [],
-      "benefits": [],
-      "process": []
+      ]
     },
     {
       "slug": "aluminium-glazing-works",
       "title": "Aluminium & Glazing Works",
-      "shortDescription": "Modern aluminium and glass solutions including windows, doors, shopfronts, office partitions, balustrades, and custom glazing installations.",
-      "description": "UA Engineering provides professional aluminium and glass solutions designed to enhance durability, natural lighting, security, and architectural appeal with expert craftsmanship and reliable installation services throughout Singapore.",
-      "featuredImage": "/images/services/service_3_featuredImage_1788760396323_2589.webp",
-      "bgImage": "/images/services/service_3_bgImage_1788760396324_1553.webp",
+      "breadcrumbTitle": "Aluminium & Glass Solutions",
+      "detailTitle": "Custom Aluminium Framing & Glass Installation Singapore",
+      "subServicesTitle": "Our Aluminium & Glazing Services",
+      "subServicesSubheading": "Precision glass partitions, sliding doors, windows, skylights, mosquito nets, and zip blinds.",
+      "shortDescription": "Modern aluminium and glass solutions including windows, doors, storefronts, office partitions, balustrades, and custom glazing.",
+      "description": "UA Engineering delivers high quality aluminium window frames, tempered glass doors, shower screens, acoustic glass partitions, skylights, and zip blinds for modern building designs.",
+      "featuredImage": "/images/services/aluminium.png",
+      "bgImage": "/images/layout/breadcrumb-bg.png",
+      "targetBadge": "GLAZING SCOPE",
+      "targetHeading": "Glass & Aluminium Applications",
+      "targetSubheading": "Delivering architectural glass and aluminium fittings for homes and commercial interiors.",
+      "targetSpaces": [
+        "Commercial Office Glass Partitions & Conference Rooms",
+        "Residential Aluminum Sliding Windows & French Doors",
+        "Tempered Glass Shower Screens & Balustrades",
+        "Roof Skylights & Glass Canopies",
+        "Zip Blinds & Insect Mosquito Mesh Screens"
+      ],
+      "whyChooseBadge": "PRECISION GLAZING",
+      "whyChooseHeading": "Why Choose Our Glazing Solutions?",
+      "whyChooseLeftTitle": "Glazing Challenges",
+      "whyChooseRightTitle": "Our Glazing Standards",
+      "whyChooseAdvantages": [
+        {
+          "title": "Tempered Safety & Soundproof Laminated Glass",
+          "description": "Heavy-duty safety glass engineered for high wind load and noise reduction."
+        },
+        {
+          "title": "Precision Powder Coated Aluminum Frames",
+          "description": "Seamless aluminum extrusions resistant to warping and corrosion."
+        }
+      ],
+      "whyChooseChallenges": [
+        {
+          "title": "Water Leakage Around Window Frames",
+          "description": "Degraded sealant silicon causing rainwater entry during windstorms."
+        },
+        {
+          "title": "Noisy External Environment",
+          "description": "Single pane glass failing to block road traffic noise."
+        }
+      ],
+      "features": [
+        "Aluminium Sliding & Casement Windows",
+        "Tempered Glass Office Partition Walls",
+        "Laminated Glass Roof Skylights",
+        "Magnetic & Roller Mosquito Mesh Screens",
+        "Outdoor Motorised Zip Blinds"
+      ],
+      "benefits": [
+        "Enhances natural indoor lighting while maintaining safety.",
+        "Reduces external traffic noise through acoustic double glazing.",
+        "Sleek contemporary look matching modern architectural aesthetics."
+      ],
+      "processHeading": "Glazing Installation Workflow",
+      "processText": "Accurate site laser measurement, factory glass tempering, aluminum frame assembly, and airtight sealant fitting.",
+      "processSteps": [
+        {
+          "title": "Laser Measurement",
+          "description": "Measure opening dimensions with sub-millimeter precision."
+        },
+        {
+          "title": "Glass Tempering & Cutting",
+          "description": "Custom glass processing and edge polishing."
+        },
+        {
+          "title": "Site Installation",
+          "description": "Secure frame anchoring, glass panel insertion, and weather seal silicone."
+        }
+      ],
+      "serviceAreasBadge": "SINGAPORE WIDE",
+      "serviceAreasHeading": "Aluminium & Glass Services Islandwide",
+      "serviceAreasSubheading": "Providing custom glass repair and new fitting across Singapore.",
+      "faqs": [
+        {
+          "question": "Are your glass partitions made of safety glass?",
+          "answer": "Yes, all our glass partitions and shower screens use heat-strengthened tempered or laminated safety glass."
+        },
+        {
+          "question": "Can double glazing reduce outside traffic noise?",
+          "answer": "Yes, double-glazed acoustic glass significantly dampens external street and traffic noise."
+        }
+      ],
       "services": [
         {
-          "slug": "aluminium-glass",
+          "slug": "aluminium-glass-installation-repair",
           "title": "Aluminium & Glass Installation & Repair",
-          "image": "/images/services/service_3_services_0_image_1788760396325_3372.webp",
-          "description": "Professional aluminium and glass installation and repair services delivering durability, safety, and modern aesthetics seamlessly.",
-          "longDescription": "We manufacture and install premium aluminium casement windows, sliding doors, glass partitions, and glass balustrades. We offer double-glazed, tempered, or laminated safety glass configurations that reduce outdoor street noise and heat. We also provide repair services for loose window hinges, handles, and rollers to ensure smooth opening.",
+          "image": "/images/services/sub_aluminium_glass.png",
+          "breadcrumbBg": "/images/layout/breadcrumb-bg.png",
+          "description": "Professional aluminium and glass installation, replacement, and repair services for commercial offices, residential homes, and retail storefronts.",
+          "longDescription": "Upgrade your property facade and interior with custom aluminum sliding doors, casement windows, glass partition walls, and storefront glass. We also repair broken glass panels, worn rollers, and faulty window hinges.",
           "features": [
+            "Commercial Glass Door & Partition Fitting",
             "Aluminium Casement & Sliding Windows",
-            "Double-Glazed Soundproof Glass Doors",
-            "Tempered Glass Shower Screens",
-            "Office Glass Partition Systems",
-            "Window Handle, Friction Stay, Hinge Repairs",
-            "Laminated Glass Balustrades & Railings"
+            "Tempered Glass Shower Screen Enclosures",
+            "Glass Door Hinge & Roller Repair"
           ],
           "benefits": [
-            "BCA-approved window installation specialists",
-            "Reduces noise levels by up to 50% with double glazing",
-            "Improves thermal efficiency, reducing aircon bills",
-            "Rust-proof frames engineered for high-salinity coastal areas"
+            "Maximises daylight while creating distinct functional zones.",
+            "Smooth sliding operation with durable aluminum tracks.",
+            "High thermal and acoustic insulation."
           ],
           "process": [
-            "Precise laser window measurements",
-            "Aluminium frame cutting & glass assembly at workshop",
-            "Safely dismantling and recycling old windows/doors",
-            "Installing new frames, anchoring, and glazing",
-            "Applying heavy-duty structural silicone sealants",
-            "Testing safety handles & smooth friction sliding"
+            "Measurement: Site survey for exact frame dimensions.",
+            "Fitting: Frame anchoring and glass panel installation."
+          ],
+          "processSteps": [
+            {
+              "title": "Measurement",
+              "description": "Site survey for exact frame dimensions."
+            },
+            {
+              "title": "Fitting",
+              "description": "Frame anchoring and glass panel installation."
+            }
           ]
         },
         {
           "slug": "skylight-installation",
           "title": "Skylight Installation",
-          "image": "/images/services/service_3_services_1_image_1788760396326_7614.webp",
-          "description": "Brighten interiors with professionally installed skylights that enhance natural lighting, ventilation, and energy efficiency effortlessly.",
-          "longDescription": "Our Skylight Installation service is designed for landed homes and commercial spaces looking to bring in natural daylight. We build leak-proof, heavy-duty structural frames holding heat-reflective, laminated safety glass or durable polycarbonate panels. This reduces the need for artificial lighting during the day while filtering out harmful UV rays and heat.",
+          "image": "/images/services/sub_skylight.png",
+          "breadcrumbBg": "/images/layout/breadcrumb-bg.png",
+          "description": "Brighten interiors with professionally installed glass skylights that bring natural sunlight into homes, stairwells, and commercial buildings.",
+          "longDescription": "Illuminate dim stairwells, attic rooms, and atrium hallways with custom laminated glass roof skylights framed in heavy-duty weatherproof aluminum.",
           "features": [
-            "Laminated Safety Glass Skylights",
-            "Heat-Reflective Low-E Glass options",
-            "UV-Resistant Polycarbonate Domes",
-            "Heavy-Duty Leak-Proof Metal Frames",
-            "Acoustic Dampening Gaskets",
-            "Architectural Integration with Ceilings"
+            "Double Laminated Safety Glass Skylights",
+            "Heat-Reflective Low-E Glass Options",
+            "Airtight Double-Sealed Aluminum Framing",
+            "Integrated Water Drainage Channels"
           ],
           "benefits": [
-            "Maximizes natural daylight, creating a bright and positive mood",
-            "Reduces daytime lighting electricity bills",
-            "Low-E glass coatings reflect heat, keeping interiors cool",
-            "Double sealing ensures zero water leaks even during storms"
+            "Reduces daytime artificial electrical lighting energy costs.",
+            "Completely leak-proof installation with double weather seals.",
+            "UV blocking glass prevents furniture fading."
           ],
           "process": [
-            "Roof structure check & opening fabrication",
-            "Welding steel structural support frame",
-            "Applying weatherproofing flashings around the frame",
-            "Hoisting and mounting laminated glass panels",
-            "Installing secondary seals & silicone weatherproofing",
-            "Testing with high-pressure water spray to ensure zero leaks"
+            "Roof Opening: Prepare structural roof frame opening.",
+            "Skylight Mounting: Anchor aluminum frame and seal glass unit."
+          ],
+          "processSteps": [
+            {
+              "title": "Roof Opening",
+              "description": "Prepare structural roof frame opening."
+            },
+            {
+              "title": "Skylight Mounting",
+              "description": "Anchor aluminum frame and seal glass unit."
+            }
           ]
         },
         {
-          "slug": "mosquito-net",
+          "slug": "mosquito-net-installation",
           "title": "Mosquito Net Installation",
-          "image": "/images/services/service_3_services_2_image_1788760396327_2548.webp",
-          "description": "Custom mosquito net installations provide effective insect protection while maintaining fresh airflow and unobstructed outdoor views.",
-          "longDescription": "Enjoy fresh outdoor breeze without worrying about dengue-carrying mosquitoes, flies, or pests. We customize high-durability magnetic mosquito nets, sliding mesh screens, and roll-up insect netting for casement windows, sliding doors, and louvres. The screens use premium fibreglass or stainless steel mesh that is virtually invisible and easy to clean.",
+          "image": "/images/services/sub_mosquito_net.png",
+          "breadcrumbBg": "/images/layout/breadcrumb-bg.png",
+          "description": "Custom mosquito net installations providing reliable insect protection while allowing fresh airflow into your living spaces.",
+          "longDescription": "Keep Dengue mosquitoes, lizards, and pests out while keeping windows wide open. We install invisible magnetic mesh screens, sliding netting doors, and roller insect screens.",
           "features": [
-            "Magnetic Window Mosquito Screens",
-            "Retractable Roller Netting Systems",
-            "Heavy-Duty Stainless Steel Insect Mesh",
-            "Slim Aluminium Frame Profiles",
-            "Custom Sliding Insect Screen Doors",
-            "Washable & Rust-Proof Net Materials"
+            "Magnetic Window Mosquito Mesh Screens",
+            "Sliding Mesh Door Screens for Balconies",
+            "Retractable Roller Insect Screens",
+            "Durable High-Clarity Fiberglass Mesh"
           ],
           "benefits": [
-            "Protects your family from mosquitoes, flies, and lizards",
-            "Allows 100% natural breeze, reducing aircon usage",
-            "Minimalist design that does not block views or light",
-            "Easy to detach, wash, and reinstall in seconds"
+            "100% insect protection without blocking breeze or outdoor view.",
+            "Easy to detach and wash with magnetic snap frames.",
+            "Rust-proof and tear-resistant mesh material."
           ],
           "process": [
-            "Measuring window and door frame dimensions",
-            "Choosing frame colors to match existing window frames",
-            "Fabricating frames & tensioning fibreglass mesh",
-            "On-site installation of magnetic strips or guide rails",
-            "Fitting the net panels & testing retraction smoothness",
-            "Providing maintenance & cleaning guide"
+            "Frame Sizing: Measure window and door frame perimeters.",
+            "Mesh Assembly: Mount magnetic strips and snap mesh into place."
+          ],
+          "processSteps": [
+            {
+              "title": "Frame Sizing",
+              "description": "Measure window and door frame perimeters."
+            },
+            {
+              "title": "Mesh Assembly",
+              "description": "Mount magnetic strips and snap mesh into place."
+            }
           ]
         },
         {
-          "slug": "zip-blinds",
+          "slug": "zip-blind-all-types-of-blind-fabrication-installation",
           "title": "Zip Blind & All Types of Blind Fabrication & Installation",
-          "image": "/images/services/service_3_services_3_image_1788760396329_5872.webp",
-          "description": "Custom blind fabrication and installation enhancing privacy, comfort, sun protection, and contemporary property aesthetics effectively.",
-          "longDescription": "Our outdoor motorized Zip Blinds are Singapore's favorite solution for converting hot, wet balconies into functional indoor-like rooms. The blind's fabric is locked into side tracks to resist strong winds and heavy rain splash. We also fabricate and install indoor roller blinds, wooden Venetian blinds, and vertical blinds for offices and homes.",
+          "image": "/images/services/sub_zip_blinds.png",
+          "breadcrumbBg": "/images/layout/breadcrumb-bg.png",
+          "description": "Custom blind fabrication and installation services including outdoor zip blinds, roller blinds, and venetian blinds for shade and privacy.",
+          "longDescription": "Protect outdoor balconies and indoor office windows from harsh sunlight and rain with heavy-duty motorised outdoor zip blinds, blackout roller blinds, and timber venetian blinds.",
           "features": [
-            "Motorized Outdoor Zip Blinds",
-            "Heavy-Duty Windproof Track Systems",
-            "UV-Blocking & Rain-Resistant Screen Fabrics",
-            "Smart Home Remote & Mobile App Integration",
-            "Indoor Venetian & Roller Blinds",
-            "Custom Fabric Selection (Blackout/Semi-Sheer)"
+            "Heavy-Duty Motorised Outdoor Zip Blinds",
+            "Indoor Blackout & Dimout Roller Blinds",
+            "Venetian & Vertical Window Blinds",
+            "Smart Home Remote & Mobile App Integration"
           ],
           "benefits": [
-            "Expands your living room space out to the balcony",
-            "Blocks 90%+ of rain splash and heavy wind during storms",
-            "Provides immediate privacy from nearby neighbors",
-            "Easily integrates with Google Home / Alexa smart automation"
+            "Blocks up to 90% rain and solar heat on outdoor balconies.",
+            "Zip side-track system prevents blind flapping in strong winds.",
+            "Sleek modern sun-shade solution."
           ],
           "process": [
-            "Balcony dimensions measurement & wind exposure check",
-            "Selecting fabric color, transparency, and motor brand",
-            "Installing heavy-duty top cassettes & side tracks",
-            "Threading and tensioning the zip fabric",
-            "Connecting motor to power & calibrating sensor limits",
-            "Testing obstacle detection & remote control app"
+            "Track Mounting: Secure heavy-duty side zip tracks.",
+            "Blind Fitting: Mount motor roller tube and program remote controls."
+          ],
+          "processSteps": [
+            {
+              "title": "Track Mounting",
+              "description": "Secure heavy-duty side zip tracks."
+            },
+            {
+              "title": "Blind Fitting",
+              "description": "Mount motor roller tube and program remote controls."
+            }
           ]
         }
-      ],
-      "breadcrumbTitle": "Aluminium & Glazing Works",
-      "icon": "",
-      "features": [],
-      "benefits": [],
-      "process": []
+      ]
     },
     {
       "slug": "electrical-plumbing-aircon",
       "title": "Electrical, Plumbing & Aircon",
-      "shortDescription": "Complete M&E solutions covering electrical systems, plumbing installations, air-conditioning services, repairs, upgrades, and routine maintenance.",
-      "description": "Expert electrical, plumbing, and aircon services ensuring safe, efficient, reliable building systems across Singapore properties.",
-      "featuredImage": "/images/services/service_4_featuredImage_1788760396330_3308.webp",
-      "bgImage": "/images/services/service_4_bgImage_1788760396331_7001.webp",
+      "breadcrumbTitle": "M&E Electrical, Plumbing & Aircon",
+      "detailTitle": "Complete Mechanical & Electrical (M&E) Services Singapore",
+      "subServicesTitle": "Our M&E Engineering Services",
+      "subServicesSubheading": "Licensed electrical rewiring, sanitary plumbing repair, pipe replacement, and air-conditioning servicing.",
+      "shortDescription": "Complete M&E solutions covering electrical systems, plumbing installations, air-conditioning services, repairs, and maintenance.",
+      "description": "UA Engineering provides comprehensive M&E services carried out by licensed electricians and plumbers, ensuring safe power distribution, leak-free piping, and efficient air cooling.",
+      "featuredImage": "/images/services/mep.png",
+      "bgImage": "/images/layout/breadcrumb-bg.png",
+      "targetBadge": "M&E SERVICES",
+      "targetHeading": "Electrical, Plumbing & Aircon Solutions",
+      "targetSubheading": "Trusted utility installation and emergency repairs for homes, offices, and industrial premises.",
+      "targetSpaces": [
+        "HDB & Landed Electrical DB Box Upgrades & Rewiring",
+        "Sanitary Ware, Toilet Bowl & Pipe Leak Repairs",
+        "Aircon Chemical Overhaul & Servicing Contracts",
+        "Commercial Lighting & Power Socket Distribution",
+        "Water Heater & Ceiling Fan Installation"
+      ],
+      "whyChooseBadge": "LICENSED TRADESMEN",
+      "whyChooseHeading": "Why Choose Our M&E Services?",
+      "whyChooseLeftTitle": "Utility Issues",
+      "whyChooseRightTitle": "Our M&E Guarantee",
+      "whyChooseAdvantages": [
+        {
+          "title": "EMA Licensed Electricians & PUB Plumbers",
+          "description": "All works executed according to Singapore electrical code (SS 638) and PUB water regulations."
+        },
+        {
+          "title": "Fast Response Emergency Repairs",
+          "description": "Quick turnaround for power trips, burst pipes, and aircon water leaks."
+        }
+      ],
+      "whyChooseChallenges": [
+        {
+          "title": "Frequent Power Trips & Overloaded Circuits",
+          "description": "Outdated DB boxes failing to support modern high-wattage appliances."
+        },
+        {
+          "title": "Hidden Pipe Leaks & Low Water Pressure",
+          "description": "Corroded concealed pipes causing water damage behind walls."
+        }
+      ],
+      "features": [
+        "Full House Electrical Rewiring & DB Box Upgrade",
+        "Sanitary Ware & Water Pipe Leak Repair",
+        "Aircon Servicing, Chemical Wash & Repair",
+        "Lighting & Power Point Additions",
+        "Water Heater & Ceiling Fan Installation"
+      ],
+      "benefits": [
+        "Ensures electrical safety and prevents fire hazards.",
+        "Restores optimal aircon cooling efficiency and lower electricity bills.",
+        "Reliable plumbing fixtures with zero water leakage."
+      ],
+      "processHeading": "M&E Execution Workflow",
+      "processText": "Safety isolation, circuit/pipe testing, professional installation, and load test verification.",
+      "processSteps": [
+        {
+          "title": "Safety Isolation",
+          "description": "Isolate power DB or main water supply shutoff."
+        },
+        {
+          "title": "Installation / Repair",
+          "description": "Execute wiring, piping, or aircon overhaul."
+        },
+        {
+          "title": "Testing & Verification",
+          "description": "Voltage testing, pressure testing, and temperature verification."
+        }
+      ],
+      "serviceAreasBadge": "SINGAPORE WIDE",
+      "serviceAreasHeading": "M&E Services Across Singapore",
+      "serviceAreasSubheading": "Deploying licensed technicians islandwide.",
+      "faqs": [
+        {
+          "question": "Are your electrical works performed by EMA licensed electricians?",
+          "answer": "Yes, all electrical wiring and distribution box works are handled by EMA LEW licensed electricians."
+        },
+        {
+          "question": "How often should residential aircons be serviced?",
+          "answer": "We recommend routine aircon servicing every 3 to 4 months to maintain cooling efficiency and clean air quality."
+        }
+      ],
       "services": [
         {
-          "slug": "electrical-lighting",
+          "slug": "electrical-lighting-work",
           "title": "Electrical & Lighting Work",
-          "image": "/images/services/service_4_services_0_image_1788760396332_6676.webp",
-          "description": "Safe, efficient electrical and lighting solutions delivering reliable power, comfort, and everyday convenience for every property.",
-          "longDescription": "We provide certified residential and commercial electrical services. Our licensed EMA electricians handle full home rewiring, distribution board (DB) box replacements, circuit breaker upgrades, smart switch setups, ceiling fan mountings, and decorative lighting installations. We ensure all works comply with local SS638 electrical safety standards.",
+          "image": "/images/services/sub_electrical.png",
+          "breadcrumbBg": "/images/layout/breadcrumb-bg.png",
+          "description": "Safe, efficient electrical and lighting services, including full rewiring, DB box upgrades, power point installation, and LED lighting setups.",
+          "longDescription": "Ensure electrical safety with UA Engineering's licensed electrical services. We upgrade old electrical DB breaker boxes, install new power sockets, wire track lights and chandeliers, and resolve frequent circuit trips.",
           "features": [
-            "Licensed EMA Electrician Services",
-            "Whole-House Electrical Rewiring",
-            "Distribution Board (DB) Upgrades",
-            "Power Sockets & USB Port Installations",
-            "Ceiling Fan & Chandelier Mounting",
-            "Electrical Fault Finding & Troubleshooting"
+            "Full Home & Office Electrical Rewiring",
+            "EMA Compliant DB Box & MCB Replacement",
+            "Lighting Fixture & LED Strip Installation",
+            "Power Socket & Data Point Additions"
           ],
           "benefits": [
-            "Prevents short circuits, overloaded breakers, and fire hazards",
-            "Ensures full safety compliance with EMA regulations",
-            "Neat routing using PVC casings or concealed conduits",
-            "Quick response for sudden power outages or tripping issues"
+            "Prevents electrical short circuits and appliance damage.",
+            "Neat concealed or trunking wiring execution.",
+            "Energy-efficient LED lighting recommendations."
           ],
           "process": [
-            "Reviewing power load requirements & drawing single line maps",
-            "Laying safety cables & running conduits (concealed or surface)",
-            "Installing switches, sockets, DB boards, and lights",
-            "Testing circuit loops, earthing, and safety breakers",
-            "EMA inspection and sign-off",
-            "Power activation & client walkthrough"
+            "Circuit Audit: Test current wiring load and DB box health.",
+            "Wiring & Testing: Lay new wires, connect switches, and test load."
+          ],
+          "processSteps": [
+            {
+              "title": "Circuit Audit",
+              "description": "Test current wiring load and DB box health."
+            },
+            {
+              "title": "Wiring & Testing",
+              "description": "Lay new wires, connect switches, and test load."
+            }
           ]
         },
         {
           "slug": "plumbing-services",
           "title": "Plumbing Services",
-          "image": "/images/services/service_4_services_1_image_1788760396333_1134.webp",
-          "description": "Professional plumbing solutions ensure reliable water flow, leak-free systems, and long-lasting performance for every property.",
-          "longDescription": "Our professional plumbing service covers all commercial and residential needs. We repair copper and PVC pipe leaks, clear clogged toilet bowls or kitchen sinks, replace instant and storage water heaters, and install modern kitchen and bathroom sanitary wares. We use high-grade plumbing joints and pressure testing to ensure leak-free results.",
+          "image": "/images/services/sub_plumbing.png",
+          "breadcrumbBg": "/images/layout/breadcrumb-bg.png",
+          "description": "Professional plumbing solutions ensure reliable water flow, leak-free piping, and properly installed sanitary fixtures.",
+          "longDescription": "From clearing stubborn choke drains to replacing old copper or stainless steel water pipes, our PUB licensed plumbers handle all residential and commercial plumbing needs.",
           "features": [
-            "Copper & PVC Pipe Leak Repairs",
-            "Sink, Toilet Bowl & Basin Unclogging",
-            "Storage & Instant Water Heater Installation",
-            "Sanitary Ware & Faucet Replacements",
-            "Water Pressure Pump Installations",
-            "Main Water Supply Pipe Replacements"
+            "Copper, Stainless Steel & PVC Pipe Replacement",
+            "Toilet Bowl, Basin & Tap Installation",
+            "Drain Choke & Sewer Clearing",
+            "Instant & Storage Water Heater Fitting"
           ],
           "benefits": [
-            "Immediate leak resolution, preventing water damage and mold",
-            "Ensures clean, odorless water flow with correct traps",
-            "Storage heaters installed with approved safety pressure valves",
-            "PUB licensed plumber coordination when required"
+            "Eliminates foul odors and water seepage under sinks.",
+            "Restores strong, clean water flow pressure.",
+            "Durable leak-proof pipe joint fittings."
           ],
           "process": [
-            "Site inspection to locate leakage source or choke point",
-            "Providing repair options & plumbing parts catalog",
-            "Shutting off water main & cutting out old pipes/fittings",
-            "Laying new pipelines, soldering copper, or gluing PVC",
-            "Mounting faucets, heaters, or toilet bowls",
-            "Turning on water supply, testing pressure, and verifying zero leaks"
+            "Leak Inspection: Identify choke or leak source.",
+            "Pipe Fitting: Replace damaged piping and install fixtures."
+          ],
+          "processSteps": [
+            {
+              "title": "Leak Inspection",
+              "description": "Identify choke or leak source."
+            },
+            {
+              "title": "Pipe Fitting",
+              "description": "Replace damaged piping and install fixtures."
+            }
           ]
         },
         {
           "slug": "aircon-repair",
           "title": "Aircon Repair",
-          "image": "/images/services/service_4_services_2_image_1788760396334_6506.webp",
-          "description": "Restore cooling efficiency with expert aircon repairs for dependable comfort and optimal system performance year-round.",
-          "longDescription": "Keep your indoor air cool and clean in Singapore's tropical heat. We offer regular aircon servicing, deep chemical wash overhauls, refrigerant gas top-ups, drainage pipe vacuuming (to stop water leaking), and troubleshooting of compressor or fan motor failures. We handle all major aircon brands like Daikin, Mitsubishi Electric, Panasonic, and system configs.",
+          "image": "/images/services/sub_aircon.png",
+          "breadcrumbBg": "/images/layout/breadcrumb-bg.png",
+          "description": "Restore cooling efficiency with expert aircon repair, regular servicing, chemical overhaul, and refrigerant gas top-up services.",
+          "longDescription": "Keep your home cool and clean. We service split unit aircons and central VRV systems, fixing water leaking, warm air blowing, noisy blower fans, and gas leaks.",
           "features": [
-            "General Aircon Cleaning & Servicing",
-            "Deep Chemical Wash / Overhaul",
-            "Coolant Gas Leak Check & Top-Up",
-            "Condensation Pipe Vacuuming (Fix Water Leaking)",
-            "Compressor & Fan Motor Diagnosis & Repair",
-            "Smart Thermostat & Controller Setup"
+            "General Aircon Filter & Coil Cleaning",
+            "Chemical Wash & Full Overhaul Flushing",
+            "R32 / R410A Refrigerant Gas Top-Up",
+            "Compressor & Fan Motor Repair"
           ],
           "benefits": [
-            "Restores icy cold air flow and optimizes cooling speed",
-            "Saves up to 20% on electricity bills by cleaning clogged coils",
-            "Improves indoor air purity, filtering out dust, mold, and allergens",
-            "Prevents messy water dripping damage to your walls and floors"
+            "Blows ice-cold, fresh air free of bacteria and dust mites.",
+            "Reduces compressor strain and lowers monthly power bill.",
+            "Stops water dripping onto floors and furniture."
           ],
           "process": [
-            "Checking air temp, fan speed, and checking error codes",
-            "Cleaning filters, front panel, and water tray",
-            "Vacuuming water drainage pipe to clear jelly/slime build-up",
-            "If chemical wash: dismantling fan coil and rinsing with chemical coil cleaners",
-            "Checking refrigerant gas pressure & topping up if low",
-            "Reassembling, turning on the system, and testing cooling efficiency"
+            "Diagnostic Check: Check gas pressure and cooling temperature.",
+            "Chemical Overhaul: Dismantle unit and chemical flush coil parts."
+          ],
+          "processSteps": [
+            {
+              "title": "Diagnostic Check",
+              "description": "Check gas pressure and cooling temperature."
+            },
+            {
+              "title": "Chemical Overhaul",
+              "description": "Dismantle unit and chemical flush coil parts."
+            }
           ]
         }
-      ],
-      "icon": "",
-      "features": [],
-      "benefits": [],
-      "process": [],
-      "breadcrumbTitle": "Electrical, Plumbing & Aircon"
+      ]
     },
     {
       "slug": "solar-panel-installation",
       "title": "Solar Panel Installation",
-      "shortDescription": "Reduce energy costs with professionally installed solar panel systems designed for long-term efficiency, reliability, and sustainable performance.",
-      "description": "Professional solar panel installation service delivering clean, efficient renewable energy solutions for residential and commercial properties across Singapore.",
-      "featuredImage": "/images/services/service_5_featuredImage_1788760396335_6493.webp",
-      "bgImage": "/images/services/service_5_bgImage_1788760396336_8348.webp",
-      "services": [
+      "breadcrumbTitle": "Clean Energy Solar Solutions",
+      "detailTitle": "Turnkey Solar PV System Design & Installation Singapore",
+      "subServicesTitle": "Our Solar Panel Installation Services",
+      "subServicesSubheading": "Harness renewable clean solar energy to lower monthly electricity bills for landed homes and commercial buildings.",
+      "shortDescription": "Complete design, engineering, and installation of high-efficiency solar panel systems to generate clean energy and cut electricity bills.",
+      "description": "UA Engineering provides end-to-end solar photovoltaic (PV) systems for landed residential properties, commercial factories, and industrial roofs across Singapore.",
+      "featuredImage": "/images/services/solar.png",
+      "bgImage": "/images/layout/breadcrumb-bg.png",
+      "targetBadge": "SOLAR POWER",
+      "targetHeading": "Solar PV Installations",
+      "targetSubheading": "Turn unused roof space into a clean power generating asset.",
+      "targetSpaces": [
+        "Landed Terraces, Semi-Detached & Bungalow Roofs",
+        "Commercial Building & Factory Roof Decks",
+        "Warehouse Rooftops & Industrial Parks",
+        "Agricultural & Institutional Canopy Roofs"
+      ],
+      "whyChooseBadge": "RENEWABLE ENERGY",
+      "whyChooseHeading": "Why Invest In Solar Panels?",
+      "whyChooseLeftTitle": "High Energy Costs",
+      "whyChooseRightTitle": "The Solar Advantage",
+      "whyChooseAdvantages": [
         {
-          "slug": "solar-panel",
-          "title": "Solar Panel Installation",
-          "image": "/images/services/sub_solar.png",
-          "description": "Complete design, engineering, and installation of rooftop solar PV systems to offset electricity bills.",
-          "longDescription": "Transitioning to green energy is made simple with our turnkey Solar Panel Installation service. We cater to landed residential properties, commercial offices, and industrial warehouses in Singapore. We manage the entire lifecycle: structural roof load evaluations, solar PV panel layout drawings, high-efficiency solar panel procurement, power inverter setups, grid connections with SP Group, and Net-Metering configurations to sell excess power back to the grid.",
-          "features": [
-            "High-Efficiency Tier-1 Monocrystalline Solar Panels",
-            "Hybrid & Grid-Tied Inverter Systems",
-            "Rooftop Mounting Rail & Safety Harness Setup",
-            "SP Group Grid-Connection & Net Metering Support",
-            "Real-Time Solar Power Yield App Setup",
-            "BCA Structural submission & PE Endorsements"
-          ],
-          "benefits": [
-            "Reduces electricity bills by up to 50% to 80% every month",
-            "Earns income by exporting excess solar energy back to SP Group",
-            "Protects the roof from direct sun rays, lowering top-floor temps",
-            "Adds significant eco-friendly value to your landed property"
-          ],
-          "process": [
-            "Site survey to analyze shadow casting and roof structural safety",
-            "PV layout design and estimation of monthly energy savings",
-            "Submitting drawings for BCA & SP Group grid approval",
-            "On-site mounting rail fabrication & solar panel installation",
-            "DC cabling, inverter installation, and safety checks",
-            "Installing SP Group bi-directional meter & turning on the system"
-          ]
+          "title": "Up to 70% Monthly Electricity Bill Reduction",
+          "description": "Generate your own green electricity and export excess solar energy back to the grid."
+        },
+        {
+          "title": "Tier-1 High Efficiency Solar Panels",
+          "description": "Monocrystalline panels with 25-year power output performance warranty."
         }
       ],
-      "icon": "",
-      "features": [
-        "Solar PV Installation",
-        "Rooftop Solar Systems",
-        "Secure Roof Mounting",
-        "Weather-Resistant Installation",
-        "Precision Workmanship",
-        "Clean Energy Solutions"
+      "whyChooseChallenges": [
+        {
+          "title": "Rising SP Group Electricity Tariffs",
+          "description": "Increasing monthly utility bills impacting operational margins."
+        }
       ],
-      "benefits": [],
-      "process": []
+      "features": [
+        "Solar PV System Feasibility & Roof Structural Audit",
+        "Grid-Tied Inverter & Battery Storage Setup",
+        "SP Group Grid Interconnection & Net Metering",
+        "Mobile App Real-Time Power Generation Monitoring"
+      ],
+      "benefits": [
+        "Substantial long-term savings on electricity expenses.",
+        "Reduces carbon footprint and enhances building sustainability rating.",
+        "Long 25-year manufacturer solar panel performance warranty."
+      ],
+      "processHeading": "Solar Installation Workflow",
+      "processText": "Roof assessment, PE structural endorsement, solar mounting, inverter wiring, and SP grid turn-on.",
+      "processSteps": [
+        {
+          "title": "Roof Audit & Design",
+          "description": "Solar irradiance simulation and structural load assessment."
+        },
+        {
+          "title": "Permits & Interconnection",
+          "description": "Submit SP Group grid connection and EMA approvals."
+        },
+        {
+          "title": "Panel Installation & Turn-On",
+          "description": "Mount solar racking, wire inverter, and turn on green power."
+        }
+      ],
+      "serviceAreasBadge": "SINGAPORE WIDE",
+      "serviceAreasHeading": "Solar Solutions Across Singapore",
+      "serviceAreasSubheading": "Installing clean solar energy systems islandwide.",
+      "faqs": [
+        {
+          "question": "How much can I save with a solar panel system on a landed house?",
+          "answer": "Landed property owners typically save between 50% to 70% on monthly electricity bills, achieving full payback in 4 to 6 years."
+        },
+        {
+          "question": "Can excess solar energy be sold back to the power grid?",
+          "answer": "Yes, under SP Group's net metering scheme, unused excess solar power is credited back to your utility account."
+        }
+      ],
+      "services": [
+        {
+          "slug": "solar-panel-installation",
+          "title": "Solar Panel Installation",
+          "image": "/images/services/sub_solar.png",
+          "breadcrumbBg": "/images/layout/breadcrumb-bg.png",
+          "description": "Complete design, engineering, and installation of high-efficiency solar panel systems to generate clean energy and cut electricity bills.",
+          "longDescription": "Harness clean solar energy with UA Engineering. We provide turnkey solar PV solutions including roof structural load checks, Tier-1 solar panel mounting, grid-tie inverter installation, SP Group meter submission, and mobile app performance monitoring.",
+          "features": [
+            "Tier-1 Monocrystalline Solar Panel Fitting",
+            "Smart Solar Inverter & Battery Storage Setup",
+            "SP Group Net Metering & Power Export",
+            "Mobile App Live Energy Yield Tracking"
+          ],
+          "benefits": [
+            "Drastically slashes monthly utility power bills.",
+            "High ROI with 25-year panel performance guarantee.",
+            "Increases property value and sustainability score."
+          ],
+          "process": [
+            "Solar Audit: Calculate roof area, shade, and annual solar yield.",
+            "Installation & Grid Hookup: Secure mounting racking, wire inverter, and activate grid."
+          ],
+          "processSteps": [
+            {
+              "title": "Solar Audit",
+              "description": "Calculate roof area, shade, and annual solar yield."
+            },
+            {
+              "title": "Installation & Grid Hookup",
+              "description": "Secure mounting racking, wire inverter, and activate grid."
+            }
+          ]
+        }
+      ]
     }
   ],
   "projects": [
