@@ -180,6 +180,7 @@ function syncBlogsToWebsite(blogs) {
   popular?: boolean;
   views?: number;
   content: string;
+  __v?: number;
 }
 
 export const blogPosts: BlogPost[] = ${JSON.stringify(blogs, null, 2)};
@@ -202,6 +203,7 @@ function syncProjectsToWebsite(projects) {
     const tsCode = `export interface ProjectItem {
   id?: string;
   _id?: string;
+  slug?: string;
   title: string;
   subtitle?: string;
   category: string;
