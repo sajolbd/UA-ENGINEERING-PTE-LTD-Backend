@@ -56,7 +56,7 @@ app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
 // Ensure MongoDB connection is initialized for serverless requests (non-blocking fallback)
 app.use(async (req, res, next) => {
   if (getUseMongo()) return next();
-  const timeoutPromise = new Promise((resolve) => setTimeout(resolve, 2000));
+  const timeoutPromise = new Promise((resolve) => setTimeout(resolve, 10000));
   await Promise.race([dbConnection.connectDB().catch(() => {}), timeoutPromise]);
   next();
 });
