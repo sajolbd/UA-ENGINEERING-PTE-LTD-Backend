@@ -111,7 +111,73 @@
         "serviceAreasTitle": "Reliable Home Renovation Solutions Near You",
         "serviceAreasSubtitle": "UA ENGINEERING proudly provides home renovation services across Singapore, covering all major residential and commercial areas.",
         "consultHeading": "Book a Free Consultation as Your Convenient Time",
-        "consultSubheading": "Would you like to discuss your project face-to-face with our expert? Do you need expert guidance for your project? Would you like our expert to visit your site or project? Then book a free-of-cost appointment at your convenience."
+        "consultSubheading": "Would you like to discuss your project face-to-face with our expert? Do you need expert guidance for your project? Would you like our expert to visit your site or project? Then book a free-of-cost appointment at your convenience.",
+        "areaHeading": "Reliable Engineering & Renovation Solutions Near You",
+        "areaSubheading": "UA ENGINEERING proudly provides renovation and upgrading services across Singapore, covering all major residential and commercial areas.",
+        "regions": [
+          {
+            "region": "Central Region",
+            "name": "Central Region",
+            "areas": [
+              "Orchard",
+              "Bugis",
+              "Marina Bay",
+              "Raffles Place",
+              "Tanjong Pagar",
+              "Bishan",
+              "Toa Payoh",
+              "Bukit Merah"
+            ]
+          },
+          {
+            "region": "East Region",
+            "name": "East Region",
+            "areas": [
+              "Marine Parade",
+              "Katong",
+              "Joo Chiat",
+              "Bedok",
+              "Tampines",
+              "Pasir Ris",
+              "Changi",
+              "Geylang"
+            ]
+          },
+          {
+            "region": "North Region",
+            "name": "North Region",
+            "areas": [
+              "Woodlands",
+              "Yishun",
+              "Sembawang",
+              "Mandai",
+              "Sungei Kadut"
+            ]
+          },
+          {
+            "region": "North-East Region",
+            "name": "North-East Region",
+            "areas": [
+              "Hougang",
+              "Punggol",
+              "Sengkang",
+              "Serangoon",
+              "Ang Mo Kio"
+            ]
+          },
+          {
+            "region": "West Region",
+            "name": "West Region",
+            "areas": [
+              "Jurong East",
+              "Jurong West",
+              "Bukit Batok",
+              "Clementi",
+              "Boon Lay",
+              "Choa Chu Kang"
+            ]
+          }
+        ]
       },
       "seo": {
         "metaTitle": "UA Engineering PTE. LTD. | Singapore Engineering & Renovation",
@@ -164,7 +230,73 @@
         "heroImage": "/images/services/services-bg.jpg",
         "heroImageAlt": "UA Engineering Substation Electrical Rewiring Grid",
         "servicesHeading": "Singapore Building and Construction Capability",
-        "servicesSubheading": "We handle commercial, industrial, and residential upgrades. All works are certified by BCA registered professional engineers."
+        "servicesSubheading": "We handle commercial, industrial, and residential upgrades. All works are certified by BCA registered professional engineers.",
+        "serviceAreasTitle": "Reliable Engineering & Renovation Solutions Near You",
+        "serviceAreasSubtitle": "UA ENGINEERING proudly provides renovation and upgrading services across Singapore, covering all major residential and commercial areas.",
+        "regions": [
+          {
+            "region": "Central Region",
+            "name": "Central Region",
+            "areas": [
+              "Orchard",
+              "Bugis",
+              "Marina Bay",
+              "Raffles Place",
+              "Tanjong Pagar",
+              "Bishan",
+              "Toa Payoh",
+              "Bukit Merah"
+            ]
+          },
+          {
+            "region": "East Region",
+            "name": "East Region",
+            "areas": [
+              "Marine Parade",
+              "Katong",
+              "Joo Chiat",
+              "Bedok",
+              "Tampines",
+              "Pasir Ris",
+              "Changi",
+              "Geylang"
+            ]
+          },
+          {
+            "region": "North Region",
+            "name": "North Region",
+            "areas": [
+              "Woodlands",
+              "Yishun",
+              "Sembawang",
+              "Mandai",
+              "Sungei Kadut"
+            ]
+          },
+          {
+            "region": "North-East Region",
+            "name": "North-East Region",
+            "areas": [
+              "Hougang",
+              "Punggol",
+              "Sengkang",
+              "Serangoon",
+              "Ang Mo Kio"
+            ]
+          },
+          {
+            "region": "West Region",
+            "name": "West Region",
+            "areas": [
+              "Jurong East",
+              "Jurong West",
+              "Bukit Batok",
+              "Clementi",
+              "Boon Lay",
+              "Choa Chu Kang"
+            ]
+          }
+        ]
       },
       "seo": {
         "metaTitle": "Our Services | Substation Electrical, Plumbing, Waterproofing",
@@ -747,6 +879,65 @@
             }
           ]
         }
+      ],
+      "serviceAreas": [
+        {
+          "region": "Central Region",
+          "areas": [
+            "Orchard",
+            "Bugis",
+            "Marina Bay",
+            "Raffles Place",
+            "Tanjong Pagar",
+            "Bishan",
+            "Toa Payoh",
+            "Bukit Merah"
+          ]
+        },
+        {
+          "region": "East Region",
+          "areas": [
+            "Marine Parade",
+            "Katong",
+            "Joo Chiat",
+            "Bedok",
+            "Tampines",
+            "Pasir Ris",
+            "Changi",
+            "Geylang"
+          ]
+        },
+        {
+          "region": "North Region",
+          "areas": [
+            "Woodlands",
+            "Yishun",
+            "Sembawang",
+            "Mandai",
+            "Sungei Kadut"
+          ]
+        },
+        {
+          "region": "North-East Region",
+          "areas": [
+            "Hougang",
+            "Punggol",
+            "Sengkang",
+            "Serangoon",
+            "Ang Mo Kio"
+          ]
+        },
+        {
+          "region": "West Region",
+          "areas": [
+            "Jurong East",
+            "Jurong West",
+            "Bukit Batok",
+            "Clementi",
+            "Boon Lay",
+            "Choa Chu Kang"
+          ]
+        }
       ]
     },
     {
@@ -1157,6 +1348,65 @@
             }
           ]
         }
+      ],
+      "serviceAreas": [
+        {
+          "region": "Central Region",
+          "areas": [
+            "Orchard",
+            "Bugis",
+            "Marina Bay",
+            "Raffles Place",
+            "Tanjong Pagar",
+            "Bishan",
+            "Toa Payoh",
+            "Bukit Merah"
+          ]
+        },
+        {
+          "region": "East Region",
+          "areas": [
+            "Marine Parade",
+            "Katong",
+            "Joo Chiat",
+            "Bedok",
+            "Tampines",
+            "Pasir Ris",
+            "Changi",
+            "Geylang"
+          ]
+        },
+        {
+          "region": "North Region",
+          "areas": [
+            "Woodlands",
+            "Yishun",
+            "Sembawang",
+            "Mandai",
+            "Sungei Kadut"
+          ]
+        },
+        {
+          "region": "North-East Region",
+          "areas": [
+            "Hougang",
+            "Punggol",
+            "Sengkang",
+            "Serangoon",
+            "Ang Mo Kio"
+          ]
+        },
+        {
+          "region": "West Region",
+          "areas": [
+            "Jurong East",
+            "Jurong West",
+            "Bukit Batok",
+            "Clementi",
+            "Boon Lay",
+            "Choa Chu Kang"
+          ]
+        }
       ]
     },
     {
@@ -1398,6 +1648,65 @@
               "title": "Step 06 – Project Handover",
               "description": "Perform final quality checks, clean the site, and provide maintenance guidance."
             }
+          ]
+        }
+      ],
+      "serviceAreas": [
+        {
+          "region": "Central Region",
+          "areas": [
+            "Orchard",
+            "Bugis",
+            "Marina Bay",
+            "Raffles Place",
+            "Tanjong Pagar",
+            "Bishan",
+            "Toa Payoh",
+            "Bukit Merah"
+          ]
+        },
+        {
+          "region": "East Region",
+          "areas": [
+            "Marine Parade",
+            "Katong",
+            "Joo Chiat",
+            "Bedok",
+            "Tampines",
+            "Pasir Ris",
+            "Changi",
+            "Geylang"
+          ]
+        },
+        {
+          "region": "North Region",
+          "areas": [
+            "Woodlands",
+            "Yishun",
+            "Sembawang",
+            "Mandai",
+            "Sungei Kadut"
+          ]
+        },
+        {
+          "region": "North-East Region",
+          "areas": [
+            "Hougang",
+            "Punggol",
+            "Sengkang",
+            "Serangoon",
+            "Ang Mo Kio"
+          ]
+        },
+        {
+          "region": "West Region",
+          "areas": [
+            "Jurong East",
+            "Jurong West",
+            "Bukit Batok",
+            "Clementi",
+            "Boon Lay",
+            "Choa Chu Kang"
           ]
         }
       ]
@@ -1812,6 +2121,65 @@
             }
           ]
         }
+      ],
+      "serviceAreas": [
+        {
+          "region": "Central Region",
+          "areas": [
+            "Orchard",
+            "Bugis",
+            "Marina Bay",
+            "Raffles Place",
+            "Tanjong Pagar",
+            "Bishan",
+            "Toa Payoh",
+            "Bukit Merah"
+          ]
+        },
+        {
+          "region": "East Region",
+          "areas": [
+            "Marine Parade",
+            "Katong",
+            "Joo Chiat",
+            "Bedok",
+            "Tampines",
+            "Pasir Ris",
+            "Changi",
+            "Geylang"
+          ]
+        },
+        {
+          "region": "North Region",
+          "areas": [
+            "Woodlands",
+            "Yishun",
+            "Sembawang",
+            "Mandai",
+            "Sungei Kadut"
+          ]
+        },
+        {
+          "region": "North-East Region",
+          "areas": [
+            "Hougang",
+            "Punggol",
+            "Sengkang",
+            "Serangoon",
+            "Ang Mo Kio"
+          ]
+        },
+        {
+          "region": "West Region",
+          "areas": [
+            "Jurong East",
+            "Jurong West",
+            "Bukit Batok",
+            "Clementi",
+            "Boon Lay",
+            "Choa Chu Kang"
+          ]
+        }
       ]
     },
     {
@@ -2110,6 +2478,65 @@
             }
           ]
         }
+      ],
+      "serviceAreas": [
+        {
+          "region": "Central Region",
+          "areas": [
+            "Orchard",
+            "Bugis",
+            "Marina Bay",
+            "Raffles Place",
+            "Tanjong Pagar",
+            "Bishan",
+            "Toa Payoh",
+            "Bukit Merah"
+          ]
+        },
+        {
+          "region": "East Region",
+          "areas": [
+            "Marine Parade",
+            "Katong",
+            "Joo Chiat",
+            "Bedok",
+            "Tampines",
+            "Pasir Ris",
+            "Changi",
+            "Geylang"
+          ]
+        },
+        {
+          "region": "North Region",
+          "areas": [
+            "Woodlands",
+            "Yishun",
+            "Sembawang",
+            "Mandai",
+            "Sungei Kadut"
+          ]
+        },
+        {
+          "region": "North-East Region",
+          "areas": [
+            "Hougang",
+            "Punggol",
+            "Sengkang",
+            "Serangoon",
+            "Ang Mo Kio"
+          ]
+        },
+        {
+          "region": "West Region",
+          "areas": [
+            "Jurong East",
+            "Jurong West",
+            "Bukit Batok",
+            "Clementi",
+            "Boon Lay",
+            "Choa Chu Kang"
+          ]
+        }
       ]
     },
     {
@@ -2269,6 +2696,67 @@
               "title": "Step 06 – Testing & Handover",
               "description": "Conduct comprehensive system testing, verify operational performance, perform safety inspections, and complete the final client handover."
             }
+          ]
+        }
+      ],
+      "serviceAreasHeading": "Reliable Engineering & Renovation Solutions Near You",
+      "serviceAreasSubheading": "UA ENGINEERING proudly provides renovation and upgrading services across Singapore, covering all major residential and commercial areas.",
+      "serviceAreas": [
+        {
+          "region": "Central Region",
+          "areas": [
+            "Orchard",
+            "Bugis",
+            "Marina Bay",
+            "Raffles Place",
+            "Tanjong Pagar",
+            "Bishan",
+            "Toa Payoh",
+            "Bukit Merah"
+          ]
+        },
+        {
+          "region": "East Region",
+          "areas": [
+            "Marine Parade",
+            "Katong",
+            "Joo Chiat",
+            "Bedok",
+            "Tampines",
+            "Pasir Ris",
+            "Changi",
+            "Geylang"
+          ]
+        },
+        {
+          "region": "North Region",
+          "areas": [
+            "Woodlands",
+            "Yishun",
+            "Sembawang",
+            "Mandai",
+            "Sungei Kadut"
+          ]
+        },
+        {
+          "region": "North-East Region",
+          "areas": [
+            "Hougang",
+            "Punggol",
+            "Sengkang",
+            "Serangoon",
+            "Ang Mo Kio"
+          ]
+        },
+        {
+          "region": "West Region",
+          "areas": [
+            "Jurong East",
+            "Jurong West",
+            "Bukit Batok",
+            "Clementi",
+            "Boon Lay",
+            "Choa Chu Kang"
           ]
         }
       ]
