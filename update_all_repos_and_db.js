@@ -8,7 +8,7 @@ dotenv.config();
 const DEFAULT_MONGODB_URI = "mongodb+srv://sajolbd:sajolBD-222@cluster0.wug67yz.mongodb.net/?appName=Cluster0";
 const MONGODB_URI = process.env.MONGODB_URI || DEFAULT_MONGODB_URI;
 
-// Define updated servicesData array with exact text from Google Doc
+// Define updated servicesData array with exact FULL UNTRUNCATED text from Google Doc
 const servicesData = [
   {
     slug: "renovation-upgrading",
@@ -145,7 +145,7 @@ const servicesData = [
         title: "Home Renovation",
         image: "/images/services/sub_home_reno.png",
         breadcrumbBg: "/images/layout/breadcrumb-bg.png",
-        description: "Transform your HDB, condo, or landed property with customised home renovation solutions designed for modern living, comfort, functionality, and long-term value.",
+        description: "Create a home that reflects your lifestyle with UA Engineering's professional Home Renovation Services in Singapore. We specialise in renovating HDB flats, condominiums, and landed homes by improving layouts, maximising usable space, and upgrading interiors for better comfort and functionality. Whether you're renovating an ageing property or preparing a newly purchased home, our experienced team delivers practical renovation solutions with quality workmanship, efficient project coordination, and compliance with Singapore renovation guidelines.",
         longDescription: "Create a home that reflects your lifestyle with UA Engineering's professional Home Renovation Services in Singapore. We specialise in renovating HDB flats, condominiums, and landed homes by improving layouts, maximising usable space, and upgrading interiors for better comfort and functionality. Whether you're renovating an ageing property or preparing a newly purchased home, our experienced team delivers practical renovation solutions with quality workmanship, efficient project coordination, and compliance with Singapore renovation guidelines.",
         features: [
           "Complete Home Renovation Planning",
@@ -183,7 +183,7 @@ const servicesData = [
         title: "Kitchen Renovation",
         image: "/images/services/sub_kitchen_reno.png",
         breadcrumbBg: "/images/layout/breadcrumb-bg.png",
-        description: "Upgrade your kitchen with smart layouts, durable cabinetry, and stylish finishes that maximise storage, efficiency, and everyday convenience for Singapore homes.",
+        description: "Transform your cooking space with UA Engineering's professional Kitchen Renovation Services in Singapore. We design and renovate functional kitchens for HDB flats, condominiums, and landed homes, combining smart layouts with quality materials and efficient storage solutions. From cabinet replacement and countertop installation to tiling and plumbing coordination, we deliver practical kitchen renovations that improve workflow, maximise space, and enhance everyday living.",
         longDescription: "Transform your cooking space with UA Engineering's professional Kitchen Renovation Services in Singapore. We design and renovate functional kitchens for HDB flats, condominiums, and landed homes, combining smart layouts with quality materials and efficient storage solutions. From cabinet replacement and countertop installation to tiling and plumbing coordination, we deliver practical kitchen renovations that improve workflow, maximise space, and enhance everyday living.",
         features: [
           "Kitchen Layout Planning",
@@ -221,7 +221,7 @@ const servicesData = [
         title: "Room Beautification",
         image: "/images/services/sub_room_beautification.png",
         breadcrumbBg: "/images/layout/breadcrumb-bg.png",
-        description: "Refresh bedrooms, living rooms, and study spaces with elegant interior upgrades that create a comfortable, stylish, and personalised environment for your family.",
+        description: "Enhance the comfort and appearance of your home with UA Engineering's Room Beautification Services in Singapore. We upgrade bedrooms, living rooms, and study spaces through customised interior enhancements, decorative finishes, space optimisation, and quality built-in features. Every project is designed to create a welcoming environment that reflects your lifestyle while improving functionality and visual appeal.",
         longDescription: "Enhance the comfort and appearance of your home with UA Engineering's Room Beautification Services in Singapore. We upgrade bedrooms, living rooms, and study spaces through customised interior enhancements, decorative finishes, space optimisation, and quality built-in features. Every project is designed to create a welcoming environment that reflects your lifestyle while improving functionality and visual appeal.",
         features: [
           "Interior Space Enhancement",
@@ -259,7 +259,7 @@ const servicesData = [
         title: "Create Open Plan Spaces (C&R Works)",
         image: "/images/services/sub_open_plan.png",
         breadcrumbBg: "/images/layout/breadcrumb-bg.png",
-        description: "Create spacious and modern open-plan living areas with professional C&R works, ensuring safe structural modifications and compliance with Singapore regulations.",
+        description: "Create brighter and more spacious interiors with UA Engineering's C&R (Construction & Reconstruction) Services in Singapore. We perform professional wall removal, structural modifications, and space reconfiguration to improve flow and maximise usable living areas. Every project is carefully planned and executed in compliance with HDB and Singapore building regulations.",
         longDescription: "Create brighter and more spacious interiors with UA Engineering's C&R (Construction & Reconstruction) Services in Singapore. We perform professional wall removal, structural modifications, and space reconfiguration to improve flow and maximise usable living areas. Every project is carefully planned and executed in compliance with HDB and Singapore building regulations.",
         features: [
           "Site Assessment & Structural Review",
@@ -297,7 +297,7 @@ const servicesData = [
         title: "Floor Renovation & Polishing",
         image: "/images/services/sub_floor_reno.png",
         breadcrumbBg: "/images/layout/breadcrumb-bg.png",
-        description: "Restore and upgrade your flooring with high-quality renovation and polishing services that enhance durability, appearance, and long-lasting protection.",
+        description: "Restore the beauty and durability of your floors with UA Engineering's professional Floor Renovation & Polishing Services in Singapore. We repair, replace, and polish a wide range of flooring materials to improve appearance, safety, and long-term performance for residential and commercial properties.",
         longDescription: "Restore the beauty and durability of your floors with UA Engineering's professional Floor Renovation & Polishing Services in Singapore. We repair, replace, and polish a wide range of flooring materials to improve appearance, safety, and long-term performance for residential and commercial properties.",
         features: [
           "Floor Surface Assessment",
@@ -335,7 +335,7 @@ const servicesData = [
         title: "Decking Work",
         image: "/images/services/sub_decking.png",
         breadcrumbBg: "/images/layout/breadcrumb-bg.png",
-        description: "Enhance balconies, patios, and outdoor spaces with durable decking solutions that combine weather resistance, safety, and elegant design.",
+        description: "Upgrade your outdoor living areas with UA Engineering's professional Decking Installation Services in Singapore. We design and install durable timber and composite decking for balconies, patios, gardens, and outdoor spaces that combine functionality, safety, and long-lasting performance in Singapore's tropical climate.",
         longDescription: "Upgrade your outdoor living areas with UA Engineering's professional Decking Installation Services in Singapore. We design and install durable timber and composite decking for balconies, patios, gardens, and outdoor spaces that combine functionality, safety, and long-lasting performance in Singapore's tropical climate.",
         features: [
           "Timber Deck Installation",
@@ -373,7 +373,7 @@ const servicesData = [
         title: "Installation of Decorative Wall Panels",
         image: "/images/services/sub_wall_panels.png",
         breadcrumbBg: "/images/layout/breadcrumb-bg.png",
-        description: "Transform plain walls into stunning feature walls with professionally installed decorative wall panels, combining modern aesthetics, durability, and low-maintenance performance.",
+        description: "Enhance your interiors with UA Engineering's Decorative Wall Panel Installation Services in Singapore. We install stylish wall panel systems that add texture, depth, and character to living rooms, bedrooms, offices, and commercial interiors. Our solutions combine modern design with quality workmanship to create elegant feature walls that are durable and easy to maintain.",
         longDescription: "Enhance your interiors with UA Engineering's Decorative Wall Panel Installation Services in Singapore. We install stylish wall panel systems that add texture, depth, and character to living rooms, bedrooms, offices, and commercial interiors. Our solutions combine modern design with quality workmanship to create elegant feature walls that are durable and easy to maintain.",
         features: [
           "PVC Wall Panel Installation",
@@ -541,7 +541,7 @@ const servicesData = [
         title: "All Kinds of Steel Work",
         image: "/images/services/sub_steel_work.png",
         breadcrumbBg: "/images/layout/breadcrumb-bg.png",
-        description: "Expert steel fabrication and installation for durable, safe, customised structural solutions throughout Singapore properties.",
+        description: "UA ENGINEERING provides custom steel fabrication and installation services for HDB flats, condominiums, landed homes, and commercial properties across Singapore. We fabricate and install steel support structures, custom frames, platforms, brackets, railings, and other metal components tailored to your property's requirements. Our team combines precise fabrication, quality materials, and professional installation to deliver durable steel solutions built for safety, functionality, and long-term performance.",
         longDescription: "UA ENGINEERING provides custom steel fabrication and installation services for HDB flats, condominiums, landed homes, and commercial properties across Singapore. We fabricate and install steel support structures, custom frames, platforms, brackets, railings, and other metal components tailored to your property's requirements. Our team combines precise fabrication, quality materials, and professional installation to deliver durable steel solutions built for safety, functionality, and long-term performance.",
         features: [
           "Custom Steel Fabrication",
@@ -579,7 +579,7 @@ const servicesData = [
         title: "Main Gate & Grill Work",
         image: "/images/services/sub_gate_grill.png",
         breadcrumbBg: "/images/layout/breadcrumb-bg.png",
-        description: "Custom gates and grills combining security, durability, and modern designs for residential and commercial properties across Singapore.",
+        description: "UA ENGINEERING provides custom main gate and grill fabrication services for HDB flats, condominiums, landed homes, and commercial properties across Singapore. Whether you're replacing an existing gate, installing a new entrance gate, or upgrading window and door grills, we fabricate each product to suit your property's dimensions and design preferences. Our team focuses on quality workmanship, secure installation, and durable materials to improve property security while complementing the overall appearance of your home or business.",
         longDescription: "UA ENGINEERING provides custom main gate and grill fabrication services for HDB flats, condominiums, landed homes, and commercial properties across Singapore. Whether you're replacing an existing gate, installing a new entrance gate, or upgrading window and door grills, we fabricate each product to suit your property's dimensions and design preferences. Our team focuses on quality workmanship, secure installation, and durable materials to improve property security while complementing the overall appearance of your home or business.",
         features: [
           "Mild Steel Main Gates",
@@ -617,7 +617,7 @@ const servicesData = [
         title: "Balcony Shelter Work",
         image: "/images/services/sub_balcony_shelter.png",
         breadcrumbBg: "/images/layout/breadcrumb-bg.png",
-        description: "Professionally installed balcony shelters providing reliable weather protection, enhanced comfort, and lasting durability for Singapore properties.",
+        description: "UA ENGINEERING designs and installs balcony shelters that provide practical weather protection while enhancing the comfort and usability of outdoor living spaces. Our balcony shelter solutions are suitable for HDB executive apartments (where permitted), condominiums, landed homes, and commercial premises. We use quality structural materials and roofing systems to create shelters that blend with your property's exterior while helping protect against Singapore's sun and frequent rainfall.",
         longDescription: "UA ENGINEERING designs and installs balcony shelters that provide practical weather protection while enhancing the comfort and usability of outdoor living spaces. Our balcony shelter solutions are suitable for HDB executive apartments (where permitted), condominiums, landed homes, and commercial premises. We use quality structural materials and roofing systems to create shelters that blend with your property's exterior while helping protect against Singapore's sun and frequent rainfall.",
         features: [
           "Polycarbonate Balcony Shelters",
@@ -655,7 +655,7 @@ const servicesData = [
         title: "Roof Extension & Solutions",
         image: "/images/services/sub_roof_extension.png",
         breadcrumbBg: "/images/layout/breadcrumb-bg.png",
-        description: "Custom roof extensions designed to maximise covered space while improving weather protection, functionality, and long-term property value.",
+        description: "UA ENGINEERING provides customised roof extension solutions for landed homes and commercial properties across Singapore. Whether you need additional covered space for a car porch, outdoor seating area, side walkway, or backyard, our team fabricates and installs durable roof structures designed to suit your property's layout. We focus on practical designs, quality materials, and professional installation to improve protection from Singapore's weather while maintaining a clean and well-integrated appearance.",
         longDescription: "UA ENGINEERING provides customised roof extension solutions for landed homes and commercial properties across Singapore. Whether you need additional covered space for a car porch, outdoor seating area, side walkway, or backyard, our team fabricates and installs durable roof structures designed to suit your property's layout. We focus on practical designs, quality materials, and professional installation to improve protection from Singapore's weather while maintaining a clean and well-integrated appearance.",
         features: [
           "Car Porch Roof Extensions",
@@ -693,7 +693,7 @@ const servicesData = [
         title: "Awning Shelter Fabrication & Installation",
         image: "/images/services/sub_awning_shelter.png",
         breadcrumbBg: "/images/layout/breadcrumb-bg.png",
-        description: "High-quality awning shelters expertly fabricated and installed to provide shade, weather protection, and enhanced outdoor comfort.",
+        description: "UA ENGINEERING fabricates and installs customised awning shelters for residential and commercial properties throughout Singapore. Our awnings provide practical shade and weather protection for entrances, windows, patios, shopfronts, and outdoor areas. Every awning is manufactured according to your property's dimensions and installed with careful attention to structural stability, functionality, and overall appearance.",
         longDescription: "UA ENGINEERING fabricates and installs customised awning shelters for residential and commercial properties throughout Singapore. Our awnings provide practical shade and weather protection for entrances, windows, patios, shopfronts, and outdoor areas. Every awning is manufactured according to your property's dimensions and installed with careful attention to structural stability, functionality, and overall appearance.",
         features: [
           "Residential Awning Installation",
@@ -862,7 +862,7 @@ const servicesData = [
         title: "Painting Services",
         image: "/images/services/sub_painting.png",
         breadcrumbBg: "/images/layout/breadcrumb-bg.png",
-        description: "Expert Interior and Exterior Painting Services Designed to Enhance Beauty, Protection, and Property Value.",
+        description: "Refresh and protect your property with UA Engineering's professional Painting Services in Singapore. We provide interior and exterior painting for HDB flats, condominiums, landed houses, offices, and commercial properties. Our process includes thorough surface preparation, crack repairs, priming, and premium paint application to achieve smooth, durable, and long-lasting finishes that withstand Singapore's humid climate.",
         longDescription: "Refresh and protect your property with UA Engineering's professional Painting Services in Singapore. We provide interior and exterior painting for HDB flats, condominiums, landed houses, offices, and commercial properties. Our process includes thorough surface preparation, crack repairs, priming, and premium paint application to achieve smooth, durable, and long-lasting finishes that withstand Singapore's humid climate.",
         features: [
           "Interior Wall & Ceiling Painting",
@@ -900,7 +900,7 @@ const servicesData = [
         title: "Waterproofing Solutions",
         image: "/images/services/sub_waterproofing.png",
         breadcrumbBg: "/images/layout/breadcrumb-bg.png",
-        description: "Professional Waterproofing Solutions Preventing Water Seepage, Roof Leaks, and Moisture Damage for Lasting Protection.",
+        description: "Protect your property from water seepage, roof leaks, ceiling leaks, and damp walls with UA Engineering's professional Waterproofing Solutions in Singapore. We provide effective waterproofing for roofs, bathrooms, balconies, external walls, and concrete surfaces using proven waterproofing systems that deliver long-term protection against Singapore's heavy rainfall and humidity.",
         longDescription: "Protect your property from water seepage, roof leaks, ceiling leaks, and damp walls with UA Engineering's professional Waterproofing Solutions in Singapore. We provide effective waterproofing for roofs, bathrooms, balconies, external walls, and concrete surfaces using proven waterproofing systems that deliver long-term protection against Singapore's heavy rainfall and humidity.",
         features: [
           "Roof Waterproofing Systems",
@@ -1068,8 +1068,8 @@ const servicesData = [
         title: "Aluminium & Glass Installation & Repair",
         image: "/images/services/sub_aluminium_glass.png",
         breadcrumbBg: "/images/layout/breadcrumb-bg.png",
-        description: "Professional aluminium and glass installation and repair services delivering durability, safety, and modern aesthetics seamlessly.",
-        longDescription: "UA Engineering provides professional aluminium and glass installation and repair services for residential, commercial, and industrial properties throughout Singapore. We install aluminium windows, sliding and swing doors, glass partitions, shopfront glazing, shower screens, and customised glazing systems using premium aluminium profiles and high-quality tempered or laminated safety glass. Our repair services address damaged glass panels, worn hardware, faulty rollers, misaligned frames, and deteriorated sealants, restoring safety and smooth operation.",
+        description: "UA Engineering provides professional aluminium and glass installation and repair services for residential, commercial, and industrial properties throughout Singapore. We install aluminium windows, sliding and swing doors, glass partitions, shopfront glazing, shower screens, and customised glazing systems using premium aluminium profiles and high-quality tempered or laminated safety glass. Our repair services address damaged glass panels, worn hardware, faulty rollers, misaligned frames, and deteriorated sealants, restoring both safety and smooth operation while maintaining a clean, modern appearance.",
+        longDescription: "UA Engineering provides professional aluminium and glass installation and repair services for residential, commercial, and industrial properties throughout Singapore. We install aluminium windows, sliding and swing doors, glass partitions, shopfront glazing, shower screens, and customised glazing systems using premium aluminium profiles and high-quality tempered or laminated safety glass. Our repair services address damaged glass panels, worn hardware, faulty rollers, misaligned frames, and deteriorated sealants, restoring both safety and smooth operation while maintaining a clean, modern appearance.",
         features: [
           "Aluminium Windows & Doors",
           "Sliding & Folding Door Systems",
@@ -1106,7 +1106,7 @@ const servicesData = [
         title: "Skylight Installation",
         image: "/images/services/sub_skylight.png",
         breadcrumbBg: "/images/layout/breadcrumb-bg.png",
-        description: "Brighten interiors with professionally installed skylights that enhance natural lighting, ventilation, and energy efficiency effortlessly.",
+        description: "Bring more natural daylight into your property with professionally installed skylight systems from UA Engineering. We install fixed and ventilated skylights for residential, commercial, and industrial buildings, helping improve interior brightness, ventilation, and overall architectural appeal. Every installation includes careful structural assessment, weatherproof flashing, and precision sealing to deliver reliable long-term performance in Singapore's climate.",
         longDescription: "Bring more natural daylight into your property with professionally installed skylight systems from UA Engineering. We install fixed and ventilated skylights for residential, commercial, and industrial buildings, helping improve interior brightness, ventilation, and overall architectural appeal. Every installation includes careful structural assessment, weatherproof flashing, and precision sealing to deliver reliable long-term performance in Singapore's climate.",
         features: [
           "Fixed Skylight Installation",
@@ -1144,7 +1144,7 @@ const servicesData = [
         title: "Mosquito Net Installation",
         image: "/images/services/sub_mosquito_net.png",
         breadcrumbBg: "/images/layout/breadcrumb-bg.png",
-        description: "Custom mosquito net installations provide effective insect protection while maintaining fresh airflow and unobstructed outdoor views.",
+        description: "UA Engineering supplies and installs custom-fit mosquito net systems that provide effective insect protection without restricting natural airflow or outdoor views. Our solutions are suitable for windows, doors, balconies, and ventilation openings, with options including sliding, magnetic, retractable, and fixed-frame systems. Every installation is accurately measured to ensure a secure fit, smooth operation, and long-lasting performance.",
         longDescription: "UA Engineering supplies and installs custom-fit mosquito net systems that provide effective insect protection without restricting natural airflow or outdoor views. Our solutions are suitable for windows, doors, balconies, and ventilation openings, with options including sliding, magnetic, retractable, and fixed-frame systems. Every installation is accurately measured to ensure a secure fit, smooth operation, and long-lasting performance.",
         features: [
           "Window Mosquito Nets",
@@ -1182,8 +1182,8 @@ const servicesData = [
         title: "Glass Protection Films",
         image: "/images/services/sub_glass_films.png",
         breadcrumbBg: "/images/layout/breadcrumb-bg.png",
-        description: "High-quality glass protection film installation enhancing privacy, UV protection, heat reduction, and everyday indoor comfort.",
-        longDescription: "UA Engineering provides professional glass protection film installation services for residential and commercial properties across Singapore. We install high-performance solar control films, safety films, privacy films, decorative films, and UV protection films for windows, glass doors, office partitions, and shopfront glazing. Our quality window films help reduce solar heat, minimise UV exposure, improve indoor privacy, and protect glass surfaces from scratches and accidental impacts.",
+        description: "UA Engineering provides professional glass protection film installation services for residential and commercial properties across Singapore. We install high-performance solar control films, safety films, privacy films, decorative films, and UV protection films for windows, glass doors, office partitions, and shopfront glazing. Our quality window films help reduce solar heat, minimise UV exposure, improve indoor privacy, and protect glass surfaces from scratches and accidental impacts. Every installation is completed with precise application techniques and premium-grade film materials to achieve a smooth, bubble-free finish and long-lasting performance.",
+        longDescription: "UA Engineering provides professional glass protection film installation services for residential and commercial properties across Singapore. We install high-performance solar control films, safety films, privacy films, decorative films, and UV protection films for windows, glass doors, office partitions, and shopfront glazing. Our quality window films help reduce solar heat, minimise UV exposure, improve indoor privacy, and protect glass surfaces from scratches and accidental impacts. Every installation is completed with precise application techniques and premium-grade film materials to achieve a smooth, bubble-free finish and long-lasting performance.",
         features: [
           "Solar Control Film Installation",
           "UV Protection Window Films",
@@ -1222,8 +1222,8 @@ const servicesData = [
         title: "Zip Blind & All Types of Blind Fabrication & Installation",
         image: "/images/services/sub_zip_blinds.png",
         breadcrumbBg: "/images/layout/breadcrumb-bg.png",
-        description: "Custom blind fabrication and installation enhancing privacy, comfort, sun protection, and contemporary property aesthetics effectively.",
-        longDescription: "UA Engineering designs, fabricates, and installs customised blind systems for indoor and outdoor applications across Singapore. Our solutions include zip blinds, roller blinds, Venetian blinds, Roman blinds, vertical blinds, zebra blinds, blackout blinds, and motorised systems. Designed to improve privacy, reduce glare, and enhance thermal comfort, every blind is manufactured to suit your property's dimensions and functional requirements.",
+        description: "UA Engineering designs, fabricates, and installs customised blind systems for indoor and outdoor applications across Singapore. Our solutions include zip blinds, roller blinds, Venetian blinds, Roman blinds, vertical blinds, zebra blinds, blackout blinds, and motorised systems. Designed to improve privacy, reduce glare, and enhance thermal comfort, every blind is manufactured to suit the dimensions and functional requirements of your property while delivering a clean, contemporary finish.",
+        longDescription: "UA Engineering designs, fabricates, and installs customised blind systems for indoor and outdoor applications across Singapore. Our solutions include zip blinds, roller blinds, Venetian blinds, Roman blinds, vertical blinds, zebra blinds, blackout blinds, and motorised systems. Designed to improve privacy, reduce glare, and enhance thermal comfort, every blind is manufactured to suit the dimensions and functional requirements of your property while delivering a clean, contemporary finish.",
         features: [
           "Zip Blind Systems",
           "Roller Blind Installation",
@@ -1390,7 +1390,7 @@ const servicesData = [
         title: "Electrical & Lighting Work",
         image: "/images/services/sub_electrical.png",
         breadcrumbBg: "/images/layout/breadcrumb-bg.png",
-        description: "Safe, efficient electrical and lighting solutions delivering reliable power, comfort, and everyday convenience for every property.",
+        description: "UA Engineering provides professional electrical and lighting solutions for residential and commercial properties across Singapore. Our services include electrical wiring, lighting installations, power point additions, distribution board upgrades, ceiling fan installations, and electrical fault troubleshooting. Every project is completed with careful planning, quality materials, and thorough testing to ensure reliable performance, operational safety, and long-term dependability.",
         longDescription: "UA Engineering provides professional electrical and lighting solutions for residential and commercial properties across Singapore. Our services include electrical wiring, lighting installations, power point additions, distribution board upgrades, ceiling fan installations, and electrical fault troubleshooting. Every project is completed with careful planning, quality materials, and thorough testing to ensure reliable performance, operational safety, and long-term dependability.",
         features: [
           "Electrical Wiring & Rewiring",
@@ -1428,7 +1428,7 @@ const servicesData = [
         title: "Plumbing Services",
         image: "/images/services/sub_plumbing.png",
         breadcrumbBg: "/images/layout/breadcrumb-bg.png",
-        description: "Professional plumbing solutions ensure reliable water flow, leak-free systems, and long-lasting performance for every property.",
+        description: "UA Engineering delivers dependable plumbing solutions for residential and commercial properties, covering water supply systems, sanitary fittings, drainage repairs, and pipe installations. Whether repairing leaks, replacing damaged pipes, or installing new plumbing fixtures, our team focuses on efficient water flow, reliable performance, and quality workmanship to keep your plumbing system operating smoothly.",
         longDescription: "UA Engineering delivers dependable plumbing solutions for residential and commercial properties, covering water supply systems, sanitary fittings, drainage repairs, and pipe installations. Whether repairing leaks, replacing damaged pipes, or installing new plumbing fixtures, our team focuses on efficient water flow, reliable performance, and quality workmanship to keep your plumbing system operating smoothly.",
         features: [
           "Water Pipe Installation",
@@ -1466,7 +1466,7 @@ const servicesData = [
         title: "Aircon Repair",
         image: "/images/services/sub_aircon.png",
         breadcrumbBg: "/images/layout/breadcrumb-bg.png",
-        description: "Restore cooling efficiency with expert aircon repairs for dependable comfort and optimal system performance year-round.",
+        description: "UA Engineering provides professional air conditioning repair services to restore cooling performance, improve energy efficiency, and extend system lifespan. Our technicians diagnose faults accurately, repair malfunctioning components, resolve water leakage issues, and optimise overall system operation, helping maintain a comfortable indoor environment throughout the year.",
         longDescription: "UA Engineering provides professional air conditioning repair services to restore cooling performance, improve energy efficiency, and extend system lifespan. Our technicians diagnose faults accurately, repair malfunctioning components, resolve water leakage issues, and optimise overall system operation, helping maintain a comfortable indoor environment throughout the year.",
         features: [
           "Aircon Fault Diagnosis",
@@ -1634,7 +1634,7 @@ const servicesData = [
         title: "Solar Panel Installation",
         image: "/images/services/sub_solar.png",
         breadcrumbBg: "/images/layout/breadcrumb-bg.png",
-        description: "Professional solar panel installation service delivering clean, efficient renewable energy solutions for residential and commercial properties across Singapore.",
+        description: "UA Engineering provides professional solar panel installation services for residential and commercial properties across Singapore. We deliver customised rooftop solar solutions designed to maximise available roof space and support efficient renewable energy generation. Our experienced team manages every stage of the installation process, including site assessment, roof suitability evaluation, solar panel layout planning, mounting structure installation, inverter installation, electrical cabling, and final system commissioning. Using quality solar components and proven installation practices, we ensure every system is installed with precision, safety, and long-term reliability in mind.",
         longDescription: "UA Engineering provides professional solar panel installation services for residential and commercial properties across Singapore. We deliver customised rooftop solar solutions designed to maximise available roof space and support efficient renewable energy generation. Our experienced team manages every stage of the installation process, including site assessment, roof suitability evaluation, solar panel layout planning, mounting structure installation, inverter installation, electrical cabling, and final system commissioning. Using quality solar components and proven installation practices, we ensure every system is installed with precision, safety, and long-term reliability in mind.",
         features: [
           "Rooftop Solar Assessment",
@@ -2011,6 +2011,7 @@ const cmsData = {
 
 const websiteCmsPath = path.join(__dirname, "..", "UA ENGINEERING PTE. LTD -Website", "data", "cmsData.json");
 const dashboardCmsPath = path.join(__dirname, "..", "UA ENGINEERING PTE. LTD -Dashboard", "data", "cmsData.json");
+const dashboardCmsTsPath = path.join(__dirname, "..", "UA ENGINEERING PTE. LTD -Dashboard", "data", "cmsData.ts");
 
 const websiteServicesTsPath = path.join(__dirname, "..", "UA ENGINEERING PTE. LTD -Website", "data", "servicesData.ts");
 const dashboardServicesTsPath = path.join(__dirname, "..", "UA ENGINEERING PTE. LTD -Dashboard", "data", "servicesData.ts");
@@ -2019,7 +2020,7 @@ const dbJsonPath = path.join(__dirname, "data", "db.json");
 
 async function main() {
   console.log("==================================================");
-  console.log(" Re-running Full Data Sync with 100% Exact Doc Text");
+  console.log(" Full Data Sync with Long Descriptions & Input Fields ");
   console.log("==================================================");
 
   const servicesTsCode = `export interface SubService {
@@ -2096,6 +2097,179 @@ export const servicesData: ServiceCategory[] = ${JSON.stringify(servicesData, nu
   fs.writeFileSync(dashboardCmsPath, JSON.stringify(cmsData, null, 2), "utf8");
   console.log(" - Updated Dashboard cmsData.json");
 
+  // Generate cmsData.ts for Dashboard
+  const cmsTsCode = `export interface PageSeo {
+  metaTitle: string;
+  metaDescription: string;
+  metaKeywords: string;
+  schemaJson: string;
+}
+
+export interface SiteContent {
+  siteLogo: string;
+  footerLogo: string;
+  companyName: string;
+  welcomeMessage: string;
+  phone: string;
+  email: string;
+  address: string;
+  workingHours: string;
+  appointmentButtonText: string;
+  footerAboutText: string;
+  facebook: string;
+  instagram: string;
+  linkedin: string;
+  youtube: string;
+  whatsapp: string;
+}
+
+export interface HomeContent {
+  heroHeading: string;
+  heroSubheading: string;
+  heroSlide1Heading?: string;
+  heroSlide1Subheading?: string;
+  heroSlide2Heading?: string;
+  heroSlide2Subheading?: string;
+  heroSlide3Heading?: string;
+  heroSlide3Subheading?: string;
+  heroSlide4Heading?: string;
+  heroSlide4Subheading?: string;
+  heroSlide5Heading?: string;
+  heroSlide5Subheading?: string;
+  heroSlide6Heading?: string;
+  heroSlide6Subheading?: string;
+  heroSlide7Heading?: string;
+  heroSlide7Subheading?: string;
+  heroImage: string;
+  heroImageAlt: string;
+  heroCtaText: string;
+  aboutHeading: string;
+  aboutSubheading: string;
+  aboutImage: string;
+  aboutImageAlt: string;
+  aboutExperience: string;
+  aboutCard1Title?: string;
+  aboutCard1Desc?: string;
+  aboutCard2Title?: string;
+  aboutCard2Desc?: string;
+  aboutCard3Title?: string;
+  aboutCard3Desc?: string;
+  whyChooseBadge: string;
+  whyChooseHeading: string;
+  relyBadge: string;
+  relyHeading: string;
+  relyImage: string;
+  relyButtonText: string;
+  callbackHeading: string;
+  callbackSubheading: string;
+  callbackBgImage: string;
+  callbackSupportImage: string;
+  callbackButtonText: string;
+  reviewsBadge: string;
+  reviewsHeading: string;
+  processBadge: string;
+  processHeading: string;
+  [key: string]: any;
+}
+
+export interface AboutContent {
+  heroHeading: string;
+  heroSubheading: string;
+  heroImage: string;
+  aboutImage?: string;
+  heroImageAlt: string;
+  sectionTag?: string;
+  overviewHeading: string;
+  overviewText: string;
+  experienceYears?: string;
+  experienceTitle?: string;
+  experienceSubtitle?: string;
+  trustHeading?: string;
+  highlightsJson?: string;
+  ehsHeading: string;
+  ehsText: string;
+  ehsImage: string;
+  processBadge?: string;
+  processHeading: string;
+  processSubheading: string;
+  processStepsJson?: string;
+  residentialBadge?: string;
+  residentialHeading: string;
+  residentialSubheading: string;
+  faqBadge?: string;
+  faqHeading: string;
+  faqSubheading: string;
+  faqsJson?: string;
+}
+
+export interface ServicesContent {
+  heroHeading: string;
+  heroSubheading: string;
+  heroImage: string;
+  heroImageAlt: string;
+  servicesHeading: string;
+  servicesSubheading: string;
+}
+
+export interface ProjectsContent {
+  heroHeading: string;
+  heroSubheading: string;
+  heroImage: string;
+  heroImageAlt: string;
+  portfolioHeading: string;
+  portfolioSubheading: string;
+}
+
+export interface BlogContent {
+  heroHeading: string;
+  heroSubheading: string;
+  heroImage: string;
+  heroImageAlt: string;
+  blogHeading: string;
+  blogSubheading: string;
+}
+
+export interface ContactContent {
+  heroHeading: string;
+  heroSubheading: string;
+  heroImage: string;
+  heroImageAlt: string;
+  contactAddress: string;
+  contactPhone: string;
+  contactEmail: string;
+  contactHours: string;
+}
+
+export type CmsContentUnion =
+  | SiteContent
+  | HomeContent
+  | AboutContent
+  | ServicesContent
+  | ProjectsContent
+  | BlogContent
+  | ContactContent;
+
+export interface PageCmsData {
+  content: CmsContentUnion;
+  seo: PageSeo;
+}
+
+export interface CmsDatabase {
+  site: { content: SiteContent; seo: PageSeo };
+  home: { content: HomeContent; seo: PageSeo };
+  about: { content: AboutContent; seo: PageSeo };
+  services: { content: ServicesContent; seo: PageSeo };
+  projects: { content: ProjectsContent; seo: PageSeo };
+  blog: { content: BlogContent; seo: PageSeo };
+  contact: { content: ContactContent; seo: PageSeo };
+}
+
+export const initialCmsData: CmsDatabase = ${JSON.stringify(cmsData, null, 2)};
+`;
+
+  fs.writeFileSync(dashboardCmsTsPath, cmsTsCode, "utf8");
+  console.log(" - Updated Dashboard cmsData.ts (initialCmsData export)");
+
   // 3. Update db.json
   let dbData = JSON.parse(fs.readFileSync(dbJsonPath, "utf8"));
   dbData.cms = cmsData;
@@ -2133,7 +2307,7 @@ export const servicesData: ServiceCategory[] = ${JSON.stringify(servicesData, nu
 
   await mongoose.disconnect();
   console.log("\n==================================================");
-  console.log(" SUCCESS! Re-synced 100% Exact Text Across All Files ");
+  console.log(" SUCCESS! Full Long Descriptions & Dashboard Sync Done ");
   console.log("==================================================");
 }
 
