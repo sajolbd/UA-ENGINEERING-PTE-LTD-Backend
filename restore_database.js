@@ -8,7 +8,7 @@ dotenv.config();
 const DEFAULT_MONGODB_URI = "mongodb+srv://sajolbd:sajolBD-222@cluster0.wug67yz.mongodb.net/?appName=Cluster0";
 const MONGODB_URI = process.env.MONGODB_URI || DEFAULT_MONGODB_URI;
 
-const WEBSITE_DATA_DIR = path.join(__dirname, "..", "UA-ENGINEERING-PTE-LTD-Website", "data");
+const WEBSITE_DATA_DIR = path.join(__dirname, "..", "UA ENGINEERING PTE. LTD -Website", "data");
 const DB_JSON_PATH = path.join(__dirname, "data", "db.json");
 
 // Helper to extract exported array from TS file
