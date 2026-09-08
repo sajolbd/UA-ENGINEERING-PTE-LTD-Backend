@@ -899,36 +899,36 @@
             "Clear coordination ensures organised projects from assessment through installation."
           ],
           "process": [
-            "Step 01 - Site Assessment: Inspect site, measure areas, understand requirements.",
-            "Step 02 - Planning & Quotation: Recommend solutions, materials, and provide quotation.",
-            "Step 03 - Steel Fabrication: Cut, weld, assemble, and prepare steel components.",
-            "Step 04 - Surface Finishing: Apply protective coatings for durability and appearance.",
-            "Step 05 - Installation: Install and secure components with precise alignment.",
-            "Step 06 - Inspection & Handover: Check quality, finishing, functionality before project handover."
+            "Step 01 – Site Assessment: Inspect site, measure areas, understand requirements.",
+            "Step 02 – Planning & Quotation: Recommend solutions, materials, and provide quotation.",
+            "Step 03 – Steel Fabrication: Cut, weld, assemble, and prepare steel components.",
+            "Step 04 – Surface Finishing: Apply protective coatings for durability and appearance.",
+            "Step 05 – Installation: Install and secure components with precise alignment.",
+            "Step 06 – Inspection & Handover: Check quality, finishing, functionality before project handover."
           ],
           "processSteps": [
             {
-              "title": "Step 01 - Site Assessment",
+              "title": "Step 01 – Site Assessment",
               "description": "Inspect site, measure areas, understand requirements."
             },
             {
-              "title": "Step 02 - Planning & Quotation",
+              "title": "Step 02 – Planning & Quotation",
               "description": "Recommend solutions, materials, and provide quotation."
             },
             {
-              "title": "Step 03 - Steel Fabrication",
+              "title": "Step 03 – Steel Fabrication",
               "description": "Cut, weld, assemble, and prepare steel components."
             },
             {
-              "title": "Step 04 - Surface Finishing",
+              "title": "Step 04 – Surface Finishing",
               "description": "Apply protective coatings for durability and appearance."
             },
             {
-              "title": "Step 05 - Installation",
+              "title": "Step 05 – Installation",
               "description": "Install and secure components with precise alignment."
             },
             {
-              "title": "Step 06 - Inspection & Handover",
+              "title": "Step 06 – Inspection & Handover",
               "description": "Check quality, finishing, functionality before project handover."
             }
           ]
@@ -955,36 +955,36 @@
             "Professional installation ensures secure fixing and smooth operation."
           ],
           "process": [
-            "Step 01 - Site Measurement: Inspect site, discuss preferences, take accurate measurements.",
-            "Step 02 - Design & Quotation: Recommend materials, styles, and provide clear quotation.",
-            "Step 03 - Fabrication: Fabricate gates and grills to approved specifications.",
-            "Step 04 - Surface Finishing: Apply protective finishes for durability and appearance.",
-            "Step 05 - Installation: Securely install, align, and test smooth operation.",
-            "Step 06 - Final Inspection: Check alignment, locks, finishing, and complete handover."
+            "Step 01 – Site Measurement: Inspect site, discuss preferences, take accurate measurements.",
+            "Step 02 – Design & Quotation: Recommend materials, styles, and provide clear quotation.",
+            "Step 03 – Fabrication: Fabricate gates and grills to approved specifications.",
+            "Step 04 – Surface Finishing: Apply protective finishes for durability and appearance.",
+            "Step 05 – Installation: Securely install, align, and test smooth operation.",
+            "Step 06 – Final Inspection: Check alignment, locks, finishing, and complete handover."
           ],
           "processSteps": [
             {
-              "title": "Step 01 - Site Measurement",
+              "title": "Step 01 – Site Measurement",
               "description": "Inspect site, discuss preferences, take accurate measurements."
             },
             {
-              "title": "Step 02 - Design & Quotation",
+              "title": "Step 02 – Design & Quotation",
               "description": "Recommend materials, styles, and provide clear quotation."
             },
             {
-              "title": "Step 03 - Fabrication",
+              "title": "Step 03 – Fabrication",
               "description": "Fabricate gates and grills to approved specifications."
             },
             {
-              "title": "Step 04 - Surface Finishing",
+              "title": "Step 04 – Surface Finishing",
               "description": "Apply protective finishes for durability and appearance."
             },
             {
-              "title": "Step 05 - Installation",
+              "title": "Step 05 – Installation",
               "description": "Securely install, align, and test smooth operation."
             },
             {
-              "title": "Step 06 - Final Inspection",
+              "title": "Step 06 – Final Inspection",
               "description": "Check alignment, locks, finishing, and complete handover."
             }
           ]
@@ -1011,36 +1011,36 @@
             "Balcony shelters create comfortable outdoor spaces for daily use."
           ],
           "process": [
-            "Step 01 - Site Assessment: We inspect the balcony area and assess suitable shelter options.",
-            "Step 02 - Design Consultation: Material options, colours, and structural requirements are discussed.",
-            "Step 03 - Fabrication: Support frames and shelter components are fabricated according to site measurements.",
-            "Step 04 - Material Preparation: Roofing panels and structural components are prepared before installation.",
-            "Step 05 - Installation: The shelter is securely installed with careful alignment and finishing.",
-            "Step 06 - Inspection & Handover: Completed works are checked before final project completion."
+            "Step 01 – Site Assessment: We inspect the balcony area and assess suitable shelter options.",
+            "Step 02 – Design Consultation: Material options, colours, and structural requirements are discussed.",
+            "Step 03 – Fabrication: Support frames and shelter components are fabricated according to site measurements.",
+            "Step 04 – Material Preparation: Roofing panels and structural components are prepared before installation.",
+            "Step 05 – Installation: The shelter is securely installed with careful alignment and finishing.",
+            "Step 06 – Inspection & Handover: Completed works are checked before final project completion."
           ],
           "processSteps": [
             {
-              "title": "Step 01 - Site Assessment",
+              "title": "Step 01 – Site Assessment",
               "description": "We inspect the balcony area and assess suitable shelter options."
             },
             {
-              "title": "Step 02 - Design Consultation",
+              "title": "Step 02 – Design Consultation",
               "description": "Material options, colours, and structural requirements are discussed."
             },
             {
-              "title": "Step 03 - Fabrication",
+              "title": "Step 03 – Fabrication",
               "description": "Support frames and shelter components are fabricated according to site measurements."
             },
             {
-              "title": "Step 04 - Material Preparation",
+              "title": "Step 04 – Material Preparation",
               "description": "Roofing panels and structural components are prepared before installation."
             },
             {
-              "title": "Step 05 - Installation",
+              "title": "Step 05 – Installation",
               "description": "The shelter is securely installed with careful alignment and finishing."
             },
             {
-              "title": "Step 06 - Inspection & Handover",
+              "title": "Step 06 – Inspection & Handover",
               "description": "Completed works are checked before final project completion."
             }
           ]
@@ -1067,36 +1067,36 @@
             "Professional installation ensures organised workmanship and quality finishing."
           ],
           "process": [
-            "Step 01 - Site Visit: We assess your existing roof and discuss extension requirements.",
-            "Step 02 - Design Proposal: Roof layout, materials, and structural details are finalised.",
-            "Step 03 - Fabrication: Roof support structures are fabricated according to approved dimensions.",
-            "Step 04 - Material Preparation: Roofing sheets, flashings, and accessories are prepared.",
-            "Step 05 - Installation: Structural frames and roofing materials are professionally installed.",
-            "Step 06 - Quality Inspection: The completed roof extension is inspected before handover."
+            "Step 01 – Site Visit: We assess your existing roof and discuss extension requirements.",
+            "Step 02 – Design Proposal: Roof layout, materials, and structural details are finalised.",
+            "Step 03 – Fabrication: Roof support structures are fabricated according to approved dimensions.",
+            "Step 04 – Material Preparation: Roofing sheets, flashings, and accessories are prepared.",
+            "Step 05 – Installation: Structural frames and roofing materials are professionally installed.",
+            "Step 06 – Quality Inspection: The completed roof extension is inspected before handover."
           ],
           "processSteps": [
             {
-              "title": "Step 01 - Site Visit",
+              "title": "Step 01 – Site Visit",
               "description": "We assess your existing roof and discuss extension requirements."
             },
             {
-              "title": "Step 02 - Design Proposal",
+              "title": "Step 02 – Design Proposal",
               "description": "Roof layout, materials, and structural details are finalised."
             },
             {
-              "title": "Step 03 - Fabrication",
+              "title": "Step 03 – Fabrication",
               "description": "Roof support structures are fabricated according to approved dimensions."
             },
             {
-              "title": "Step 04 - Material Preparation",
+              "title": "Step 04 – Material Preparation",
               "description": "Roofing sheets, flashings, and accessories are prepared."
             },
             {
-              "title": "Step 05 - Installation",
+              "title": "Step 05 – Installation",
               "description": "Structural frames and roofing materials are professionally installed."
             },
             {
-              "title": "Step 06 - Quality Inspection",
+              "title": "Step 06 – Quality Inspection",
               "description": "The completed roof extension is inspected before handover."
             }
           ]
@@ -1123,37 +1123,37 @@
             "We complete installations with careful alignment, neat workmanship, and attention to detail."
           ],
           "process": [
-            "Step 01 - Site Consultation: We assess the installation area and discuss your shelter requirements.",
-            "Step 02 - Material Selection: Suitable awning materials, frame types, and colours are recommended.",
-            "Step 03 - Custom Fabrication: The awning frame and roofing components are fabricated to required dimensions.",
-            "Step 04 - Pre-Installation Preparation: Materials and fittings are prepared for efficient on-site installation.",
-            "Step 05 - Installation: We securely install, check alignment, fixing points, and structural stability.",
-            "Step 06 - Final Inspection & Handover: We complete a final quality inspection and customer handover."
+            "Step 01 – Site Consultation: We assess the installation area and discuss your shelter requirements.",
+            "Step 02 – Material Selection: Suitable awning materials, frame types, and colours are recommended.",
+            "Step 03 – Custom Fabrication: The awning frame and roofing components are fabricated to the required dimensions.",
+            "Step 04 – Pre-Installation Preparation: Materials and fittings are prepared for efficient on-site installation.",
+            "Step 05 – Installation: We securely install, check alignment, fixing points, and structural stability.",
+            "Step 06 – Final Inspection & Handover: We complete a final quality inspection and ensure the awning."
           ],
           "processSteps": [
             {
-              "title": "Step 01 - Site Consultation",
+              "title": "Step 01 – Site Consultation",
               "description": "We assess the installation area and discuss your shelter requirements."
             },
             {
-              "title": "Step 02 - Material Selection",
+              "title": "Step 02 – Material Selection",
               "description": "Suitable awning materials, frame types, and colours are recommended."
             },
             {
-              "title": "Step 03 - Custom Fabrication",
-              "description": "The awning frame and roofing components are fabricated to required dimensions."
+              "title": "Step 03 – Custom Fabrication",
+              "description": "The awning frame and roofing components are fabricated to the required dimensions."
             },
             {
-              "title": "Step 04 - Pre-Installation Preparation",
+              "title": "Step 04 – Pre-Installation Preparation",
               "description": "Materials and fittings are prepared for efficient on-site installation."
             },
             {
-              "title": "Step 05 - Installation",
+              "title": "Step 05 – Installation",
               "description": "We securely install, check alignment, fixing points, and structural stability."
             },
             {
-              "title": "Step 06 - Final Inspection & Handover",
-              "description": "We complete a final quality inspection and customer handover."
+              "title": "Step 06 – Final Inspection & Handover",
+              "description": "We complete a final quality inspection and ensure the awning."
             }
           ]
         }
@@ -1311,10 +1311,10 @@
           ],
           "process": [
             "Step 01 – Site Inspection: Assess wall condition, cracks, moisture, and painting requirements.",
-            "Step 02 – Surface Preparation: Protect surrounding areas, repair cracks, sand surfaces, apply primer.",
+            "Step 02 – Surface Preparation: Protect surrounding areas, repair cracks, sand surfaces, and apply primer.",
             "Step 03 – Colour Confirmation: Confirm paint colours, finishes, and project scope before application.",
             "Step 04 – Paint Application: Apply premium paint systems using professional techniques for even coverage.",
-            "Step 05 – Final Touch-Up: Inspect painted surfaces, complete touch-ups, remove protective coverings.",
+            "Step 05 – Final Touch-Up: Inspect painted surfaces, complete touch-ups, and remove protective coverings.",
             "Step 06 – Quality Handover: Conduct final inspection, site cleaning, and customer handover."
           ],
           "processSteps": [
@@ -1324,7 +1324,7 @@
             },
             {
               "title": "Step 02 – Surface Preparation",
-              "description": "Protect surrounding areas, repair cracks, sand surfaces, apply primer."
+              "description": "Protect surrounding areas, repair cracks, sand surfaces, and apply primer."
             },
             {
               "title": "Step 03 – Colour Confirmation",
@@ -1336,7 +1336,7 @@
             },
             {
               "title": "Step 05 – Final Touch-Up",
-              "description": "Inspect painted surfaces, complete touch-ups, remove protective coverings."
+              "description": "Inspect painted surfaces, complete touch-ups, and remove protective coverings."
             },
             {
               "title": "Step 06 – Quality Handover",
@@ -1367,11 +1367,11 @@
           ],
           "process": [
             "Step 01 – Site Assessment: Inspect leak sources, moisture levels, cracks, and affected surfaces.",
-            "Step 02 – Surface Preparation: Clean the area, remove damaged materials, prepare surfaces.",
+            "Step 02 – Surface Preparation: Clean the area, remove damaged materials, and prepare surfaces for treatment.",
             "Step 03 – System Selection: Recommend the most suitable waterproofing method based on site conditions.",
-            "Step 04 – Waterproofing Application: Apply membranes, PU injection, sealants, or waterproof coatings.",
+            "Step 04 – Waterproofing Application: Apply membranes, PU injection, sealants, or waterproof coatings professionally.",
             "Step 05 – Testing & Inspection: Carry out water testing and verify complete waterproof protection.",
-            "Step 06 – Project Handover: Perform final quality checks, clean site, provide maintenance guidance."
+            "Step 06 – Project Handover: Perform final quality checks, clean the site, and provide maintenance guidance."
           ],
           "processSteps": [
             {
@@ -1380,7 +1380,7 @@
             },
             {
               "title": "Step 02 – Surface Preparation",
-              "description": "Clean the area, remove damaged materials, prepare surfaces."
+              "description": "Clean the area, remove damaged materials, and prepare surfaces for treatment."
             },
             {
               "title": "Step 03 – System Selection",
@@ -1388,7 +1388,7 @@
             },
             {
               "title": "Step 04 – Waterproofing Application",
-              "description": "Apply membranes, PU injection, sealants, or waterproof coatings."
+              "description": "Apply membranes, PU injection, sealants, or waterproof coatings professionally."
             },
             {
               "title": "Step 05 – Testing & Inspection",
@@ -1396,7 +1396,7 @@
             },
             {
               "title": "Step 06 – Project Handover",
-              "description": "Perform final quality checks, clean site, provide maintenance guidance."
+              "description": "Perform final quality checks, clean the site, and provide maintenance guidance."
             }
           ]
         }
@@ -1722,37 +1722,37 @@
             "Careful workmanship with thorough quality checks for a flawless finished result."
           ],
           "process": [
-            "Step 01 – Site Assessment: Inspect glass surfaces, discuss requirements, recommend film solution.",
-            "Step 02 – Surface Preparation: Clean and prepare the glass thoroughly to ensure maximum adhesion.",
-            "Step 03 – Film Measurement: Measure and precision-cut the film to suit each glass panel.",
-            "Step 04 – Film Installation: Apply selected film using professional techniques for bubble-free finish.",
-            "Step 05 – Finishing: Trim edges, remove excess moisture, ensure proper alignment.",
-            "Step 06 – Final Inspection: Inspect completed installation and verify overall finish and adhesion."
+            "Step 01 – Site Assessment: Inspect glass surfaces, discuss requirements, and recommend the most suitable film solution.",
+            "Step 02 – Surface Preparation: Clean and prepare the glass thoroughly to ensure maximum film adhesion.",
+            "Step 03 – Film Measurement: Measure and precision-cut the film to suit each glass panel accurately.",
+            "Step 04 – Film Installation: Apply the selected film using professional techniques for a smooth, bubble-free finish.",
+            "Step 05 – Finishing: Trim edges, remove excess moisture, and ensure proper alignment across all panels.",
+            "Step 06 – Final Inspection: Inspect the completed installation and verify overall finish, adhesion, and appearance."
           ],
           "processSteps": [
             {
               "title": "Step 01 – Site Assessment",
-              "description": "Inspect glass surfaces, discuss requirements, recommend film solution."
+              "description": "Inspect glass surfaces, discuss requirements, and recommend the most suitable film solution."
             },
             {
               "title": "Step 02 – Surface Preparation",
-              "description": "Clean and prepare the glass thoroughly to ensure maximum adhesion."
+              "description": "Clean and prepare the glass thoroughly to ensure maximum film adhesion."
             },
             {
               "title": "Step 03 – Film Measurement",
-              "description": "Measure and precision-cut the film to suit each glass panel."
+              "description": "Measure and precision-cut the film to suit each glass panel accurately."
             },
             {
               "title": "Step 04 – Film Installation",
-              "description": "Apply selected film using professional techniques for bubble-free finish."
+              "description": "Apply the selected film using professional techniques for a smooth, bubble-free finish."
             },
             {
               "title": "Step 05 – Finishing",
-              "description": "Trim edges, remove excess moisture, ensure proper alignment."
+              "description": "Trim edges, remove excess moisture, and ensure proper alignment across all panels."
             },
             {
               "title": "Step 06 – Final Inspection",
-              "description": "Inspect completed installation and verify overall finish and adhesion."
+              "description": "Inspect the completed installation and verify overall finish, adhesion, and appearance."
             }
           ]
         },
@@ -1783,7 +1783,7 @@
             "Step 03 – Custom Fabrication: Manufacture blinds according to approved specifications.",
             "Step 04 – Professional Installation: Install brackets, tracks, and blind systems securely.",
             "Step 05 – System Adjustment: Fine-tune alignment and operating mechanisms.",
-            "Step 06 – Final Handover: Inspect operation, demonstrate usage, complete handover."
+            "Step 06 – Final Handover: Inspect operation, demonstrate usage, and complete project handover."
           ],
           "processSteps": [
             {
@@ -1808,7 +1808,7 @@
             },
             {
               "title": "Step 06 – Final Handover",
-              "description": "Inspect operation, demonstrate usage, complete handover."
+              "description": "Inspect operation, demonstrate usage, and complete project handover."
             }
           ]
         }
@@ -2120,7 +2120,7 @@
       "subServicesTitle": "Professional Solar Panel Installation Overview",
       "subServicesSubheading": "Professional solar panel installation service delivering clean, efficient renewable energy solutions for residential and commercial properties across Singapore.",
       "shortDescription": "Reduce energy costs with professionally installed solar panel systems designed for long-term efficiency, reliability, and sustainable performance.",
-      "description": "UA Engineering provides professional solar panel installation services for residential and commercial properties across Singapore. We deliver customised rooftop solar solutions designed to maximise available roof space and support efficient renewable energy generation.",
+      "description": "UA Engineering provides professional solar panel installation services for residential and commercial properties across Singapore. We deliver customised rooftop solar solutions designed to maximise available roof space and support efficient renewable energy generation. Our experienced team manages every stage of the installation process, including site assessment, roof suitability evaluation, solar panel layout planning, mounting structure installation, inverter installation, electrical cabling, and final system commissioning. Using quality solar components and proven installation practices, we ensure every system is installed with precision, safety, and long-term reliability in mind.",
       "featuredImage": "/images/services/solar.png",
       "bgImage": "/images/layout/breadcrumb-bg.png",
       "targetBadge": "PROJECT COVERAGE",
@@ -2138,20 +2138,20 @@
       "whyChooseRightTitle": "UA Engineering's Solar Installation Expertise",
       "whyChooseAdvantages": [
         {
-          "title": "Professional Site Assessment",
-          "description": "Every installation begins with a detailed roof assessment to determine structural suitability, panel placement, and sunlight exposure for optimal system performance."
+          "title": "Assess the site, roof condition, space, and sunlight to determine the best panel placement.",
+          "description": "Assess the site, roof condition, space, and sunlight to determine the best panel placement."
         },
         {
-          "title": "Quality Installation Standards",
-          "description": "Our team installs solar panels using reliable mounting systems, quality components, and proven installation practices for long-term durability."
+          "title": "Use reliable solar panels, durable mounting systems, and quality electrical components for lasting performance.",
+          "description": "Use reliable solar panels, durable mounting systems, and quality electrical components for lasting performance."
         },
         {
-          "title": "Tailored System Planning",
-          "description": "Each solar installation is planned according to your property's roof layout, available space, and energy requirements for efficient performance."
+          "title": "Carefully plan mounting, cable routing, and electrical connections for safety and stability.",
+          "description": "Carefully plan mounting, cable routing, and electrical connections for safety and stability."
         },
         {
-          "title": "Thorough System Verification",
-          "description": "We inspect all installed components, electrical connections, and mounting structures to ensure the system is ready for safe operation."
+          "title": "Manage the entire process from consultation and planning to installation, testing, and handover.",
+          "description": "Manage the entire process from consultation and planning to installation, testing, and handover."
         }
       ],
       "whyChooseChallenges": [
@@ -2173,70 +2173,45 @@
         }
       ],
       "features": [
-        "Solar PV Installation",
-        "Rooftop Solar Systems",
-        "Secure Roof Mounting",
-        "Weather-Resistant Installation",
-        "Precision Workmanship",
-        "Clean Energy Solutions"
+        "Rooftop Solar Assessment",
+        "Custom Panel Layout Design",
+        "Solar Panel Installation",
+        "Electrical System Integration",
+        "Safety & Performance Testing",
+        "Final System Commissioning"
       ],
       "benefits": [
-        "Customised rooftop solar PV layout design for maximum solar yield.",
-        "Structural load analysis and secure mounting systems for Singapore weather.",
-        "Complete electrical integration, inverter setup, and grid connection.",
-        "Turnkey project management from site survey to final commissioning."
+        "Assess the site, roof condition, space, and sunlight to determine the best panel placement.",
+        "Use reliable solar panels, durable mounting systems, and quality electrical components for lasting performance.",
+        "Carefully plan mounting, cable routing, and electrical connections for safety and stability.",
+        "Manage the entire process from consultation and planning to installation, testing, and handover."
       ],
       "processHeading": "Our Working Process",
       "processText": "Our solar installation process includes site assessment, system planning, secure rooftop mounting, and professional electrical integration to deliver reliable renewable energy performance.",
       "processSteps": [
         {
-          "title": "STEP 01: Site Assessment",
-          "description": "Evaluate roof condition, available installation space, sunlight exposure, and structural suitability for solar panel installation."
+          "title": "Step 01: Site Assessment",
+          "description": "Inspect roof condition, available installation area, structural suitability, and sunlight exposure to determine the optimal solar installation approach."
         },
         {
-          "title": "STEP 02: System Planning",
-          "description": "Design an efficient panel layout and determine equipment placement based on your property's energy requirements."
+          "title": "Step 02: System Planning",
+          "description": "Prepare a customised solar panel layout, equipment selection, and installation plan based on your property's energy requirements."
         },
         {
-          "title": "STEP 03: Panel Installation",
-          "description": "Install mounting structures, solar panels, and electrical components using safe and professional installation practices."
+          "title": "Step 03: Installation Preparation",
+          "description": "Arrange mounting structures, electrical materials, safety equipment, and installation logistics before on-site work begins."
         },
         {
-          "title": "STEP 04: Testing & Handover",
-          "description": "Conduct system inspections, verify electrical connections, and complete final testing before project handover."
-        }
-      ],
-      "serviceAreasBadge": "COVERAGE",
-      "serviceAreasHeading": "Reliable Engineering & Renovation Solutions Near You",
-      "serviceAreasSubheading": "UA ENGINEERING proudly provides renovation and upgrading services across Singapore, covering all major residential and commercial areas.",
-      "faqs": [
-        {
-          "question": "1. What solar panel installation services does UA Engineering provide?",
-          "answer": "We provide rooftop solar PV installation, secure mounting, electrical integration, system testing, and professional handover."
+          "title": "Step 04: Solar Panel Installation",
+          "description": "Install mounting rails, solar panels, inverters, and electrical cabling using professional installation methods and quality workmanship."
         },
         {
-          "question": "2. Is my roof suitable for solar panel installation?",
-          "answer": "We assess roof condition, structural suitability, available space, sunlight exposure, and shading to determine solar feasibility."
+          "title": "Step 05: System Integration",
+          "description": "Complete electrical connections, configure the inverter, and integrate all system components for reliable operation."
         },
         {
-          "question": "3. Do you conduct a roof load assessment before installation?",
-          "answer": "Yes. We conduct structural roof load assessments and shading analysis for RC flat roofs, metal roofs, and tiled landed property roofs."
-        },
-        {
-          "question": "4. Can solar panels be installed on landed homes and commercial buildings?",
-          "answer": "Yes. We provide solar solutions for landed homes, condominiums, commercial buildings, and retail properties, subject to site suitability."
-        },
-        {
-          "question": "5. How does the solar panel installation process work?",
-          "answer": "Our process includes site assessment, system planning, panel and mounting installation, electrical integration, testing, and final handover."
-        },
-        {
-          "question": "6. Are your solar installations designed for Singapore's weather conditions?",
-          "answer": "Yes. We use secure mounting and weather-resistant installation practices designed for reliable performance in Singapore's conditions."
-        },
-        {
-          "question": "7. Does UA Engineering provide solar panel installation across Singapore?",
-          "answer": "Yes. We provide professional solar panel installation services across Singapore for suitable residential and commercial properties."
+          "title": "Step 06: Testing & Handover",
+          "description": "Conduct comprehensive system testing, verify operational performance, perform safety inspections, and complete the final client handover."
         }
       ],
       "services": [
@@ -2262,37 +2237,37 @@
             "Manage the entire process from consultation and planning to installation, testing, and handover."
           ],
           "process": [
-            "Step 01 – Site Assessment: Inspect roof condition, available installation area, structural suitability, and sunlight exposure.",
-            "Step 02 – System Planning: Prepare a customised solar panel layout, equipment selection, and installation plan.",
-            "Step 03 – Installation Preparation: Arrange mounting structures, electrical materials, safety equipment.",
-            "Step 04 – Solar Panel Installation: Install mounting rails, solar panels, inverters, and electrical cabling.",
-            "Step 05 – System Integration: Complete electrical connections, configure the inverter, and integrate components.",
-            "Step 06 – Testing & Handover: Conduct system testing, verify operational performance, and complete client handover."
+            "Step 01 – Site Assessment: Inspect roof condition, available installation area, structural suitability, and sunlight exposure to determine the optimal solar installation approach.",
+            "Step 02 – System Planning: Prepare a customised solar panel layout, equipment selection, and installation plan based on your property's energy requirements.",
+            "Step 03 – Installation Preparation: Arrange mounting structures, electrical materials, safety equipment, and installation logistics before on-site work begins.",
+            "Step 04 – Solar Panel Installation: Install mounting rails, solar panels, inverters, and electrical cabling using professional installation methods and quality workmanship.",
+            "Step 05 – System Integration: Complete electrical connections, configure the inverter, and integrate all system components for reliable operation.",
+            "Step 06 – Testing & Handover: Conduct comprehensive system testing, verify operational performance, perform safety inspections, and complete the final client handover."
           ],
           "processSteps": [
             {
               "title": "Step 01 – Site Assessment",
-              "description": "Inspect roof condition, available installation area, structural suitability, and sunlight exposure."
+              "description": "Inspect roof condition, available installation area, structural suitability, and sunlight exposure to determine the optimal solar installation approach."
             },
             {
               "title": "Step 02 – System Planning",
-              "description": "Prepare a customised solar panel layout, equipment selection, and installation plan."
+              "description": "Prepare a customised solar panel layout, equipment selection, and installation plan based on your property's energy requirements."
             },
             {
               "title": "Step 03 – Installation Preparation",
-              "description": "Arrange mounting structures, electrical materials, safety equipment."
+              "description": "Arrange mounting structures, electrical materials, safety equipment, and installation logistics before on-site work begins."
             },
             {
               "title": "Step 04 – Solar Panel Installation",
-              "description": "Install mounting rails, solar panels, inverters, and electrical cabling."
+              "description": "Install mounting rails, solar panels, inverters, and electrical cabling using professional installation methods and quality workmanship."
             },
             {
               "title": "Step 05 – System Integration",
-              "description": "Complete electrical connections, configure the inverter, and integrate components."
+              "description": "Complete electrical connections, configure the inverter, and integrate all system components for reliable operation."
             },
             {
               "title": "Step 06 – Testing & Handover",
-              "description": "Conduct system testing, verify operational performance, and complete client handover."
+              "description": "Conduct comprehensive system testing, verify operational performance, perform safety inspections, and complete the final client handover."
             }
           ]
         }
