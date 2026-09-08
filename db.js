@@ -7,7 +7,7 @@ dotenv.config();
 let useMongo = false;
 let cachedPromise = null;
 
-const DEFAULT_MONGODB_URI = "mongodb+srv://sajolbd:sajolBD-222@cluster0.wug67yz.mongodb.net/?appName=Cluster0";
+const DEFAULT_MONGODB_URI = "mongodb+srv://sajolbd:sajolBD-222@cluster0.wug67yz.mongodb.net/ua_engineering?retryWrites=true&w=majority";
 
 async function connectDB() {
   const MONGODB_URI = process.env.MONGODB_URI || DEFAULT_MONGODB_URI;
