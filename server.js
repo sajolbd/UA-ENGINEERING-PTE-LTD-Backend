@@ -356,13 +356,19 @@ app.post("/api/cms", async (req, res) => {
 
   if (getUseMongo()) {
     try {
-      const updateField = formType === "content" ? { content: data } : { seo: data };
+      const existingDoc = await Cms.findOne({ pageId });
+      const currentContent = existingDoc?.content || {};
+      const currentSeo = existingDoc?.seo || {};
+
+      const updatedContent = formType === "content" ? { ...currentContent, ...data } : currentContent;
+      const updatedSeo = formType === "seo" ? { ...currentSeo, ...data } : currentSeo;
+
       const updatedDoc = await Cms.findOneAndUpdate(
         { pageId },
-        { $set: updateField },
+        { $set: { content: updatedContent, seo: updatedSeo } },
         { upsert: true, new: true }
       );
-      syncToWebsite(pageId, formType, data);
+      syncToWebsite(pageId, formType, formType === "content" ? updatedContent : updatedSeo);
       return res.json({ success: true, data: updatedDoc, message: `CMS ${formType} settings saved successfully to MongoDB for page: ${pageId}` });
     } catch (err) {
       console.error("[Mongo Error] POST /api/cms failed:", err.message);
@@ -376,11 +382,15 @@ app.post("/api/cms", async (req, res) => {
     if (!db.cms[pageId]) {
       db.cms[pageId] = { content: {}, seo: {} };
     }
-    db.cms[pageId][formType] = data;
+    
+    db.cms[pageId][formType] = {
+      ...(db.cms[pageId][formType] || {}),
+      ...data
+    };
     
     const saved = writeDatabase(db);
     if (saved || process.env.VERCEL) {
-      syncToWebsite(pageId, formType, data);
+      syncToWebsite(pageId, formType, db.cms[pageId][formType]);
       return res.json({ success: true, message: `CMS ${formType} settings saved successfully for page: ${pageId}` });
     } else {
       return res.status(500).json({ success: false, error: "Failed to write data to database" });
