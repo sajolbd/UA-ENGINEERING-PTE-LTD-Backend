@@ -55,7 +55,7 @@ async function connectDB() {
 }
 
 // Proactively initiate connection on module load
-connectDB().catch(() => {});
+connectDB().catch(() => { });
 
 // 1. CMS Page Schema
 const CmsSchema = new mongoose.Schema({
@@ -223,9 +223,9 @@ async function seedDefaultData() {
           const defaultsForPage = pageId === "about" ? DEFAULT_ABOUT_FIELDS : {};
           const contentUpdated = { ...defaultsForPage, ...parsedData.cms[pageId].content, ...doc.content };
           const seoUpdated = { ...parsedData.cms[pageId].seo, ...doc.seo };
-          
-          if (Object.keys(contentUpdated).length !== Object.keys(doc.content).length || 
-              Object.keys(seoUpdated).length !== Object.keys(doc.seo).length) {
+
+          if (Object.keys(contentUpdated).length !== Object.keys(doc.content).length ||
+            Object.keys(seoUpdated).length !== Object.keys(doc.seo).length) {
             doc.content = contentUpdated;
             doc.seo = seoUpdated;
             doc.markModified("content");

@@ -177,7 +177,14 @@
               "Choa Chu Kang"
             ]
           }
-        ]
+        ],
+        "heroSlide7Bg": "/images/uploads/image-1787047790944-479913020.jpeg",
+        "heroSlide1Bg": "/images/home/hero/hero-bg.png",
+        "heroSlide2Bg": "/images/home/hero/hero-bg.png",
+        "heroSlide3Bg": "/images/home/hero/hero-bg.png",
+        "heroSlide4Bg": "/images/home/hero/hero-bg.png",
+        "heroSlide5Bg": "/images/home/hero/hero-bg.png",
+        "heroSlide6Bg": "/images/home/hero/hero-bg.png"
       },
       "seo": {
         "metaTitle": "UA Engineering PTE. LTD. | Singapore Engineering & Renovation",
