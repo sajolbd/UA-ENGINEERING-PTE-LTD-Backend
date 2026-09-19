@@ -372,14 +372,18 @@ app.post("/api/cms", async (req, res) => {
     return res.status(400).json({ success: false, error: "Missing required fields (pageId, formType, data)" });
   }
 
+  const dataWithTimestamp = formType === "content"
+    ? { ...data, _updatedAt: new Date().toISOString() }
+    : data;
+
   if (getUseMongo()) {
     try {
       const existingDoc = await Cms.findOne({ pageId });
       const currentContent = existingDoc?.content || {};
       const currentSeo = existingDoc?.seo || {};
 
-      const updatedContent = formType === "content" ? { ...currentContent, ...data } : currentContent;
-      const updatedSeo = formType === "seo" ? { ...currentSeo, ...data } : currentSeo;
+      const updatedContent = formType === "content" ? { ...currentContent, ...dataWithTimestamp } : currentContent;
+      const updatedSeo = formType === "seo" ? { ...currentSeo, ...dataWithTimestamp } : currentSeo;
 
       const updatedDoc = await Cms.findOneAndUpdate(
         { pageId },
@@ -403,7 +407,7 @@ app.post("/api/cms", async (req, res) => {
     
     db.cms[pageId][formType] = {
       ...(db.cms[pageId][formType] || {}),
-      ...data
+      ...dataWithTimestamp
     };
     
     const saved = writeDatabase(db);
