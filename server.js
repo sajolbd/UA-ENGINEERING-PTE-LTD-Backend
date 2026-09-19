@@ -133,24 +133,42 @@ function writeDatabase(data) {
 function syncToWebsite(pageId, formType, data) {
   if (process.env.VERCEL) return;
   try {
-    let websiteCmsJsonPath = path.join(__dirname, "..", "UA-ENGINEERING-PTE-LTD-Website", "data", "cmsData.json");
-    if (!fs.existsSync(path.dirname(websiteCmsJsonPath))) {
-      websiteCmsJsonPath = path.join(__dirname, "..", "UA ENGINEERING PTE. LTD -Website", "data", "cmsData.json");
-    }
-    if (!fs.existsSync(path.dirname(websiteCmsJsonPath))) return;
-    
-    let currentCms = {};
-    if (fs.existsSync(websiteCmsJsonPath)) {
-      currentCms = JSON.parse(fs.readFileSync(websiteCmsJsonPath, "utf8"));
-    }
-    if (!currentCms[pageId]) {
-      currentCms[pageId] = { content: {}, seo: {} };
-    }
-    currentCms[pageId][formType] = {
-      ...(currentCms[pageId][formType] || {}),
-      ...data,
-    };
-    fs.writeFileSync(websiteCmsJsonPath, JSON.stringify(currentCms, null, 2), "utf8");
+    const targets = [
+      path.join(__dirname, "..", "UA-ENGINEERING-PTE-LTD-Website", "data", "cmsData.json"),
+      path.join(__dirname, "..", "UA ENGINEERING PTE. LTD -Website", "data", "cmsData.json"),
+      path.join(__dirname, "..", "UA-ENGINEERING-PTE-LTD-Dashboard", "data", "cmsData.json"),
+      path.join(__dirname, "..", "UA ENGINEERING PTE. LTD -Dashboard", "data", "cmsData.json"),
+    ];
+
+    targets.forEach((targetPath) => {
+      try {
+        if (!fs.existsSync(path.dirname(targetPath))) return;
+        let cmsObj = {};
+        if (fs.existsSync(targetPath)) {
+          cmsObj = JSON.parse(fs.readFileSync(targetPath, "utf8"));
+        }
+        if (!cmsObj[pageId]) {
+          cmsObj[pageId] = { content: {}, seo: {} };
+        }
+        cmsObj[pageId][formType] = {
+          ...(cmsObj[pageId][formType] || {}),
+          ...data,
+        };
+        fs.writeFileSync(targetPath, JSON.stringify(cmsObj, null, 2), "utf8");
+      } catch (e) {}
+    });
+
+    // Also update local db.json
+    try {
+      const localDb = readDatabase();
+      if (!localDb.cms) localDb.cms = {};
+      if (!localDb.cms[pageId]) localDb.cms[pageId] = { content: {}, seo: {} };
+      localDb.cms[pageId][formType] = {
+        ...(localDb.cms[pageId][formType] || {}),
+        ...data,
+      };
+      writeDatabase(localDb);
+    } catch (e) {}
   } catch (err) {
     // Non-fatal in production
   }
