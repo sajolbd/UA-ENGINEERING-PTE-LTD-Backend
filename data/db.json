@@ -178,13 +178,17 @@
             ]
           }
         ],
-        "heroSlide7Bg": "/images/uploads/image-1787047790944-479913020.jpeg",
-        "heroSlide1Bg": "/images/home/hero/hero-bg.png",
-        "heroSlide2Bg": "/images/home/hero/hero-bg.png",
-        "heroSlide3Bg": "/images/home/hero/hero-bg.png",
-        "heroSlide4Bg": "/images/home/hero/hero-bg.png",
-        "heroSlide5Bg": "/images/home/hero/hero-bg.png",
-        "heroSlide6Bg": "/images/home/hero/hero-bg.png"
+        "heroSlide7Bg": "",
+        "heroSlide1Bg": "",
+        "heroSlide2Bg": "",
+        "heroSlide3Bg": "",
+        "heroSlide4Bg": "",
+        "heroSlide5Bg": "",
+        "heroSlide6Bg": "",
+        "processStep1Image": "",
+        "processStep2Image": "",
+        "processStep3Image": "",
+        "processStep4Image": ""
       },
       "seo": {
         "metaTitle": "UA Engineering PTE. LTD. | Singapore Engineering & Renovation",
