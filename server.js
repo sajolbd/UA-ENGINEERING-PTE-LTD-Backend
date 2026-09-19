@@ -345,15 +345,15 @@ app.get("/api/cms", async (req, res) => {
   if (getUseMongo()) {
     try {
       const cmsDocs = await Cms.find();
-      const cmsMap = {};
+      const localDb = readDatabase();
+      const mergedCms = { ...(localDb.cms || {}) };
       cmsDocs.forEach((doc) => {
-        cmsMap[doc.pageId] = {
-          content: doc.content || {},
-          seo: doc.seo || {}
+        const localPage = (localDb.cms || {})[doc.pageId] || {};
+        mergedCms[doc.pageId] = {
+          content: { ...(localPage.content || {}), ...(doc.content || {}) },
+          seo: { ...(localPage.seo || {}), ...(doc.seo || {}) }
         };
       });
-      const localDb = readDatabase();
-      const mergedCms = { ...localDb.cms, ...cmsMap };
       return res.json({ success: true, data: mergedCms });
     } catch (err) {
       console.error("[Mongo Error] GET /api/cms failed:", err.message);
@@ -378,9 +378,13 @@ app.post("/api/cms", async (req, res) => {
 
   if (getUseMongo()) {
     try {
+      const localDb = readDatabase();
+      const localDefaultContent = (localDb.cms || {})[pageId]?.content || {};
+      const localDefaultSeo = (localDb.cms || {})[pageId]?.seo || {};
+
       const existingDoc = await Cms.findOne({ pageId });
-      const currentContent = existingDoc?.content || {};
-      const currentSeo = existingDoc?.seo || {};
+      const currentContent = { ...localDefaultContent, ...(existingDoc?.content || {}) };
+      const currentSeo = { ...localDefaultSeo, ...(existingDoc?.seo || {}) };
 
       const updatedContent = formType === "content" ? { ...currentContent, ...dataWithTimestamp } : currentContent;
       const updatedSeo = formType === "seo" ? { ...currentSeo, ...dataWithTimestamp } : currentSeo;
