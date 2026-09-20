@@ -109,12 +109,26 @@ const ServiceSchema = new mongoose.Schema({
   categories: { type: Array, default: [] }
 }, { strict: false });
 
+// 6. Admin Users Schema
+const AdminUserSchema = new mongoose.Schema({
+  username: { type: String, required: true, unique: true },
+  name: { type: String, required: true },
+  email: { type: String, required: true },
+  password: { type: String, required: true },
+  role: { type: String, default: "Super Admin" },
+  status: { type: String, default: "Active" },
+  avatar: { type: String, default: "" },
+  lastLogin: { type: String, default: "" },
+  createdAt: { type: Date, default: Date.now }
+}, { strict: false });
+
 // Register models safely (prevent overwrite error if model registered)
 const Cms = mongoose.models.Cms || mongoose.model("Cms", CmsSchema);
 const Blog = mongoose.models.Blog || mongoose.model("Blog", BlogSchema);
 const Inquiry = mongoose.models.Inquiry || mongoose.model("Inquiry", InquirySchema);
 const Project = mongoose.models.Project || mongoose.model("Project", ProjectSchema);
 const Service = mongoose.models.Service || mongoose.model("Service", ServiceSchema);
+const AdminUser = mongoose.models.AdminUser || mongoose.model("AdminUser", AdminUserSchema);
 
 async function seedDefaultData() {
   try {
@@ -293,6 +307,23 @@ async function seedDefaultData() {
       }
       console.log("   Successfully seeded default blog articles to MongoDB!");
     }
+
+    // Seed default AdminUser if empty
+    const adminCount = await AdminUser.countDocuments();
+    if (adminCount === 0) {
+      console.log("   MongoDB is empty. Seeding default Super Admin user account...");
+      await AdminUser.create({
+        username: "admin",
+        name: "UA Administrator",
+        email: "admin@uaengineering.com.sg",
+        password: "admin123",
+        role: "Super Admin",
+        status: "Active",
+        avatar: "/images/logo.webp",
+        lastLogin: new Date().toISOString()
+      });
+      console.log("   Successfully seeded default Super Admin user to MongoDB!");
+    }
   } catch (err) {
     console.error("   Failed to seed/migrate database values:", err.message);
   }
@@ -306,5 +337,6 @@ module.exports = {
   Blog,
   Inquiry,
   Project,
-  Service
+  Service,
+  AdminUser
 };

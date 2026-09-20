@@ -19,6 +19,7 @@ const Inquiry = dbConnection.Inquiry;
 const Project = dbConnection.Project;
 const getUseMongo = dbConnection.getUseMongo;
 const Service = dbConnection.Service;
+const AdminUser = dbConnection.AdminUser;
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -97,18 +98,70 @@ let inMemoryDb = null;
 // Helper function to read database (local fallback with in-memory caching)
 function readDatabase() {
   if (inMemoryDb) {
+    if (!inMemoryDb.admins || !Array.isArray(inMemoryDb.admins) || inMemoryDb.admins.length === 0) {
+      inMemoryDb.admins = [
+        {
+          id: "1",
+          username: "admin",
+          name: "UA Administrator",
+          email: "admin@uaengineering.com.sg",
+          password: "admin123",
+          role: "Super Admin",
+          status: "Active",
+          avatar: "/images/logo.webp",
+          lastLogin: new Date().toISOString(),
+          createdAt: new Date().toISOString()
+        }
+      ];
+    }
     return inMemoryDb;
   }
   try {
     if (fs.existsSync(DB_PATH)) {
       const data = fs.readFileSync(DB_PATH, "utf8");
       inMemoryDb = JSON.parse(data);
+      if (!inMemoryDb.admins || !Array.isArray(inMemoryDb.admins) || inMemoryDb.admins.length === 0) {
+        inMemoryDb.admins = [
+          {
+            id: "1",
+            username: "admin",
+            name: "UA Administrator",
+            email: "admin@uaengineering.com.sg",
+            password: "admin123",
+            role: "Super Admin",
+            status: "Active",
+            avatar: "/images/logo.webp",
+            lastLogin: new Date().toISOString(),
+            createdAt: new Date().toISOString()
+          }
+        ];
+      }
       return inMemoryDb;
     }
   } catch (error) {
     console.error("Error reading database:", error.message);
   }
-  inMemoryDb = { cms: {}, blogs: [], inquiries: [], projects: [], services: [] };
+  inMemoryDb = {
+    cms: {},
+    blogs: [],
+    inquiries: [],
+    projects: [],
+    services: [],
+    admins: [
+      {
+        id: "1",
+        username: "admin",
+        name: "UA Administrator",
+        email: "admin@uaengineering.com.sg",
+        password: "admin123",
+        role: "Super Admin",
+        status: "Active",
+        avatar: "/images/logo.webp",
+        lastLogin: new Date().toISOString(),
+        createdAt: new Date().toISOString()
+      }
+    ]
+  };
   return inMemoryDb;
 }
 
@@ -825,6 +878,373 @@ app.post("/api/services", async (req, res) => {
     }
   } catch (err) {
     console.error("[Local DB Error] POST /api/services failed:", err.message);
+    return res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// -------------------------------------------------------------
+// 8.6. ADMIN & AUTH MANAGEMENT ENDPOINTS
+// -------------------------------------------------------------
+
+// Auth Login Route
+app.post("/api/auth/login", async (req, res) => {
+  const { username, password } = req.body;
+
+  if (!username || !password) {
+    return res.status(400).json({ success: false, error: "Username and password are required." });
+  }
+
+  const cleanUser = username.toString().trim().toLowerCase();
+
+  if (getUseMongo()) {
+    try {
+      const admin = await AdminUser.findOne({
+        $or: [{ username: cleanUser }, { email: cleanUser }]
+      });
+
+      if (admin) {
+        if (admin.password !== password) {
+          return res.status(401).json({ success: false, error: "Invalid username or password credentials." });
+        }
+        if (admin.status === "Inactive") {
+          return res.status(403).json({ success: false, error: "Your admin account is deactivated. Please contact a Super Admin." });
+        }
+
+        admin.lastLogin = new Date().toISOString();
+        await admin.save();
+
+        const userResponse = {
+          id: admin._id,
+          username: admin.username,
+          name: admin.name,
+          email: admin.email,
+          role: admin.role,
+          status: admin.status,
+          avatar: admin.avatar,
+          lastLogin: admin.lastLogin
+        };
+
+        return res.json({ success: true, user: userResponse, message: "Authentication successful!" });
+      }
+    } catch (err) {
+      console.error("[Mongo Auth Error]", err.message);
+    }
+  }
+
+  // Local JSON DB / Fallback Auth
+  const db = readDatabase();
+  const localAdmins = db.admins || [];
+  const match = localAdmins.find(
+    (a) => (a.username.toLowerCase() === cleanUser || a.email.toLowerCase() === cleanUser) && a.password === password
+  );
+
+  if (match) {
+    if (match.status === "Inactive") {
+      return res.status(403).json({ success: false, error: "Your admin account is deactivated. Please contact a Super Admin." });
+    }
+
+    match.lastLogin = new Date().toISOString();
+    writeDatabase(db);
+
+    const { password: _, ...userWithoutPass } = match;
+    return res.json({ success: true, user: userWithoutPass, message: "Authentication successful!" });
+  }
+
+  // Ultimate fallback for default admin
+  if (cleanUser === "admin" && password === "admin123") {
+    const defaultUser = {
+      id: "1",
+      username: "admin",
+      name: "UA Administrator",
+      email: "admin@uaengineering.com.sg",
+      role: "Super Admin",
+      status: "Active",
+      avatar: "/images/logo.webp",
+      lastLogin: new Date().toISOString()
+    };
+    return res.json({ success: true, user: defaultUser, message: "Authentication successful!" });
+  }
+
+  return res.status(401).json({ success: false, error: "Invalid username or password credentials." });
+});
+
+// GET All Admins
+app.get("/api/admins", async (req, res) => {
+  if (getUseMongo()) {
+    try {
+      const admins = await AdminUser.find({}, "-password").sort({ createdAt: -1 });
+      return res.json({ success: true, data: admins });
+    } catch (err) {
+      console.error("[Mongo Error] GET /api/admins failed:", err.message);
+    }
+  }
+
+  const db = readDatabase();
+  const sanitized = (db.admins || []).map(({ password, ...rest }) => rest);
+  res.json({ success: true, data: sanitized });
+});
+
+// CREATE New Admin
+app.post("/api/admins", async (req, res) => {
+  const { username, name, email, password, role, status, avatar } = req.body;
+
+  if (!username || !name || !email || !password) {
+    return res.status(400).json({ success: false, error: "Username, Name, Email, and Password are required." });
+  }
+
+  const cleanUsername = username.trim().toLowerCase();
+  const cleanEmail = email.trim().toLowerCase();
+
+  if (getUseMongo()) {
+    try {
+      const existing = await AdminUser.findOne({
+        $or: [{ username: cleanUsername }, { email: cleanEmail }]
+      });
+
+      if (existing) {
+        return res.status(400).json({ success: false, error: "Username or Email is already registered." });
+      }
+
+      const newAdmin = new AdminUser({
+        username: cleanUsername,
+        name: name.trim(),
+        email: cleanEmail,
+        password,
+        role: role || "Admin",
+        status: status || "Active",
+        avatar: avatar || "",
+        lastLogin: "",
+        createdAt: new Date()
+      });
+
+      await newAdmin.save();
+
+      const createdObj = newAdmin.toObject();
+      delete createdObj.password;
+
+      return res.json({ success: true, data: createdObj, message: `Admin account '${name}' created successfully in MongoDB!` });
+    } catch (err) {
+      console.error("[Mongo Error] POST /api/admins failed:", err.message);
+      return res.status(500).json({ success: false, error: err.message });
+    }
+  }
+
+  try {
+    const db = readDatabase();
+    if (!db.admins) db.admins = [];
+
+    const existingLocal = db.admins.find(
+      (a) => a.username.toLowerCase() === cleanUsername || a.email.toLowerCase() === cleanEmail
+    );
+
+    if (existingLocal) {
+      return res.status(400).json({ success: false, error: "Username or Email is already registered." });
+    }
+
+    const newLocalAdmin = {
+      id: Date.now().toString(),
+      username: cleanUsername,
+      name: name.trim(),
+      email: cleanEmail,
+      password,
+      role: role || "Admin",
+      status: status || "Active",
+      avatar: avatar || "",
+      lastLogin: "",
+      createdAt: new Date().toISOString()
+    };
+
+    db.admins.unshift(newLocalAdmin);
+    writeDatabase(db);
+
+    const { password: _, ...sanitizedReturn } = newLocalAdmin;
+    return res.json({ success: true, data: sanitizedReturn, message: `Admin account '${name}' created successfully!` });
+  } catch (err) {
+    console.error("[Local DB Error] POST /api/admins failed:", err.message);
+    return res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// UPDATE Admin User Profile or Role
+app.put("/api/admins/:id", async (req, res) => {
+  const { id } = req.params;
+  const { name, email, role, status, avatar, password } = req.body;
+
+  if (getUseMongo()) {
+    try {
+      const updateData = {};
+      if (name) updateData.name = name.trim();
+      if (email) updateData.email = email.trim().toLowerCase();
+      if (role) updateData.role = role;
+      if (status) updateData.status = status;
+      if (avatar !== undefined) updateData.avatar = avatar;
+      if (password && password.trim().length > 0) updateData.password = password.trim();
+
+      let adminDoc = null;
+      if (mongoose.Types.ObjectId.isValid(id)) {
+        adminDoc = await AdminUser.findByIdAndUpdate(id, { $set: updateData }, { new: true });
+      }
+      if (!adminDoc) {
+        adminDoc = await AdminUser.findOneAndUpdate(
+          { $or: [{ username: id }, { email: id }] },
+          { $set: updateData },
+          { new: true }
+        );
+      }
+
+      if (adminDoc) {
+        const resultObj = adminDoc.toObject();
+        delete resultObj.password;
+        return res.json({ success: true, data: resultObj, message: "Admin details updated successfully in MongoDB!" });
+      }
+      return res.status(404).json({ success: false, error: "Admin user not found." });
+    } catch (err) {
+      console.error("[Mongo Error] PUT /api/admins failed:", err.message);
+      return res.status(500).json({ success: false, error: err.message });
+    }
+  }
+
+  try {
+    const db = readDatabase();
+    if (db.admins) {
+      const idx = db.admins.findIndex((a) => a.id === id || a._id === id || a.username === id);
+      if (idx !== -1) {
+        if (name) db.admins[idx].name = name.trim();
+        if (email) db.admins[idx].email = email.trim().toLowerCase();
+        if (role) db.admins[idx].role = role;
+        if (status) db.admins[idx].status = status;
+        if (avatar !== undefined) db.admins[idx].avatar = avatar;
+        if (password && password.trim().length > 0) db.admins[idx].password = password.trim();
+
+        writeDatabase(db);
+
+        const { password: _, ...sanitizedReturn } = db.admins[idx];
+        return res.json({ success: true, data: sanitizedReturn, message: "Admin details updated successfully!" });
+      }
+    }
+    return res.status(404).json({ success: false, error: "Admin user not found." });
+  } catch (err) {
+    console.error("[Local DB Error] PUT /api/admins failed:", err.message);
+    return res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// DELETE Admin User
+app.delete("/api/admins/:id", async (req, res) => {
+  const { id } = req.params;
+
+  if (getUseMongo()) {
+    try {
+      // Protection check: Ensure we don't delete the last active Super Admin
+      const activeSuperAdmins = await AdminUser.find({ role: "Super Admin", status: "Active" });
+      const targetUser = await AdminUser.findOne({
+        $or: [
+          ...(mongoose.Types.ObjectId.isValid(id) ? [{ _id: id }] : []),
+          { username: id },
+          { email: id }
+        ]
+      });
+
+      if (!targetUser) {
+        return res.status(404).json({ success: false, error: "Admin user not found." });
+      }
+
+      if (targetUser.role === "Super Admin" && activeSuperAdmins.length <= 1) {
+        return res.status(400).json({
+          success: false,
+          error: "Action blocked: You cannot delete the only remaining active Super Admin account."
+        });
+      }
+
+      await AdminUser.findByIdAndDelete(targetUser._id);
+      return res.json({ success: true, message: `Admin account '${targetUser.username}' deleted successfully from MongoDB!` });
+    } catch (err) {
+      console.error("[Mongo Error] DELETE /api/admins failed:", err.message);
+      return res.status(500).json({ success: false, error: err.message });
+    }
+  }
+
+  try {
+    const db = readDatabase();
+    if (db.admins) {
+      const activeSuperAdmins = db.admins.filter((a) => a.role === "Super Admin" && a.status === "Active");
+      const targetUser = db.admins.find((a) => a.id === id || a._id === id || a.username === id);
+
+      if (!targetUser) {
+        return res.status(404).json({ success: false, error: "Admin user not found." });
+      }
+
+      if (targetUser.role === "Super Admin" && activeSuperAdmins.length <= 1) {
+        return res.status(400).json({
+          success: false,
+          error: "Action blocked: You cannot delete the only remaining active Super Admin account."
+        });
+      }
+
+      db.admins = db.admins.filter((a) => a.id !== id && a._id !== id && a.username !== id);
+      writeDatabase(db);
+
+      return res.json({ success: true, message: `Admin account '${targetUser.username}' deleted successfully!` });
+    }
+    return res.status(404).json({ success: false, error: "No admin users found." });
+  } catch (err) {
+    console.error("[Local DB Error] DELETE /api/admins failed:", err.message);
+    return res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// CHANGE PASSWORD Endpoint
+app.post("/api/admins/change-password", async (req, res) => {
+  const { username, currentPassword, newPassword } = req.body;
+
+  if (!username || !currentPassword || !newPassword) {
+    return res.status(400).json({ success: false, error: "Username, Current Password, and New Password are required." });
+  }
+
+  if (newPassword.trim().length < 6) {
+    return res.status(400).json({ success: false, error: "New Password must be at least 6 characters long." });
+  }
+
+  const cleanUser = username.toString().trim().toLowerCase();
+
+  if (getUseMongo()) {
+    try {
+      const admin = await AdminUser.findOne({
+        $or: [{ username: cleanUser }, { email: cleanUser }]
+      });
+
+      if (!admin || admin.password !== currentPassword) {
+        return res.status(400).json({ success: false, error: "Current password verification failed." });
+      }
+
+      admin.password = newPassword.trim();
+      await admin.save();
+
+      return res.json({ success: true, message: "Password updated successfully!" });
+    } catch (err) {
+      console.error("[Mongo Error] POST /api/admins/change-password failed:", err.message);
+      return res.status(500).json({ success: false, error: err.message });
+    }
+  }
+
+  try {
+    const db = readDatabase();
+    if (db.admins) {
+      const admin = db.admins.find(
+        (a) => (a.username.toLowerCase() === cleanUser || a.email.toLowerCase() === cleanUser)
+      );
+
+      if (!admin || admin.password !== currentPassword) {
+        return res.status(400).json({ success: false, error: "Current password verification failed." });
+      }
+
+      admin.password = newPassword.trim();
+      writeDatabase(db);
+      return res.json({ success: true, message: "Password updated successfully!" });
+    }
+    return res.status(404).json({ success: false, error: "Admin user not found." });
+  } catch (err) {
+    console.error("[Local DB Error] POST /api/admins/change-password failed:", err.message);
     return res.status(500).json({ success: false, error: err.message });
   }
 });

@@ -16,7 +16,8 @@
         "instagram": "https://instagram.com",
         "linkedin": "https://linkedin.com",
         "youtube": "https://youtube.com",
-        "whatsapp": "https://wa.me/6584593003"
+        "whatsapp": "https://wa.me/6584593003",
+        "_updatedAt": "2026-09-20T07:14:40.041Z"
       },
       "seo": {
         "metaTitle": "UA Engineering PTE. LTD. | Singapore Engineering & Renovation",
@@ -2959,6 +2960,20 @@
       "popular": true,
       "views": 0,
       "content": "<strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry."
+    }
+  ],
+  "admins": [
+    {
+      "id": "1",
+      "username": "admin",
+      "name": "UA Administrator",
+      "email": "admin@uaengineering.com.sg",
+      "password": "admin123",
+      "role": "Super Admin",
+      "status": "Active",
+      "avatar": "/images/logo.webp",
+      "lastLogin": "2026-09-20T07:11:12.304Z",
+      "createdAt": "2026-09-20T07:11:12.304Z"
     }
   ]
 }
