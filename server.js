@@ -324,6 +324,7 @@ export interface SubService {
   process: string[];
   processSteps?: ProcessStep[];
   seo?: ServiceSeo;
+  [key: string]: any;
 }
 
 export interface FAQItem {
@@ -371,6 +372,7 @@ export interface ServiceCategory {
   serviceAreas?: any;
   faqs?: FAQItem[];
   seo?: ServiceSeo;
+  [key: string]: any;
 }
 
 export const servicesData: ServiceCategory[] = ${JSON.stringify(categories, null, 2)};
