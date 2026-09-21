@@ -304,7 +304,14 @@ function syncServicesToWebsite(categories) {
     }
     if (!fs.existsSync(path.dirname(tsPath))) return;
 
-    const tsCode = `export interface SubService {
+    const tsCode = `export interface ServiceSeo {
+  metaTitle?: string;
+  metaDescription?: string;
+  metaKeywords?: string;
+  schemaJson?: string;
+}
+
+export interface SubService {
   slug: string;
   title: string;
   image: string;
@@ -316,6 +323,7 @@ function syncServicesToWebsite(categories) {
   benefits: string[];
   process: string[];
   processSteps?: ProcessStep[];
+  seo?: ServiceSeo;
 }
 
 export interface FAQItem {
@@ -360,7 +368,9 @@ export interface ServiceCategory {
   serviceAreasBadge?: string;
   serviceAreasHeading?: string;
   serviceAreasSubheading?: string;
+  serviceAreas?: any;
   faqs?: FAQItem[];
+  seo?: ServiceSeo;
 }
 
 export const servicesData: ServiceCategory[] = ${JSON.stringify(categories, null, 2)};
