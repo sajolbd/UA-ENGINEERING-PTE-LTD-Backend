@@ -72,7 +72,14 @@ servicesData.forEach(cat => {
   cat.serviceAreas = updatedRegions.map(r => ({ region: r.region, areas: r.areas }));
 });
 
-const newServicesTsContent = `export interface SubService {
+const newServicesTsContent = `export interface ServiceSeo {
+  metaTitle?: string;
+  metaDescription?: string;
+  metaKeywords?: string;
+  schemaJson?: string;
+}
+
+export interface SubService {
   id?: string;
   _id?: string;
   slug: string;
@@ -85,7 +92,7 @@ const newServicesTsContent = `export interface SubService {
   process?: string[];
   processHeading?: string;
   processSubheading?: string;
-  processSteps?: { step: string; title: string; description: string }[];
+  processSteps?: { step?: string; title: string; description: string }[];
   targetSpacesHeading?: string;
   targetSpacesSubheading?: string;
   targetSpaces?: { title: string; subtitle: string; description: string; points: string[]; image?: string }[];
@@ -98,6 +105,8 @@ const newServicesTsContent = `export interface SubService {
   faqHeading?: string;
   faqSubheading?: string;
   faqs?: { question: string; answer: string }[];
+  seo?: ServiceSeo;
+  [key: string]: any;
 }
 
 export interface FAQItem {
@@ -117,18 +126,18 @@ export interface ServiceCategory {
   title: string;
   shortDescription: string;
   description: string;
-  longDescription: string;
-  image: string;
-  featuredImage: string;
-  bgImage: string;
-  icon: string;
+  longDescription?: string;
+  image?: string;
+  featuredImage?: string;
+  bgImage?: string;
+  icon?: string;
   services: SubService[];
   features?: string[];
   benefits?: string[];
   process?: string[];
   processHeading?: string;
   processSubheading?: string;
-  processSteps?: { step: string; title: string; description: string }[];
+  processSteps?: { step?: string; title: string; description: string }[];
   whyChooseBadge?: string;
   whyChooseHeading?: string;
   whyChooseLeftTitle?: string;
@@ -140,7 +149,9 @@ export interface ServiceCategory {
   serviceAreasSubheading?: string;
   serviceAreas?: { region: string; areas: string[] }[];
   faqs?: FAQItem[];
+  seo?: ServiceSeo;
   __v?: number;
+  [key: string]: any;
 }
 
 export const servicesData: ServiceCategory[] = ${JSON.stringify(servicesData, null, 2)};
