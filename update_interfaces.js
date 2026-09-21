@@ -8,7 +8,14 @@ function updateHeader(filePath, isDashboard = false) {
   let content = fs.readFileSync(filePath, 'utf8');
 
   // Replace SubService interface
-  const newSubService = `export interface SubService {
+  const newSubService = `export interface ServiceSeo {
+  metaTitle?: string;
+  metaDescription?: string;
+  metaKeywords?: string;
+  schemaJson?: string;
+}
+
+export interface SubService {
   id?: string;
   _id?: string;
   slug: string;
@@ -36,6 +43,8 @@ function updateHeader(filePath, isDashboard = false) {
   faqHeading?: string;
   faqSubheading?: string;
   faqs?: { question: string; answer: string }[];
+  seo?: ServiceSeo;
+  [key: string]: any;
 }`;
 
   // Replace ServiceCategory interface
@@ -79,7 +88,9 @@ function updateHeader(filePath, isDashboard = false) {
   serviceAreasSubheading?: string;
   serviceAreas?: { region: string; areas: string[] }[];
   faqs?: FAQItem[];
+  seo?: ServiceSeo;
   __v?: number;
+  [key: string]: any;
 }`;
 
   // Find boundaries of export const servicesData
