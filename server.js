@@ -405,6 +405,199 @@ app.get("/api/health", (req, res) => {
   });
 });
 
+// =============================================================
+// XML Sitemaps & robots.txt / llms.txt (Dynamic CMS / Database)
+// =============================================================
+const CANONICAL_SITE = "https://uaengineering.com.sg";
+
+function escapeXml(str) {
+  if (!str) return "";
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+}
+
+function formatLastmod(dateVal) {
+  if (!dateVal) return "2026-09-20";
+  try {
+    const d = new Date(dateVal);
+    if (isNaN(d.getTime())) return "2026-09-20";
+    return d.toISOString().split("T")[0];
+  } catch {
+    return "2026-09-20";
+  }
+}
+
+function buildUrlsetXml(entries) {
+  const urlTags = entries
+    .map((e) => {
+      const lastmod = e.lastmod ? `\n    <lastmod>${escapeXml(e.lastmod)}</lastmod>` : "";
+      return `  <url>\n    <loc>${escapeXml(e.loc)}</loc>${lastmod}\n  </url>`;
+    })
+    .join("\n");
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urlTags}\n</urlset>`;
+}
+
+app.get("/sitemap.xml", (req, res) => {
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <sitemap>
+    <loc>${CANONICAL_SITE}/sitemap-pages.xml</loc>
+  </sitemap>
+
+  <sitemap>
+    <loc>${CANONICAL_SITE}/sitemap-services.xml</loc>
+  </sitemap>
+
+  <sitemap>
+    <loc>${CANONICAL_SITE}/sitemap-projects.xml</loc>
+  </sitemap>
+
+  <sitemap>
+    <loc>${CANONICAL_SITE}/sitemap-blog.xml</loc>
+  </sitemap>
+
+</sitemapindex>`;
+  res.setHeader("Content-Type", "application/xml; charset=UTF-8");
+  res.setHeader("Cache-Control", "public, max-age=3600, s-maxage=3600");
+  res.send(xml);
+});
+
+app.get("/sitemap-pages.xml", async (req, res) => {
+  let cmsData = {};
+  if (getUseMongo()) {
+    try {
+      const docs = await Cms.find();
+      docs.forEach((d) => { cmsData[d.pageId] = d; });
+    } catch (e) {}
+  } else {
+    cmsData = readDatabase().cms || {};
+  }
+
+  const entries = [
+    { loc: `${CANONICAL_SITE}`, lastmod: formatLastmod(cmsData.home?.content?._updatedAt) },
+    { loc: `${CANONICAL_SITE}/about`, lastmod: formatLastmod(cmsData.about?.content?._updatedAt) },
+    { loc: `${CANONICAL_SITE}/projects`, lastmod: formatLastmod(cmsData.projects?.content?._updatedAt) },
+    { loc: `${CANONICAL_SITE}/blog`, lastmod: formatLastmod(cmsData.blog?.content?._updatedAt) },
+    { loc: `${CANONICAL_SITE}/contact`, lastmod: formatLastmod(cmsData.contact?.content?._updatedAt) },
+  ];
+
+  res.setHeader("Content-Type", "application/xml; charset=UTF-8");
+  res.setHeader("Cache-Control", "public, max-age=3600, s-maxage=3600");
+  res.send(buildUrlsetXml(entries));
+});
+
+app.get("/sitemap-services.xml", async (req, res) => {
+  let categories = [];
+  if (getUseMongo()) {
+    try {
+      const doc = await Service.findOne();
+      if (doc && Array.isArray(doc.categories)) categories = doc.categories;
+    } catch (e) {}
+  }
+  if (!categories.length) {
+    categories = readDatabase().services || [];
+  }
+
+  const entries = [{ loc: `${CANONICAL_SITE}/services`, lastmod: "2026-09-20" }];
+  categories.forEach((cat) => {
+    if (!cat || !cat.slug || cat.status === "inactive" || cat.is_indexable === false) return;
+    const catDate = formatLastmod(cat.updatedAt || cat.createdAt);
+    entries.push({ loc: `${CANONICAL_SITE}/services/${cat.slug}`, lastmod: catDate });
+
+    if (Array.isArray(cat.services)) {
+      cat.services.forEach((sub) => {
+        if (!sub || !sub.slug || sub.status === "inactive" || sub.is_indexable === false) return;
+        const subDate = formatLastmod(sub.updatedAt || sub.createdAt || catDate);
+        entries.push({ loc: `${CANONICAL_SITE}/services/${cat.slug}/${sub.slug}`, lastmod: subDate });
+      });
+    }
+  });
+
+  res.setHeader("Content-Type", "application/xml; charset=UTF-8");
+  res.setHeader("Cache-Control", "public, max-age=3600, s-maxage=3600");
+  res.send(buildUrlsetXml(entries));
+});
+
+app.get("/sitemap-projects.xml", async (req, res) => {
+  let projects = [];
+  if (getUseMongo()) {
+    try {
+      projects = await Project.find().sort({ _id: -1 });
+    } catch (e) {}
+  }
+  if (!projects.length) {
+    projects = readDatabase().projects || [];
+  }
+
+  const entries = [];
+  projects.forEach((p) => {
+    if (!p || p.status === "inactive" || p.is_indexable === false || p.deleted) return;
+    const slug = p.slug || p.id || p._id;
+    if (!slug) return;
+    const pDate = formatLastmod(p.createdAt || p.updatedAt);
+    entries.push({ loc: `${CANONICAL_SITE}/projects/${slug}`, lastmod: pDate });
+  });
+
+  res.setHeader("Content-Type", "application/xml; charset=UTF-8");
+  res.setHeader("Cache-Control", "public, max-age=3600, s-maxage=3600");
+  res.send(buildUrlsetXml(entries));
+});
+
+app.get("/sitemap-blog.xml", async (req, res) => {
+  let blogs = [];
+  if (getUseMongo()) {
+    try {
+      blogs = await Blog.find().sort({ _id: -1 });
+    } catch (e) {}
+  }
+  if (!blogs.length) {
+    blogs = readDatabase().blogs || [];
+  }
+
+  const entries = [];
+  blogs.forEach((b) => {
+    if (!b || !b.slug || b.status === "draft" || b.is_indexable === false || b.deleted) return;
+    const bDate = formatLastmod(b.updatedAt || b.createdAt || b.date);
+    entries.push({ loc: `${CANONICAL_SITE}/blog/${b.slug}`, lastmod: bDate });
+  });
+
+  res.setHeader("Content-Type", "application/xml; charset=UTF-8");
+  res.setHeader("Cache-Control", "public, max-age=3600, s-maxage=3600");
+  res.send(buildUrlsetXml(entries));
+});
+
+app.get("/robots.txt", (req, res) => {
+  const robotsTxt = `User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: /login/
+Disallow: /privacy-policy
+Disallow: /terms-conditions
+Disallow: /llms.txt
+
+Sitemap: ${CANONICAL_SITE}/sitemap.xml
+`;
+  res.setHeader("Content-Type", "text/plain; charset=UTF-8");
+  res.send(robotsTxt);
+});
+
+app.get("/llms.txt", (req, res) => {
+  const llmsPath = path.join(__dirname, "public", "llms.txt");
+  if (fs.existsSync(llmsPath)) {
+    res.setHeader("Content-Type", "text/plain; charset=UTF-8");
+    return res.sendFile(llmsPath);
+  }
+  res.setHeader("Content-Type", "text/plain; charset=UTF-8");
+  res.send("# UA Engineering Pte. Ltd.\n");
+});
+
 // 1. GET CMS Section Data
 app.get("/api/cms", async (req, res) => {
   if (getUseMongo()) {
