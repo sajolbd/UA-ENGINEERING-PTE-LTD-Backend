@@ -10,7 +10,7 @@
 **Company Name:** UA Engineering Pte. Ltd.  
 **Legal Name:** UA ENGINEERING PTE. LTD.  
 **Location:** Singapore  
-**Address:** 38C Sea Avenue, Marine Mansion, Singapore 424256  
+**Address:** 88 Koon Seng Rd, Singapore 427029  
 **UEN:** 202553040W  
 **Telephone:** +65 8459 3003  
 **Website:** https://uaengineering.com.sg/  
@@ -1146,8 +1146,8 @@ https://uaengineering.com.sg/
 **UA Engineering Pte. Ltd.**
 
 
-38C Sea Avenue, Marine Mansion  
-Singapore 424256
+88 Koon Seng Rd,  
+Singapore 427029
 
 
 **Phone:** +65 8459 3003
