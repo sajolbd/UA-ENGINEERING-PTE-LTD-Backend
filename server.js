@@ -257,6 +257,11 @@ function syncBlogsToWebsite(blogs) {
 export const blogPosts: BlogPost[] = ${JSON.stringify(blogs, null, 2)};
 `;
     fs.writeFileSync(tsPath, tsCode, "utf8");
+
+    const dashPath = path.join(__dirname, "..", "UA-ENGINEERING-PTE-LTD-Dashboard", "data", "blogData.ts");
+    if (fs.existsSync(path.dirname(dashPath))) {
+      fs.writeFileSync(dashPath, tsCode, "utf8");
+    }
   } catch (err) {
     // Non-fatal in production
   }
@@ -800,6 +805,86 @@ app.delete("/api/blogs/:id", async (req, res) => {
     }
   } catch (err) {
     console.error("[Local DB Error] DELETE /api/blogs failed:", err.message);
+    return res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// 4.2. PUT / UPDATE Blog Post
+app.put("/api/blogs/:id", async (req, res) => {
+  const { id } = req.params;
+  const updatedData = req.body;
+
+  if (!updatedData.title) {
+    return res.status(400).json({ success: false, error: "Title is required to update a blog." });
+  }
+
+  // Ensure slug exists
+  if (!updatedData.slug && updatedData.title) {
+    updatedData.slug = updatedData.title
+      .toLowerCase()
+      .trim()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/(^-|-$)/g, "");
+  }
+
+  if (getUseMongo()) {
+    try {
+      let blogDoc = null;
+      if (id && mongoose.Types.ObjectId.isValid(id)) {
+        blogDoc = await Blog.findByIdAndUpdate(
+          id,
+          { $set: updatedData },
+          { new: true }
+        );
+      }
+      if (!blogDoc && id) {
+        blogDoc = await Blog.findOneAndUpdate(
+          { $or: [{ _id: id }, { id: id }, { slug: id }, { title: updatedData.title }] },
+          { $set: updatedData },
+          { new: true }
+        );
+      }
+      if (!blogDoc) {
+        blogDoc = new Blog(updatedData);
+        await blogDoc.save();
+      }
+      const allBlogs = await Blog.find().sort({ _id: -1 });
+      syncBlogsToWebsite(allBlogs);
+      return res.json({ success: true, data: blogDoc, message: "Blog updated successfully in MongoDB!" });
+    } catch (err) {
+      console.error("[Mongo Error] PUT /api/blogs/:id failed:", err.message);
+      return res.status(500).json({ success: false, error: err.message });
+    }
+  }
+
+  try {
+    const db = readDatabase();
+    if (db.blogs) {
+      let index = db.blogs.findIndex((b) => b.id === id || b._id === id || b.slug === id);
+      if (index !== -1) {
+        db.blogs[index] = { ...db.blogs[index], ...updatedData };
+        const saved = writeDatabase(db);
+        if (saved || process.env.VERCEL) {
+          syncBlogsToWebsite(db.blogs);
+          return res.json({ success: true, data: db.blogs[index], message: "Blog updated successfully!" });
+        } else {
+          return res.status(500).json({ success: false, error: "Failed to update local database" });
+        }
+      } else {
+        let titleIndex = db.blogs.findIndex((b) => b.title === updatedData.title);
+        if (titleIndex !== -1) {
+          db.blogs[titleIndex] = { ...db.blogs[titleIndex], ...updatedData };
+          writeDatabase(db);
+          syncBlogsToWebsite(db.blogs);
+          return res.json({ success: true, data: db.blogs[titleIndex], message: "Blog updated successfully!" });
+        }
+        return res.status(404).json({ success: false, error: "Blog not found to update." });
+      }
+    } else {
+      return res.status(404).json({ success: false, error: "No blogs found" });
+    }
+  } catch (err) {
+    console.error("[Local DB Error] PUT /api/blogs/:id failed:", err.message);
     return res.status(500).json({ success: false, error: err.message });
   }
 });

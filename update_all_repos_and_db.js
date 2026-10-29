@@ -1657,7 +1657,7 @@ const cmsData = {
       phone: "+65 8459 3003",
       email: "info@uaengineering.com.sg",
       address: "88 Koon Seng Rd, Singapore 427029",
-      workingHours: "Mon - Sat: 9:00 AM - 6:00 PM (Emergency 24/7 Support)",
+      workingHours: "Mon - Sat: 7:00 AM - 9:00 PM (Emergency 24/7 Support)",
       appointmentButtonText: "Book An Appointment",
       footerAboutText: "A complete renovation partner for homes and commercial spaces in Singapore, handling everything from small repairs to full structural transformation.",
       facebook: "https://facebook.com",
@@ -1970,7 +1970,7 @@ const cmsData = {
       contactAddress: "88 Koon Seng Rd, Singapore 427029",
       contactPhone: "+65 8459 3003",
       contactEmail: "info@uaengineering.com.sg",
-      contactHours: "Mon - Sat: 9:00 AM - 6:00 PM (Emergency 24/7 Support)"
+      contactHours: "Mon - Sat: 7:00 AM - 9:00 PM (Emergency 24/7 Support)"
     },
     seo: {
       metaTitle: "Contact Us | UA Engineering PTE. LTD.",
